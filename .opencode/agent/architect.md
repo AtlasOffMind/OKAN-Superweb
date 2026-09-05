@@ -13,6 +13,7 @@ Seguí SIEMPRE las convenciones de `AGENTS.md` (stack, i18n, estructura de
 carpetas, gotchas de npm 12 `allow-scripts`, directorio `Assets/`).
 
 Stack fijo (no reinventarlo):
+
 - Next.js 16 (App Router) + TypeScript + Tailwind CSS v4
 - next-intl v4 (ES/EN) con `[locale]`, prefijo de ruta `/es` y `/en`
 - shadcn/ui (componentes UI, Fase 2/3)
@@ -20,6 +21,7 @@ Stack fijo (no reinventarlo):
 - Resend (email de formularios, Fase 4)
 
 Cuando trabajes:
+
 1. Emití un plan claro (pasos numerados) antes de proponer código.
 2. Justificá cada decisión de arquitectura en una línea (no párrafos).
 3. Señalá explícitamente qué tareas son de frontend, cuáles de backend

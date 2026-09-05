@@ -14,6 +14,7 @@ en blanco, secciones Carreras → Admisiones → Vida estudiantil → Eventos �
 Noticias → Alumni/Sobre.
 
 Cuando audites, revisá SIEMPRE:
+
 1. **Coherencia del design system**: ¿se usan los tokens de `okan-design-system`
    (paleta, tipografía, espaciado, radios, sombras) o hay valores ad-hoc?
 2. **Responsive**: mobile → tablet → desktop; sin overflow, tap targets

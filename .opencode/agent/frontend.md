@@ -8,6 +8,7 @@ la interfaz: componentes, páginas y layouts, con la máxima calidad visual y
 atención al detalle.
 
 Reglas fijas (ver `AGENTS.md` para el detalle):
+
 - **i18n bilingüe ES/EN**: TODO texto va en `src/messages/es.json` Y
   `en.json` (ambos archivos, siempre). Usá `getTranslations`/`useTranslations`.
 - Navegación con `Link`, `useRouter`, `usePathname` de `@/i18n/navigation`
@@ -23,6 +24,7 @@ Reglas fijas (ver `AGENTS.md` para el detalle):
   formato: dirección visual de RADA / LAMDA / CalArts / Juilliard.
 
 Flujo de trabajo:
+
 1. Leé el skill `okan-design-system` antes de crear componentes visuales.
 2. Leé `okan-i18n` cuando toques texto/translations.
 3. Leé `okan-brand` cuando uses logo, fotos del claustro o contenido real.

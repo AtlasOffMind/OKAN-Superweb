@@ -27,6 +27,7 @@ Orden de verificación: `lint → typecheck → build` (y `format:check`). El pr
 ## Gotchas que un agente NO adivinará
 
 ### i18n (ES/EN)
+
 - Locales: `es` (default) y `en`, `localePrefix` implícito = `"always"` → todas las rutas van `/es/...` y `/en/...`.
 - **Todas** las páginas públicas viven bajo `src/app/[locale]/`. No crees páginas fuera de `[locale]`.
 - Textos en `src/messages/{es,en}.json`. **Siempre agregá la clave en AMBOS archivos** (no solo es).
@@ -35,6 +36,7 @@ Orden de verificación: `lint → typecheck → build` (y `format:check`). El pr
 - `setRequestLocale(locale)` + `generateStaticParams()` en cada layout/page bajo `[locale]` para SSG.
 
 ### npm 12 `allow-scripts` (importante)
+
 Este entorno tiene npm 12 con una política `allow-scripts` restrictiva. Al instalar paquetes nativos (`@swc/core`, `@parcel/watcher`, `unrs-resolver`, y luego `sharp`/`esbuild` de Payload) sus scripts quedan **bloqueados silenciosamente** con un warning. Después de `npm install`, corré:
 
 ```bash
@@ -46,6 +48,7 @@ npm install-scripts approve --all
 - No re-cree el `npx create-next-app` con `--use-npm` si falla con `EALLOWSCRIPTS`; el problema es esta política, no tu comando.
 
 ### Restricción de nombre npm
+
 El nombre del paquete no puede tener mayúsculas (por eso el repo se llama `OKAN-Superweb` pero el paquete es `okan-superweb`).
 
 ## Fuente de contenido (Assets/)

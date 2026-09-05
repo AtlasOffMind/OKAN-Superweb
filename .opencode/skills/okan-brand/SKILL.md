@@ -18,22 +18,22 @@ tipografías oficiales. No inventar marca; usar los assets reales.
 Descripción). Las fotos están en `Assets/Imagenes/profesores/`. **El nombre de
 archivo NO coincide 1:1 con el nombre formal**: relacioná manualmente.
 
-| Nombre formal (xlsx) | Cargo | Archivo de foto |
-|---|---|---|
-| Carolina del Carmen Zepeda García | Rectora fundadora | `Carolina.jpeg` |
-| Ernesto Tamayo Benítez | Decano de Actuación | `ErnestoTamayo.jpg` |
-| Luz Mas | Decana de Danza | `Luz-Mas.jpg` |
-| Alia Gisela Sánchez Vázquez | Directora de Mercadotecnia | `Alia-Sanchez.jpeg` |
-| Yailín Coppola | Docente | `Yailin-1.jpeg` |
-| Abigail Soqui Michelena | Docente | `Abigail-Soqui-Michelena.jpeg` |
-| Patricia Rivera | Docente | `Patricia-Rivera.png` |
-| Zurisadai González Fuente | Docente | `Zurisadai-Gonzalez-Fuente.jpg` |
-| Kirenia Arbelo Plasencia | Docente | `kirenia.jpeg` |
-| Anyel Judith Goenaga | Docente | `Anyel-Judith-Goenaga.png` |
-| Pita Ochoa | Docente | `Pita-Ochoa.jpg` |
-| Lázaro Alejandro Batista Burunate | Docente | `Lazaro-Alejandro-Batista-Burunate.png` |
-| Greys Rosales | Docente | `Greys-Rosales.png` |
-| Doriam Díaz Goenaga | Psicóloga | `Doriam.jpeg` |
+| Nombre formal (xlsx)              | Cargo                      | Archivo de foto                         |
+| --------------------------------- | -------------------------- | --------------------------------------- |
+| Carolina del Carmen Zepeda García | Rectora fundadora          | `Carolina.jpeg`                         |
+| Ernesto Tamayo Benítez            | Decano de Actuación        | `ErnestoTamayo.jpg`                     |
+| Luz Mas                           | Decana de Danza            | `Luz-Mas.jpg`                           |
+| Alia Gisela Sánchez Vázquez       | Directora de Mercadotecnia | `Alia-Sanchez.jpeg`                     |
+| Yailín Coppola                    | Docente                    | `Yailin-1.jpeg`                         |
+| Abigail Soqui Michelena           | Docente                    | `Abigail-Soqui-Michelena.jpeg`          |
+| Patricia Rivera                   | Docente                    | `Patricia-Rivera.png`                   |
+| Zurisadai González Fuente         | Docente                    | `Zurisadai-Gonzalez-Fuente.jpg`         |
+| Kirenia Arbelo Plasencia          | Docente                    | `kirenia.jpeg`                          |
+| Anyel Judith Goenaga              | Docente                    | `Anyel-Judith-Goenaga.png`              |
+| Pita Ochoa                        | Docente                    | `Pita-Ochoa.jpg`                        |
+| Lázaro Alejandro Batista Burunate | Docente                    | `Lazaro-Alejandro-Batista-Burunate.png` |
+| Greys Rosales                     | Docente                    | `Greys-Rosales.png`                     |
+| Doriam Díaz Goenaga               | Psicóloga                  | `Doriam.jpeg`                           |
 
 Nota: el xlsx contiene el texto completo de `Descripción` (biodata rica) para
 cada persona. Úsalo tal cual para las biografías, pero validá acentos (p.ej.

@@ -1,9 +1,72 @@
 {
   "home": {
     "title": "OKAN School of the Arts",
-    "heroTitle": "Professional training in the performing arts",
-    "heroSubtitle": "Acting, dance and stage creation at the highest level.",
-    "ctaApply": "Apply now",
-    "ctaPrograms": "View programs"
+    "description": "Professional training in the performing arts: acting, dance and stage creation.",
+    "intro": "Landing page drafts to choose a visual direction."
+  },
+  "drafts": {
+    "title": "Landing drafts",
+    "subtitle": "Choose the visual direction that best represents you. All three share the same content; the design changes.",
+    "links": "View draft"
+  },
+  "landing": {
+    "nav": {
+      "programs": "Programs",
+      "admissions": "Admissions",
+      "life": "Student life",
+      "about": "About",
+      "apply": "Apply"
+    },
+    "hero": {
+      "eyebrow": "School of the Arts",
+      "title": "We train artists for the stage",
+      "subtitle": "Acting, dance and stage creation in a rigorous, contemporary and deeply human education project.",
+      "primary": "Apply for admission",
+      "secondary": "Explore programs"
+    },
+    "programs": {
+      "heading": "Programs",
+      "subheading": "Three paths, one calling",
+      "acting": {
+        "title": "Acting",
+        "desc": "Actor training, dramaturgy and stage laboratory with a contemporary-oriented curriculum."
+      },
+      "dance": {
+        "title": "Dance",
+        "desc": "Ballet, contemporary dance and jazz built on solid technique and movement research."
+      },
+      "creation": {
+        "title": "Stage creation",
+        "desc": "Directing, production and stage thinking to imagine and sustain your own works."
+      }
+    },
+    "faculty": {
+      "heading": "Our faculty",
+      "desc": "Active artists, researchers and teachers whose practice was forged on stages in Mexico, Cuba and Europe."
+    },
+    "news": {
+      "heading": "What's on",
+      "item": {
+        "date": "September 2026",
+        "title": "Auditions open for the new generation",
+        "desc": "Admission call for the Acting, Dance and Stage Creation programs."
+      }
+    },
+    "about": {
+      "heading": "About OKAN",
+      "text": "A performing arts institution that brings together training, artistic research and human support to shape the next generation of creators."
+    },
+    "stats": {
+      "years": "Years training artists",
+      "students": "Students",
+      "alumni": "Alumni",
+      "productions": "Productions"
+    },
+    "footer": {
+      "ctaTitle": "Take the next step",
+      "ctaText": "Your calling starts here. Explore our programs and apply for the audition.",
+      "ctaButton": "Apply now",
+      "copyright": "OKAN School of the Arts. All rights reserved."
+    }
   }
 }

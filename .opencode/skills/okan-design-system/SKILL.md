@@ -15,6 +15,7 @@ RADA, LAMDA, CalArts, Juilliard.
 fuente se definen ahí (variables CSS + `@theme inline`).
 
 Tokens base actuales:
+
 - `--color-background`, `--color-foreground`
 - `--font-sans` (Geist), `--font-mono` (Geist Mono)
 
@@ -22,13 +23,19 @@ Tokens base actuales:
 
 1. Colores de marca → variables CSS en `:root` y mapeo en `@theme inline`:
    ```css
-   :root { --brand: #000000; }
-   @theme inline { --color-brand: var(--brand); }
+   :root {
+     --brand: #000000;
+   }
+   @theme inline {
+     --color-brand: var(--brand);
+   }
    ```
    Luego usás `bg-brand`, `text-brand`, etc.
 2. Tipografías → importá la fuente (next/font o `@import`) y registrala:
    ```css
-   @theme inline { --font-display: var(--font-serif); }
+   @theme inline {
+     --font-display: var(--font-serif);
+   }
    ```
 3. Espaciado/escala → no inventes valores mágicos; usá la escala de Tailwind.
 

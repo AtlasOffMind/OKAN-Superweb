@@ -1,9 +1,72 @@
 {
   "home": {
     "title": "OKAN Escuela Superior de Arte",
-    "heroTitle": "Formación profesional en artes escénicas",
-    "heroSubtitle": "Actuación, danza y creación escénica al más alto nivel.",
-    "ctaApply": "Solicitar admisión",
-    "ctaPrograms": "Ver programas"
+    "description": "Formación profesional en artes escénicas: actuación, danza y creación.",
+    "intro": "Borradores de la landing para elegir dirección visual."
+  },
+  "drafts": {
+    "title": "Borradores de landing",
+    "subtitle": "Elegí la dirección visual que más te represente. Las tres comparten el mismo contenido; cambia el diseño.",
+    "links": "Ver borrador"
+  },
+  "landing": {
+    "nav": {
+      "programs": "Programas",
+      "admissions": "Admisiones",
+      "life": "Vida estudiantil",
+      "about": "Nosotros",
+      "apply": "Aplicar"
+    },
+    "hero": {
+      "eyebrow": "Escuela Superior de Arte",
+      "title": "Formamos artistas para el escenario",
+      "subtitle": "Actuación, danza y creación escénica en un proyecto educativo riguroso, contemporáneo y profundamente humano.",
+      "primary": "Solicitar admisión",
+      "secondary": "Explorar programas"
+    },
+    "programs": {
+      "heading": "Programas",
+      "subheading": "Tres caminos, una misma vocación",
+      "acting": {
+        "title": "Actuación",
+        "desc": "Entrenamiento actoral, dramaturgia y laboratorio escénico con una malla curricular de orientación contemporánea."
+      },
+      "dance": {
+        "title": "Danza",
+        "desc": "Ballet, danza contemporánea y jazz desde una formación técnica sólida y una investigación del movimiento."
+      },
+      "creation": {
+        "title": "Creación escénica",
+        "desc": "Dirección, producción y pensamiento escénico para imaginar y sostener obras propias."
+      }
+    },
+    "faculty": {
+      "heading": "Nuestro claustro",
+      "desc": "Artistas en activo, investigadores y docentes que formaron su práctica en escenarios de México, Cuba y Europa."
+    },
+    "news": {
+      "heading": "Agenda y noticias",
+      "item": {
+        "date": "Septiembre 2026",
+        "title": "Audiciones abiertas para la nueva generación",
+        "desc": "Convocatoria de admisión para los programas de Actuación, Danza y Creación escénica."
+      }
+    },
+    "about": {
+      "heading": "Sobre OKAN",
+      "text": "Una institución de artes escénicas que integra entrenamiento, investigación artística y acompañamiento humano para formar a la próxima generación de creadores."
+    },
+    "stats": {
+      "years": "Años formando artistas",
+      "students": "Estudiantes",
+      "alumni": "Egresados",
+      "productions": "Producciones"
+    },
+    "footer": {
+      "ctaTitle": "Da el siguiente paso",
+      "ctaText": "Tu vocación empieza aquí. Conocé nuestros programas y postulá a la audición.",
+      "ctaButton": "Aplicar ahora",
+      "copyright": "OKAN Escuela Superior de Arte. Todos los derechos reservados."
+    }
   }
 }
