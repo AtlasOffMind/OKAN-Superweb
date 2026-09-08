@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { OkanLogo } from "@/components/okan-logo";
 import { LocaleSwitcher } from "@/components/locale-switcher";
+import { NavDrawer } from "@/components/nav-drawer";
 import { navLinks } from "@/lib/site";
 
 const base = "/draft-1";
@@ -18,30 +19,32 @@ export default async function Draft1Layout({
   const t = await getTranslations("landing");
   const c = await getTranslations("contact");
 
+  const links = navLinks.map((l) => ({
+    label: t(`nav.${l.key}`),
+    href: `${base}${l.path}`,
+  }));
+
   return (
     <div className="bg-white text-zinc-900">
       <header className="flex items-center justify-between border-b border-zinc-200 px-6 py-5 md:px-12">
         <Link href={base}>
           <OkanLogo width={140} />
         </Link>
-        <nav className="hidden items-center gap-7 text-sm tracking-wide text-zinc-600 lg:flex">
-          {navLinks.map((l) => (
-            <Link
-              key={l.key}
-              href={`${base}${l.path}`}
-              className="hover:text-brand-700 transition-colors"
-            >
-              {t(`nav.${l.key}`)}
-            </Link>
-          ))}
-          <LocaleSwitcher className="hover:text-brand-600 text-xs tracking-widest text-zinc-400 uppercase" />
-        </nav>
-        <a
-          href={`${base}/admissions`}
-          className="hover:bg-brand-700 rounded-full bg-zinc-900 px-5 py-2 text-sm font-medium text-white transition-colors"
-        >
-          {t("nav.apply")}
-        </a>
+
+        <div className="flex items-center gap-3">
+          <LocaleSwitcher />
+          <a
+            href={`${base}/admissions`}
+            className="hover:bg-brand-700 hidden rounded-full bg-zinc-900 px-5 py-2 text-sm font-medium text-white transition-colors sm:inline-block"
+          >
+            {t("nav.apply")}
+          </a>
+          <NavDrawer
+            links={links}
+            applyLabel={t("nav.apply")}
+            applyHref={`${base}/admissions`}
+          />
+        </div>
       </header>
 
       <main className="min-h-screen">{children}</main>
@@ -57,13 +60,9 @@ export default async function Draft1Layout({
               <div className="mb-2 font-semibold text-white">
                 {t("nav.programs")}
               </div>
-              {navLinks.slice(0, 3).map((l) => (
-                <Link
-                  key={l.key}
-                  href={`${base}${l.path}`}
-                  className="hover:text-white"
-                >
-                  {t(`nav.${l.key}`)}
+              {links.slice(0, 3).map((l) => (
+                <Link key={l.href} href={l.href} className="hover:text-white">
+                  {l.label}
                 </Link>
               ))}
             </div>
@@ -71,13 +70,9 @@ export default async function Draft1Layout({
               <div className="mb-2 font-semibold text-white">
                 {t("nav.about")}
               </div>
-              {navLinks.slice(3).map((l) => (
-                <Link
-                  key={l.key}
-                  href={`${base}${l.path}`}
-                  className="hover:text-white"
-                >
-                  {t(`nav.${l.key}`)}
+              {links.slice(3).map((l) => (
+                <Link key={l.href} href={l.href} className="hover:text-white">
+                  {l.label}
                 </Link>
               ))}
             </div>

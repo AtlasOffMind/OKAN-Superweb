@@ -18,6 +18,11 @@ export default async function Draft2Layout({
   const t = await getTranslations("landing");
   const c = await getTranslations("contact");
 
+  const links = navLinks.map((l) => ({
+    label: t(`nav.${l.key}`),
+    href: `${base}${l.path}`,
+  }));
+
   return (
     <div className="bg-white text-zinc-900">
       <div className="bg-brand-700 px-6 py-2 text-center text-xs font-medium tracking-wide text-white md:px-12">
@@ -28,29 +33,21 @@ export default async function Draft2Layout({
         <Link href={base}>
           <OkanLogo width={140} />
         </Link>
-        <nav className="hidden items-center gap-7 text-sm font-medium text-zinc-700 lg:flex">
-          {navLinks.map((l) => (
-            <Link
-              key={l.key}
-              href={`${base}${l.path}`}
-              className="hover:text-brand-700 transition-colors"
-            >
-              {t(`nav.${l.key}`)}
-            </Link>
-          ))}
-          <LocaleSwitcher className="text-brand-600 text-xs font-semibold tracking-widest uppercase" />
-        </nav>
-        <a
-          href={`${base}/admissions`}
-          className="bg-brand-700 hover:bg-brand-800 rounded-xl px-5 py-2.5 text-sm font-semibold text-white transition-colors"
-        >
-          {t("nav.apply")}
-        </a>
+
+        <div className="flex items-center gap-3">
+          <LocaleSwitcher />
+          <a
+            href={`${base}/admissions`}
+            className="bg-brand-700 hover:bg-brand-800 rounded-xl px-5 py-2.5 text-sm font-semibold text-white transition-colors"
+          >
+            {t("nav.apply")}
+          </a>
+        </div>
       </header>
 
       <main className="min-h-screen">{children}</main>
 
-      <footer className="bg-brand-700 text-brand-100 px-6 py-16 md:px-12">
+      <footer className="bg-brand-950 text-brand-100 px-6 py-16 md:px-12">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 md:flex-row md:justify-between">
           <div>
             <OkanLogo variant="light" width={130} />
@@ -63,13 +60,9 @@ export default async function Draft2Layout({
               <div className="mb-2 font-semibold text-white">
                 {t("nav.programs")}
               </div>
-              {navLinks.slice(0, 3).map((l) => (
-                <Link
-                  key={l.key}
-                  href={`${base}${l.path}`}
-                  className="hover:text-white"
-                >
-                  {t(`nav.${l.key}`)}
+              {links.slice(0, 3).map((l) => (
+                <Link key={l.href} href={l.href} className="hover:text-white">
+                  {l.label}
                 </Link>
               ))}
             </div>
@@ -77,13 +70,9 @@ export default async function Draft2Layout({
               <div className="mb-2 font-semibold text-white">
                 {t("nav.about")}
               </div>
-              {navLinks.slice(3).map((l) => (
-                <Link
-                  key={l.key}
-                  href={`${base}${l.path}`}
-                  className="hover:text-white"
-                >
-                  {t(`nav.${l.key}`)}
+              {links.slice(3).map((l) => (
+                <Link key={l.href} href={l.href} className="hover:text-white">
+                  {l.label}
                 </Link>
               ))}
             </div>

@@ -7,7 +7,21 @@
   "drafts": {
     "title": "Landing drafts",
     "subtitle": "Choose the visual direction that best represents you. All three share the same content; the design changes.",
-    "links": "View draft"
+    "links": "View draft",
+    "items": [
+      {
+        "name": "Classic · Conservatoire",
+        "desc": "Elegant serif, sober and monochrome, large-format photography."
+      },
+      {
+        "name": "Modern · Editorial",
+        "desc": "Asymmetric, bold use of purple, contemporary grid."
+      },
+      {
+        "name": "Expressive · Artistic",
+        "desc": "Oversized typography, gradients and stage energy."
+      }
+    ]
   },
   "landing": {
     "nav": {

@@ -79,7 +79,7 @@ export default async function Draft1About({
                     src={l.file}
                     alt={l.name}
                     fill
-                    className="object-cover grayscale"
+                    className="object-cover"
                   />
                 </div>
                 <div className="font-display mt-4 text-lg font-semibold">

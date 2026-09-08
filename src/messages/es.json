@@ -7,7 +7,21 @@
   "drafts": {
     "title": "Borradores de landing",
     "subtitle": "Elegí la dirección visual que más te represente. Las tres comparten el mismo contenido; cambia el diseño.",
-    "links": "Ver borrador"
+    "links": "Ver borrador",
+    "items": [
+      {
+        "name": "Clásico · Conservatorio",
+        "desc": "Serif elegante, monocromo y sobrio, fotografía en gran formato."
+      },
+      {
+        "name": "Moderno · Editorial",
+        "desc": "Asimétrico, uso audaz del púrpura, grilla contemporánea."
+      },
+      {
+        "name": "Expresivo · Artístico",
+        "desc": "Tipografía oversized, gradientes y energía escénica."
+      }
+    ]
   },
   "landing": {
     "nav": {
