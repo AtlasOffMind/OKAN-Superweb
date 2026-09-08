@@ -26,7 +26,7 @@ export default async function Draft2Layout({
 
       <header className="flex items-center justify-between px-6 py-5 md:px-12">
         <Link href={base}>
-          <OkanLogo width={140} height={56} />
+          <OkanLogo width={140} />
         </Link>
         <nav className="hidden items-center gap-7 text-sm font-medium text-zinc-700 lg:flex">
           {navLinks.map((l) => (
@@ -53,7 +53,7 @@ export default async function Draft2Layout({
       <footer className="bg-brand-700 text-brand-100 px-6 py-16 md:px-12">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 md:flex-row md:justify-between">
           <div>
-            <OkanLogo width={130} height={52} />
+            <OkanLogo variant="light" width={130} />
             <p className="text-brand-100 mt-4 max-w-xs text-sm">
               {t("about.text")}
             </p>

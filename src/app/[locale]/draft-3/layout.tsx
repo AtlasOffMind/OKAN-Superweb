@@ -22,7 +22,7 @@ export default async function Draft3Layout({
     <div className="bg-zinc-950 text-zinc-100">
       <header className="flex items-center justify-between px-6 py-5 md:px-10">
         <Link href={base}>
-          <OkanLogo width={130} height={52} />
+          <OkanLogo variant="light" width={130} />
         </Link>
         <nav className="font-display hidden items-center gap-8 text-sm text-zinc-400 italic lg:flex">
           {navLinks.map((l) => (
@@ -50,7 +50,7 @@ export default async function Draft3Layout({
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(147,51,234,0.25),transparent_60%)]" />
         <div className="relative mx-auto flex max-w-6xl flex-col gap-12 md:flex-row md:justify-between">
           <div>
-            <OkanLogo width={130} height={52} />
+            <OkanLogo variant="light" width={130} />
             <p className="mt-4 max-w-xs text-sm text-zinc-500">
               {t("about.text")}
             </p>

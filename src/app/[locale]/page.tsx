@@ -36,7 +36,7 @@ export default async function HomePage({
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col items-center px-6 py-16">
-      <OkanLogo width={180} height={72} className="mb-16" />
+      <OkanLogo width={180} className="mb-16" />
 
       <h1 className="font-display text-4xl font-semibold tracking-tight">
         {t("title")}

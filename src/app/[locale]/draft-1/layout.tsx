@@ -22,7 +22,7 @@ export default async function Draft1Layout({
     <div className="bg-white text-zinc-900">
       <header className="flex items-center justify-between border-b border-zinc-200 px-6 py-5 md:px-12">
         <Link href={base}>
-          <OkanLogo width={140} height={56} />
+          <OkanLogo width={140} />
         </Link>
         <nav className="hidden items-center gap-7 text-sm tracking-wide text-zinc-600 lg:flex">
           {navLinks.map((l) => (
@@ -49,7 +49,7 @@ export default async function Draft1Layout({
       <footer className="bg-zinc-950 px-6 py-16 text-zinc-400 md:px-12">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 md:flex-row md:justify-between">
           <div>
-            <OkanLogo width={130} height={52} />
+            <OkanLogo variant="light" width={130} />
             <p className="mt-4 max-w-xs text-sm">{t("about.text")}</p>
           </div>
           <div className="grid grid-cols-2 gap-10 text-sm md:grid-cols-3">
