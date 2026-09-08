@@ -15,6 +15,8 @@
       "admissions": "Admisiones",
       "life": "Vida estudiantil",
       "about": "Nosotros",
+      "news": "Noticias",
+      "contact": "Contacto",
       "apply": "Aplicar"
     },
     "hero": {
@@ -67,6 +69,158 @@
       "ctaText": "Tu vocación empieza aquí. Conocé nuestros programas y postulá a la audición.",
       "ctaButton": "Aplicar ahora",
       "copyright": "OKAN Escuela Superior de Arte. Todos los derechos reservados."
+    }
+  },
+  "programs": {
+    "heading": "Programas académicos",
+    "intro": "Tres licenciaturas en artes escénicas con una formación integral, práctica y situada en la escena contemporánea.",
+    "acting": {
+      "title": "Actuación",
+      "tagline": "El actor como creador",
+      "desc": "Una malla curricular que integra entrenamiento actoral, dramaturgia, voz, movimiento y laboratorio escénico, con orientación contemporánea y pensamiento crítico.",
+      "outcomes": [
+        "Entrenamiento actoral y de voz",
+        "Dramaturgia para el actor",
+        "Laboratorio escénico y montaje"
+      ]
+    },
+    "dance": {
+      "title": "Danza",
+      "tagline": "El cuerpo como lenguaje",
+      "desc": "Formación técnica en ballet, danza contemporánea y jazz, junto a investigación del movimiento, conciencia corporal y creación coreográfica.",
+      "outcomes": [
+        "Ballet y técnica clásica",
+        "Danza contemporánea",
+        "Improvisación y coreografía"
+      ]
+    },
+    "creation": {
+      "title": "Creación escénica",
+      "tagline": "El artista que imagina mundos",
+      "desc": "Dirección, producción y pensamiento escénico para imaginar, sostener y producir obras propias con mirada interdisciplinaria.",
+      "outcomes": [
+        "Dirección escénica",
+        "Producción y gestión",
+        "Pensamiento y dramaturgia"
+      ]
+    }
+  },
+  "admissions": {
+    "heading": "Admisiones",
+    "intro": "Queremos conocerte. Nuestro proceso busca talento, curiosidad y compromiso, no un expediente perfecto.",
+    "process": {
+      "title": "El proceso",
+      "steps": [
+        {
+          "title": "Solicitud",
+          "desc": "Completá tu solicitud en línea con tus datos y antecedentes."
+        },
+        {
+          "title": "Audición",
+          "desc": "Presentá una muestra de tu trabajo ante el claustro docente."
+        },
+        {
+          "title": "Entrevista",
+          "desc": "Conversamos sobre tu motivación y tu trayectoria."
+        },
+        {
+          "title": "Resultado",
+          "desc": "Recibís la decisión de admisión y los siguientes pasos."
+        }
+      ]
+    },
+    "deadlines": {
+      "title": "Fechas clave",
+      "item": "Audiciones abiertas",
+      "date": "Septiembre 2026"
+    },
+    "cta": {
+      "title": "¿Listo para postularte?",
+      "button": "Solicitar admisión"
+    }
+  },
+  "life": {
+    "heading": "Vida estudiantil",
+    "intro": "Una comunidad donde la formación trasciende el aula: ensayos, montajes, colaboraciones y acompañamiento.",
+    "features": [
+      {
+        "title": "Escenarios",
+        "desc": "Participá en montajes y muestras durante toda tu formación."
+      },
+      {
+        "title": "Comunidad",
+        "desc": "Un claustro cercano y compañeros que se vuelven colegas."
+      },
+      {
+        "title": "Acompañamiento",
+        "desc": "Psicopedagogía y bienestar integrados al proceso creativo."
+      },
+      {
+        "title": "Colaboraciones",
+        "desc": "Proyectos interdisciplinarios entre actuación, danza y creación."
+      }
+    ]
+  },
+  "about": {
+    "heading": "Sobre OKAN",
+    "intro": "Somos una escuela superior de arte dedicada a formar artistas escénicos íntegros, con un proyecto educativo riguroso y profundamente humano.",
+    "mission": "Nuestra misión",
+    "missionText": "Desarrollar el potencial individual de cada estudiante, formando creadores curiosos, críticos y socialmente conscientes a través de una enseñanza de excelencia.",
+    "story": "Nuestra historia",
+    "storyText": "OKAN nace del trabajo sostenido de artistas y docentes comprometidos con la formación profesional en artes escénicas, uniendo la exigencia técnica con la investigación y el acompañamiento humano.",
+    "values": [
+      {
+        "title": "Excelencia",
+        "desc": "Exigencia técnica y rigor artístico en cada proceso."
+      },
+      {
+        "title": "Humanismo",
+        "desc": "Cuidamos a la persona detrás del artista."
+      },
+      {
+        "title": "Investigación",
+        "desc": "La escena como espacio de pensamiento y creación."
+      }
+    ]
+  },
+  "news": {
+    "heading": "Noticias",
+    "intro": "Lo que está pasando en OKAN.",
+    "items": [
+      {
+        "date": "Septiembre 2026",
+        "title": "Audiciones abiertas para la nueva generación",
+        "desc": "Convocatoria de admisión para los programas de Actuación, Danza y Creación escénica."
+      },
+      {
+        "date": "Agosto 2026",
+        "title": "Estreno de la producción escénica Humedal",
+        "desc": "Nuestra compañía presenta su más reciente montaje, resultado de un año de laboratorio."
+      },
+      {
+        "date": "Julio 2026",
+        "title": "Nuevo ciclo de talleres abiertos",
+        "desc": "Abrimos talleres de voz, movimiento y creación para la comunidad interesada."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contacto",
+    "intro": "Escribinos. Respondemos todas tus dudas sobre programas, admisiones y vida estudiantil.",
+    "email": "hola@okan.edu.mx",
+    "phone": "+52 998 000 0000",
+    "address": "Cancún, Quintana Roo, México",
+    "hours": "Lun – Vie · 9:00 – 18:00",
+    "emailLabel": "Email",
+    "phoneLabel": "Teléfono",
+    "addressLabel": "Dirección",
+    "hoursLabel": "Horario",
+    "form": {
+      "title": "Escribinos",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar"
     }
   }
 }

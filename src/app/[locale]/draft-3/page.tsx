@@ -2,14 +2,13 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { routing } from "@/i18n/routing";
-import { OkanLogo } from "@/components/okan-logo";
 import { leaders } from "@/lib/leaders";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function Draft3({
+export default async function Draft3Home({
   params,
 }: {
   params: Promise<{ locale: (typeof routing.locales)[number] }>;
@@ -17,47 +16,10 @@ export default async function Draft3({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("landing");
-  const other = locale === "es" ? "en" : "es";
 
   return (
-    <div className="bg-zinc-950 text-zinc-100">
-      {/* Header */}
-      <header className="flex items-center justify-between px-6 py-5 md:px-10">
-        <Link href="/">
-          <OkanLogo width={130} height={52} />
-        </Link>
-        <nav className="font-display hidden items-center gap-8 text-sm text-zinc-400 italic md:flex">
-          <span className="hover:text-brand-400 cursor-pointer">
-            {t("nav.programs")}
-          </span>
-          <span className="hover:text-brand-400 cursor-pointer">
-            {t("nav.admissions")}
-          </span>
-          <span className="hover:text-brand-400 cursor-pointer">
-            {t("nav.life")}
-          </span>
-          <span className="hover:text-brand-400 cursor-pointer">
-            {t("nav.about")}
-          </span>
-        </nav>
-        <div className="flex items-center gap-4">
-          <Link
-            href="/draft-3"
-            locale={other}
-            className="text-brand-400 text-xs tracking-widest uppercase"
-          >
-            {other.toUpperCase()}
-          </Link>
-          <a
-            href="#apply"
-            className="from-brand-500 to-brand-700 rounded-full bg-gradient-to-r px-5 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-          >
-            {t("nav.apply")}
-          </a>
-        </div>
-      </header>
-
-      {/* Hero — oversized */}
+    <>
+      {/* Hero */}
       <section className="relative overflow-hidden px-6 py-24 text-center md:py-32">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(147,51,234,0.35),transparent_70%)]" />
         <div className="relative mx-auto max-w-5xl">
@@ -71,27 +33,24 @@ export default async function Draft3({
             {t("hero.subtitle")}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a
-              href="#apply"
+            <Link
+              href="/draft-3/admissions"
               className="from-brand-500 to-brand-700 shadow-brand-900/50 rounded-full bg-gradient-to-r px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-opacity hover:opacity-90"
             >
               {t("hero.primary")}
-            </a>
-            <a
-              href="#programs"
+            </Link>
+            <Link
+              href="/draft-3/programs"
               className="hover:border-brand-400 rounded-full border border-zinc-700 px-8 py-3.5 text-sm font-semibold text-zinc-200 transition-colors"
             >
               {t("hero.secondary")}
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Programs — bold numbered list */}
-      <section
-        id="programs"
-        className="border-t border-zinc-800 px-6 py-24 md:px-10"
-      >
+      {/* Programs */}
+      <section className="border-t border-zinc-800 px-6 py-24 md:px-10">
         <div className="mx-auto max-w-6xl">
           <h2 className="font-display text-5xl font-semibold tracking-tight italic md:text-7xl">
             {t("programs.heading")}
@@ -128,7 +87,7 @@ export default async function Draft3({
         </div>
       </section>
 
-      {/* Faculty — overlapping grid */}
+      {/* Faculty */}
       <section className="border-t border-zinc-800 px-6 py-24 md:px-10">
         <div className="mx-auto max-w-6xl">
           <h2 className="font-display text-5xl font-semibold tracking-tight italic md:text-6xl">
@@ -175,28 +134,19 @@ export default async function Draft3({
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <footer
-        id="apply"
-        className="relative overflow-hidden border-t border-zinc-800 px-6 py-28 text-center md:px-10"
-      >
+      {/* CTA */}
+      <section className="relative overflow-hidden border-t border-zinc-800 px-6 py-28 text-center md:px-10">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(147,51,234,0.4),transparent_70%)]" />
         <h2 className="font-display relative text-6xl leading-none font-semibold tracking-tight italic md:text-8xl">
           {t("footer.ctaTitle")}
         </h2>
-        <p className="relative mx-auto mt-6 max-w-xl text-zinc-300">
-          {t("footer.ctaText")}
-        </p>
-        <a
-          href="#apply"
+        <Link
+          href="/draft-3/admissions"
           className="relative mt-10 inline-block rounded-full bg-white px-9 py-4 text-sm font-bold text-zinc-900 transition-opacity hover:opacity-90"
         >
           {t("footer.ctaButton")}
-        </a>
-        <p className="relative mt-16 text-xs text-zinc-500">
-          {t("footer.copyright")}
-        </p>
-      </footer>
-    </div>
+        </Link>
+      </section>
+    </>
   );
 }

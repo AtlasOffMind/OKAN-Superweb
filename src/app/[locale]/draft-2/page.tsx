@@ -2,14 +2,13 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { routing } from "@/i18n/routing";
-import { OkanLogo } from "@/components/okan-logo";
 import { leaders } from "@/lib/leaders";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function Draft2({
+export default async function Draft2Home({
   params,
 }: {
   params: Promise<{ locale: (typeof routing.locales)[number] }>;
@@ -17,50 +16,10 @@ export default async function Draft2({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("landing");
-  const other = locale === "es" ? "en" : "es";
 
   return (
-    <div className="bg-white text-zinc-900">
-      {/* Top bar */}
-      <div className="bg-brand-700 px-6 py-2 text-center text-xs font-medium tracking-wide text-white md:px-12">
-        {t("news.item.title")} — {t("news.item.date")}
-      </div>
-
-      {/* Header */}
-      <header className="flex items-center justify-between px-6 py-5 md:px-12">
-        <Link href="/">
-          <OkanLogo width={140} height={56} />
-        </Link>
-        <nav className="hidden items-center gap-7 text-sm font-medium text-zinc-700 md:flex">
-          <span className="hover:text-brand-700 cursor-pointer">
-            {t("nav.programs")}
-          </span>
-          <span className="hover:text-brand-700 cursor-pointer">
-            {t("nav.admissions")}
-          </span>
-          <span className="hover:text-brand-700 cursor-pointer">
-            {t("nav.life")}
-          </span>
-          <span className="hover:text-brand-700 cursor-pointer">
-            {t("nav.about")}
-          </span>
-          <Link
-            href="/draft-2"
-            locale={other}
-            className="text-brand-600 text-xs font-semibold tracking-widest uppercase"
-          >
-            {other.toUpperCase()}
-          </Link>
-        </nav>
-        <a
-          href="#apply"
-          className="bg-brand-700 hover:bg-brand-800 rounded-xl px-5 py-2.5 text-sm font-semibold text-white transition-colors"
-        >
-          {t("nav.apply")}
-        </a>
-      </header>
-
-      {/* Hero — asymmetric */}
+    <>
+      {/* Hero */}
       <section className="relative grid min-h-[70vh] items-center gap-8 px-6 md:grid-cols-2 md:px-12">
         <div className="relative z-10">
           <p className="border-brand-200 bg-brand-50 text-brand-700 inline-block rounded-full border px-3 py-1 text-xs font-semibold">
@@ -74,18 +33,18 @@ export default async function Draft2({
             {t("hero.subtitle")}
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
-            <a
-              href="#apply"
+            <Link
+              href="/draft-2/admissions"
               className="bg-brand-700 hover:bg-brand-800 rounded-xl px-7 py-3 text-sm font-semibold text-white transition-colors"
             >
               {t("hero.primary")}
-            </a>
-            <a
-              href="#programs"
+            </Link>
+            <Link
+              href="/draft-2/programs"
               className="hover:border-brand-400 hover:text-brand-700 rounded-xl border border-zinc-300 px-7 py-3 text-sm font-semibold text-zinc-800 transition-colors"
             >
               {t("hero.secondary")}
-            </a>
+            </Link>
           </div>
         </div>
         <div className="from-brand-700 via-brand-500 to-brand-300 relative aspect-[4/5] overflow-hidden rounded-3xl bg-gradient-to-br">
@@ -117,8 +76,8 @@ export default async function Draft2({
         </div>
       </section>
 
-      {/* Programs — cards */}
-      <section id="programs" className="px-6 py-24 md:px-12">
+      {/* Programs */}
+      <section className="px-6 py-24 md:px-12">
         <div className="mx-auto max-w-6xl">
           <h2 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
             {t("programs.heading")}
@@ -141,7 +100,7 @@ export default async function Draft2({
                 <p className="mt-3 leading-relaxed text-zinc-500">
                   {t(`programs.${key}.desc`)}
                 </p>
-                <div className="text-brand-700 mt-6 text-sm font-semibold group-hover:underline">
+                <div className="text-brand-700 mt-6 text-sm font-semibold">
                   {t("nav.admissions")} →
                 </div>
               </div>
@@ -202,29 +161,23 @@ export default async function Draft2({
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <footer
-        id="apply"
-        className="bg-brand-700 px-6 py-20 text-white md:px-12"
-      >
+      {/* CTA */}
+      <section className="px-6 py-20 md:px-12">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 md:flex-row md:items-center">
           <div>
             <h2 className="font-display text-4xl font-semibold tracking-tight">
               {t("footer.ctaTitle")}
             </h2>
-            <p className="text-brand-100 mt-3 max-w-md">
-              {t("footer.ctaText")}
-            </p>
+            <p className="mt-3 max-w-md text-zinc-500">{t("footer.ctaText")}</p>
           </div>
-          <a
-            href="#apply"
-            className="text-brand-700 hover:bg-brand-50 rounded-xl bg-white px-8 py-3 text-sm font-semibold transition-colors"
+          <Link
+            href="/draft-2/admissions"
+            className="bg-brand-700 hover:bg-brand-800 rounded-xl px-8 py-3 text-sm font-semibold text-white transition-colors"
           >
             {t("footer.ctaButton")}
-          </a>
+          </Link>
         </div>
-        <p className="text-brand-200 mt-14 text-xs">{t("footer.copyright")}</p>
-      </footer>
-    </div>
+      </section>
+    </>
   );
 }

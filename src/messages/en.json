@@ -15,6 +15,8 @@
       "admissions": "Admissions",
       "life": "Student life",
       "about": "About",
+      "news": "News",
+      "contact": "Contact",
       "apply": "Apply"
     },
     "hero": {
@@ -67,6 +69,158 @@
       "ctaText": "Your calling starts here. Explore our programs and apply for the audition.",
       "ctaButton": "Apply now",
       "copyright": "OKAN School of the Arts. All rights reserved."
+    }
+  },
+  "programs": {
+    "heading": "Academic programs",
+    "intro": "Three performing arts degrees built on comprehensive, hands-on training grounded in the contemporary stage.",
+    "acting": {
+      "title": "Acting",
+      "tagline": "The actor as creator",
+      "desc": "A curriculum that brings together actor training, dramaturgy, voice, movement and stage laboratory, with a contemporary lean and critical thinking.",
+      "outcomes": [
+        "Actor and voice training",
+        "Dramaturgy for the actor",
+        "Stage laboratory and production"
+      ]
+    },
+    "dance": {
+      "title": "Dance",
+      "tagline": "The body as language",
+      "desc": "Technical training in ballet, contemporary dance and jazz, alongside movement research, body awareness and choreographic creation.",
+      "outcomes": [
+        "Ballet and classical technique",
+        "Contemporary dance",
+        "Improvisation and choreography"
+      ]
+    },
+    "creation": {
+      "title": "Stage creation",
+      "tagline": "The artist who imagines worlds",
+      "desc": "Directing, production and stage thinking to imagine, sustain and produce your own works with an interdisciplinary approach.",
+      "outcomes": [
+        "Stage directing",
+        "Production and management",
+        "Thinking and dramaturgy"
+      ]
+    }
+  },
+  "admissions": {
+    "heading": "Admissions",
+    "intro": "We want to get to know you. Our process looks for talent, curiosity and commitment — not a perfect record.",
+    "process": {
+      "title": "The process",
+      "steps": [
+        {
+          "title": "Application",
+          "desc": "Complete your online application with your details and background."
+        },
+        {
+          "title": "Audition",
+          "desc": "Present a sample of your work before our faculty."
+        },
+        {
+          "title": "Interview",
+          "desc": "We talk about your motivation and your path."
+        },
+        {
+          "title": "Result",
+          "desc": "You receive the admission decision and next steps."
+        }
+      ]
+    },
+    "deadlines": {
+      "title": "Key dates",
+      "item": "Auditions open",
+      "date": "September 2026"
+    },
+    "cta": {
+      "title": "Ready to apply?",
+      "button": "Apply for admission"
+    }
+  },
+  "life": {
+    "heading": "Student life",
+    "intro": "A community where learning goes beyond the classroom: rehearsals, productions, collaborations and support.",
+    "features": [
+      {
+        "title": "Stages",
+        "desc": "Take part in productions and showcases throughout your training."
+      },
+      {
+        "title": "Community",
+        "desc": "A close faculty and classmates who become colleagues."
+      },
+      {
+        "title": "Support",
+        "desc": "Psycho-pedagogy and wellbeing woven into the creative process."
+      },
+      {
+        "title": "Collaborations",
+        "desc": "Interdisciplinary projects across acting, dance and creation."
+      }
+    ]
+  },
+  "about": {
+    "heading": "About OKAN",
+    "intro": "We are a school of the arts dedicated to training whole performing artists, with a rigorous and deeply human education project.",
+    "mission": "Our mission",
+    "missionText": "To develop each student's individual potential, shaping curious, critical and socially-conscious creators through teaching of excellence.",
+    "story": "Our story",
+    "storyText": "OKAN was born from the sustained work of artists and teachers committed to professional training in the performing arts, joining technical rigor with research and human support.",
+    "values": [
+      {
+        "title": "Excellence",
+        "desc": "Technical rigor and artistic discipline in every process."
+      },
+      {
+        "title": "Humanism",
+        "desc": "We care for the person behind the artist."
+      },
+      {
+        "title": "Research",
+        "desc": "The stage as a space for thinking and creation."
+      }
+    ]
+  },
+  "news": {
+    "heading": "News",
+    "intro": "What's happening at OKAN.",
+    "items": [
+      {
+        "date": "September 2026",
+        "title": "Auditions open for the new generation",
+        "desc": "Admission call for the Acting, Dance and Stage Creation programs."
+      },
+      {
+        "date": "August 2026",
+        "title": "Premiere of the stage production Humedal",
+        "desc": "Our company presents its latest work, the result of a year of laboratory."
+      },
+      {
+        "date": "July 2026",
+        "title": "New cycle of open workshops",
+        "desc": "We open workshops in voice, movement and creation for the interested community."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact",
+    "intro": "Write to us. We answer all your questions about programs, admissions and student life.",
+    "email": "hola@okan.edu.mx",
+    "phone": "+52 998 000 0000",
+    "address": "Cancún, Quintana Roo, México",
+    "hours": "Mon – Fri · 9:00 – 18:00",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "hoursLabel": "Hours",
+    "form": {
+      "title": "Write to us",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
     }
   }
 }

@@ -2,14 +2,13 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { routing } from "@/i18n/routing";
-import { OkanLogo } from "@/components/okan-logo";
 import { leaders } from "@/lib/leaders";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function Draft1({
+export default async function Draft1Home({
   params,
 }: {
   params: Promise<{ locale: (typeof routing.locales)[number] }>;
@@ -17,36 +16,9 @@ export default async function Draft1({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("landing");
-  const other = locale === "es" ? "en" : "es";
 
   return (
-    <div className="bg-white text-zinc-900">
-      {/* Header */}
-      <header className="flex items-center justify-between border-b border-zinc-200 px-6 py-5 md:px-12">
-        <Link href="/">
-          <OkanLogo width={140} height={56} />
-        </Link>
-        <nav className="hidden items-center gap-8 text-sm tracking-wide text-zinc-600 md:flex">
-          <span>{t("nav.programs")}</span>
-          <span>{t("nav.admissions")}</span>
-          <span>{t("nav.life")}</span>
-          <span>{t("nav.about")}</span>
-          <Link
-            href={`/draft-1`}
-            locale={other}
-            className="hover:text-brand-600 text-xs tracking-widest text-zinc-400 uppercase"
-          >
-            {other.toUpperCase()}
-          </Link>
-        </nav>
-        <a
-          href="#apply"
-          className="hover:bg-brand-700 rounded-full bg-zinc-900 px-5 py-2 text-sm font-medium text-white transition-colors"
-        >
-          {t("nav.apply")}
-        </a>
-      </header>
-
+    <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-zinc-950 px-6 py-28 text-center md:py-36">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(147,51,234,0.25),transparent_60%)]" />
@@ -61,24 +33,24 @@ export default async function Draft1({
             {t("hero.subtitle")}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a
-              href="#apply"
+            <Link
+              href="/draft-1/admissions"
               className="hover:bg-brand-100 rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 transition-colors"
             >
               {t("hero.primary")}
-            </a>
-            <a
-              href="#programs"
+            </Link>
+            <Link
+              href="/draft-1/programs"
               className="rounded-full border border-zinc-600 px-7 py-3 text-sm font-semibold text-white transition-colors hover:border-white"
             >
               {t("hero.secondary")}
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Programs */}
-      <section id="programs" className="px-6 py-24 md:px-12">
+      <section className="px-6 py-24 md:px-12">
         <div className="mx-auto max-w-6xl">
           <div className="mb-16 flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <h2 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
@@ -170,25 +142,21 @@ export default async function Draft1({
         </div>
       </section>
 
-      {/* Footer / CTA */}
-      <footer
-        id="apply"
-        className="bg-zinc-950 px-6 py-24 text-center md:px-12"
-      >
-        <h2 className="font-display text-4xl font-semibold tracking-tight text-white md:text-5xl">
+      {/* CTA */}
+      <section className="px-6 py-24 text-center md:px-12">
+        <h2 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
           {t("footer.ctaTitle")}
         </h2>
-        <p className="mx-auto mt-5 max-w-xl text-zinc-400">
+        <p className="mx-auto mt-5 max-w-xl text-zinc-500">
           {t("footer.ctaText")}
         </p>
-        <a
-          href="#apply"
+        <Link
+          href="/draft-1/admissions"
           className="bg-brand-600 hover:bg-brand-500 mt-9 inline-block rounded-full px-8 py-3 text-sm font-semibold text-white transition-colors"
         >
           {t("footer.ctaButton")}
-        </a>
-        <p className="mt-16 text-xs text-zinc-500">{t("footer.copyright")}</p>
-      </footer>
-    </div>
+        </Link>
+      </section>
+    </>
   );
 }
