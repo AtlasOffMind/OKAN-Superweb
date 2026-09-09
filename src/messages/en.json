@@ -234,7 +234,10 @@
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "submit": "Send"
+      "submit": "Send",
+      "sending": "Sending…",
+      "success": "Thank you! Your message has been sent.",
+      "error": "We couldn't send your message. Please try again."
     }
   }
 }

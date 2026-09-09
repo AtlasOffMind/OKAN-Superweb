@@ -66,7 +66,7 @@ export default async function Draft1Admissions({
           {t("cta.title")}
         </h2>
         <Link
-          href="/draft-1/contact"
+          href="draft-1/contact"
           className="bg-brand-600 hover:bg-brand-500 mt-8 inline-block rounded-full px-8 py-3 text-sm font-semibold text-white transition-colors"
         >
           {t("cta.button")}

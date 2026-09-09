@@ -34,13 +34,13 @@ export default async function Draft1Home({
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
-              href="/draft-1/admissions"
+              href="draft-1/admissions"
               className="hover:bg-brand-100 rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 transition-colors"
             >
               {t("hero.primary")}
             </Link>
             <Link
-              href="/draft-1/programs"
+              href="draft-1/programs"
               className="rounded-full border border-zinc-600 px-7 py-3 text-sm font-semibold text-white transition-colors hover:border-white"
             >
               {t("hero.secondary")}
@@ -151,7 +151,7 @@ export default async function Draft1Home({
           {t("footer.ctaText")}
         </p>
         <Link
-          href="/draft-1/admissions"
+          href="draft-1/admissions"
           className="bg-brand-600 hover:bg-brand-500 mt-9 inline-block rounded-full px-8 py-3 text-sm font-semibold text-white transition-colors"
         >
           {t("footer.ctaButton")}

@@ -234,7 +234,10 @@
       "name": "Nombre",
       "email": "Correo electrónico",
       "message": "Mensaje",
-      "submit": "Enviar"
+      "submit": "Enviar",
+      "sending": "Enviando…",
+      "success": "¡Gracias! Tu mensaje fue enviado.",
+      "error": "No pudimos enviar tu mensaje. Intenta de nuevo."
     }
   }
 }

@@ -4,5 +4,6 @@ import { routing } from "./i18n/routing";
 export default createMiddleware(routing);
 
 export const config = {
-  matcher: ["/((?!api|trpc|_next|_vercel|.*\\..*).*)"],
+  // Excluye el panel de Payload y su API del enrutado de locales.
+  matcher: ["/((?!api|admin|trpc|_next|_vercel|.*\\..*).*)"],
 };

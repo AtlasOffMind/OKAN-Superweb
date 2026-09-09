@@ -73,7 +73,7 @@ export default async function Draft3Admissions({
           {t("cta.title")}
         </h2>
         <Link
-          href="/draft-3/contact"
+          href="draft-3/contact"
           className="relative mt-8 inline-block rounded-full bg-white px-8 py-3 text-sm font-bold text-zinc-900 transition-opacity hover:opacity-90"
         >
           {t("cta.button")}

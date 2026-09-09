@@ -4,7 +4,7 @@ import { routing } from "@/i18n/routing";
 import { OkanLogo } from "@/components/okan-logo";
 import { LocaleSwitcher } from "@/components/locale-switcher";
 
-const hrefs = ["/draft-1", "/draft-2", "/draft-3"];
+const hrefs = ["draft-1", "draft-2", "draft-3"];
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

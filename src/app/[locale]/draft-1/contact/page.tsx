@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { ContactForm } from "@/components/contact-form";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -54,32 +55,19 @@ export default async function Draft1Contact({
             </div>
           </div>
 
-          <form className="flex flex-col gap-5 rounded-2xl border border-zinc-200 p-8">
-            <h2 className="font-display text-2xl font-semibold">
-              {t("form.title")}
-            </h2>
-            <input
-              type="text"
-              placeholder={t("form.name")}
-              className="focus:border-brand-500 rounded-xl border border-zinc-300 px-4 py-3 transition-colors outline-none"
-            />
-            <input
-              type="email"
-              placeholder={t("form.email")}
-              className="focus:border-brand-500 rounded-xl border border-zinc-300 px-4 py-3 transition-colors outline-none"
-            />
-            <textarea
-              placeholder={t("form.message")}
-              rows={4}
-              className="focus:border-brand-500 rounded-xl border border-zinc-300 px-4 py-3 transition-colors outline-none"
-            />
-            <button
-              type="submit"
-              className="hover:bg-brand-700 rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors"
-            >
-              {t("form.submit")}
-            </button>
-          </form>
+          <ContactForm
+            variant="classic"
+            labels={{
+              title: t("form.title"),
+              name: t("form.name"),
+              email: t("form.email"),
+              message: t("form.message"),
+              submit: t("form.submit"),
+              sending: t("form.sending"),
+              success: t("form.success"),
+              error: t("form.error"),
+            }}
+          />
         </div>
       </section>
     </>
