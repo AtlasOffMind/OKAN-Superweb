@@ -12,10 +12,12 @@ export function NavDrawer({
   links,
   applyLabel,
   applyHref,
+  className,
 }: {
   links: NavItem[];
   applyLabel: string;
   applyHref: string;
+  className?: string;
 }) {
   const [open, setOpen] = useState(false);
 
@@ -25,7 +27,10 @@ export function NavDrawer({
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Abrir menú"
-        className="hover:text-brand-700 flex h-10 w-10 items-center justify-center rounded-full text-zinc-700 transition-colors"
+        className={
+          className ??
+          "flex h-10 w-10 items-center justify-center rounded-full text-zinc-700 transition-colors hover:text-brand-700"
+        }
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
           <path

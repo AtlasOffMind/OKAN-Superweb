@@ -6,6 +6,10 @@ import { leaders } from "@/lib/leaders";
 import ImageMarquee from "@/components/ImageMarquee";
 import { OkanLogo } from "@/components/okan-logo";
 import { LocaleSwitcher } from "@/components/locale-switcher";
+import { NavDrawer } from "@/components/nav-drawer";
+import { navLinks } from "@/lib/site";
+
+const base = "/draft-1";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -20,69 +24,101 @@ export default async function Draft1Home({
   setRequestLocale(locale);
   const t = await getTranslations("landing");
 
+  const links = navLinks.map((link) => ({
+    label: t(`nav.${link.key}`),
+    href: `${base}${link.path}`,
+  }));
+
   return (
     <>
-{/* Hero */}
-       <section className="relative overflow-hidden min-h-[90vh]">
-         <ImageMarquee className="absolute inset-0 w-full h-full" />
-         <div className="absolute inset-0 bg-black/80 bg-[radial-gradient(ellipse_at_top,rgba(147,51,234,0.25),transparent_60%)] bg-[linear-gradient(to_bottom,rgba(10,10,10,0.6),rgba(10,10,10,0.8))]" />
-         <div className="absolute inset-0 flex flex-col items-center justify-center px-6 pt-20 pb-24 text-center md:py-36">
-            <p className="text-brand-400 font-sans text-xs font-semibold tracking-[0.3em] uppercase">
-              {t("hero.eyebrow")}
-            </p>
-            <h1 className="font-display mt-6 text-5xl leading-[1.05] font-semibold tracking-tight text-white md:text-7xl">
-              {t("hero.title")}
-            </h1>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-zinc-400">
-              {t("hero.subtitle")}
-            </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Link
-                href="draft-1/admissions"
-                className="hover:bg-brand-100 rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 transition-colors"
-              >
-                {t("hero.primary")}
-              </Link>
-              <Link
-                href="draft-1/programs"
-                className="rounded-full border border-zinc-600 px-7 py-3 text-sm font-semibold text-white transition-colors hover:border-white"
-              >
-                {t("hero.secondary")}
-              </Link>
-            </div>
-          </div>
-       </section>
+      {/* Hero */}
+      <section className="relative min-h-[100svh] overflow-hidden">
+        <ImageMarquee className="absolute inset-0 w-full h-full" />
+        <div className="absolute inset-0 bg-black/80 bg-[radial-gradient(ellipse_at_top,rgba(147,51,234,0.25),transparent_60%)] bg-[linear-gradient(to_bottom,rgba(10,10,10,0.6),rgba(10,10,10,0.8))]" />
+        <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-6 py-5 md:px-12">
+          <Link href={base} aria-label="OKAN Escuela Superior de Arte">
+            <OkanLogo variant="light" width={140} />
+          </Link>
 
-{/* Programs */}
-       <section className="px-6 py-24 md:px-12">
-         <div className="mx-auto max-w-6xl">
-           <div className="mb-16 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-             <h2 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
-               {t("programs.heading")}
-             </h2>
-             <p className="max-w-xs text-zinc-500">{t("programs.subheading")}</p>
-           </div>
-           <div className="space-y-6">
-             {[
-               ["acting", "01"],
-               ["dance", "02"],
-               ["creation", "03"],
-             ].map(([key, num]) => (
-               <div key={key} className="border border-zinc-200 rounded-lg p-6">
-                 <div className="mb-2 text-brand-600 font-sans text-sm font-semibold">
-                   {num}
-                 </div>
-                 <h3 className="font-display mt-2 text-2xl font-semibold">
-                   {t(`programs.${key}.title`)}
-                 </h3>
-                 <p className="mt-4 leading-relaxed text-zinc-500">
-                   {t(`programs.${key}.desc`)}
-                 </p>
-               </div>
-             ))}
-           </div>
-         </div>
-       </section>
+          <div className="flex items-center gap-3">
+            <LocaleSwitcher className="border-white/40 text-white" />
+            <Link
+              href={`${base}/admissions`}
+              className="hidden rounded-full bg-white px-5 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-brand-100 sm:inline-block"
+            >
+              {t("nav.apply")}
+            </Link>
+            <NavDrawer
+              links={links}
+              applyLabel={t("nav.apply")}
+              applyHref={`${base}/admissions`}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/50 bg-black/30 text-white shadow-lg backdrop-blur-sm transition-colors hover:border-white hover:bg-white hover:text-zinc-900"
+            />
+          </div>
+        </header>
+
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-6 pt-24 pb-16 text-center md:py-36">
+          <p className="text-brand-400 font-sans text-xs font-semibold tracking-[0.3em] uppercase">
+            {t("hero.eyebrow")}
+          </p>
+          <h1 className="font-display mt-6 text-5xl leading-[1.05] font-semibold tracking-tight text-white md:text-7xl">
+            {t("hero.title")}
+          </h1>
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-zinc-400">
+            {t("hero.subtitle")}
+          </p>
+          <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link
+              href="draft-1/admissions"
+              className="hover:bg-brand-100 rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 transition-colors"
+            >
+              {t("hero.primary")}
+            </Link>
+            <Link
+              href="draft-1/programs"
+              className="rounded-full border border-zinc-600 px-7 py-3 text-sm font-semibold text-white transition-colors hover:border-white"
+            >
+              {t("hero.secondary")}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Programs */}
+      <section className="px-6 py-24 md:px-12">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-14 max-w-2xl">
+            <p className="text-brand-600 text-sm font-semibold tracking-[0.25em] uppercase">
+              {t("programs.heading")}
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-zinc-500">
+              {t("programs.subheading")}
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {(["acting", "dance", "creation"] as const).map((key) => (
+              <article
+                key={key}
+                className="flex min-h-[20rem] flex-col border-t-2 border-zinc-900 pt-6"
+              >
+                <h3 className="font-display text-3xl font-semibold tracking-tight">
+                  {t(`programs.${key}.title`)}
+                </h3>
+                <p className="mt-5 flex-1 leading-relaxed text-zinc-500">
+                  {t(`programs.${key}.desc`)}
+                </p>
+                <Link
+                  href={`${base}/programs`}
+                  className="text-brand-700 hover:text-brand-500 mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-colors"
+                >
+                  {t("programs.readMore")}
+                  <span aria-hidden="true">-&gt;</span>
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* About */}
       <section className="bg-zinc-50 px-6 py-24 md:px-12">
