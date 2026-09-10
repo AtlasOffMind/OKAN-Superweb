@@ -34,7 +34,7 @@ export default async function Draft1Home({
       {/* Hero */}
       <section className="relative min-h-[100svh] overflow-hidden">
         <ImageMarquee className="absolute inset-0 w-full h-full" />
-        <div className="absolute inset-0 bg-black/80 bg-[radial-gradient(ellipse_at_top,rgba(147,51,234,0.25),transparent_60%)] bg-[linear-gradient(to_bottom,rgba(10,10,10,0.6),rgba(10,10,10,0.8))]" />
+        <div className="absolute inset-0 bg-black/70 bg-[radial-gradient(ellipse_at_top,rgba(147,51,234,0.25),transparent_60%)] bg-[linear-gradient(to_bottom,rgba(10,10,10,0.6),rgba(10,10,10,0.8))]" />
         <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-6 py-5 md:px-12">
           <Link href={base} aria-label="OKAN Escuela Superior de Arte">
             <OkanLogo variant="light" width={140} />
