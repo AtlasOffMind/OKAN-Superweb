@@ -2,8 +2,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { routing } from "@/i18n/routing";
-import { leaders } from "@/lib/leaders";
+import { faculty } from "@/lib/faculty";
 import ImageMarquee from "@/components/ImageMarquee";
+import FacultyCarousel from "@/components/FacultyCarousel";
 import { OkanLogo } from "@/components/okan-logo";
 import { LocaleSwitcher } from "@/components/locale-switcher";
 import { NavDrawer } from "@/components/nav-drawer";
@@ -105,10 +106,16 @@ export default async function Draft1Home({
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-black/60" />
-              <h3 className="font-display text-brand-600 absolute top-8 left-8 z-10 text-3xl font-semibold tracking-tight md:top-12 md:left-12 md:text-4xl">
+              <h3
+                className={`font-display text-brand-600 absolute top-8 z-10 text-3xl font-semibold tracking-tight md:top-12 md:text-4xl ${key === "dance" ? "right-8 text-right md:right-12" : "left-8 md:left-12"
+                  }`}
+              >
                 {t(`programs.${key}.title`)}
               </h3>
-              <div className="relative z-10">
+              <div
+                className={`relative z-10 max-w-xl ${key === "acting" ? "md:ml-auto md:text-right" : ""
+                  }`}
+              >
                 <p className="mt-5 max-w-xl leading-relaxed text-white/90">
                   {t(`programs.${key}.desc`)}
                 </p>
@@ -126,58 +133,53 @@ export default async function Draft1Home({
       </section>
 
       {/* About */}
-      <section className="bg-zinc-50 px-6 py-24 md:px-12">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="font-display text-4xl leading-tight font-semibold tracking-tight md:text-5xl">
+      <section className="relative min-h-[30rem] overflow-hidden">
+        <Image
+          src="/images/sobre OKAN/okan-11-2.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 mx-auto flex min-h-[30rem] max-w-4xl flex-col items-center justify-center px-6 py-24 text-center md:px-12">
+          <h2 className="font-display text-4xl leading-tight font-semibold tracking-tight text-white md:text-5xl">
             {t("about.text")}
           </h2>
-          <div className="text-brand-600 mt-8 text-xs font-semibold tracking-[0.3em] uppercase">
+          <div className="text-brand-300 mt-8 text-xs font-semibold tracking-[0.3em] uppercase">
             {t("about.heading")}
           </div>
         </div>
       </section>
 
       {/* Faculty */}
-      <section className="px-6 py-24 md:px-12">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
+      <section className="bg-[radial-gradient(ellipse_at_center,#080808_35%,#100817_72%,#24103d_100%)] py-24 text-white">
+        <div className="mx-auto max-w-7xl px-6 md:px-12">
+          <h2 className="font-display text-brand-600 text-4xl font-semibold tracking-tight md:text-5xl">
             {t("faculty.heading")}
           </h2>
-          <p className="mt-4 max-w-md text-zinc-500">{t("faculty.desc")}</p>
-          <div className="mt-14 grid grid-cols-2 gap-6 md:grid-cols-4">
-            {leaders.map((l) => (
-              <div key={l.name}>
-                <div className="relative aspect-[3/4] overflow-hidden bg-zinc-100">
-                  <Image
-                    src={l.file}
-                    alt={l.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="font-display mt-4 text-lg font-semibold">
-                  {l.name}
-                </div>
-                <div className="text-sm text-zinc-500">
-                  {locale === "es" ? l.es : l.en}
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="mt-4 max-w-md text-zinc-400">{t("faculty.desc")}</p>
+        </div>
+        <div className="mt-14 w-full overflow-hidden">
+          <FacultyCarousel
+            members={faculty}
+            locale={locale}
+            aboutHref={`${base}/about`}
+          />
         </div>
       </section>
 
       {/* News */}
-      <section className="border-y border-zinc-200 px-6 py-20 md:px-12">
+      <section className="border-y border-brand-200 bg-brand-50 px-6 py-20 md:px-12">
         <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div className="max-w-2xl">
             <div className="text-brand-600 text-sm font-semibold tracking-widest uppercase">
               {t("news.heading")}
             </div>
-            <h3 className="font-display mt-4 text-3xl font-semibold tracking-tight">
+            <h3 className="font-display mt-4 text-3xl font-semibold tracking-tight text-zinc-900">
               {t("news.item.title")}
             </h3>
-            <p className="mt-3 text-zinc-500">{t("news.item.desc")}</p>
+            <p className="mt-3 text-zinc-600">{t("news.item.desc")}</p>
           </div>
           <div className="shrink-0 text-sm font-medium text-zinc-400">
             {t("news.item.date")}
@@ -186,11 +188,11 @@ export default async function Draft1Home({
       </section>
 
       {/* CTA */}
-      <section className="px-6 py-24 text-center md:px-12">
+      <section className="bg-[radial-gradient(ellipse_at_top,#24103d_0%,#0a0a0a_62%)] px-6 py-24 text-center text-white md:px-12">
         <h2 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
           {t("footer.ctaTitle")}
         </h2>
-        <p className="mx-auto mt-5 max-w-xl text-zinc-500">
+        <p className="mx-auto mt-5 max-w-xl text-zinc-300">
           {t("footer.ctaText")}
         </p>
         <Link

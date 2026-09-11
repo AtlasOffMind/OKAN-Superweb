@@ -3,17 +3,17 @@
 import { useEffect, useState } from "react";
 
 const images = [
-  "/images/carrusel/20260707_193020.jpg",
-  "/images/carrusel/20260707_193406.jpg",
-  "/images/carrusel/20260707_193712.jpg",
-  "/images/carrusel/20260707_203802.jpg",
-  "/images/carrusel/20260707_204624.jpg",
-  "/images/carrusel/okan-18-3.jpg",
-  "/images/carrusel/okan-38-2.jpg",
-  "/images/carrusel/okan-49-2.jpg",
-  "/images/carrusel/okan-59-2.jpg",
-  "/images/carrusel/okan-77-2.jpg",
-  "/images/carrusel/okan-85.jpg",
+  "/images/Hero/20260707_193020.jpg",
+  "/images/Hero/20260707_193406.jpg",
+  "/images/Hero/20260707_193712.jpg",
+  "/images/Hero/20260707_203802.jpg",
+  "/images/Hero/20260707_204624.jpg",
+  "/images/Hero/okan-18-3.jpg",
+  "/images/Hero/okan-38-2.jpg",
+  "/images/Hero/okan-49-2.jpg",
+  "/images/Hero/okan-59-2.jpg",
+  "/images/Hero/okan-77-2.jpg",
+  "/images/Hero/okan-85.jpg",
 ] as const;
 
 interface AutoCarouselProps {
