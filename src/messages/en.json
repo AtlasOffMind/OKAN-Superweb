@@ -121,9 +121,16 @@
     }
   },
   "admissions": {
+    "eyebrow": "Your next stage",
     "heading": "Admissions",
     "intro": "We want to get to know you. Our process looks for talent, curiosity and commitment — not a perfect record.",
+    "welcome": {
+      "eyebrow": "Join OKAN",
+      "title": "An audition is also the beginning of a conversation.",
+      "text": "We look for emerging artists with a point of view and the willingness to work rigorously, listen to others and grow within a performing arts community."
+    },
     "process": {
+      "eyebrow": "How it works",
       "title": "The process",
       "steps": [
         {
@@ -148,6 +155,11 @@
       "title": "Key dates",
       "item": "Auditions open",
       "date": "September 2026"
+    },
+    "audition": {
+      "eyebrow": "Before you apply",
+      "title": "Come ready to show us who you are.",
+      "text": "The audition is a space to share your sensitivity, presence and way of creating. We will publish the specific materials, dates and requirements for each program soon."
     },
     "cta": {
       "title": "Ready to apply?",

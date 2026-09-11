@@ -121,9 +121,16 @@
     }
   },
   "admissions": {
+    "eyebrow": "Tu próximo escenario",
     "heading": "Admisiones",
     "intro": "Queremos conocerte. Nuestro proceso busca talento, curiosidad y compromiso, no un expediente perfecto.",
+    "welcome": {
+      "eyebrow": "Entrar a OKAN",
+      "title": "Una audición también es el comienzo de una conversación.",
+      "text": "Buscamos artistas en formación con una mirada propia y la disposición para trabajar con rigor, escuchar a otros y crecer dentro de una comunidad escénica."
+    },
     "process": {
+      "eyebrow": "Cómo funciona",
       "title": "El proceso",
       "steps": [
         {
@@ -148,6 +155,11 @@
       "title": "Fechas clave",
       "item": "Audiciones abiertas",
       "date": "Septiembre 2026"
+    },
+    "audition": {
+      "eyebrow": "Antes de aplicar",
+      "title": "Ven preparado para mostrar quién eres.",
+      "text": "La audición es un espacio para compartir tu sensibilidad, tu presencia y tu manera de crear. Próximamente publicaremos los materiales, fechas y requisitos específicos de cada programa."
     },
     "cta": {
       "title": "¿Listo para postularte?",
