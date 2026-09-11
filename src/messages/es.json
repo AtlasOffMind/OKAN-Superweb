@@ -41,6 +41,8 @@
       "secondary": "Explorar programas"
     },
     "programs": {
+      "heading": "Programas",
+      "subheading": "Tres caminos, una misma vocación",
       "readMore": "Leer más",
       "acting": {
         "title": "Actuación",

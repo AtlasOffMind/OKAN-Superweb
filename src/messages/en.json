@@ -41,6 +41,8 @@
       "secondary": "Explore programs"
     },
     "programs": {
+      "heading": "Programs",
+      "subheading": "Three paths, one calling",
       "readMore": "Read more",
       "acting": {
         "title": "Acting",
