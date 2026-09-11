@@ -41,16 +41,14 @@
       "secondary": "Explorar programas"
     },
     "programs": {
-      "heading": "Programas",
-      "subheading": "Tres caminos, una misma vocación",
       "readMore": "Leer más",
       "acting": {
         "title": "Actuación",
-        "desc": "Entrenamiento actoral, dramaturgia y laboratorio escénico con una malla curricular de orientación contemporánea."
+        "desc": "Una formación integral para desarrollar presencia, voz, cuerpo e imaginación. Explora el texto, la creación y el trabajo colectivo con rigor, curiosidad y práctica escénica."
       },
       "dance": {
         "title": "Danza",
-        "desc": "Ballet, danza contemporánea y jazz desde una formación técnica sólida y una investigación del movimiento."
+        "desc": "Entrena la técnica, la musicalidad y la conciencia corporal para convertir el movimiento en lenguaje. Combina ballet, danza contemporánea, jazz y creación coreográfica."
       },
       "creation": {
         "title": "Creación escénica",

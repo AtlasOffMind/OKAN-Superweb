@@ -41,16 +41,14 @@
       "secondary": "Explore programs"
     },
     "programs": {
-      "heading": "Programs",
-      "subheading": "Three paths, one calling",
       "readMore": "Read more",
       "acting": {
         "title": "Acting",
-        "desc": "Actor training, dramaturgy and stage laboratory with a contemporary-oriented curriculum."
+        "desc": "A comprehensive training to develop presence, voice, body and imagination. Explore text, creation and collaborative practice with rigor, curiosity and a commitment to the stage."
       },
       "dance": {
         "title": "Dance",
-        "desc": "Ballet, contemporary dance and jazz built on solid technique and movement research."
+        "desc": "Train technique, musicality and body awareness to turn movement into language. Combine ballet, contemporary dance, jazz and choreographic creation."
       },
       "creation": {
         "title": "Stage creation",

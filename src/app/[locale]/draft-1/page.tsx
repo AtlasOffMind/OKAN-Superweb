@@ -85,38 +85,43 @@ export default async function Draft1Home({
       </section>
 
       {/* Programs */}
-      <section className="px-6 py-24 md:px-12">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-14 max-w-2xl">
-            <p className="text-brand-600 text-sm font-semibold tracking-[0.25em] uppercase">
-              {t("programs.heading")}
-            </p>
-            <p className="mt-4 text-lg leading-relaxed text-zinc-500">
-              {t("programs.subheading")}
-            </p>
-          </div>
-          <div className="grid gap-8 md:grid-cols-3">
-            {(["acting", "dance", "creation"] as const).map((key) => (
-              <article
-                key={key}
-                className="flex min-h-[20rem] flex-col border-t-2 border-zinc-900 pt-6"
-              >
-                <h3 className="font-display text-3xl font-semibold tracking-tight">
-                  {t(`programs.${key}.title`)}
-                </h3>
-                <p className="mt-5 flex-1 leading-relaxed text-zinc-500">
+      <section>
+        <div className="grid md:grid-cols-2">
+          {(
+            [
+              ["acting", "/images/Pograms/Actuacion.jpg"],
+              ["dance", "/images/Pograms/Danza.jpg"],
+            ] as const
+          ).map(([key, image]) => (
+            <article
+              key={key}
+              className="relative flex min-h-[24rem] flex-col justify-end overflow-hidden p-8 md:min-h-[34rem] md:p-12"
+            >
+              <Image
+                src={image}
+                alt=""
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-black/60" />
+              <h3 className="font-display text-brand-600 absolute top-8 left-8 z-10 text-3xl font-semibold tracking-tight md:top-12 md:left-12 md:text-4xl">
+                {t(`programs.${key}.title`)}
+              </h3>
+              <div className="relative z-10">
+                <p className="mt-5 max-w-xl leading-relaxed text-white/90">
                   {t(`programs.${key}.desc`)}
                 </p>
                 <Link
                   href={`${base}/programs`}
-                  className="text-brand-700 hover:text-brand-500 mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-colors"
+                  className="text-brand-200 hover:text-white mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-colors"
                 >
                   {t("programs.readMore")}
                   <span aria-hidden="true">-&gt;</span>
                 </Link>
-              </article>
-            ))}
-          </div>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
