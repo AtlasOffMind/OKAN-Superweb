@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "@/i18n/navigation";
 import { Link } from "@/i18n/navigation";
 
 export interface NavItem {
@@ -13,13 +14,23 @@ export function NavDrawer({
   applyLabel,
   applyHref,
   className,
+  hiddenOnPath,
 }: {
   links: NavItem[];
   applyLabel: string;
   applyHref: string;
   className?: string;
+  hiddenOnPath?: string;
 }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const admissionsStyle = pathname.endsWith("/draft-1/admissions")
+    ? "!border-white/50 !bg-black/35 !text-white backdrop-blur-sm"
+    : "";
+
+  if (hiddenOnPath && pathname === hiddenOnPath) {
+    return null;
+  }
 
   return (
     <>
@@ -28,10 +39,7 @@ export function NavDrawer({
         onClick={() => setOpen(true)}
         aria-label="Abrir menú"
         aria-expanded={open}
-        className={
-          className ??
-          "flex h-10 w-10 items-center justify-center rounded-full text-zinc-700 transition-colors hover:text-brand-700"
-        }
+        className={`${className ?? "flex h-10 w-10 items-center justify-center rounded-full text-zinc-700 transition-colors hover:text-brand-700"} ${admissionsStyle}`}
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
           <path

@@ -27,7 +27,7 @@ export default async function Draft1Admissions({
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-55"
+          className="bg-zinc-950 object-contain object-center opacity-55"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,10,0.92),rgba(10,10,10,0.45),rgba(10,10,10,0.7))]" />
         <div className="relative z-10 mx-auto flex min-h-[70svh] max-w-6xl flex-col justify-end px-6 py-20 md:px-12 md:py-24">

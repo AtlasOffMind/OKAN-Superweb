@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { OkanLogo } from "@/components/okan-logo";
+import { NavDrawer } from "@/components/nav-drawer";
 import { navLinks } from "@/lib/site";
 
 const base = "/draft-1";
@@ -23,11 +24,20 @@ export default async function Draft1Layout({
   }));
 
   return (
-    <div className="bg-white text-zinc-900">
+    <div className="relative bg-white text-zinc-900">
+      <div className="absolute top-5 right-6 z-30 md:top-8 md:right-12">
+        <NavDrawer
+          links={links}
+          applyLabel={t("nav.apply")}
+          applyHref={`${base}/admissions`}
+          hiddenOnPath={base}
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-300 bg-white/80 text-zinc-900 shadow-lg backdrop-blur-sm transition-colors hover:border-brand-600 hover:bg-brand-600 hover:text-white"
+        />
+      </div>
       <main className="min-h-screen">{children}</main>
 
       <footer className="bg-zinc-950 px-6 py-16 text-zinc-400 md:px-12">
-        <div className="mx-auto flex max-w-6xl flex-col gap-12 md:flex-row md:justify-between">
+        <div className="flex w-full flex-col gap-12 md:flex-row md:justify-between">
           <div>
             <OkanLogo variant="light" width={130} />
             <p className="mt-4 max-w-xs text-sm">{t("about.text")}</p>
@@ -63,7 +73,7 @@ export default async function Draft1Layout({
             </div>
           </div>
         </div>
-        <div className="mx-auto mt-12 max-w-6xl border-t border-zinc-800 pt-6 text-xs">
+        <div className="mt-12 w-full border-t border-zinc-800 pt-6 text-xs">
           {t("footer.copyright")}
         </div>
       </footer>
