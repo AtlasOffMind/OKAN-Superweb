@@ -189,6 +189,7 @@
     ]
   },
   "about": {
+    "eyebrow": "La comunidad OKAN",
     "heading": "Sobre OKAN",
     "intro": "Somos una escuela superior de arte dedicada a formar artistas escénicos íntegros, con un proyecto educativo riguroso y profundamente humano.",
     "mission": "Nuestra misión",
@@ -208,7 +209,21 @@
         "title": "Investigación",
         "desc": "La escena como espacio de pensamiento y creación."
       }
-    ]
+    ],
+    "faculty": {
+      "leadership": {
+        "eyebrow": "Dirección",
+        "title": "Equipo directivo"
+      },
+      "teachers": {
+        "eyebrow": "Formación artística",
+        "title": "Docentes"
+      },
+      "psychologist": {
+        "eyebrow": "Bienestar",
+        "title": "Acompañamiento psicopedagógico"
+      }
+    }
   },
   "news": {
     "heading": "Noticias",

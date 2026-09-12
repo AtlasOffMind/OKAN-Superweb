@@ -189,6 +189,7 @@
     ]
   },
   "about": {
+    "eyebrow": "The OKAN community",
     "heading": "About OKAN",
     "intro": "We are a school of the arts dedicated to training whole performing artists, with a rigorous and deeply human education project.",
     "mission": "Our mission",
@@ -208,7 +209,21 @@
         "title": "Research",
         "desc": "The stage as a space for thinking and creation."
       }
-    ]
+    ],
+    "faculty": {
+      "leadership": {
+        "eyebrow": "Leadership",
+        "title": "Leadership team"
+      },
+      "teachers": {
+        "eyebrow": "Artistic training",
+        "title": "Faculty"
+      },
+      "psychologist": {
+        "eyebrow": "Wellbeing",
+        "title": "Psychopedagogical support"
+      }
+    }
   },
   "news": {
     "heading": "News",
