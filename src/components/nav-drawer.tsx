@@ -13,12 +13,16 @@ export function NavDrawer({
   links,
   applyLabel,
   applyHref,
+  homeLabel,
+  homeHref,
   className,
   hiddenOnPath,
 }: {
   links: NavItem[];
   applyLabel: string;
   applyHref: string;
+  homeLabel: string;
+  homeHref: string;
   className?: string;
   hiddenOnPath?: string;
 }) {
@@ -84,6 +88,13 @@ export function NavDrawer({
           </div>
 
           <nav className="mt-10 flex flex-1 flex-col gap-5">
+            <Link
+              href={homeHref}
+              onClick={() => setOpen(false)}
+              className="font-display hover:text-brand-400 text-2xl font-semibold tracking-tight text-zinc-200 transition-colors"
+            >
+              {homeLabel}
+            </Link>
             {links.map((l) => (
               <Link
                 key={l.href}

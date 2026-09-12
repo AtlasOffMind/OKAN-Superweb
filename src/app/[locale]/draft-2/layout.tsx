@@ -34,6 +34,8 @@ export default async function Draft2Layout({
           links={links}
           applyLabel={t("nav.apply")}
           applyHref={`${base}/admissions`}
+          homeLabel={t("nav.home")}
+          homeHref={base}
           className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-300 bg-white/80 text-zinc-900 shadow-lg backdrop-blur-sm transition-colors hover:border-brand-600 hover:bg-brand-600 hover:text-white"
         />
       </div>

@@ -25,6 +25,7 @@
   },
   "landing": {
     "nav": {
+      "home": "Inicio",
       "programs": "Programas",
       "admissions": "Admisiones",
       "life": "Vida estudiantil",
