@@ -87,6 +87,7 @@
     }
   },
   "programs": {
+    "eyebrow": "Performing arts training",
     "heading": "Academic programs",
     "intro": "Three performing arts degrees built on comprehensive, hands-on training grounded in the contemporary stage.",
     "acting": {
@@ -118,6 +119,11 @@
         "Production and management",
         "Thinking and dramaturgy"
       ]
+    },
+    "cta": {
+      "eyebrow": "Take the next step",
+      "title": "Find the stage language you want to develop.",
+      "button": "Explore admissions"
     }
   },
   "admissions": {

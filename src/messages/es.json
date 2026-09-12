@@ -87,6 +87,7 @@
     }
   },
   "programs": {
+    "eyebrow": "Formación escénica",
     "heading": "Programas académicos",
     "intro": "Tres licenciaturas en artes escénicas con una formación integral, práctica y situada en la escena contemporánea.",
     "acting": {
@@ -118,6 +119,11 @@
         "Producción y gestión",
         "Pensamiento y dramaturgia"
       ]
+    },
+    "cta": {
+      "eyebrow": "Da el siguiente paso",
+      "title": "Encuentra el lenguaje escénico que quieres desarrollar.",
+      "button": "Conocer admisiones"
     }
   },
   "admissions": {
