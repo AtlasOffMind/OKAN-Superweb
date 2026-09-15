@@ -22,6 +22,10 @@ export default async function Draft1News({
 
   return (
     <>
+      {/* ========================================================================= */}
+      {/* SECCIÓN 1: CABECERA / TÍTULO DE NOTICIAS                                  */}
+      {/* - Textos modificables en: src/messages/es.json -> "news.heading/intro"    */}
+      {/* ========================================================================= */}
       <section className="border-b border-zinc-200 px-6 py-20 md:px-12">
         <div className="mx-auto max-w-6xl">
           <h1 className="font-display text-5xl font-semibold tracking-tight md:text-6xl">
@@ -31,6 +35,10 @@ export default async function Draft1News({
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* SECCIÓN 2: LISTA EDITORIAL DE NOTICIAS Y NOVEDADES                        */}
+      {/* - Artículos modificables en: src/messages/es.json -> "news.items"         */}
+      {/* ========================================================================= */}
       <section className="px-6 py-20 md:px-12">
         <div className="mx-auto flex max-w-6xl flex-col">
           {items.map((n) => (

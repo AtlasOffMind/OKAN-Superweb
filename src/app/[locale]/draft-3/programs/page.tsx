@@ -28,7 +28,7 @@ export default async function Draft3Programs({
 
       <section className="px-6 py-20 md:px-10">
         <div className="mx-auto flex max-w-6xl flex-col gap-16">
-          {(["acting", "dance", "creation"] as const).map((key, i) => (
+          {(["acting", "dance"] as const).map((key, i) => (
             <div
               key={key}
               className="grid gap-6 border-b border-zinc-800 pb-12 md:grid-cols-3"

@@ -17,6 +17,10 @@ export default async function Draft1Contact({
 
   return (
     <>
+      {/* ========================================================================= */}
+      {/* SECCIÓN 1: CABECERA / TÍTULO DE CONTACTO                                  */}
+      {/* - Textos modificables en: src/messages/es.json -> "contact.heading/intro" */}
+      {/* ========================================================================= */}
       <section className="border-b border-zinc-200 px-6 py-20 md:px-12">
         <div className="mx-auto max-w-6xl">
           <h1 className="font-display text-5xl font-semibold tracking-tight md:text-6xl">
@@ -26,8 +30,14 @@ export default async function Draft1Contact({
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* SECCIÓN 2: DATOS DE CONTACTO Y FORMULARIO DE MENSAJES                     */}
+      {/* - Datos (email, teléfono, dirección, horario) en: src/messages/es.json     */}
+      {/* - Componente de formulario en: src/components/contact-form.tsx            */}
+      {/* ========================================================================= */}
       <section className="px-6 py-20 md:px-12">
         <div className="mx-auto grid max-w-6xl gap-16 md:grid-cols-2">
+          {/* Columna Izquierda: Información de contacto */}
           <div className="flex flex-col gap-8">
             <div>
               <div className="text-brand-600 text-sm font-semibold tracking-widest uppercase">
@@ -55,6 +65,7 @@ export default async function Draft1Contact({
             </div>
           </div>
 
+          {/* Columna Derecha: Formulario interactivo para enviar mensajes */}
           <ContactForm
             variant="classic"
             labels={{

@@ -85,8 +85,8 @@ href="draft-2/admissions"
           <p className="mt-3 max-w-md text-zinc-500">
             {t("programs.subheading")}
           </p>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {(["acting", "dance", "creation"] as const).map((key, i) => (
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {(["acting", "dance"] as const).map((key, i) => (
               <div
                 key={key}
                 className="group hover:border-brand-300 hover:shadow-brand-100 rounded-3xl border border-zinc-200 p-8 transition-all hover:-translate-y-1 hover:shadow-xl"

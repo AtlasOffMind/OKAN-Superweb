@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { OkanLogo } from "@/components/okan-logo";
 import { NavDrawer } from "@/components/nav-drawer";
+import { ScrollHeader } from "@/components/scroll-header";
 import { navLinks } from "@/lib/site";
 
 const base = "/draft-2";
@@ -29,7 +30,7 @@ export default async function Draft2Layout({
         {t("news.item.title")} — {t("news.item.date")}
       </div>
 
-      <div className="absolute top-12 right-6 z-30 md:right-12">
+      <ScrollHeader className="top-12 right-6 md:right-12">
         <NavDrawer
           links={links}
           applyLabel={t("nav.apply")}
@@ -38,11 +39,11 @@ export default async function Draft2Layout({
           homeHref={base}
           className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-300 bg-white/80 text-zinc-900 shadow-lg backdrop-blur-sm transition-colors hover:border-brand-600 hover:bg-brand-600 hover:text-white"
         />
-      </div>
+      </ScrollHeader>
 
       <main className="min-h-screen">{children}</main>
 
-      <footer className="bg-brand-950 text-brand-100 px-6 py-16 md:px-12">
+      <footer className="bg-[linear-gradient(135deg,#000000_0%,#3b0764_55%,#000000_100%)] text-brand-100 px-6 py-16 md:px-12">
         <div className="flex w-full flex-col gap-12 md:flex-row md:justify-between">
           <div>
             <OkanLogo variant="light" width={130} />

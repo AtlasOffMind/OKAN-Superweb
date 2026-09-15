@@ -18,10 +18,15 @@ export default async function Draft1Programs({
   const careers = [
     { key: "acting", image: "/images/Pograms/Actuacion.jpg" },
     { key: "dance", image: "/images/Pograms/Danza.jpg" },
+    { key: "continuingEd", image: "/images/Pograms/Estudios_Continuos.jpeg" },
   ] as const;
 
   return (
     <>
+      {/* ========================================================================= */}
+      {/* SECCIÓN 1: CABECERA / HERO DE PROGRAMAS (TÍTULO PRINCIPAL Y DESCRIPCIÓN)  */}
+      {/* - Textos modificables en: src/messages/es.json -> "programs.heading/intro" */}
+      {/* ========================================================================= */}
       <section className="bg-[radial-gradient(ellipse_at_top,#24103d_0%,#0a0a0a_62%)] px-6 py-28 text-white md:px-12 md:py-36">
         <div className="mx-auto max-w-7xl">
           <p className="text-brand-300 text-sm font-semibold tracking-[0.3em] uppercase">
@@ -36,33 +41,43 @@ export default async function Draft1Programs({
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* SECCIÓN 2: BLOQUES DE PROGRAMAS (ACTUACIÓN, DANZA, ESTUDIOS CONTINUOS)    */}
+      {/* - Fotos de fondo en: public/images/Pograms/                               */}
+      {/* - Títulos grandes morados en la esquina superior izquierda               */}
+      {/* - Malla / Resultados formativos en la parte inferior                     */}
+      {/* - Textos modificables en: src/messages/es.json -> "programs.*"           */}
+      {/* ========================================================================= */}
       <section>
-        <div className="grid md:grid-cols-2">
+        <div className="grid md:grid-cols-3">
           {careers.map(({ key, image }) => (
             <article key={key} className="group relative overflow-hidden bg-zinc-950 text-white">
+              {/* Imagen del programa con título gigante y lema */}
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
                   src={image}
                   alt=""
                   fill
-                  sizes="(min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 768px) 33vw, 100vw"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/65" />
                 <h2 className="font-display text-brand-600 absolute top-7 left-7 z-10 max-w-[90%] text-7xl font-semibold leading-[0.85] tracking-tight drop-shadow-[0_3px_16px_rgba(0,0,0,0.65)] md:top-60 md:left-12 md:text-9xl">
                   {t(`${key}.title`)}
                 </h2>
-                <div className="absolute inset-x-0 bottom-0 p-7 md:p-12">
+                <div className="absolute inset-x-0 bottom-0 p-7 md:p-10">
                   <p className="mt-5 text-base font-medium tracking-[0.12em] text-white uppercase md:text-lg">
                     {t(`${key}.tagline`)}
                   </p>
                 </div>
               </div>
-              <div className="grid gap-10 border-t border-zinc-800 p-7 md:grid-cols-[1.2fr_0.8fr] md:p-12">
-                <p className="text-lg leading-[1.7] text-white md:text-xl">
+
+              {/* Descripción detallada y lista de aprendizajes del programa */}
+              <div className="grid gap-8 border-t border-zinc-800 p-7 md:p-10">
+                <p className="text-base leading-[1.7] text-white md:text-lg">
                   {t(`${key}.desc`)}
                 </p>
-                <ul className="flex flex-col gap-5 text-base leading-relaxed text-zinc-200 md:text-lg">
+                <ul className="flex flex-col gap-3 text-sm leading-relaxed text-zinc-200 md:text-base">
                   {t.raw(`${key}.outcomes`).map((outcome: string) => (
                     <li key={outcome} className="flex items-start gap-2">
                       <span className="bg-brand-400 mt-2 h-1 w-1 shrink-0 rounded-full" />
@@ -76,6 +91,9 @@ export default async function Draft1Programs({
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* SECCIÓN 3: LLAMADO A LA ACCIÓN (CTA QUE LLEVA A ADMISIONES)               */}
+      {/* ========================================================================= */}
       <section className="bg-brand-50 px-6 py-24 md:px-12">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div>

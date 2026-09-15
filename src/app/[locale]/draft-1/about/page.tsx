@@ -136,11 +136,12 @@ export default async function Draft1About({
 
   return (
     <>
+      {/* ========================================================================= */}
+      {/* SECCIÓN 1: CABECERA / INTRODUCCIÓN PRINCIPAL (FONDO OSCURO CON DEGRADADO) */}
+      {/* Modifica textos en: src/messages/es.json -> "about.heading" y "about.intro" */}
+      {/* ========================================================================= */}
       <section className="bg-[radial-gradient(ellipse_at_top,#24103d_0%,#0a0a0a_62%)] px-6 py-28 text-white md:px-12 md:py-36">
         <div className="mx-auto max-w-7xl">
-          <p className="text-brand-300 text-sm font-semibold tracking-[0.3em] uppercase">
-            {t("eyebrow")}
-          </p>
           <h1 className="font-display mt-5 max-w-4xl text-6xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
             {t("heading")}
           </h1>
@@ -150,49 +151,83 @@ export default async function Draft1About({
         </div>
       </section>
 
-      <section className="bg-brand-50 px-6 py-24 md:px-12">
-        <div className="mx-auto grid max-w-7xl gap-16 md:grid-cols-12">
-          <div className="md:col-span-5">
-            <h2 className="text-brand-600 text-sm font-semibold tracking-widest uppercase">
-              {t("mission")}
-            </h2>
-            <p className="font-display mt-4 text-2xl leading-relaxed tracking-tight">
-              {t("missionText")}
-            </p>
-          </div>
-          <div className="md:col-span-6 md:col-start-7 md:pt-20">
-            <h2 className="text-brand-600 text-sm font-semibold tracking-widest uppercase">
-              {t("story")}
-            </h2>
-            <p className="mt-4 leading-relaxed text-zinc-600">
-              {t("storyText")}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-24 md:px-12">
-        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-3">
-          {values.map((value, index) => (
-            <div key={value.title} className="border-t border-zinc-200 pt-6">
-              <div className="text-brand-600 text-sm font-semibold">
-                0{index + 1}
-              </div>
-              <h3 className="font-display mt-3 text-2xl font-semibold">
-                {value.title}
-              </h3>
-              <p className="mt-2 text-zinc-500">{value.desc}</p>
+      {/* ========================================================================= */}
+      {/* SECCIÓN 2: MISIÓN, HISTORIA Y VALORES / MODELO (DISTRIBUCIÓN EN 2 COLUMNAS) */}
+      {/* - Izquierda: Misión (arriba) e Historia (abajo)                           */}
+      {/* - Derecha: Valores / Pilares del modelo (en vertical)                     */}
+      {/* ========================================================================= */}
+      <section className="overflow-x-hidden bg-brand-50 px-6 py-24 md:px-12">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 md:grid-cols-12 md:gap-20">
+          {/* Columna Izquierda (span 6): Misión arriba e Historia abajo */}
+          <div className="flex min-w-0 flex-col gap-16 md:col-span-6">
+            {/* Bloque Misión */}
+            <div>
+              <h2 className="text-brand-600 text-sm font-semibold tracking-widest uppercase">
+                {t("mission")}
+              </h2>
+              <p className="font-display mt-4 text-3xl leading-snug tracking-tight text-zinc-900 md:text-4xl">
+                {t("missionText")}
+              </p>
             </div>
-          ))}
+
+            {/* Bloque Historia (debajo de Misión) */}
+            <div className="border-t border-brand-200/80 pt-12">
+              <h2 className="text-brand-600 text-sm font-semibold tracking-widest uppercase">
+                {t("story")}
+              </h2>
+              <h3 className="font-display mt-4 text-2xl font-semibold tracking-tight text-zinc-900">
+                {t("storyTitle")}
+              </h3>
+              <p className="mt-4 text-base leading-relaxed text-zinc-600">
+                {t("storyText")}
+              </p>
+            </div>
+          </div>
+
+          {/* Columna Derecha (span 6): Valores / Nuestro Modelo apilados verticalmente */}
+          <div className="min-w-0 md:col-span-6">
+            <h2 className="font-display text-3xl font-semibold tracking-tight text-zinc-900 md:text-4xl">
+              {t("valuesTitle")}
+            </h2>
+            <div className="mt-10 flex flex-col gap-8">
+              {values.map((value, index) => (
+                <div key={value.title} className="min-w-0 border-t border-brand-200/80 pt-6">
+                  <div className="text-brand-600 text-sm font-semibold">
+                    0{index + 1}
+                  </div>
+                  <h3 className="font-display mt-2 text-2xl font-semibold break-words text-zinc-900">
+                    {value.title}
+                  </h3>
+                  <p className="mt-2 text-base leading-relaxed break-words text-zinc-600">
+                    {value.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* SECCIÓN 4: EQUIPO DIRECTIVO (FOTOS Y BIOGRAFÍAS)                          */}
+      {/* Modifica datos y fotos en: src/lib/faculty.ts                             */}
+      {/* ========================================================================= */}
       {renderLeadership()}
+
+      {/* ========================================================================= */}
+      {/* SECCIÓN 5: DOCENTES (FOTOS Y BIOGRAFÍAS ASIMÉTRICAS)                      */}
+      {/* Modifica datos y fotos en: src/lib/faculty.ts                             */}
+      {/* ========================================================================= */}
       {renderFacultyGroup(
         teachers,
         t("faculty.teachers.title"),
         t("faculty.teachers.eyebrow"),
       )}
+
+      {/* ========================================================================= */}
+      {/* SECCIÓN 6: ACOMPAÑAMIENTO PSICOPEDAGÓGICO (BIENESTAR / PSICÓLOGA)        */}
+      {/* Modifica datos y fotos en: src/lib/faculty.ts                             */}
+      {/* ========================================================================= */}
       {renderFacultyGroup(
         psychologist,
         t("faculty.psychologist.title"),

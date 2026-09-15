@@ -26,8 +26,8 @@ export default async function Draft2Programs({
       </section>
 
       <section className="px-6 py-20 md:px-12">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
-          {(["acting", "dance", "creation"] as const).map((key, i) => (
+        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
+          {(["acting", "dance"] as const).map((key, i) => (
             <div
               key={key}
               className="hover:border-brand-300 hover:shadow-brand-100 rounded-3xl border border-zinc-200 p-8 transition-all hover:-translate-y-1 hover:shadow-xl"

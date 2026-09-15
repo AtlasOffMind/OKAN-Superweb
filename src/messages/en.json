@@ -32,7 +32,7 @@
       "about": "About",
       "news": "News",
       "contact": "Contact",
-      "apply": "Apply"
+      "apply": "Apply now"
     },
     "hero": {
       "eyebrow": "School of the Arts",
@@ -53,26 +53,26 @@
         "title": "Dance",
         "desc": "Train technique, musicality and body awareness to turn movement into language. Combine ballet, contemporary dance, jazz and choreographic creation."
       },
-      "creation": {
-        "title": "Stage creation",
-        "desc": "Directing, production and stage thinking to imagine and sustain your own works."
+      "continuingEd": {
+        "title": "Continuing Studies",
+        "desc": "Workshops, open courses and complementary training to keep growing as an artist, on and off the program.",
+        "cta": "EXPLORE THE OFFERING"
       }
     },
     "faculty": {
       "heading": "Our faculty",
-      "desc": "Active artists, researchers and teachers whose practice was forged on stages in Mexico, Cuba and Europe."
+      "desc": "LEARN FROM THOSE WHO CREATE, RESEARCH AND LIVE ART. Artists and educators with careers across stages, classrooms and projects worldwide."
     },
     "news": {
       "heading": "What's on",
       "item": {
-        "date": "September 2026",
         "title": "Auditions open for the new generation",
         "desc": "Admission call for the Acting, Dance and Stage Creation programs."
       }
     },
     "about": {
       "heading": "About OKAN",
-      "text": "A performing arts institution that brings together training, artistic research and human support to shape the next generation of creators."
+      "text": "WE ARE A SCHOOL OF THE ARTS. Here art is trained, conceived, and created. Find your voice, take it further, and make it your profession."
     },
     "stats": {
       "years": "Years training artists",
@@ -81,9 +81,10 @@
       "productions": "Productions"
     },
     "footer": {
-      "ctaTitle": "Take the next step",
-      "ctaText": "Your calling starts here. Explore our programs and apply for the audition.",
+      "ctaTitle": "WHAT STARTS AS A CALLING CAN BECOME YOUR PROFESSION.",
+      "ctaText": "Take the step. We provide the school.",
       "ctaButton": "Apply now",
+      "ctaSecondary": "Discover OKAN",
       "copyright": "OKAN School of the Arts. All rights reserved."
     }
   },
@@ -111,14 +112,14 @@
         "Improvisation and choreography"
       ]
     },
-    "creation": {
-      "title": "Stage creation",
-      "tagline": "The artist who imagines worlds",
-      "desc": "Directing, production and stage thinking to imagine, sustain and produce your own works with an interdisciplinary approach.",
+    "continuingEd": {
+      "title": "Continuing Studies",
+      "tagline": "Continuing education and workshops",
+      "desc": "There is always something new to learn. Workshops, labs, and certificate programs for artists, professionals, and creative minds.",
       "outcomes": [
-        "Stage directing",
-        "Production and management",
-        "Thinking and dramaturgy"
+        "Intensive workshops and labs",
+        "Open movement and voice courses",
+        "Professional development and certificate courses"
       ]
     },
     "cta": {
@@ -198,23 +199,29 @@
   "about": {
     "eyebrow": "The OKAN community",
     "heading": "About OKAN",
-    "intro": "We are a school of the arts dedicated to training whole performing artists, with a rigorous and deeply human education project.",
+    "intro": "We are a School of the Arts where craft, thought, identity and creation are part of the same process. We train artists to understand what they do, discover their own voice and turn their practice into a profession.",
     "mission": "Our mission",
-    "missionText": "To develop each student's individual potential, shaping curious, critical and socially-conscious creators through teaching of excellence.",
+    "missionText": "To train performing artists with solid technical, creative, and intellectual tools, capable of researching, creating, and practicing their profession with identity, critical thinking, and awareness of their community and territory.",
     "story": "Our story",
-    "storyText": "OKAN was born from the sustained work of artists and teachers committed to professional training in the performing arts, joining technical rigor with research and human support.",
+    "storyTitle": "A SCHOOL THAT WAS BORN DOING.",
+    "storyText": "OKAN was born from stage practice, training, and the need to build a space in Cancún for the professional training of artists. What began as a laboratory for creation and learning grew, questioned itself, and transformed into a School of the Arts with its own educational model. Today that story continues: training artists, generating knowledge, and building community from the Mexican Caribbean.",
+    "valuesTitle": "Our model",
     "values": [
       {
-        "title": "Excellence",
+        "title": "CRAFT",
         "desc": "Technical rigor and artistic discipline in every process."
       },
       {
-        "title": "Humanism",
-        "desc": "We care for the person behind the artist."
+        "title": "THOUGHT",
+        "desc": "An artist does not only create. They also question. History, dramaturgy, philosophy, analysis and research dialogue with practice to understand what we do, how and why."
       },
       {
-        "title": "Research",
-        "desc": "The stage as a space for thinking and creation."
+        "title": "IDENTITY",
+        "desc": "We do not train artists to resemble others. Each process seeks for the student to recognize their tools, build judgment, and find their own artistic voice."
+      },
+      {
+        "title": "COMMUNITY AND TERRITORY",
+        "desc": "Art does not happen isolated from the world. Training engages with its time, community, and territory to create, participate, and transform from within them."
       }
     ],
     "faculty": {

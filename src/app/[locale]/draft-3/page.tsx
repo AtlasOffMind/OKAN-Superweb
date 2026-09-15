@@ -63,7 +63,6 @@ href="draft-3/admissions"
               [
                 ["01", "acting"],
                 ["02", "dance"],
-                ["03", "creation"],
               ] as const
             ).map(([num, key]) => (
               <div

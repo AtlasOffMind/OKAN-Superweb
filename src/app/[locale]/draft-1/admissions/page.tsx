@@ -20,6 +20,11 @@ export default async function Draft1Admissions({
 
   return (
     <>
+      {/* ========================================================================= */}
+      {/* SECCIÓN 1: HERO DE ADMISIONES (IMAGEN COMPLETA, TÍTULO Y BOTÓN DE ACCIÓN) */}
+      {/* - Foto de fondo en: public/images/okan-45.jpg                              */}
+      {/* - Textos modificables en: src/messages/es.json -> "admissions"            */}
+      {/* ========================================================================= */}
       <section className="relative min-h-[70svh] overflow-hidden bg-zinc-950 text-white">
         <Image
           src="/images/okan-45.jpg"
@@ -49,6 +54,10 @@ export default async function Draft1Admissions({
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* SECCIÓN 2: BIENVENIDA / FILOSOFÍA DE ADMISIÓN (BLOQUE CLARO ASIMÉTRICO)    */}
+      {/* - Textos modificables en: src/messages/es.json -> "admissions.welcome"    */}
+      {/* ========================================================================= */}
       <section className="px-6 py-24 md:px-12">
         <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
           <div>
@@ -65,6 +74,11 @@ export default async function Draft1Admissions({
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* SECCIÓN 3: EL PROCESO EN 4 PASOS Y FECHAS CLAVE (FONDO OSCURO)            */}
+      {/* - Pasos: 01 Solicitud, 02 Audición, 03 Entrevista, 04 Resultado           */}
+      {/* - Textos modificables en: src/messages/es.json -> "admissions.process"     */}
+      {/* ========================================================================= */}
       <section className="bg-zinc-950 px-6 py-24 text-white md:px-12">
         <div className="mx-auto max-w-6xl">
           <p className="text-brand-300 text-sm font-semibold tracking-[0.25em] uppercase">
@@ -87,6 +101,7 @@ export default async function Draft1Admissions({
             ))}
           </div>
 
+          {/* Bloque de Fechas clave */}
           <div className="mt-20 flex flex-col items-start justify-between gap-8 border-t border-zinc-700 pt-10 md:flex-row md:items-center">
             <div className="text-brand-300 text-sm font-semibold tracking-widest uppercase">
               {t("deadlines.title")}
@@ -101,6 +116,10 @@ export default async function Draft1Admissions({
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* SECCIÓN 4: RECOMENDACIONES PARA LA AUDICIÓN (FONDO PÚRPURA SUAVE)         */}
+      {/* - Textos modificables en: src/messages/es.json -> "admissions.audition"   */}
+      {/* ========================================================================= */}
       <section className="bg-brand-50 px-6 py-24 md:px-12">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:items-end">
           <div>
@@ -115,6 +134,9 @@ export default async function Draft1Admissions({
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* SECCIÓN 5: LLAMADO A LA ACCIÓN FINAL (CTA / CONTACTO)                     */}
+      {/* ========================================================================= */}
       <section className="bg-[radial-gradient(ellipse_at_top,#24103d_0%,#0a0a0a_62%)] px-6 py-24 text-center text-white md:px-12">
         <h2 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
           {t("cta.title")}

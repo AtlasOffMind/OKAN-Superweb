@@ -26,53 +26,55 @@
   "landing": {
     "nav": {
       "home": "Inicio",
-      "programs": "Programas",
-      "admissions": "Admisiones",
-      "life": "Vida estudiantil",
       "about": "Nosotros",
+      "programs": "Programas",     
+      "Agora/Show": "Ágora OKAN", 
+      "Bitacora": "Bitacora OKAN", 
+      "life": "Vida estudiantil",
       "news": "Noticias",
+      "admissions": "Admisiones",
       "contact": "Contacto",
-      "apply": "Aplicar"
+      "apply": "Aplica ahora"
     },
     "hero": {
       "eyebrow": "Escuela Superior de Arte",
-      "title": "Formamos artistas para el escenario",
-      "subtitle": "Actuación, danza y creación escénica en un proyecto educativo riguroso, contemporáneo y profundamente humano.",
-      "primary": "Solicitar admisión",
-      "secondary": "Explorar programas"
+      "title": "EL ARTE NO ES SOLO TALENTO",
+      "subtitle": "ES OFICIO. PENSAMIENTO. IDENTIDAD. PROFESIÓN.",
+      "primary": "Aplica ahora",
+      "secondary": "Conoce OKAN"
     },
     "programs": {
       "heading": "Programas",
       "subheading": "Tres caminos, una misma vocación",
-      "readMore": "Leer más",
+      "readMore": "CONOCE LA CARRERA",
       "acting": {
         "title": "Actuación",
-        "desc": "Una formación integral para desarrollar presencia, voz, cuerpo e imaginación. Explora el texto, la creación y el trabajo colectivo con rigor, curiosidad y práctica escénica."
+        "desc": "Tu cuerpo. Tu voz. Tu verdad en escena. Entrena, explora, crea. Haz del escenario tu profesión."
       },
       "dance": {
         "title": "Danza",
-        "desc": "Entrena la técnica, la musicalidad y la conciencia corporal para convertir el movimiento en lenguaje. Combina ballet, danza contemporánea, jazz y creación coreográfica."
+        "desc": "Tu cuerpo. Tu lenguaje. Tu manera de ocupar la escena. Entrena, investiga, crea. Haz del movimiento tu profesión."
       },
-      "creation": {
-        "title": "Creación escénica",
-        "desc": "Dirección, producción y pensamiento escénico para imaginar y sostener obras propias."
+      "continuingEd": {
+        "title": "Estudios continuos",
+        "desc": "Siempre hay algo nuevo que aprender. Y nuevos lugares donde llevar lo que sabes. Talleres, laboratorios y diplomados para artistas, profesionales y mentes creativas.",
+        "cta": "EXPLORA LA OFERTA"
       }
     },
     "faculty": {
       "heading": "Nuestro claustro",
-      "desc": "Artistas en activo, investigadores y docentes que formaron su práctica en escenarios de México, Cuba y Europa."
+      "desc": "APRENDE DE QUIENES HACEN, INVESTIGAN Y VIVEN EL ARTE. Artistas y docentes con trayectoria en escenarios, aulas y proyectos del mundo."
     },
     "news": {
       "heading": "Agenda y noticias",
       "item": {
-        "date": "Septiembre 2026",
         "title": "Audiciones abiertas para la nueva generación",
         "desc": "Convocatoria de admisión para los programas de Actuación, Danza y Creación escénica."
       }
     },
     "about": {
       "heading": "Sobre OKAN",
-      "text": "Una institución de artes escénicas que integra entrenamiento, investigación artística y acompañamiento humano para formar a la próxima generación de creadores."
+      "text": "SOMOS UNA ESCUELA SUPERIOR DE ARTE. Aquí el arte se entrena, se piensa y se hace. Encuentra tu voz, llévala más lejos y conviértela en profesión."
     },
     "stats": {
       "years": "Años formando artistas",
@@ -81,9 +83,10 @@
       "productions": "Producciones"
     },
     "footer": {
-      "ctaTitle": "Da el siguiente paso",
-      "ctaText": "Tu vocación empieza aquí. Conocé nuestros programas y postulá a la audición.",
-      "ctaButton": "Aplicar ahora",
+      "ctaTitle": "LO QUE EMPIEZA COMO VOCACIÓN PUEDE CONVERTIRSE EN TU PROFESIÓN.",
+      "ctaText": "Da el paso. Nosotros ponemos la escuela.",
+      "ctaButton": "Aplica ahora",
+      "ctaSecondary": "Conoce OKAN",
       "copyright": "OKAN Escuela Superior de Arte. Todos los derechos reservados."
     }
   },
@@ -111,14 +114,14 @@
         "Improvisación y coreografía"
       ]
     },
-    "creation": {
-      "title": "Creación escénica",
-      "tagline": "El artista que imagina mundos",
-      "desc": "Dirección, producción y pensamiento escénico para imaginar, sostener y producir obras propias con mirada interdisciplinaria.",
+    "continuingEd": {
+      "title": "Estudios continuos",
+      "tagline": "Formación continua y talleres",
+      "desc": "Siempre hay algo nuevo que aprender. Talleres, laboratorios y diplomados para artistas, profesionales y mentes creativas.",
       "outcomes": [
-        "Dirección escénica",
-        "Producción y gestión",
-        "Pensamiento y dramaturgia"
+        "Talleres intensivos y laboratorios",
+        "Cursos libres de movimiento y voz",
+        "Diplomados y actualización profesional"
       ]
     },
     "cta": {
@@ -198,23 +201,30 @@
   "about": {
     "eyebrow": "La comunidad OKAN",
     "heading": "Sobre OKAN",
-    "intro": "Somos una escuela superior de arte dedicada a formar artistas escénicos íntegros, con un proyecto educativo riguroso y profundamente humano.",
+    "intro": "Somos una Escuela Superior de Arte donde oficio, pensamiento, identidad y creación forman parte de un mismo proceso. Entrenamos artistas para comprender lo que hacen, descubrir una voz propia y convertir su práctica en profesión.",
     "mission": "Nuestra misión",
-    "missionText": "Desarrollar el potencial individual de cada estudiante, formando creadores curiosos, críticos y socialmente conscientes a través de una enseñanza de excelencia.",
+    "missiontitle": "Nuestra misión",
+    "missionText": "Formar artistas escénicos con sólidas herramientas técnicas, creativas e intelectuales, capaces de investigar, crear y ejercer su profesión con identidad, pensamiento crítico y conciencia de su comunidad y su territorio.",
     "story": "Nuestra historia",
-    "storyText": "OKAN nace del trabajo sostenido de artistas y docentes comprometidos con la formación profesional en artes escénicas, uniendo la exigencia técnica con la investigación y el acompañamiento humano.",
+    "storyTitle": "UNA ESCUELA QUE NACIÓ HACIENDO.",
+    "storyText": "OKAN nació de la práctica escénica, del entrenamiento y de la necesidad de construir en Cancún un espacio para la formación profesional de artistas. Lo que comenzó como un laboratorio de creación y aprendizaje fue creciendo, preguntándose y transformándose hasta convertirse en una Escuela Superior de Arte con un modelo educativo propio. Hoy esa historia continúa: formando artistas, generando conocimiento y construyendo comunidad desde el Caribe mexicano.",
+    "valuesTitle": "Nuestro modelo",
     "values": [
       {
-        "title": "Excelencia",
+        "title": "OFICIO",
         "desc": "Exigencia técnica y rigor artístico en cada proceso."
       },
       {
-        "title": "Humanismo",
-        "desc": "Cuidamos a la persona detrás del artista."
+        "title": "PENSAMIENTO",
+        "desc": "Un artista no solo hace. También pregunta. Historia, dramaturgia, filosofía, análisis e investigación dialogan con la práctica para comprender qué hacemos, cómo y por qué."
       },
       {
-        "title": "Investigación",
-        "desc": "La escena como espacio de pensamiento y creación."
+        "title": "IDENTIDAD",
+        "desc": "No formamos artistas para que se parezcan a otros. Cada proceso busca que el estudiante reconozca sus herramientas, construya criterio y encuentre una voz artística propia."
+      },
+      {
+        "title": "COMUNIDAD Y TERRITORIO",
+        "desc": "El arte no sucede aislado del mundo. La formación dialoga con su tiempo, su comunidad y su territorio para crear, participar y transformar desde ellos."
       }
     ],
     "faculty": {

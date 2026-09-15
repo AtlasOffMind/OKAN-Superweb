@@ -18,6 +18,10 @@ export default async function Draft1Life({
 
   return (
     <>
+      {/* ========================================================================= */}
+      {/* SECCIÓN 1: CABECERA / TÍTULO DE VIDA ESTUDIANTIL                          */}
+      {/* - Textos modificables en: src/messages/es.json -> "life.heading/intro"    */}
+      {/* ========================================================================= */}
       <section className="border-b border-zinc-200 px-6 py-20 md:px-12">
         <div className="mx-auto max-w-6xl">
           <h1 className="font-display text-5xl font-semibold tracking-tight md:text-6xl">
@@ -27,6 +31,10 @@ export default async function Draft1Life({
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* SECCIÓN 2: GRILLA DE EXPERIENCIA ESTUDIANTIL (ESCENARIOS, COMUNIDAD...)  */}
+      {/* - Textos modificables en: src/messages/es.json -> "life.features"         */}
+      {/* ========================================================================= */}
       <section className="px-6 py-20 md:px-12">
         <div className="mx-auto grid max-w-6xl gap-px overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-200 md:grid-cols-2">
           {features.map((f) => (
