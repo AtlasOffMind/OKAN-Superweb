@@ -1,16 +1,24 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useState } from "react";
 
 import { submitContact, type ContactState } from "@/actions/contact";
 
 export type FormVariant = "classic" | "modern" | "bold";
 
+export const MESSAGE_MAX_LENGTH = 250;
+
 export interface ContactLabels {
   title: string;
   name: string;
   email: string;
+  gender: string;
+  genderOptions: { male: string; female: string; other: string };
+  phone: string;
+  interest: string;
+  interestOptions: { acting: string; dance: string; continuingEd: string };
   message: string;
+  messageHint: string;
   submit: string;
   sending: string;
   success: string;
@@ -57,6 +65,24 @@ const errorStyles: Record<FormVariant, string> = {
   bold: "text-sm font-medium text-red-400",
 };
 
+const labelStyles: Record<FormVariant, string> = {
+  classic: "text-xs font-semibold tracking-widest text-zinc-500 uppercase",
+  modern: "text-xs font-semibold tracking-widest text-zinc-500 uppercase",
+  bold: "text-xs font-semibold tracking-widest text-zinc-400 uppercase",
+};
+
+const radioLabelStyles: Record<FormVariant, string> = {
+  classic: "flex items-center gap-2 text-sm text-zinc-700",
+  modern: "flex items-center gap-2 text-sm text-zinc-700",
+  bold: "flex items-center gap-2 text-sm text-zinc-200",
+};
+
+const hintStyles: Record<FormVariant, string> = {
+  classic: "text-right text-xs text-zinc-400",
+  modern: "text-right text-xs text-zinc-400",
+  bold: "text-right text-xs text-zinc-500",
+};
+
 const initialState: ContactState = { ok: false };
 
 export function ContactForm({
@@ -70,6 +96,7 @@ export function ContactForm({
     submitContact,
     initialState,
   );
+  const [messageLength, setMessageLength] = useState(0);
 
   return (
     <form
@@ -91,13 +118,66 @@ export function ContactForm({
         placeholder={labels.email}
         className={fieldStyles[variant]}
       />
-      <textarea
-        name="message"
+      <input
+        type="tel"
+        name="phone"
         required
-        rows={4}
-        placeholder={labels.message}
+        placeholder={labels.phone}
         className={fieldStyles[variant]}
       />
+
+      {/* Sexo */}
+      <fieldset className="flex flex-col gap-2">
+        <legend className={labelStyles[variant]}>{labels.gender}</legend>
+        <div className="flex flex-wrap gap-4">
+          <label className={radioLabelStyles[variant]}>
+            <input type="radio" name="gender" value="male" required />
+            {labels.genderOptions.male}
+          </label>
+          <label className={radioLabelStyles[variant]}>
+            <input type="radio" name="gender" value="female" required />
+            {labels.genderOptions.female}
+          </label>
+          <label className={radioLabelStyles[variant]}>
+            <input type="radio" name="gender" value="other" required />
+            {labels.genderOptions.other}
+          </label>
+        </div>
+      </fieldset>
+
+      {/* Interés (malla curricular) */}
+      <select
+        name="interest"
+        required
+        defaultValue=""
+        className={fieldStyles[variant]}
+      >
+        <option value="" disabled>
+          {labels.interest}
+        </option>
+        <option value="acting">{labels.interestOptions.acting}</option>
+        <option value="dance">{labels.interestOptions.dance}</option>
+        <option value="continuingEd">
+          {labels.interestOptions.continuingEd}
+        </option>
+      </select>
+
+      <div className="flex flex-col gap-1">
+        <span className={labelStyles[variant]}>{labels.messageHint}</span>
+        <textarea
+          name="message"
+          required
+          rows={4}
+          maxLength={MESSAGE_MAX_LENGTH}
+          placeholder={labels.message}
+          onChange={(e) => setMessageLength(e.target.value.length)}
+          className={fieldStyles[variant]}
+        />
+        <span className={hintStyles[variant]}>
+          {messageLength}/{MESSAGE_MAX_LENGTH}
+        </span>
+      </div>
+
       {state.ok && <p className={successStyles[variant]}>{labels.success}</p>}
       {state.error && <p className={errorStyles[variant]}>{labels.error}</p>}
       <button

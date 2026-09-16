@@ -26,10 +26,20 @@ export default async function Draft1Home({
   setRequestLocale(locale);
   const t = await getTranslations("landing");
 
-  const links = navLinks.map((link) => ({
-    label: t(`nav.${link.key}`),
-    href: `${base}${link.path}`,
-  }));
+  const links = navLinks.map((link) =>
+    link.children
+      ? {
+        label: t(`nav.${link.key}`),
+        children: link.children.map((child) => ({
+          label: t(`nav.${link.key}Items.${child.key}`),
+          href: `${base}${child.path}`,
+        })),
+      }
+      : {
+        label: t(`nav.${link.key}`),
+        href: `${base}${link.path}`,
+      },
+  );
 
   return (
     <>
@@ -200,8 +210,11 @@ export default async function Draft1Home({
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 mx-auto flex min-h-[30rem] max-w-4xl flex-col items-center justify-center px-6 py-24 text-center md:px-12">
           <h2 className="font-display text-4xl leading-tight font-semibold tracking-tight text-white md:text-5xl">
-            {t("about.text")}
+            {(t.raw("about.text") as string[])[0]}
           </h2>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-zinc-300">
+            {(t.raw("about.text") as string[])[1]}
+          </p>
           <Link
             href={`${base}/admissions`}
             className="bg-brand-600 hover:bg-brand-500 mt-8 rounded-full px-8 py-3 text-sm font-semibold text-white transition-colors"

@@ -18,15 +18,15 @@ export default async function Draft1Contact({
   return (
     <>
       {/* ========================================================================= */}
-      {/* SECCIÓN 1: CABECERA / TÍTULO DE CONTACTO                                  */}
+      {/* SECCIÓN 1: CABECERA / TÍTULO DE CONTACTO (FONDO CON COLORES OKAN)         */}
       {/* - Textos modificables en: src/messages/es.json -> "contact.heading/intro" */}
       {/* ========================================================================= */}
-      <section className="border-b border-zinc-200 px-6 py-20 md:px-12">
+      <section className="bg-[radial-gradient(ellipse_at_top,#24103d_0%,#0a0a0a_62%)] px-6 py-28 text-white md:px-12 md:py-36">
         <div className="mx-auto max-w-6xl">
-          <h1 className="font-display text-5xl font-semibold tracking-tight md:text-6xl">
+          <h1 className="font-display text-5xl font-semibold tracking-tight sm:text-6xl md:text-8xl">
             {t("heading")}
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-zinc-500">{t("intro")}</p>
+          <p className="mt-6 max-w-2xl text-lg text-zinc-300">{t("intro")}</p>
         </div>
       </section>
 
@@ -35,7 +35,7 @@ export default async function Draft1Contact({
       {/* - Datos (email, teléfono, dirección, horario) en: src/messages/es.json     */}
       {/* - Componente de formulario en: src/components/contact-form.tsx            */}
       {/* ========================================================================= */}
-      <section className="px-6 py-20 md:px-12">
+      <section className="bg-brand-50 px-6 py-20 md:px-12">
         <div className="mx-auto grid max-w-6xl gap-16 md:grid-cols-2">
           {/* Columna Izquierda: Información de contacto */}
           <div className="flex flex-col gap-8">
@@ -72,7 +72,21 @@ export default async function Draft1Contact({
               title: t("form.title"),
               name: t("form.name"),
               email: t("form.email"),
+              gender: t("form.gender"),
+              genderOptions: {
+                male: t("form.genderOptions.male"),
+                female: t("form.genderOptions.female"),
+                other: t("form.genderOptions.other"),
+              },
+              phone: t("form.phone"),
+              interest: t("form.interest"),
+              interestOptions: {
+                acting: t("form.interestOptions.acting"),
+                dance: t("form.interestOptions.dance"),
+                continuingEd: t("form.interestOptions.continuingEd"),
+              },
               message: t("form.message"),
+              messageHint: t("form.messageHint"),
               submit: t("form.submit"),
               sending: t("form.sending"),
               success: t("form.success"),

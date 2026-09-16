@@ -48,6 +48,7 @@ export default function ImageMarquee({ className }: ImageMarqueeProps) {
                   width={1600}
                   height={1067}
                   priority={copy === 0 && index === 0}
+                  loading="eager"
                   className="block h-full w-auto max-w-none object-contain object-center"
                 />
               </div>

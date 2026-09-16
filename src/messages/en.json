@@ -1,36 +1,20 @@
 {
   "home": {
-    "title": "OKAN School of the Arts",
-    "description": "Professional training in the performing arts: acting, dance and stage creation.",
-    "intro": "Landing page drafts to choose a visual direction."
-  },
-  "drafts": {
-    "title": "Landing drafts",
-    "subtitle": "Choose the visual direction that best represents you. All three share the same content; the design changes.",
-    "links": "View draft",
-    "items": [
-      {
-        "name": "Classic · Conservatoire",
-        "desc": "Elegant serif, sober and monochrome, large-format photography."
-      },
-      {
-        "name": "Modern · Editorial",
-        "desc": "Asymmetric, bold use of purple, contemporary grid."
-      },
-      {
-        "name": "Expressive · Artistic",
-        "desc": "Oversized typography, gradients and stage energy."
-      }
-    ]
+    "title": "OKAN School of the Arts"
   },
   "landing": {
     "nav": {
       "home": "Home",
-      "programs": "Programs",
-      "admissions": "Admissions",
-      "life": "Student life",
       "about": "About",
-      "news": "News",
+      "programs": "Programs",
+      "okanEnAccion": "OKAN EN ACCIÓN",
+      "okanEnAccionItems": {
+        "agora": "Ágora OKAN",
+        "laboratorio": "OKAN Laboratorio Escénico",
+        "espectaculos": "OKAN Espectáculos"
+      },
+      "bitacora": "Bitácora OKAN",
+      "admissions": "Admissions",
       "contact": "Contact",
       "apply": "Apply now"
     },
@@ -72,15 +56,14 @@
     },
     "about": {
       "heading": "About OKAN",
-      "text": "WE ARE A SCHOOL OF THE ARTS. Here art is trained, conceived, and created. Find your voice, take it further, and make it your profession."
-    },
-    "stats": {
-      "years": "Years training artists",
-      "students": "Students",
-      "alumni": "Alumni",
-      "productions": "Productions"
+      "text": [
+        "WE ARE A SCHOOL OF THE ARTS.",
+        "Here art is trained, conceived, and created. Find your voice, take it further, and make it your profession."
+      ]
     },
     "footer": {
+      "col1": "Explore",
+      "col2": "OKAN in action",
       "ctaTitle": "WHAT STARTS AS A CALLING CAN BECOME YOUR PROFESSION.",
       "ctaText": "Take the step. We provide the school.",
       "ctaButton": "Apply now",
@@ -95,7 +78,10 @@
     "acting": {
       "title": "Acting",
       "tagline": "The actor as creator",
-      "desc": "A curriculum that brings together actor training, dramaturgy, voice, movement and stage laboratory, with a contemporary lean and critical thinking.",
+      "desc": [
+        "The Bachelor's Degree in Acting explores the craft from every angle the profession demands today: actor training, voice and physical expression; dramaturgy, history, philosophy, critical thinking and performance research; creation, laboratory work and staging; acting for camera, casting and dubbing; stagecraft, cultural management and the tools to understand how a stage project is created, produced and circulated. The curriculum also builds toward directing actors, executive production, entrepreneurship and research applied to the thesis project.",
+        "A curriculum to investigate, analyze, create, master different languages of performance, understand the technical resources of the stage and develop professional autonomy."
+      ],
       "outcomes": [
         "Actor and voice training",
         "Dramaturgy for the actor",
@@ -105,7 +91,11 @@
     "dance": {
       "title": "Dance",
       "tagline": "The body as language",
-      "desc": "Technical training in ballet, contemporary dance and jazz, alongside movement research, body awareness and choreographic creation.",
+      "desc": [
+        "Contemporary Dance is the backbone of the degree. Around it, classical ballet, jazz, Caribbean rhythms, Mexican folklore and urban dance engage in dialogue with performance, choreographic composition, acting, voice, history, philosophy, critical thinking and research.",
+        "The training expands toward the languages and tools that build the contemporary stage: multimedia, space, light, set design and stagecraft; and toward the knowledge needed to develop and sustain projects: cultural management, the creative economy, funding, executive production and pedagogy for dance. The curriculum also includes functional anatomy and kinesiology, music applied to dance, audition management and a progressive choreographic lab process that culminates in the creation and staging of the thesis work.",
+        "A curriculum to perform, research, compose and create with technical mastery, critical thinking and a comprehensive understanding of the contemporary stage."
+      ],
       "outcomes": [
         "Ballet and classical technique",
         "Contemporary dance",
@@ -115,7 +105,12 @@
     "continuingEd": {
       "title": "Continuing Studies",
       "tagline": "Continuing education and workshops",
-      "desc": "There is always something new to learn. Workshops, labs, and certificate programs for artists, professionals, and creative minds.",
+      "desc": [
+        "Continuing Studies extends the OKAN Methodology beyond the degree programs. It is a space to specialize, update knowledge, professionalize a practice and discover new applications of stage tools in other fields of knowledge and work.",
+        "The offering combines training and professional development for performers; acting, dance, body and voice; philosophy and research in the arts; interdisciplinary creation; film and audiovisual media; martial arts applied to the stage; directing, production and company leadership; pedagogy and teacher training.",
+        "It also brings stage knowledge to other professional fields: training for speakers; presence and communication; leadership and teamwork; creativity and soft skills; tools applied to marketing, tourism and services; and preparing students and professionals to present, communicate and defend their projects.",
+        "Workshops, labs, courses, intensive programs and diplomas make it possible to build different paths according to each participant's experience, profession and goal. OKAN's agreements and partnerships expand this platform through collaboration with artists, specialists and institutions from other contexts, strengthening the national and international reach of its programs."
+      ],
       "outcomes": [
         "Intensive workshops and labs",
         "Open movement and voice courses",
@@ -123,51 +118,65 @@
       ]
     },
     "cta": {
-      "eyebrow": "Take the next step",
-      "title": "Find the stage language you want to develop.",
-      "button": "Explore admissions"
+      "title": "ONE METHODOLOGY. MANY WAYS TO GO FURTHER.",
+      "text": "Degree programs and Continuing Studies connected by the same way of learning: doing, thinking, researching, relating and creating."
+    },
+    "international": {
+      "heading": "International partnerships",
+      "intro": "OKAN collaborates with arts companies and institutions that expand the reach of its programs.",
+      "partners": [
+        {
+          "name": "",
+          "desc": ""
+        },
+        {
+          "name": "",
+          "desc": ""
+        },
+        {
+          "name": "",
+          "desc": ""
+        },
+        {
+          "name": "",
+          "desc": ""
+        }
+      ]
     }
   },
   "admissions": {
-    "eyebrow": "Your next stage",
     "heading": "Admissions",
-    "intro": "We want to get to know you. Our process looks for talent, curiosity and commitment — not a perfect record.",
+    "intro": "YOUR TRAINING AT OKAN STARTS HERE. We look for people ready to turn their interest in the performing arts into a professional training process.",
     "welcome": {
-      "eyebrow": "Join OKAN",
-      "title": "An audition is also the beginning of a conversation.",
-      "text": "We look for emerging artists with a point of view and the willingness to work rigorously, listen to others and grow within a performing arts community."
+      "eyebrow": "Joining OKAN",
+      "title": "WE WANT TO KNOW WHO YOU ARE AND HOW FAR YOU WANT TO TAKE YOUR TRAINING.",
+      "text": "Admission begins with an interview. We want to learn about your interests, your experience, your expectations and your willingness to take on training that integrates practice, thinking, research and creation. Prior experience can be a starting point. The admissions process helps identify each applicant's stage of training and the corresponding entry path."
     },
     "process": {
       "eyebrow": "How it works",
       "title": "The process",
       "steps": [
         {
-          "title": "Application",
-          "desc": "Complete your online application with your details and background."
+          "title": "INITIAL INTERVIEW",
+          "desc": "We get to know your profile, your interests and your educational background to guide your admission process."
         },
         {
-          "title": "Audition",
-          "desc": "Present a sample of your work before our faculty."
+          "title": "PREPARATORY TERM OR DIAGNOSTIC ASSESSMENT",
+          "desc": "Admission includes crediting the preparatory term or, where applicable, a diagnostic assessment of prior knowledge. The Preparatory Term is part of OKAN's academic model: it diagnoses, levels and prepares the student for the start of the degree program."
         },
         {
-          "title": "Interview",
-          "desc": "We talk about your motivation and your path."
+          "title": "DOCUMENTATION",
+          "desc": "Submission and signing of the institutional regulations and required documentation, as well as a medical certificate or proof of physical fitness and health."
         },
         {
-          "title": "Result",
-          "desc": "You receive the admission decision and next steps."
+          "title": "ENROLLMENT",
+          "desc": "Complete the enrollment payment and formalize your entry into the OKAN community."
         }
       ]
     },
-    "deadlines": {
-      "title": "Key dates",
-      "item": "Auditions open",
-      "date": "September 2026"
-    },
-    "audition": {
-      "eyebrow": "Before you apply",
-      "title": "Come ready to show us who you are.",
-      "text": "The audition is a space to share your sensitivity, presence and way of creating. We will publish the specific materials, dates and requirements for each program soon."
+    "closing": {
+      "title": "START YOUR PROCESS.",
+      "text": "Two degree programs. One methodology. A professional education to build your path in the performing arts."
     },
     "cta": {
       "title": "Ready to apply?",
@@ -239,8 +248,28 @@
       }
     }
   },
-  "news": {
-    "heading": "News",
+  "okanEnAccion": {
+    "agora": {
+      "heading": "Ágora OKAN",
+      "tagline": "TALK. DEBATE. THINK OUT LOUD.",
+      "intro": "A space to talk and debate with guests.",
+      "text": "Ágora OKAN brings the school community together with artists, thinkers and special guests in open conversations that put stage practice in dialogue with the ideas that run through it."
+    },
+    "laboratorio": {
+      "heading": "OKAN Laboratorio Escénico",
+      "tagline": "PROFESSIONAL ARTISTIC CREATION AND PRODUCTION.",
+      "intro": "Professional artistic creation and production.",
+      "text": "OKAN's Stage Laboratory is the creation platform where students and artists develop, produce and present their own stage projects, taking classroom research into professional production."
+    },
+    "espectaculos": {
+      "heading": "OKAN Espectáculos",
+      "tagline": "STAGE PRODUCTION FOR THE ENTERTAINMENT INDUSTRY.",
+      "intro": "Stage production for the entertainment industry.",
+      "text": "OKAN Espectáculos develops and produces stage productions for the entertainment industry, connecting the school's training with professional projects of commercial reach."
+    }
+  },
+  "bitacora": {
+    "heading": "Bitácora OKAN",
     "intro": "What's happening at OKAN.",
     "items": [
       {
@@ -275,7 +304,21 @@
       "title": "Write to us",
       "name": "Name",
       "email": "Email",
+      "gender": "Gender",
+      "genderOptions": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      },
+      "phone": "Phone",
+      "interest": "Interest",
+      "interestOptions": {
+        "acting": "Acting",
+        "dance": "Contemporary dance",
+        "continuingEd": "Continuing Studies (workshops)"
+      },
       "message": "Message",
+      "messageHint": "Maximum 250 characters",
       "submit": "Send",
       "sending": "Sending…",
       "success": "Thank you! Your message has been sent.",

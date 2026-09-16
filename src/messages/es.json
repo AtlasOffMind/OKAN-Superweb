@@ -1,39 +1,21 @@
 {
   "home": {
-    "title": "OKAN Escuela Superior de Arte",
-    "description": "Formación profesional en artes escénicas: actuación, danza y creación.",
-    "intro": "Borradores de la landing para elegir dirección visual."
-  },
-  "drafts": {
-    "title": "Borradores de landing",
-    "subtitle": "Elegí la dirección visual que más te represente. Las tres comparten el mismo contenido; cambia el diseño.",
-    "links": "Ver borrador",
-    "items": [
-      {
-        "name": "Clásico · Conservatorio",
-        "desc": "Serif elegante, monocromo y sobrio, fotografía en gran formato."
-      },
-      {
-        "name": "Moderno · Editorial",
-        "desc": "Asimétrico, uso audaz del púrpura, grilla contemporánea."
-      },
-      {
-        "name": "Expresivo · Artístico",
-        "desc": "Tipografía oversized, gradientes y energía escénica."
-      }
-    ]
+    "title": "OKAN Escuela Superior de Arte"
   },
   "landing": {
     "nav": {
       "home": "Inicio",
       "about": "Nosotros",
-      "programs": "Programas",     
-      "Agora/Show": "Ágora OKAN", 
-      "Bitacora": "Bitacora OKAN", 
-      "life": "Vida estudiantil",
-      "news": "Noticias",
+      "programs": "Programas",
+      "okanEnAccion": "OKAN EN ACCIÓN",
+      "okanEnAccionItems": {
+        "agora": "Ágora OKAN",
+        "laboratorio": "OKAN Laboratorio Escénico",
+        "espectaculos": "OKAN Espectáculos"
+      },
       "admissions": "Admisiones",
-      "contact": "Contacto",
+      "bitacora": "Bitácora OKAN",
+      "contact": "Contáctanos",
       "apply": "Aplica ahora"
     },
     "hero": {
@@ -74,15 +56,14 @@
     },
     "about": {
       "heading": "Sobre OKAN",
-      "text": "SOMOS UNA ESCUELA SUPERIOR DE ARTE. Aquí el arte se entrena, se piensa y se hace. Encuentra tu voz, llévala más lejos y conviértela en profesión."
-    },
-    "stats": {
-      "years": "Años formando artistas",
-      "students": "Estudiantes",
-      "alumni": "Egresados",
-      "productions": "Producciones"
+      "text": [
+        "SOMOS UNA ESCUELA SUPERIOR DE ARTE.",
+        "Aquí el arte se entrena, se piensa y se hace. Encuentra tu voz, llévala más lejos y conviértela en profesión."
+      ]
     },
     "footer": {
+      "col1": "Explorar",
+      "col2": "OKAN en acción",
       "ctaTitle": "LO QUE EMPIEZA COMO VOCACIÓN PUEDE CONVERTIRSE EN TU PROFESIÓN.",
       "ctaText": "Da el paso. Nosotros ponemos la escuela.",
       "ctaButton": "Aplica ahora",
@@ -93,87 +74,116 @@
   "programs": {
     "eyebrow": "Formación escénica",
     "heading": "Programas académicos",
-    "intro": "Tres licenciaturas en artes escénicas con una formación integral, práctica y situada en la escena contemporánea.",
+    "intro": "Dos licenciaturas y Estudios Continuos articulados por la Metodología OKAN: técnica, cuerpo, pensamiento, investigación y creación convergen en un ecosistema de práctica profesional con proyección nacional e internacional.",
     "acting": {
       "title": "Actuación",
-      "tagline": "El actor como creador",
-      "desc": "Una malla curricular que integra entrenamiento actoral, dramaturgia, voz, movimiento y laboratorio escénico, con orientación contemporánea y pensamiento crítico.",
+      "tagline": "ACTUACIÓN PARA TODOS LOS LENGUAJES DE LA ESCENA.",
+      "desc": [
+        "La Licenciatura en Actuación recorre el oficio desde todos los lugares que hoy exige la profesión: entrenamiento actoral, voz y expresión corporal; dramaturgia, historia, filosofía, pensamiento crítico e investigación escénica; creación, laboratorio y montaje; actuación para cámara, casting y doblaje; escenotecnia, gestión cultural y herramientas para comprender cómo se crea, produce y circula un proyecto escénico. La malla confirma además una progresión que llega a dirección para el actor, producción ejecutiva, emprendimiento e investigación aplicada al proyecto de tesis.",
+        "Una malla para investigar, analizar, crear, dominar diferentes lenguajes de interpretación, comprender los recursos técnicos de la escena y desarrollar autonomía profesional."
+      ],
       "outcomes": [
-        "Entrenamiento actoral y de voz",
-        "Dramaturgia para el actor",
-        "Laboratorio escénico y montaje"
+        "ESCENA",
+        "CUERPO",
+        "VOZ",
+        "CÁMARA",
+        "PENSAMIENTO",
+        "INVESTIGACIÓN",
+        "CREACIÓN",
+        "PROFESIÓN"
       ]
     },
     "dance": {
-      "title": "Danza",
-      "tagline": "El cuerpo como lenguaje",
-      "desc": "Formación técnica en ballet, danza contemporánea y jazz, junto a investigación del movimiento, conciencia corporal y creación coreográfica.",
+      "title": "Danza contemporánea",
+      "tagline": "DANZA CONTEMPORÁNEA PARA LA ESCENA DE HOY",
+      "desc": [
+        "La Danza Contemporánea es la columna vertebral de la licenciatura. A su alrededor dialogan ballet clásico, jazz, ritmos del Caribe, folklore mexicano y danzas urbanas con interpretación, composición coreográfica, actuación, voz, historia, filosofía, pensamiento crítico e investigación.",
+        "La formación se expande hacia los lenguajes y herramientas que construyen la escena contemporánea: multimedia, espacio, luz, escenografía y escenotecnia; y hacia los conocimientos que permiten desarrollar y sostener proyectos: gestión cultural, economía creativa, fondos, producción ejecutiva y pedagogía para la danza. La malla incorpora además anatomía funcional y kinesiología, música aplicada a la danza, gestión de audiciones y un proceso progresivo de laboratorio coreográfico que culmina en la creación y montaje de la obra de tesis.",
+        "Una malla para interpretar, investigar, componer y crear con dominio técnico, pensamiento crítico y comprensión integral de la escena contemporánea."
+      ],
       "outcomes": [
-        "Ballet y técnica clásica",
-        "Danza contemporánea",
-        "Improvisación y coreografía"
+        "DANZA CONTEMPORÁNEA",
+        "TÉCNICA",
+        "CREACIÓN",
+        "PENSAMIENTO",
+        "MULTIMEDIA",
+        "ESCENOTECNIA",
+        "INVESTIGACIÓN",
+        "PROFESIÓN"
       ]
     },
     "continuingEd": {
       "title": "Estudios continuos",
-      "tagline": "Formación continua y talleres",
-      "desc": "Siempre hay algo nuevo que aprender. Talleres, laboratorios y diplomados para artistas, profesionales y mentes creativas.",
+      "tagline": "EL CONOCIMIENTO ESCÉNICO NO TIENE UNA SOLA RUTA.",
+      "desc": [
+        "Estudios Continuos expande la Metodología OKAN más allá de las licenciaturas. Es un espacio para especializarse, actualizarse, profesionalizar una práctica y descubrir nuevas aplicaciones de las herramientas escénicas en otros campos del conocimiento y del trabajo.",
+        "La oferta integra entrenamiento y profesionalización de intérpretes; actuación, danza, cuerpo y voz; filosofía e investigación del arte; creación interdisciplinaria; cine y audiovisual; artes marciales aplicadas a la escena; dirección, producción y liderazgo de compañías; pedagogía y formación docente.",
+        "También lleva el conocimiento escénico a otros ámbitos profesionales: entrenamiento para conferencistas; presencia y comunicación; liderazgo y trabajo en equipo; creatividad y habilidades blandas; herramientas aplicadas a mercadotecnia, turismo y servicios; y preparación de estudiantes y profesionales para presentar, comunicar y defender sus proyectos.",
+        "Talleres, laboratorios, cursos, programas intensivos y diplomados permiten construir diferentes rutas según la experiencia, la profesión y el objetivo de cada participante. Los convenios y alianzas de OKAN amplian esta plataforma mediante colaboración con artistas, especialistas e instituciones de otros contextos, fortaleciendo la proyección nacional e internacional de sus programas."
+      ],
       "outcomes": [
-        "Talleres intensivos y laboratorios",
-        "Cursos libres de movimiento y voz",
-        "Diplomados y actualización profesional"
+        "ARTE",
+        "PROFESIONALIZACIÓN",
+        "FILOSOFÍA",
+        "EDUCACIÓN",
+        "COMUNICACIÓN",
+        "LIDERAZGO",
+        "EMPRESA",
+        "NUEVOS CRUCES"
       ]
     },
     "cta": {
-      "eyebrow": "Da el siguiente paso",
-      "title": "Encuentra el lenguaje escénico que quieres desarrollar.",
-      "button": "Conocer admisiones"
+      "title": "UNA METODOLOGÍA. MUCHAS FORMAS DE LLEGAR MÁS LEJOS.",
+      "text": "Licenciaturas y Estudios Continuos conectados por una misma manera de aprender: hacer, pensar, investigar, relacionar y crear."
+    },
+    "international": {
+      "heading": "Vinculación internacional",
+      "intro": "OKAN colabora con compañías e instituciones artísticas que amplian la proyección de sus programas.",
+      "partners": [
+        { "name": "", "desc": "" },
+        { "name": "", "desc": "" },
+        { "name": "", "desc": "" },
+        { "name": "", "desc": "" }
+      ]
     }
   },
   "admissions": {
-    "eyebrow": "Tu próximo escenario",
     "heading": "Admisiones",
-    "intro": "Queremos conocerte. Nuestro proceso busca talento, curiosidad y compromiso, no un expediente perfecto.",
+    "intro": "TU FORMACIÓN EN OKAN EMPIEZA AQUÍ. Buscamos personas dispuestas a convertir su interés por las artes escénicas en un proceso de formación profesional.",
     "welcome": {
       "eyebrow": "Entrar a OKAN",
-      "title": "Una audición también es el comienzo de una conversación.",
-      "text": "Buscamos artistas en formación con una mirada propia y la disposición para trabajar con rigor, escuchar a otros y crecer dentro de una comunidad escénica."
+      "title": "QUEREMOS SABER QUIÉN ERES Y HASTA DÓNDE QUIERES LLEVAR TU FORMACIÓN.",
+      "text": "El ingreso comienza con una entrevista. Nos interesa conocer tus intereses, tu experiencia, tus expectativas y tu disposición para asumir una formación que integra práctica, pensamiento, investigación y creación. La experiencia previa puede ser un punto de partida. El proceso de admisión permite identificar el momento formativo de cada aspirante y la ruta de ingreso correspondiente."
     },
     "process": {
       "eyebrow": "Cómo funciona",
       "title": "El proceso",
       "steps": [
         {
-          "title": "Solicitud",
-          "desc": "Completá tu solicitud en línea con tus datos y antecedentes."
+          "title": "ENTREVISTA INICIAL",
+          "desc": "Conocemos tu perfil, tus intereses y tus antecedentes formativos para orientar tu proceso de ingreso."
         },
         {
-          "title": "Audición",
-          "desc": "Presentá una muestra de tu trabajo ante el claustro docente."
+          "title": "PROPEDÉUTICO O EVALUACIÓN DIAGNÓSTICA",
+          "desc": "El ingreso contempla la acreditación del semestre propedéutico o, cuando corresponda, una evaluación diagnóstica de conocimientos previos. El Propedéutico forma parte del modelo académico de OKAN: permite diagnosticar, nivelar y preparar al estudiante para el inicio de la licenciatura."
         },
         {
-          "title": "Entrevista",
-          "desc": "Conversamos sobre tu motivación y tu trayectoria."
+          "title": "DOCUMENTACIÓN",
+          "desc": "Entrega y firma del reglamento y de la documentación institucional requerida, así como certificado médico o constancia de aptitud física y salud."
         },
         {
-          "title": "Resultado",
-          "desc": "Recibís la decisión de admisión y los siguientes pasos."
+          "title": "INSCRIPCIÓN",
+          "desc": "Realiza el pago de inscripción y formaliza tu ingreso a la comunidad OKAN."
         }
       ]
     },
-    "deadlines": {
-      "title": "Fechas clave",
-      "item": "Audiciones abiertas",
-      "date": "Septiembre 2026"
-    },
-    "audition": {
-      "eyebrow": "Antes de aplicar",
-      "title": "Ven preparado para mostrar quién eres.",
-      "text": "La audición es un espacio para compartir tu sensibilidad, tu presencia y tu manera de crear. Próximamente publicaremos los materiales, fechas y requisitos específicos de cada programa."
+    "closing": {
+      "title": "EMPIEZA TU PROCESO.",
+      "text": "Dos licenciaturas. Una metodología. Una formación profesional para construir tu camino en las artes escénicas."
     },
     "cta": {
       "title": "¿Listo para postularte?",
-      "button": "Solicitar admisión"
+      "button": "Aplica ahora"
     }
   },
   "life": {
@@ -242,8 +252,28 @@
       }
     }
   },
-  "news": {
-    "heading": "Noticias",
+  "okanEnAccion": {
+    "agora": {
+      "heading": "Ágora OKAN",
+      "tagline": "CONVERSAR. DEBATIR. PENSAR EN VOZ ALTA.",
+      "intro": "Un espacio para conversar y debatir con invitados.",
+      "text": "Ágora OKAN reúne a la comunidad escolar con artistas, pensadores e invitados especiales en conversatorios abiertos que ponen en diálogo la práctica escénica con las ideas que la atraviesan."
+    },
+    "laboratorio": {
+      "heading": "OKAN Laboratorio Escénico",
+      "tagline": "CREACIÓN Y PRODUCCIÓN ARTÍSTICA PROFESIONAL.",
+      "intro": "Creación y producción artística profesional.",
+      "text": "El Laboratorio Escénico de OKAN es la plataforma de creación donde estudiantes y artistas desarrollan, producen y presentan proyectos escénicos propios, llevando la investigación de aula a la producción profesional."
+    },
+    "espectaculos": {
+      "heading": "OKAN Espectáculos",
+      "tagline": "PRODUCCIÓN ESCÉNICA PARA LA INDUSTRIA DEL ENTRETENIMIENTO.",
+      "intro": "Producción escénica para la industria del entretenimiento.",
+      "text": "OKAN Espectáculos desarrolla y produce puestas en escena para la industria del entretenimiento, conectando la formación de la escuela con proyectos profesionales de alcance comercial."
+    }
+  },
+  "bitacora": {
+    "heading": "Bitácora OKAN",
     "intro": "Lo que está pasando en OKAN.",
     "items": [
       {
@@ -265,20 +295,34 @@
   },
   "contact": {
     "heading": "Contacto",
-    "intro": "Escribinos. Respondemos todas tus dudas sobre programas, admisiones y vida estudiantil.",
-    "email": "hola@okan.edu.mx",
-    "phone": "+52 998 000 0000",
-    "address": "Cancún, Quintana Roo, México",
+    "intro": "Escríbenos. Respondemos todas tus dudas sobre programas, admisiones y vida estudiantil.",
+    "email": "escueladearteokan@gmail.com",
+    "phone": "+52 998 786 3254",
+    "address": "Calle Ciprés 118, esquina Flamboyanes, Alamos 1, SM 311, 77560 Cancún, Q.R.",
     "hours": "Lun – Vie · 9:00 – 18:00",
     "emailLabel": "Email",
     "phoneLabel": "Teléfono",
     "addressLabel": "Dirección",
     "hoursLabel": "Horario",
     "form": {
-      "title": "Escribinos",
+      "title": "Escríbenos",
       "name": "Nombre",
       "email": "Correo electrónico",
+      "gender": "Sexo",
+      "genderOptions": {
+        "male": "Masculino",
+        "female": "Femenino",
+        "other": "Otro"
+      },
+      "phone": "Teléfono",
+      "interest": "Interés",
+      "interestOptions": {
+        "acting": "Actuación",
+        "dance": "Danza contemporánea",
+        "continuingEd": "Talleres de Estudios continuos"
+      },
       "message": "Mensaje",
+      "messageHint": "Máximo 250 caracteres",
       "submit": "Enviar",
       "sending": "Enviando…",
       "success": "¡Gracias! Tu mensaje fue enviado.",

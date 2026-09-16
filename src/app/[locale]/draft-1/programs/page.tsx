@@ -1,5 +1,4 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { routing } from "@/i18n/routing";
 
@@ -16,9 +15,9 @@ export default async function Draft1Programs({
   setRequestLocale(locale);
   const t = await getTranslations("programs");
   const careers = [
-    { key: "acting", image: "/images/Pograms/Actuacion.jpg" },
-    { key: "dance", image: "/images/Pograms/Danza.jpg" },
-    { key: "continuingEd", image: "/images/Pograms/Estudios_Continuos.jpeg" },
+    { key: "acting", image: "/images/Pograms/Programs/actuacion2.jpg" },
+    { key: "dance", image: "/images/Pograms/Programs/danza2.jpg" },
+    { key: "continuingEd", image: "/images/Pograms/Programs/estudios_continuos2.jpg" },
   ] as const;
 
   return (
@@ -32,7 +31,7 @@ export default async function Draft1Programs({
           <p className="text-brand-300 text-sm font-semibold tracking-[0.3em] uppercase">
             {t("eyebrow")}
           </p>
-          <h1 className="font-display mt-5 max-w-4xl text-6xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
+          <h1 className="font-display mt-5 max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tight sm:text-6xl md:text-8xl">
             {t("heading")}
           </h1>
           <p className="mt-8 max-w-2xl text-xl leading-relaxed text-zinc-300">
@@ -62,7 +61,7 @@ export default async function Draft1Programs({
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/65" />
-                <h2 className="font-display text-brand-600 absolute top-7 left-7 z-10 max-w-[90%] text-7xl font-semibold leading-[0.85] tracking-tight drop-shadow-[0_3px_16px_rgba(0,0,0,0.65)] md:top-60 md:left-12 md:text-9xl">
+                <h2 className="font-display text-brand-600 absolute top-7 left-7 z-10 max-w-[92%] text-4xl font-semibold leading-[0.95] tracking-tight drop-shadow-[0_3px_16px_rgba(0,0,0,0.65)] sm:text-5xl md:top-60 md:left-12 md:max-w-[85%] md:text-7xl">
                   {t(`${key}.title`)}
                 </h2>
                 <div className="absolute inset-x-0 bottom-0 p-7 md:p-10">
@@ -74,9 +73,16 @@ export default async function Draft1Programs({
 
               {/* Descripción detallada y lista de aprendizajes del programa */}
               <div className="grid gap-8 border-t border-zinc-800 p-7 md:p-10">
-                <p className="text-base leading-[1.7] text-white md:text-lg">
-                  {t(`${key}.desc`)}
-                </p>
+                <div className="grid gap-4">
+                  {t.raw(`${key}.desc`).map((paragraph: string, index: number) => (
+                    <p
+                      key={index}
+                      className="text-base leading-[1.7] text-white md:text-lg"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
                 <ul className="flex flex-col gap-3 text-sm leading-relaxed text-zinc-200 md:text-base">
                   {t.raw(`${key}.outcomes`).map((outcome: string) => (
                     <li key={outcome} className="flex items-start gap-2">
@@ -92,24 +98,48 @@ export default async function Draft1Programs({
       </section>
 
       {/* ========================================================================= */}
-      {/* SECCIÓN 3: LLAMADO A LA ACCIÓN (CTA QUE LLEVA A ADMISIONES)               */}
+      {/* SECCIÓN 3: LLAMADO A LA ACCIÓN (TEXTO ESTÁTICO, SIN BOTÓN)                */}
+      {/* - Textos modificables en: src/messages/es.json -> "programs.cta"         */}
       {/* ========================================================================= */}
       <section className="bg-brand-50 px-6 py-24 md:px-12">
-        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-end">
-          <div>
-            <p className="text-brand-600 text-sm font-semibold tracking-[0.25em] uppercase">
-              {t("cta.eyebrow")}
-            </p>
-            <h2 className="font-display mt-4 max-w-2xl text-4xl font-semibold tracking-tight md:text-5xl">
-              {t("cta.title")}
-            </h2>
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+            {t("cta.title")}
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-zinc-600">
+            {t("cta.text")}
+          </p>
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* SECCIÓN 4: VINCULACIÓN INTERNACIONAL (COMPAÑÍAS/INSTITUCIONES ALIADAS)    */}
+      {/* - Espacio reservado para 4 compañías en formato vertical.                 */}
+      {/* - COMPLETAR MANUALMENTE en: src/messages/es.json y en.json ->             */}
+      {/*   "programs.international.partners" (name + desc de cada compañía)       */}
+      {/* ========================================================================= */}
+      <section className="bg-zinc-950 px-6 py-24 text-white md:px-12">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="font-display text-brand-500 text-4xl font-semibold tracking-tight md:text-5xl">
+            {t("international.heading")}
+          </h2>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-zinc-400">
+            {t("international.intro")}
+          </p>
+          <div className="mt-14 flex flex-col divide-y divide-zinc-800 border-t border-zinc-800">
+            {t
+              .raw("international.partners")
+              .map((partner: { name: string; desc: string }, index: number) => (
+                <div key={index} className="py-8">
+                  <h3 className="font-display min-h-[1.5em] text-2xl font-semibold tracking-tight">
+                    {partner.name}
+                  </h3>
+                  <p className="mt-3 min-h-[1.5em] max-w-2xl leading-relaxed text-zinc-400">
+                    {partner.desc}
+                  </p>
+                </div>
+              ))}
           </div>
-          <Link
-            href="draft-1/admissions"
-            className="bg-brand-600 hover:bg-brand-500 rounded-full px-7 py-3 text-sm font-semibold text-white transition-colors"
-          >
-            {t("cta.button")}
-          </Link>
         </div>
       </section>
     </>

@@ -5,14 +5,14 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function Draft1News({
+export default async function Draft1Bitacora({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("news");
+  const t = await getTranslations("bitacora");
 
   const items = t.raw("items") as {
     date: string;
@@ -23,35 +23,34 @@ export default async function Draft1News({
   return (
     <>
       {/* ========================================================================= */}
-      {/* SECCIÓN 1: CABECERA / TÍTULO DE NOTICIAS                                  */}
-      {/* - Textos modificables en: src/messages/es.json -> "news.heading/intro"    */}
+      {/* SECCIÓN 1: CABECERA / TÍTULO DE BITÁCORA (FONDO CON COLORES OKAN)         */}
+      {/* - Textos modificables en: src/messages/es.json -> "bitacora.heading/intro" */}
       {/* ========================================================================= */}
-      <section className="border-b border-zinc-200 px-6 py-20 md:px-12">
+      <section className="bg-[radial-gradient(ellipse_at_top,#24103d_0%,#0a0a0a_62%)] px-6 py-28 text-white md:px-12 md:py-36">
         <div className="mx-auto max-w-6xl">
-          <h1 className="font-display text-5xl font-semibold tracking-tight md:text-6xl">
+          <h1 className="font-display text-5xl font-semibold tracking-tight sm:text-6xl md:text-8xl">
             {t("heading")}
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-zinc-500">{t("intro")}</p>
+          <p className="mt-6 max-w-2xl text-lg text-zinc-300">{t("intro")}</p>
         </div>
       </section>
 
       {/* ========================================================================= */}
       {/* SECCIÓN 2: LISTA EDITORIAL DE NOTICIAS Y NOVEDADES                        */}
-      {/* - Artículos modificables en: src/messages/es.json -> "news.items"         */}
+      {/* - Artículos modificables en: src/messages/es.json -> "bitacora.items"     */}
       {/* ========================================================================= */}
-      <section className="px-6 py-20 md:px-12">
-        <div className="mx-auto flex max-w-6xl flex-col">
+      <section className="bg-zinc-950 px-6 py-20 text-white md:px-12">
+        <div className="mx-auto flex max-w-6xl flex-col divide-y divide-zinc-800 border-t border-zinc-800">
           {items.map((n) => (
-            <article
-              key={n.title}
-              className="grid gap-4 border-b border-zinc-200 py-10 md:grid-cols-4"
-            >
-              <div className="text-sm text-zinc-400">{n.date}</div>
+            <article key={n.title} className="grid gap-4 py-10 md:grid-cols-4">
+              <div className="text-brand-300 text-sm font-semibold tracking-widest uppercase">
+                {n.date}
+              </div>
               <div className="md:col-span-3">
-                <h2 className="font-display text-3xl font-semibold tracking-tight">
+                <h2 className="font-display text-brand-500 text-3xl font-semibold tracking-tight">
                   {n.title}
                 </h2>
-                <p className="mt-3 max-w-2xl leading-relaxed text-zinc-500">
+                <p className="mt-3 max-w-2xl leading-relaxed text-zinc-400">
                   {n.desc}
                 </p>
               </div>
@@ -62,3 +61,4 @@ export default async function Draft1News({
     </>
   );
 }
+

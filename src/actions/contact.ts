@@ -9,7 +9,10 @@ import config from "@payload-config";
 const schema = z.object({
   name: z.string().trim().min(1, "required").max(200),
   email: z.string().trim().email(),
-  message: z.string().trim().min(1, "required").max(5000),
+  phone: z.string().trim().min(1, "required").max(30),
+  gender: z.enum(["male", "female", "other"]),
+  interest: z.enum(["acting", "dance", "continuingEd"]),
+  message: z.string().trim().min(1, "required").max(250),
 });
 
 export interface ContactState {
@@ -24,6 +27,9 @@ export async function submitContact(
   const parsed = schema.safeParse({
     name: formData.get("name"),
     email: formData.get("email"),
+    phone: formData.get("phone"),
+    gender: formData.get("gender"),
+    interest: formData.get("interest"),
     message: formData.get("message"),
   });
 
@@ -31,13 +37,13 @@ export async function submitContact(
     return { ok: false, error: "invalid" };
   }
 
-  const { name, email, message } = parsed.data;
+  const { name, email, phone, gender, interest, message } = parsed.data;
 
   try {
     const payload = await getPayload({ config });
     await payload.create({
       collection: "submissions",
-      data: { name, email, message },
+      data: { name, email, phone, gender, interest, message },
     });
   } catch {
     return { ok: false, error: "storage" };
@@ -55,7 +61,7 @@ export async function submitContact(
         to: [to],
         replyTo: email,
         subject: `Nueva solicitud de ${name}`,
-        text: `Nombre: ${name}\nCorreo: ${email}\n\n${message}`,
+        text: `Nombre: ${name}\nCorreo: ${email}\nTeléfono: ${phone}\nSexo: ${gender}\nInterés: ${interest}\n\n${message}`,
       });
     } catch {
       // El email es secundario: no fallamos el envío por un error de Resend.
