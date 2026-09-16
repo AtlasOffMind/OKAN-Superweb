@@ -114,31 +114,54 @@ export default async function Draft1Programs({
 
       {/* ========================================================================= */}
       {/* SECCIÓN 4: VINCULACIÓN INTERNACIONAL (COMPAÑÍAS/INSTITUCIONES ALIADAS)    */}
-      {/* - Espacio reservado para 4 compañías en formato vertical.                 */}
+      {/* - Espacio reservado para 4 compañías: logo arriba, descripción abajo.     */}
       {/* - COMPLETAR MANUALMENTE en: src/messages/es.json y en.json ->             */}
-      {/*   "programs.international.partners" (name + desc de cada compañía)       */}
+      {/*   "programs.international.partners" (logo, name y desc de cada compañía) */}
+      {/*   "logo" es la ruta de la imagen en /public, ej: "/images/partners/x.png" */}
       {/* ========================================================================= */}
       <section className="bg-zinc-950 px-6 py-24 text-white md:px-12">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-5xl">
           <h2 className="font-display text-brand-500 text-4xl font-semibold tracking-tight md:text-5xl">
             {t("international.heading")}
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-zinc-400">
             {t("international.intro")}
           </p>
-          <div className="mt-14 flex flex-col divide-y divide-zinc-800 border-t border-zinc-800">
+          <div className="mt-14 grid gap-10 sm:grid-cols-2">
             {t
               .raw("international.partners")
-              .map((partner: { name: string; desc: string }, index: number) => (
-                <div key={index} className="py-8">
-                  <h3 className="font-display min-h-[1.5em] text-2xl font-semibold tracking-tight">
-                    {partner.name}
-                  </h3>
-                  <p className="mt-3 min-h-[1.5em] max-w-2xl leading-relaxed text-zinc-400">
-                    {partner.desc}
-                  </p>
-                </div>
-              ))}
+              .map(
+                (
+                  partner: { logo: string; name: string; desc: string },
+                  index: number,
+                ) => (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center gap-5 rounded-2xl border border-zinc-800 p-8 text-center"
+                  >
+                    {/* Logo de la compañía (arriba) */}
+                    <div className="flex h-20 w-full items-center justify-center">
+                      {partner.logo ? (
+                        <Image
+                          src={partner.logo}
+                          alt={partner.name}
+                          width={200}
+                          height={80}
+                          className="max-h-20 w-auto object-contain"
+                        />
+                      ) : (
+                        <div className="flex h-20 w-full items-center justify-center rounded-lg border border-dashed border-zinc-700 text-xs tracking-widest text-zinc-600 uppercase">
+                          Logo
+                        </div>
+                      )}
+                    </div>
+                    {/* Descripción de la colaboración (abajo) */}
+                    <p className="min-h-[1.5em] max-w-sm leading-relaxed text-zinc-400">
+                      {partner.desc}
+                    </p>
+                  </div>
+                ),
+              )}
           </div>
         </div>
       </section>

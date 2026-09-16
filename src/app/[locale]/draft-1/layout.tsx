@@ -111,8 +111,22 @@ export default async function Draft1Layout({
                 {t("nav.contact")}
               </div>
               <span>{c("email")}</span>
-              <span>{c("phone")}</span>
-              <span>{c("address")}</span>
+              <a
+                href="https://wa.me/529987863254"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white"
+              >
+                {c("phone")}
+              </a>
+              <a
+                href="https://maps.app.goo.gl/7wLKmtZdfjkE22eh6"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white"
+              >
+                {c("address")}
+              </a>
             </div>
           </div>
         </div>
@@ -122,14 +136,27 @@ export default async function Draft1Layout({
           <p>
             {t("footer.copyright")} 
             <br />
-            Fotografía: Anyel
+            {/* PENDIENTE: reemplazar el "#" por el enlace del portafolio/redes de Anyel */}
+            Fotografía: <a href="#" className="underline hover:text-white">Anyel</a>
             <br />
-            Diseño web: Gerardo
+            {/* PENDIENTE: reemplazar el "#" por el enlace del portafolio/redes de Gerardo */}
+            Diseño web: <a href="#" className="underline hover:text-white">Gerardo</a>
           </p>
 
           {/* Botones de redes sociales */}
-          {/* PENDIENTE: reemplazar los "#" de abajo por los links reales de OKAN en LinkedIn, TikTok e Instagram */}
+          {/* PENDIENTE: reemplazar los "#" de abajo por los links reales de OKAN en LinkedIn, TikTok y YouTube */}
           <div className="flex items-center gap-4">
+            <a
+              href="https://wa.me/529987863254"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp"
+              className="text-zinc-400 transition-colors hover:text-white"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.26 4.9L2 22l5.25-1.38A9.96 9.96 0 0 0 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31A8.18 8.18 0 1 1 20.22 12a8.19 8.19 0 0 1-8.18 8.2zm4.5-6.13c-.25-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.78.96-.14.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.16 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z" />
+              </svg>
+            </a>
             <a
               href="#"
               aria-label="LinkedIn"
@@ -155,6 +182,26 @@ export default async function Draft1Layout({
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56a5.87 5.87 0 0 0-2.13 1.38A5.87 5.87 0 0 0 .63 4.14c-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13.67.66 1.34 1.08 2.13 1.38.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56a5.87 5.87 0 0 0 2.13-1.38 5.87 5.87 0 0 0 1.38-2.13c.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91a5.87 5.87 0 0 0-1.38-2.13A5.87 5.87 0 0 0 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/escueladearteokan"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+              className="text-zinc-400 transition-colors hover:text-white"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.77l-.44 2.91h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z" />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="YouTube"
+              className="text-zinc-400 transition-colors hover:text-white"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                <path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.51 3.5 12 3.5 12 3.5s-7.51 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.87.55 9.38.55 9.38.55s7.51 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.6 15.5v-7l6.2 3.5z" />
               </svg>
             </a>
           </div>

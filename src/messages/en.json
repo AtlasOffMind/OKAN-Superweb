@@ -126,18 +126,22 @@
       "intro": "OKAN collaborates with arts companies and institutions that expand the reach of its programs.",
       "partners": [
         {
+          "logo": "",
           "name": "",
           "desc": ""
         },
         {
+          "logo": "",
           "name": "",
           "desc": ""
         },
         {
+          "logo": "",
           "name": "",
           "desc": ""
         },
         {
+          "logo": "",
           "name": "",
           "desc": ""
         }
@@ -271,23 +275,45 @@
   "bitacora": {
     "heading": "Bitácora OKAN",
     "intro": "What's happening at OKAN.",
-    "items": [
-      {
-        "date": "September 2026",
-        "title": "Auditions open for the new generation",
-        "desc": "Admission call for the Acting, Dance and Stage Creation programs."
-      },
-      {
-        "date": "August 2026",
-        "title": "Premiere of the stage production Humedal",
-        "desc": "Our company presents its latest work, the result of a year of laboratory."
-      },
-      {
-        "date": "July 2026",
-        "title": "New cycle of open workshops",
-        "desc": "We open workshops in voice, movement and creation for the interested community."
-      }
-    ]
+    "readMore": "Read more",
+    "news": {
+      "items": [
+        {
+          "date": "September 2026",
+          "title": "Auditions open for the new generation",
+          "desc": "Admission call for the Acting, Dance and Stage Creation programs.",
+          "href": "#"
+        },
+        {
+          "date": "August 2026",
+          "title": "Premiere of the stage production Humedal",
+          "desc": "Our company presents its latest work, the result of a year of laboratory.",
+          "href": "#"
+        },
+        {
+          "date": "July 2026",
+          "title": "New cycle of open workshops",
+          "desc": "We open workshops in voice, movement and creation for the interested community.",
+          "href": "#"
+        }
+      ]
+    },
+    "library": {
+      "items": [
+        {
+          "date": "2026",
+          "title": "Essay: Body and territory in the Caribbean stage",
+          "desc": "An exploration of the relationship between stage practice and territorial identity.",
+          "href": "#"
+        },
+        {
+          "date": "2026",
+          "title": "Lab notes: the creative process behind Humedal",
+          "desc": "A record of the creative process behind the stage production Humedal.",
+          "href": "#"
+        }
+      ]
+    }
   },
   "contact": {
     "heading": "Contact",

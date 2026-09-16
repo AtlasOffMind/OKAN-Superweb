@@ -142,7 +142,7 @@ export default async function Draft1Home({
               />
               <div className="absolute inset-0 bg-black/60" />
               <h3
-                className={`font-display text-brand-600 absolute top-8 z-10 text-3xl font-semibold tracking-tight md:top-12 md:text-4xl ${key === "dance" ? "inset-x-0 text-center" : "left-8 md:left-12"
+                className={`font-display text-brand-600 absolute top-8 z-10 text-5xl font-semibold tracking-tight md:top-12 md:text-7xl ${key === "dance" ? "inset-x-0 text-center" : "left-8 md:left-12"
                   }`}
               >
                 {t(`programs.${key}.title`)}
@@ -175,7 +175,7 @@ export default async function Draft1Home({
               className="object-cover"
             />
             <div className="absolute inset-0 bg-black/60" />
-            <h3 className="font-display text-brand-600 absolute top-8 right-8 z-10 text-right text-3xl font-semibold tracking-tight md:top-12 md:right-12 md:text-4xl">
+            <h3 className="font-display text-brand-600 absolute top-8 right-8 z-10 text-right text-5xl font-semibold tracking-tight md:top-12 md:right-12 md:text-7xl">
               {t("programs.continuingEd.title")}
             </h3>
             <div className="relative z-10 ml-auto max-w-xl text-left">

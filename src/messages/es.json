@@ -140,10 +140,26 @@
       "heading": "Vinculación internacional",
       "intro": "OKAN colabora con compañías e instituciones artísticas que amplian la proyección de sus programas.",
       "partners": [
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" }
+        {
+          "logo": "",
+          "name": "",
+          "desc": ""
+        },
+        {
+          "logo": "",
+          "name": "",
+          "desc": ""
+        },
+        {
+          "logo": "",
+          "name": "",
+          "desc": ""
+        },
+        {
+          "logo": "",
+          "name": "",
+          "desc": ""
+        }
       ]
     }
   },
@@ -275,23 +291,45 @@
   "bitacora": {
     "heading": "Bitácora OKAN",
     "intro": "Lo que está pasando en OKAN.",
-    "items": [
-      {
-        "date": "Septiembre 2026",
-        "title": "Audiciones abiertas para la nueva generación",
-        "desc": "Convocatoria de admisión para los programas de Actuación, Danza y Creación escénica."
-      },
-      {
-        "date": "Agosto 2026",
-        "title": "Estreno de la producción escénica Humedal",
-        "desc": "Nuestra compañía presenta su más reciente montaje, resultado de un año de laboratorio."
-      },
-      {
-        "date": "Julio 2026",
-        "title": "Nuevo ciclo de talleres abiertos",
-        "desc": "Abrimos talleres de voz, movimiento y creación para la comunidad interesada."
-      }
-    ]
+    "readMore": "Ver más",
+    "news": {
+      "items": [
+        {
+          "date": "Septiembre 2026",
+          "title": "Audiciones abiertas para la nueva generación",
+          "desc": "Convocatoria de admisión para los programas de Actuación, Danza y Creación escénica.",
+          "href": "#"
+        },
+        {
+          "date": "Agosto 2026",
+          "title": "Estreno de la producción escénica Humedal",
+          "desc": "Nuestra compañía presenta su más reciente montaje, resultado de un año de laboratorio.",
+          "href": "#"
+        },
+        {
+          "date": "Julio 2026",
+          "title": "Nuevo ciclo de talleres abiertos",
+          "desc": "Abrimos talleres de voz, movimiento y creación para la comunidad interesada.",
+          "href": "#"
+        }
+      ]
+    },
+    "library": {
+      "items": [
+        {
+          "date": "2026",
+          "title": "Ensayo: Cuerpo y territorio en la escena caribeña",
+          "desc": "Un acercamiento a la relación entre práctica escénica e identidad territorial.",
+          "href": "#"
+        },
+        {
+          "date": "2026",
+          "title": "Notas de laboratorio: proceso creativo de Humedal",
+          "desc": "Registro del proceso de creación de la producción escénica Humedal.",
+          "href": "#"
+        }
+      ]
+    }
   },
   "contact": {
     "heading": "Contacto",
