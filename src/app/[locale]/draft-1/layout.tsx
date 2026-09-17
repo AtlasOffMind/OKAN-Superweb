@@ -167,7 +167,7 @@ export default async function Draft1Layout({
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@escueladearteokan?_r=1&_t=ZS-99ni5B27cVp"
               aria-label="TikTok"
               className="text-zinc-400 transition-colors hover:text-white"
             >
@@ -196,7 +196,7 @@ export default async function Draft1Layout({
               </svg>
             </a>
             <a
-              href="#"
+              href="https://youtube.com/@escuelasuperiordearteokan?si=xrJiHDsbuymJMqNY"
               aria-label="YouTube"
               className="text-zinc-400 transition-colors hover:text-white"
             >

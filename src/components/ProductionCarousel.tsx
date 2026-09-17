@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 export interface ProductionItem {
   title: string;
-  desc?: string;
+  desc?: string | string[];
   date?: string;
   image?: string;
   video?: string;
@@ -68,9 +68,13 @@ export function ProductionCarousel({
                 {item.title}
               </h2>
               {showDetails && item.desc && (
-                <p className="mt-6 max-w-md text-lg leading-relaxed text-zinc-200">
-                  {item.desc}
-                </p>
+                <div className="mt-6 max-w-md space-y-3 text-lg leading-relaxed text-zinc-200">
+                  {(Array.isArray(item.desc) ? item.desc : [item.desc]).map(
+                    (paragraph, index) => (
+                      <p key={`${item.title}-desc-${index}`}>{paragraph}</p>
+                    ),
+                  )}
+                </div>
               )}
               {showDetails && item.date && (
                 <p className="text-brand-300 mt-6 text-sm font-semibold tracking-[0.18em] uppercase">

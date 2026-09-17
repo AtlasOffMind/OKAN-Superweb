@@ -3,7 +3,7 @@ import Image from "next/image";
 export interface ConversationItem {
   image: string;
   title: string;
-  desc: string;
+  desc: string | string[];
   href: string;
 }
 
@@ -36,9 +36,13 @@ export function ConversationGrid({ items }: { items: ConversationItem[] }) {
               <h2 className="font-display text-2xl font-semibold leading-tight">
                 {item.title}
               </h2>
-              <p className="mt-4 text-sm leading-relaxed text-zinc-200">
-                {item.desc}
-              </p>
+              <div className="mt-4 space-y-3 text-sm leading-relaxed text-zinc-200">
+                {(Array.isArray(item.desc) ? item.desc : [item.desc]).map(
+                  (paragraph, index) => (
+                    <p key={`${item.title}-desc-${index}`}>{paragraph}</p>
+                  ),
+                )}
+              </div>
             </div>
           </a>
         ))}

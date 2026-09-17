@@ -199,20 +199,20 @@ export default async function Draft1Home({
       {/* - Foto de fondo en: public/images/sobre OKAN/okan-11-2.jpg                */}
       {/* - Textos modificables en: src/messages/es.json -> "landing.about"         */}
       {/* ========================================================================= */}
-      <section className="relative min-h-[30rem] overflow-hidden">
+      <section className="relative aspect-[4/3] overflow-hidden">
         <Image
-          src="/images/sobre OKAN/okan-11-2.jpg"
+          src="/images/sobre OKAN/Collage.png"
           alt=""
           fill
           sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 mx-auto flex min-h-[30rem] max-w-4xl flex-col items-center justify-center px-6 py-24 text-center md:px-12">
-          <h2 className="font-display text-4xl leading-tight font-semibold tracking-tight text-white md:text-5xl">
+        <div className="relative z-10 mx-auto flex h-full max-w-5xl flex-col items-center justify-center px-6 py-10 text-center md:px-12 md:py-24">
+          <h2 className="font-display text-5xl leading-[0.98] font-semibold tracking-tight text-white sm:text-6xl md:text-7xl">
             {(t.raw("about.text") as string[])[0]}
           </h2>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-zinc-300">
+          <p className="mt-6 max-w-3xl text-xl leading-relaxed text-zinc-300 md:text-2xl">
             {(t.raw("about.text") as string[])[1]}
           </p>
           <Link
