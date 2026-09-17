@@ -77,15 +77,16 @@ export default async function Draft1Layout({
       <footer className="bg-[linear-gradient(135deg,#000000_0%,#3b0764_55%,#000000_100%)] px-6 py-16 text-zinc-300 md:px-12">
         <div className="flex w-full flex-col gap-12 md:flex-row md:justify-between">
           {/* Columna 1: Logo OKAN y descripción institucional */}
-          <div>
+          <div className="max-w-xs">
             <OkanLogo variant="light" width={130} />
             <p className="mt-4 max-w-xs text-sm">
               {(t.raw("about.text") as string[])[0]}
+              {(t.raw("about.text") as string[])[1]}
             </p>
           </div>
 
           {/* Columnas 2, 3 y 4: Enlaces a Programas, OKAN en acción y Datos de Contacto */}
-          <div className="grid grid-cols-1 gap-8 text-sm sm:grid-cols-2 md:grid-cols-3 md:gap-10">
+          <div className="grid grid-cols-1 gap-4 text-sm sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3 md:gap-x-3">
             <div className="flex flex-col gap-3">
               <div className="mb-2 font-semibold text-white">
                 {t("footer.col1")}
@@ -134,13 +135,12 @@ export default async function Draft1Layout({
         {/* Línea divisoria inferior, redes sociales y texto de copyright */}
         <div className="mt-12 flex w-full flex-col gap-6 border-t border-zinc-800 pt-6 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>
-            {t("footer.copyright")} 
+            {t("footer.copyright")}
             <br />
             {/* PENDIENTE: reemplazar el "#" por el enlace del portafolio/redes de Anyel */}
             Fotografía: <a href="#" className="underline hover:text-white">Anyel</a>
             <br />
-            {/* PENDIENTE: reemplazar el "#" por el enlace del portafolio/redes de Gerardo */}
-            Diseño web: <a href="#" className="underline hover:text-white">Gerardo</a>
+            Diseño web: <a href="https://drive.google.com/file/d/1aqxzIr1QwrClFO0VCvbTVxc2xCTL-YFm/view?usp=sharing" className="underline hover:text-white">Gerardo</a>
           </p>
 
           {/* Botones de redes sociales */}

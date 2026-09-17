@@ -78,43 +78,35 @@
     "acting": {
       "title": "Actuación",
       "tagline": "ACTUACIÓN PARA TODOS LOS LENGUAJES DE LA ESCENA.",
+      "planStudy": "VER PLAN DE ESTUDIO",
+      "planHref": "#",
       "desc": [
         "La Licenciatura en Actuación recorre el oficio desde todos los lugares que hoy exige la profesión: entrenamiento actoral, voz y expresión corporal; dramaturgia, historia, filosofía, pensamiento crítico e investigación escénica; creación, laboratorio y montaje; actuación para cámara, casting y doblaje; escenotecnia, gestión cultural y herramientas para comprender cómo se crea, produce y circula un proyecto escénico. La malla confirma además una progresión que llega a dirección para el actor, producción ejecutiva, emprendimiento e investigación aplicada al proyecto de tesis.",
         "Una malla para investigar, analizar, crear, dominar diferentes lenguajes de interpretación, comprender los recursos técnicos de la escena y desarrollar autonomía profesional."
       ],
       "outcomes": [
-        "ESCENA",
-        "CUERPO",
-        "VOZ",
-        "CÁMARA",
-        "PENSAMIENTO",
-        "INVESTIGACIÓN",
-        "CREACIÓN",
-        "PROFESIÓN"
+        "ESCENA · CUERPO · VOZ · CÁMARA · PENSAMIENTO · INVESTIGACIÓN · CREACIÓN · PROFESIÓN"
       ]
     },
     "dance": {
       "title": "Danza contemporánea",
       "tagline": "DANZA CONTEMPORÁNEA PARA LA ESCENA DE HOY",
+      "planStudy": "VER PLAN DE ESTUDIO",
+      "planHref": "#",
       "desc": [
         "La Danza Contemporánea es la columna vertebral de la licenciatura. A su alrededor dialogan ballet clásico, jazz, ritmos del Caribe, folklore mexicano y danzas urbanas con interpretación, composición coreográfica, actuación, voz, historia, filosofía, pensamiento crítico e investigación.",
         "La formación se expande hacia los lenguajes y herramientas que construyen la escena contemporánea: multimedia, espacio, luz, escenografía y escenotecnia; y hacia los conocimientos que permiten desarrollar y sostener proyectos: gestión cultural, economía creativa, fondos, producción ejecutiva y pedagogía para la danza. La malla incorpora además anatomía funcional y kinesiología, música aplicada a la danza, gestión de audiciones y un proceso progresivo de laboratorio coreográfico que culmina en la creación y montaje de la obra de tesis.",
         "Una malla para interpretar, investigar, componer y crear con dominio técnico, pensamiento crítico y comprensión integral de la escena contemporánea."
       ],
       "outcomes": [
-        "DANZA CONTEMPORÁNEA",
-        "TÉCNICA",
-        "CREACIÓN",
-        "PENSAMIENTO",
-        "MULTIMEDIA",
-        "ESCENOTECNIA",
-        "INVESTIGACIÓN",
-        "PROFESIÓN"
+        "DANZA CONTEMPORÁNEA · TÉCNICA · CREACIÓN · PENSAMIENTO · MULTIMEDIA · ESCENOTECNIA · INVESTIGACIÓN · PROFESIÓN"
       ]
     },
     "continuingEd": {
       "title": "Estudios continuos",
       "tagline": "EL CONOCIMIENTO ESCÉNICO NO TIENE UNA SOLA RUTA.",
+      "planStudy": "EXPLORA LA OFERTA",
+      "planHref": "#",
       "desc": [
         "Estudios Continuos expande la Metodología OKAN más allá de las licenciaturas. Es un espacio para especializarse, actualizarse, profesionalizar una práctica y descubrir nuevas aplicaciones de las herramientas escénicas en otros campos del conocimiento y del trabajo.",
         "La oferta integra entrenamiento y profesionalización de intérpretes; actuación, danza, cuerpo y voz; filosofía e investigación del arte; creación interdisciplinaria; cine y audiovisual; artes marciales aplicadas a la escena; dirección, producción y liderazgo de compañías; pedagogía y formación docente.",
@@ -122,14 +114,7 @@
         "Talleres, laboratorios, cursos, programas intensivos y diplomados permiten construir diferentes rutas según la experiencia, la profesión y el objetivo de cada participante. Los convenios y alianzas de OKAN amplian esta plataforma mediante colaboración con artistas, especialistas e instituciones de otros contextos, fortaleciendo la proyección nacional e internacional de sus programas."
       ],
       "outcomes": [
-        "ARTE",
-        "PROFESIONALIZACIÓN",
-        "FILOSOFÍA",
-        "EDUCACIÓN",
-        "COMUNICACIÓN",
-        "LIDERAZGO",
-        "EMPRESA",
-        "NUEVOS CRUCES"
+        "ARTE · PROFESIONALIZACIÓN · FILOSOFÍA · EDUCACIÓN · COMUNICACIÓN · LIDERAZGO · EMPRESA · NUEVOS CRUCES"
       ]
     },
     "cta": {
@@ -141,22 +126,27 @@
       "intro": "OKAN colabora con compañías e instituciones artísticas que amplian la proyección de sus programas.",
       "partners": [
         {
-          "logo": "",
+          "logo": "/images/Pograms/Logos/ARGOS TEATRO.png",
           "name": "",
           "desc": ""
         },
         {
-          "logo": "",
+          "logo": "/images/Pograms/Logos/CORPOREA ENTERPRISE.png",
           "name": "",
           "desc": ""
         },
         {
-          "logo": "",
+          "logo": "/images/Pograms/Logos/GESTARTE.png",
           "name": "",
           "desc": ""
         },
         {
-          "logo": "",
+          "logo": "/images/Pograms/Logos/ISA.png",
+          "name": "",
+          "desc": ""
+        },
+        {
+          "logo": "/images/Pograms/Logos/MIAMI FACTORY THEATRE.png",
           "name": "",
           "desc": ""
         }
@@ -271,21 +261,50 @@
   "okanEnAccion": {
     "agora": {
       "heading": "Ágora OKAN",
-      "tagline": "CONVERSAR. DEBATIR. PENSAR EN VOZ ALTA.",
-      "intro": "Un espacio para conversar y debatir con invitados.",
-      "text": "Ágora OKAN reúne a la comunidad escolar con artistas, pensadores e invitados especiales en conversatorios abiertos que ponen en diálogo la práctica escénica con las ideas que la atraviesan."
+      "intro": "Charlas y encuentros con artistas, académicos especialistas y figuras públicas para compartir ideas, experiencias y conocimiento.",
+      "conversations": [
+        {
+          "image": "/images/Hero/okan-18-3.jpg",
+          "title": "Próximo conversatorio",
+          "desc": "Agrega aquí el tema, las personas invitadas y una breve reseña del encuentro.",
+          "href": "#"
+        }
+      ]
     },
     "laboratorio": {
       "heading": "OKAN Laboratorio Escénico",
-      "tagline": "CREACIÓN Y PRODUCCIÓN ARTÍSTICA PROFESIONAL.",
-      "intro": "Creación y producción artística profesional.",
-      "text": "El Laboratorio Escénico de OKAN es la plataforma de creación donde estudiantes y artistas desarrollan, producen y presentan proyectos escénicos propios, llevando la investigación de aula a la producción profesional."
+      "intro": "Producciones profesionales de teatro y danza que integran a estudiantes, docentes y artistas invitados bajo la dirección de creadores de reconocida trayectoria.",
+      "productions": [
+        {
+          "title": "La mirada de los invisibles",
+          "desc": "Agrega aquí la descripción de la producción.",
+          "date": "Fecha de estreno por confirmar",
+          "image": "/images/Hero/20260707_193020.jpg"
+        },
+        {
+          "title": "El laberinto de las alas",
+          "desc": "Agrega aquí la descripción de la producción.",
+          "date": "Fecha de estreno por confirmar",
+          "image": "/images/Hero/20260707_193406.jpg"
+        },
+        {
+          "title": "Cienagas",
+          "desc": "Agrega aquí la descripción de la producción.",
+          "date": "Fecha de estreno por confirmar",
+          "image": "/images/Hero/20260707_193712.jpg"
+        }
+      ]
     },
     "espectaculos": {
       "heading": "OKAN Espectáculos",
-      "tagline": "PRODUCCIÓN ESCÉNICA PARA LA INDUSTRIA DEL ENTRETENIMIENTO.",
-      "intro": "Producción escénica para la industria del entretenimiento.",
-      "text": "OKAN Espectáculos desarrolla y produce puestas en escena para la industria del entretenimiento, conectando la formación de la escuela con proyectos profesionales de alcance comercial."
+      "intro": "Creación y producción de espectáculos para hoteles, DMC, convenciones, eventos y la industria turística y del entretenimiento.",
+      "repertoire": [
+        {
+          "title": "Próximo espectáculo",
+          "video": "",
+          "poster": "/images/Hero/okan-38-2.jpg"
+        }
+      ]
     }
   },
   "bitacora": {
@@ -334,7 +353,7 @@
   "contact": {
     "heading": "Contacto",
     "intro": "Escríbenos. Respondemos todas tus dudas sobre programas, admisiones y vida estudiantil.",
-    "email": "escueladearteokan@gmail.com",
+    "email": "info@escueladearteokan.com",
     "phone": "+52 998 786 3254",
     "address": "Calle Ciprés 118, esquina Flamboyanes, Alamos 1, SM 311, 77560 Cancún, Q.R.",
     "hours": "Lun – Vie · 9:00 – 18:00",
@@ -345,6 +364,7 @@
     "form": {
       "title": "Escríbenos",
       "name": "Nombre",
+      "age": "Edad",
       "email": "Correo electrónico",
       "gender": "Sexo",
       "genderOptions": {
@@ -357,7 +377,7 @@
       "interestOptions": {
         "acting": "Actuación",
         "dance": "Danza contemporánea",
-        "continuingEd": "Talleres de Estudios continuos"
+        "continuingEd": "Estudios continuos"
       },
       "message": "Mensaje",
       "messageHint": "Máximo 250 caracteres",

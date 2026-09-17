@@ -95,23 +95,14 @@ export default async function Draft1Admissions({
             <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-zinc-400">
               {t("closing.text")}
             </p>
+            <Link
+              href="draft-1/contact"
+              className="bg-brand-600 hover:bg-brand-500 mt-8 inline-block rounded-full px-8 py-3 text-sm font-semibold text-white transition-colors"
+            >
+              {t("cta.button")}
+            </Link>
           </div>
         </div>
-      </section>
-
-      {/* ========================================================================= */}
-      {/* SECCIÓN 4: LLAMADO A LA ACCIÓN FINAL (CTA / CONTACTO)                     */}
-      {/* ========================================================================= */}
-      <section className="bg-[radial-gradient(ellipse_at_top,#24103d_0%,#0a0a0a_62%)] px-6 py-24 text-center text-white md:px-12">
-        <h2 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
-          {t("cta.title")}
-        </h2>
-        <Link
-          href="draft-1/contact"
-          className="bg-brand-600 hover:bg-brand-500 mt-8 inline-block rounded-full px-8 py-3 text-sm font-semibold text-white transition-colors"
-        >
-          {t("cta.button")}
-        </Link>
       </section>
     </>
   );

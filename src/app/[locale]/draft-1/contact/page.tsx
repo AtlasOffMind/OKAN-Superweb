@@ -71,6 +71,7 @@ export default async function Draft1Contact({
             labels={{
               title: t("form.title"),
               name: t("form.name"),
+              age: t("form.age"),
               email: t("form.email"),
               gender: t("form.gender"),
               genderOptions: {

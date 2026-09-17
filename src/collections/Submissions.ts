@@ -17,6 +17,13 @@ export const Submissions: CollectionConfig = {
       required: true,
     },
     {
+      name: "age",
+      type: "number",
+      required: true,
+      min: 1,
+      max: 120,
+    },
+    {
       name: "email",
       type: "email",
       required: true,

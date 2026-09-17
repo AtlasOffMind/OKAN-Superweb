@@ -8,6 +8,7 @@ import config from "@payload-config";
 
 const schema = z.object({
   name: z.string().trim().min(1, "required").max(200),
+  age: z.coerce.number().int().min(1).max(120),
   email: z.string().trim().email(),
   phone: z.string().trim().min(1, "required").max(30),
   gender: z.enum(["male", "female", "other"]),
@@ -26,6 +27,7 @@ export async function submitContact(
 ): Promise<ContactState> {
   const parsed = schema.safeParse({
     name: formData.get("name"),
+    age: formData.get("age"),
     email: formData.get("email"),
     phone: formData.get("phone"),
     gender: formData.get("gender"),
@@ -37,13 +39,13 @@ export async function submitContact(
     return { ok: false, error: "invalid" };
   }
 
-  const { name, email, phone, gender, interest, message } = parsed.data;
+  const { name, age, email, phone, gender, interest, message } = parsed.data;
 
   try {
     const payload = await getPayload({ config });
     await payload.create({
       collection: "submissions",
-      data: { name, email, phone, gender, interest, message },
+      data: { name, age, email, phone, gender, interest, message },
     });
   } catch {
     return { ok: false, error: "storage" };
@@ -61,7 +63,7 @@ export async function submitContact(
         to: [to],
         replyTo: email,
         subject: `Nueva solicitud de ${name}`,
-        text: `Nombre: ${name}\nCorreo: ${email}\nTeléfono: ${phone}\nSexo: ${gender}\nInterés: ${interest}\n\n${message}`,
+        text: `Nombre: ${name}\nEdad: ${age}\nCorreo: ${email}\nTeléfono: ${phone}\nSexo: ${gender}\nInterés: ${interest}\n\n${message}`,
       });
     } catch {
       // El email es secundario: no fallamos el envío por un error de Resend.

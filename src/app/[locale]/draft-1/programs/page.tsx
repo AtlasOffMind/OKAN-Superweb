@@ -91,6 +91,13 @@ export default async function Draft1Programs({
                     </li>
                   ))}
                 </ul>
+                <a
+                  href={t(`${key}.planHref`)}
+                  className="text-brand-300 hover:text-white inline-flex w-fit items-center gap-2 text-sm font-semibold transition-colors"
+                >
+                  {t(`${key}.planStudy`)}
+                  <span aria-hidden="true">-&gt;</span>
+                </a>
               </div>
             </article>
           ))}
@@ -114,20 +121,20 @@ export default async function Draft1Programs({
 
       {/* ========================================================================= */}
       {/* SECCIÓN 4: VINCULACIÓN INTERNACIONAL (COMPAÑÍAS/INSTITUCIONES ALIADAS)    */}
-      {/* - Espacio reservado para 4 compañías: logo arriba, descripción abajo.     */}
+      {/* - Espacio reservado para 4 compañías: solo logos de mayor tamaño.         */}
       {/* - COMPLETAR MANUALMENTE en: src/messages/es.json y en.json ->             */}
       {/*   "programs.international.partners" (logo, name y desc de cada compañía) */}
       {/*   "logo" es la ruta de la imagen en /public, ej: "/images/partners/x.png" */}
       {/* ========================================================================= */}
-      <section className="bg-zinc-950 px-6 py-24 text-white md:px-12">
+      <section className="bg-[radial-gradient(ellipse_at_top,#24103d_0%,#0a0a0a_62%)] px-6 py-24 text-white md:px-12">
         <div className="mx-auto max-w-5xl">
-          <h2 className="font-display text-brand-500 text-4xl font-semibold tracking-tight md:text-5xl">
+          <h2 className="font-display text-brand-400 text-4xl font-semibold tracking-tight md:text-5xl">
             {t("international.heading")}
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-zinc-400">
             {t("international.intro")}
           </p>
-          <div className="mt-14 grid gap-10 sm:grid-cols-2">
+          <div className="mt-14 grid gap-6 sm:grid-cols-2">
             {t
               .raw("international.partners")
               .map(
@@ -137,28 +144,23 @@ export default async function Draft1Programs({
                 ) => (
                   <div
                     key={index}
-                    className="flex flex-col items-center gap-5 rounded-2xl border border-zinc-800 p-8 text-center"
+                    className="flex min-h-64 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#f3e8ff_0%,#fefce8_55%,#e0f2fe_100%)] p-8"
                   >
-                    {/* Logo de la compañía (arriba) */}
-                    <div className="flex h-20 w-full items-center justify-center">
+                    <div className="flex h-48 w-full items-center justify-center">
                       {partner.logo ? (
                         <Image
                           src={partner.logo}
                           alt={partner.name}
-                          width={200}
-                          height={80}
-                          className="max-h-20 w-auto object-contain"
+                          width={420}
+                          height={192}
+                          className={`max-h-48 w-auto max-w-full object-contain ${partner.logo.includes("ARGOS") ? "scale-[1.45]" : ""}`}
                         />
                       ) : (
-                        <div className="flex h-20 w-full items-center justify-center rounded-lg border border-dashed border-zinc-700 text-xs tracking-widest text-zinc-600 uppercase">
+                        <div className="flex h-48 w-full items-center justify-center rounded-lg border border-dashed border-zinc-300 text-xs tracking-widest text-zinc-400 uppercase">
                           Logo
                         </div>
                       )}
                     </div>
-                    {/* Descripción de la colaboración (abajo) */}
-                    <p className="min-h-[1.5em] max-w-sm leading-relaxed text-zinc-400">
-                      {partner.desc}
-                    </p>
                   </div>
                 ),
               )}

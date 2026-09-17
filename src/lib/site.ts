@@ -29,8 +29,8 @@ export const navLinks: NavLink[] = [
       { key: "espectaculos", path: "/okan-en-accion/espectaculos" },
     ],
   },
-  { key: "bitacora", path: "/bitacora" },
   { key: "admissions", path: "/admissions" },
+  { key: "bitacora", path: "/bitacora" },
   { key: "contact", path: "/contact" },
 ];
 

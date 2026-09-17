@@ -20,26 +20,26 @@
     },
     "hero": {
       "eyebrow": "School of the Arts",
-      "title": "We train artists for the stage",
-      "subtitle": "Acting, dance and stage creation in a rigorous, contemporary and deeply human education project.",
-      "primary": "Apply for admission",
-      "secondary": "Explore programs"
+      "title": "ART IS MORE THAN TALENT",
+      "subtitle": "IT IS CRAFT. THOUGHT. IDENTITY. PROFESSION.",
+      "primary": "Apply now",
+      "secondary": "Discover OKAN"
     },
     "programs": {
       "heading": "Programs",
       "subheading": "Three paths, one calling",
-      "readMore": "Read more",
+      "readMore": "EXPLORE THE PROGRAM",
       "acting": {
         "title": "Acting",
-        "desc": "A comprehensive training to develop presence, voice, body and imagination. Explore text, creation and collaborative practice with rigor, curiosity and a commitment to the stage."
+        "desc": "Your body. Your voice. Your truth on stage. Train, explore, create. Make the stage your profession."
       },
       "dance": {
-        "title": "Dance",
-        "desc": "Train technique, musicality and body awareness to turn movement into language. Combine ballet, contemporary dance, jazz and choreographic creation."
+        "title": "Contemporary dance",
+        "desc": "Your body. Your language. Your way of inhabiting the stage. Train, research, create. Make movement your profession."
       },
       "continuingEd": {
         "title": "Continuing Studies",
-        "desc": "Workshops, open courses and complementary training to keep growing as an artist, on and off the program.",
+        "desc": "There is always something new to learn, and new places to take what you know. Workshops, labs and diplomas for artists, professionals and creative minds.",
         "cta": "EXPLORE THE OFFERING"
       }
     },
@@ -58,7 +58,7 @@
       "heading": "About OKAN",
       "text": [
         "WE ARE A SCHOOL OF THE ARTS.",
-        "Here art is trained, conceived, and created. Find your voice, take it further, and make it your profession."
+        "Here art is trained, thought through and made. Find your voice, take it further and turn it into a profession."
       ]
     },
     "footer": {
@@ -74,37 +74,39 @@
   "programs": {
     "eyebrow": "Performing arts training",
     "heading": "Academic programs",
-    "intro": "Three performing arts degrees built on comprehensive, hands-on training grounded in the contemporary stage.",
+    "intro": "Two degree programs and Continuing Studies connected by the OKAN Methodology: technique, body, thought, research and creation converge in a professional practice ecosystem with national and international reach.",
     "acting": {
       "title": "Acting",
       "tagline": "The actor as creator",
+      "planStudy": "VIEW STUDY PLAN",
+      "planHref": "#",
       "desc": [
         "The Bachelor's Degree in Acting explores the craft from every angle the profession demands today: actor training, voice and physical expression; dramaturgy, history, philosophy, critical thinking and performance research; creation, laboratory work and staging; acting for camera, casting and dubbing; stagecraft, cultural management and the tools to understand how a stage project is created, produced and circulated. The curriculum also builds toward directing actors, executive production, entrepreneurship and research applied to the thesis project.",
         "A curriculum to investigate, analyze, create, master different languages of performance, understand the technical resources of the stage and develop professional autonomy."
       ],
       "outcomes": [
-        "Actor and voice training",
-        "Dramaturgy for the actor",
-        "Stage laboratory and production"
+        "STAGE · BODY · VOICE · CAMERA · THOUGHT · RESEARCH · CREATION · PROFESSION"
       ]
     },
     "dance": {
       "title": "Dance",
       "tagline": "The body as language",
+      "planStudy": "VIEW STUDY PLAN",
+      "planHref": "#",
       "desc": [
         "Contemporary Dance is the backbone of the degree. Around it, classical ballet, jazz, Caribbean rhythms, Mexican folklore and urban dance engage in dialogue with performance, choreographic composition, acting, voice, history, philosophy, critical thinking and research.",
         "The training expands toward the languages and tools that build the contemporary stage: multimedia, space, light, set design and stagecraft; and toward the knowledge needed to develop and sustain projects: cultural management, the creative economy, funding, executive production and pedagogy for dance. The curriculum also includes functional anatomy and kinesiology, music applied to dance, audition management and a progressive choreographic lab process that culminates in the creation and staging of the thesis work.",
         "A curriculum to perform, research, compose and create with technical mastery, critical thinking and a comprehensive understanding of the contemporary stage."
       ],
       "outcomes": [
-        "Ballet and classical technique",
-        "Contemporary dance",
-        "Improvisation and choreography"
+        "CONTEMPORARY DANCE · TECHNIQUE · CREATION · THOUGHT · MULTIMEDIA · STAGECRAFT · RESEARCH · PROFESSION"
       ]
     },
     "continuingEd": {
       "title": "Continuing Studies",
       "tagline": "Continuing education and workshops",
+      "planStudy": "EXPLORE THE OFFERING",
+      "planHref": "#",
       "desc": [
         "Continuing Studies extends the OKAN Methodology beyond the degree programs. It is a space to specialize, update knowledge, professionalize a practice and discover new applications of stage tools in other fields of knowledge and work.",
         "The offering combines training and professional development for performers; acting, dance, body and voice; philosophy and research in the arts; interdisciplinary creation; film and audiovisual media; martial arts applied to the stage; directing, production and company leadership; pedagogy and teacher training.",
@@ -112,9 +114,7 @@
         "Workshops, labs, courses, intensive programs and diplomas make it possible to build different paths according to each participant's experience, profession and goal. OKAN's agreements and partnerships expand this platform through collaboration with artists, specialists and institutions from other contexts, strengthening the national and international reach of its programs."
       ],
       "outcomes": [
-        "Intensive workshops and labs",
-        "Open movement and voice courses",
-        "Professional development and certificate courses"
+        "ART · PROFESSIONAL DEVELOPMENT · PHILOSOPHY · EDUCATION · COMMUNICATION · LEADERSHIP · BUSINESS · NEW CROSSINGS"
       ]
     },
     "cta": {
@@ -126,22 +126,27 @@
       "intro": "OKAN collaborates with arts companies and institutions that expand the reach of its programs.",
       "partners": [
         {
-          "logo": "",
+          "logo": "/images/Pograms/Logos/ARGOS TEATRO.png",
           "name": "",
           "desc": ""
         },
         {
-          "logo": "",
+          "logo": "/images/Pograms/Logos/CORPOREA ENTERPRISE.png",
           "name": "",
           "desc": ""
         },
         {
-          "logo": "",
+          "logo": "/images/Pograms/Logos/GESTARTE.png",
           "name": "",
           "desc": ""
         },
         {
-          "logo": "",
+          "logo": "/images/Pograms/Logos/ISA.png",
+          "name": "",
+          "desc": ""
+        },
+        {
+          "logo": "/images/Pograms/Logos/MIAMI FACTORY THEATRE.png",
           "name": "",
           "desc": ""
         }
@@ -214,6 +219,7 @@
     "heading": "About OKAN",
     "intro": "We are a School of the Arts where craft, thought, identity and creation are part of the same process. We train artists to understand what they do, discover their own voice and turn their practice into a profession.",
     "mission": "Our mission",
+    "missiontitle": "Our mission",
     "missionText": "To train performing artists with solid technical, creative, and intellectual tools, capable of researching, creating, and practicing their profession with identity, critical thinking, and awareness of their community and territory.",
     "story": "Our story",
     "storyTitle": "A SCHOOL THAT WAS BORN DOING.",
@@ -255,21 +261,50 @@
   "okanEnAccion": {
     "agora": {
       "heading": "Ágora OKAN",
-      "tagline": "TALK. DEBATE. THINK OUT LOUD.",
-      "intro": "A space to talk and debate with guests.",
-      "text": "Ágora OKAN brings the school community together with artists, thinkers and special guests in open conversations that put stage practice in dialogue with the ideas that run through it."
+      "intro": "Talks and encounters with artists, academic specialists and public figures to share ideas, experiences and knowledge.",
+      "conversations": [
+        {
+          "image": "/images/Hero/okan-18-3.jpg",
+          "title": "Upcoming conversation",
+          "desc": "Add the topic, guest speakers and a brief overview of the session here.",
+          "href": "#"
+        }
+      ]
     },
     "laboratorio": {
       "heading": "OKAN Laboratorio Escénico",
-      "tagline": "PROFESSIONAL ARTISTIC CREATION AND PRODUCTION.",
-      "intro": "Professional artistic creation and production.",
-      "text": "OKAN's Stage Laboratory is the creation platform where students and artists develop, produce and present their own stage projects, taking classroom research into professional production."
+      "intro": "Professional theatre and dance productions involving students, faculty and guest artists under the direction of creators with recognized careers.",
+      "productions": [
+        {
+          "title": "The gaze of the invisible",
+          "desc": "Add the production description here.",
+          "date": "Opening date to be confirmed",
+          "image": "/images/Hero/20260707_193020.jpg"
+        },
+        {
+          "title": "The labyrinth of wings",
+          "desc": "Add the production description here.",
+          "date": "Opening date to be confirmed",
+          "image": "/images/Hero/20260707_193406.jpg"
+        },
+        {
+          "title": "Swamps",
+          "desc": "Add the production description here.",
+          "date": "Opening date to be confirmed",
+          "image": "/images/Hero/20260707_193712.jpg"
+        }
+      ]
     },
     "espectaculos": {
       "heading": "OKAN Espectáculos",
-      "tagline": "STAGE PRODUCTION FOR THE ENTERTAINMENT INDUSTRY.",
-      "intro": "Stage production for the entertainment industry.",
-      "text": "OKAN Espectáculos develops and produces stage productions for the entertainment industry, connecting the school's training with professional projects of commercial reach."
+      "intro": "Creation and production of shows for hotels, DMCs, conventions, events and the tourism and entertainment industries.",
+      "repertoire": [
+        {
+          "title": "Upcoming show",
+          "video": "",
+          "poster": "/images/Hero/okan-38-2.jpg"
+        }
+      ]
     }
   },
   "bitacora": {
@@ -318,9 +353,9 @@
   "contact": {
     "heading": "Contact",
     "intro": "Write to us. We answer all your questions about programs, admissions and student life.",
-    "email": "hola@okan.edu.mx",
-    "phone": "+52 998 000 0000",
-    "address": "Cancún, Quintana Roo, México",
+    "email": "info@escueladearteokan.com",
+    "phone": "+52 998 786 3254",
+    "address": "Calle Ciprés 118, esquina Flamboyanes, Alamos 1, SM 311, 77560 Cancún, Q.R.",
     "hours": "Mon – Fri · 9:00 – 18:00",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
@@ -329,6 +364,7 @@
     "form": {
       "title": "Write to us",
       "name": "Name",
+      "age": "Age",
       "email": "Email",
       "gender": "Gender",
       "genderOptions": {

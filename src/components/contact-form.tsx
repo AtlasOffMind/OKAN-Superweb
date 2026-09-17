@@ -11,6 +11,7 @@ export const MESSAGE_MAX_LENGTH = 250;
 export interface ContactLabels {
   title: string;
   name: string;
+  age: string;
   email: string;
   gender: string;
   genderOptions: { male: string; female: string; other: string };
@@ -109,6 +110,15 @@ export function ContactForm({
         name="name"
         required
         placeholder={labels.name}
+        className={fieldStyles[variant]}
+      />
+      <input
+        type="number"
+        name="age"
+        required
+        min="1"
+        max="120"
+        placeholder={labels.age}
         className={fieldStyles[variant]}
       />
       <input
