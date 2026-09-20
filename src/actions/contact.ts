@@ -53,7 +53,7 @@ export async function submitContact(
 
   const apiKey = process.env.RESEND_API_KEY;
   const from = process.env.RESEND_FROM;
-  const to = process.env.CONTACT_EMAIL || "hola@okan.edu.mx";
+  const to = process.env.CONTACT_EMAIL || "info@escueladearteokan.com";
 
   if (apiKey && from) {
     try {

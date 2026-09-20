@@ -16,8 +16,8 @@ export interface FacultyMember {
     file: string;
     role: string;
     roleEn: string;
-    bio: string;
-    bioEn: string;
+    bio: string | string[];
+    bioEn: string | string[];
 }
 
 export const faculty: FacultyMember[] = [
@@ -52,6 +52,37 @@ export const faculty: FacultyMember[] = [
         roleEn: "Director of Marketing",
         bio: "Economista, estratega digital y especialista en marketing para la industria creativa. Es Licenciada en Economía, cuenta con MBA en Administración de Empresas y Maestría en Marketing Digital y Comercio Electrónico, además de diplomados en transformación digital, e-business y habilidades directivas. Tiene más de dos décadas de experiencia en estrategia digital, comercio electrónico y desarrollo de marca para empresas en México y Centroamérica. Es especialista en posicionamiento web, redes sociales y estrategia SEO aplicada a artistas, eventos culturales y proyectos creativos. Es fundadora de OKAN y Directora del Área de Mercadotecnia.",
         bioEn: "Economist and digital strategist specializing in marketing, positioning and digital transformation for the creative industries.",
+    },
+    {
+        name: "Sandra Fernández Hassey",
+        file: "/images/profesores/Sandra Fernández Hassey.jpeg",
+        role: "Coordinadora de Admisiones y Vinculación Institucional",
+        roleEn: "Admissions and Institutional Relations Coordinator",
+        bio: ["Licenciada en Ciencias de la Comunicación, publirrelacionista y productora audiovisual, con formación en desarrollo humano y educación emocional. Es fundadora de IntegraSion, proyecto enfocado en el autoconocimiento y la transformación emocional. Su trayectoria integra comunicación, relaciones humanas y acompañamiento de jóvenes y adultos.",
+            "En OKAN coordina los procesos de admisión y vinculación institucional, acompañando la incorporación de nuevos estudiantes y fortaleciendo las relaciones de la escuela con instituciones, organizaciones y su comunidad. Su trabajo articula comunicación y desarrollo humano para construir vínculos cercanos y coherentes con el proyecto educativo de OKAN."
+        ],
+        bioEn: ["Bachelor of Communication Sciences, public relations specialist and audiovisual producer, with training in human development and emotional education. She is the founder of IntegraSion, a project focused on self-knowledge and emotional transformation. Her work combines communication, human relations and support for young people and adults.", "At OKAN, she coordinates admissions and institutional relations, supporting new students and strengthening the school's connections with institutions, organizations and its community. Her work connects communication and human development to build close relationships aligned with OKAN's educational project."],
+    },
+    {
+        name: "Daniel Moya",
+        file: "/images/profesores/Daniel Moya.jpeg",
+        role: "Comunicación Digital, Producción y Logística.",
+        roleEn: "Digital Communication, Production and Logistics",
+        bio: ["Profesional de la producción escénica y la comunicación digital, con formación en asistencia de producción en el Centro de Estudios de Radio y Televisión de Cuba. Su experiencia integra coordinación logística de espectáculos y eventos culturales, gestión de elencos y recursos técnicos, creación de contenidos y manejo estratégico de redes sociales. Ha participado en proyectos como Cuba Espectacular, el estreno teatral Cuarentena y la producción del evento de cierre de la telenovela El Derecho de Soñar, además de colaborar en proyectos culturales y sociales en Cuba y México.",
+            "En OKAN Escuela Superior de Arte forma parte del equipo de producción y comunicación, participando en la logística institucional, la organización operativa y la gestión de la comunicación digital. Su perfil conecta las necesidades creativas, técnicas y comunicativas de los proyectos, contribuyendo a su desarrollo tanto en el espacio escénico como en su relación con las audiencias."
+        ],
+        bioEn: ["Stage production and digital communication professional, trained in production assistance at Cuba's Radio and Television Studies Center. His experience includes logistics for performances and cultural events, cast and technical resource management, content creation and strategic social media management. He has participated in projects including Cuba Espectacular, the theatre premiere Cuarentena and the closing event for the television series El Derecho de Soñar, as well as cultural and social projects in Cuba and Mexico.", "At OKAN School of the Arts, he is part of the production and communications team, contributing to institutional logistics, operational organization and digital communication. His profile connects the creative, technical and communication needs of each project, supporting its development on stage and in its relationship with audiences."],
+    },
+    {
+        name: "Odalis Suárez Almeida",
+        file: "/images/profesores/Daniel Moya.jpeg",
+        role: "Departamento de Admisiones.",
+        roleEn: "Admissions Department",
+        bio: ["Ingeniera Industrial graduada del Instituto Superior Politécnico José Antonio Echeverría (CUJAE), de La Habana, Cuba. Inició su trayectoria profesional en la Empresa de Ómnibus Urbanos de La Habana, donde realizó su periodo de adiestramiento y servicio social.",
+            "Posteriormente desarrolló funciones de gestión comercial en la Empresa de Talleres de Ómnibus José María Pérez, conocida como El Naranjito, donde llegó a desempeñarse como gerente comercial. Continuó su carrera en el Instituto Nacional de Recursos Hidráulicos de Cuba como especialista superior en Organización del Trabajo y los Salarios, consolidando experiencia en gestión, organización y procesos administrativos.",
+            "Actualmente forma parte del Departamento de Admisiones de OKAN Escuela Superior de Arte, donde aplica su experiencia organizativa y administrativa al acompañamiento y seguimiento de los procesos de ingreso de nuevos estudiantes."
+        ],
+        bioEn: ["Industrial Engineer graduated from the José Antonio Echeverría Higher Polytechnic Institute (CUJAE) in Havana, Cuba. She began her professional career at the Havana Urban Bus Company, completing her training period and social service there.", "She later worked in commercial management at the José María Pérez Bus Workshop Company, known as El Naranjito, where she became commercial manager. She continued her career at Cuba's National Institute of Hydraulic Resources as a senior specialist in Work Organization and Salaries, consolidating experience in management, organization and administrative processes.", "She is currently part of OKAN School of the Arts' Admissions Department, applying her organizational and administrative experience to supporting and following up on new student admissions."],
     },
     {
         name: "Yailín Coppola",
@@ -110,20 +141,12 @@ export const faculty: FacultyMember[] = [
         bioEn: "Anthropologist, researcher and filmmaker working across documentary cinema, visual anthropology, memory and identity.",
     },
     {
-        name: "Lázaro Alejandro Batista Burunate",
-        file: "/images/profesores/Lazaro-Alejandro-Batista-Burunate.png",
+        name: "Jorge Pedro Hernández Medero",
+        file: "/images/profesores/Jorge-Pedro-Hernández-Medero.png",
         role: "Docente",
         roleEn: "Faculty",
-        bio: "Bailarín, coreógrafo, docente y director de Prisma Dance Theater, compañía que fundó en 2021 como espacio de creación e investigación en danza contemporánea. Es licenciado en Danza Contemporánea por el Instituto Superior de Arte de Cuba y cuenta con una Maestría en Procesos Formativos de la Enseñanza en las Artes. Tiene más de dieciséis años de trayectoria escénica en Cuba, Bélgica, Alemania, Ecuador, España, Italia, Portugal y México. Su práctica combina investigación del movimiento, creación, formación profesional e intercambio cultural internacional.",
-        bioEn: "Dancer, choreographer and director of Prisma Dance Theater. His practice combines movement research, creation and professional training.",
-    },
-    {
-        name: "Greys Rosales",
-        file: "/images/profesores/Greys-Rosales.png",
-        role: "Docente",
-        roleEn: "Faculty",
-        bio: "Es actriz, bailarina, coreógrafa e investigadora escénica, egresada de la Escuela Nacional de Arte (ENA) de Cuba con Título de Oro en Actuación y estudiante de la Licenciatura en Teatrología y Dramaturgia del Instituto Superior de Arte (ISA). Su formación inició en la danza contemporánea desde la enseñanza elemental, consolidando una trayectoria interdisciplinaria que integra interpretación, creación, investigación y pedagogía. Ha desarrollado una destacada carrera artística en Cuba, México y Europa, participando en festivales y proyectos internacionales en España, Portugal, Bélgica, Alemania y México. Como directora de Prisma Dance Theater, impulsa propuestas de creación escénica contemporánea que exploran el diálogo entre la danza y el teatro. Asimismo, ha colaborado con reconocidas agrupaciones como Teatro Buendía, Teatro El Público, Nave Oficio de Isla y GPS Teatro, desempeñándose como actriz y asistente de dirección. Su experiencia docente incluye la impartición de talleres especializados en expresión corporal y danzas afrocubanas, promoviendo el desarrollo técnico, creativo y expresivo de nuevas generaciones de artistas escénicos. En OKAN aporta una visión integral de la formación artística, donde la disciplina, la investigación y la creación convergen para impulsar procesos de aprendizaje innovadores y comprometidos con la escena contemporánea.",
-        bioEn: "Actor, dancer, choreographer and performance researcher whose work brings together acting, dance, contemporary creation and pedagogy.",
+        bio: "Licenciado en Arte Danzario, especialidad Folklore, y Máster en Cultura Audiovisual por la Universidad de las Artes (ISA), con formación en Teatro y categoría de Director Artístico de Espectáculos Musicales de Primer Nivel. Cuenta con más de veinte años de experiencia como director artístico, coreógrafo, actor y creador escénico, y ha desarrollado su trayectoria en espectáculos musicales, danza, teatro, televisión y proyectos de difusión cultural.  En OKAN es profesor de Expresión Corporal y forma parte de la Dirección Artística de los espectáculos orientados a la industria del entretenimiento turístico, integrando su experiencia en movimiento, composición escénica y dirección artística a los procesos de formación y creación profesional de la escuela.",
+        bioEn: "Bachelor of Dance Art in Folklore and Master in Audiovisual Culture from the University of the Arts (ISA), with theater training and First-Level Musical Show Artistic Director accreditation. With over twenty years of experience as an artistic director, choreographer, actor, and stage creator, he has worked across musical theater, dance, television, and cultural projects. At OKAN, he teaches Body Expression and contributes to the Artistic Direction of tourist entertainment productions, integrating movement, composition, and direction into professional training.",
     },
     {
         name: "Doriam Díaz Goenaga",
@@ -132,13 +155,6 @@ export const faculty: FacultyMember[] = [
         roleEn: "Psychologist",
         bio: "Psicóloga y especialista en acompañamiento psicopedagógico en procesos artísticos. Es Licenciada en Psicología por la Universidad de La Habana. En OKAN desarrolla procesos de acompañamiento integral orientados al bienestar emocional y al desarrollo humano dentro de la formación artística. Su trabajo integra psicología clínica, dinámicas grupales y herramientas expresivas aplicadas a la formación escénica y la conciencia emocional. En la escuela es profesora de Psicodrama y Psicodanza.",
         bioEn: "Psychologist specializing in psychopedagogical support. At OKAN, she supports emotional wellbeing through Psychodrama and Psychodance.",
-    },
-    {
-        name: "Jorge Pedro Hernández Medero",
-        file: "/images/profesores/Jorge-Pedro-Hernández-Medero.png",
-        role: "Docente",
-        roleEn: "Faculty",
-        bio: "Licenciado en Arte Danzario, especialidad Folklore, y Máster en Cultura Audiovisual por la Universidad de las Artes (ISA), con formación en Teatro y categoría de Director Artístico de Espectáculos Musicales de Primer Nivel. Cuenta con más de veinte años de experiencia como director artístico, coreógrafo, actor y creador escénico, y ha desarrollado su trayectoria en espectáculos musicales, danza, teatro, televisión y proyectos de difusión cultural.  En OKAN es profesor de Expresión Corporal y forma parte de la Dirección Artística de los espectáculos orientados a la industria del entretenimiento turístico, integrando su experiencia en movimiento, composición escénica y dirección artística a los procesos de formación y creación profesional de la escuela.",
-        bioEn: "Bachelor of Dance Art in Folklore and Master in Audiovisual Culture from the University of the Arts (ISA), with theater training and First-Level Musical Show Artistic Director accreditation. With over twenty years of experience as an artistic director, choreographer, actor, and stage creator, he has worked across musical theater, dance, television, and cultural projects. At OKAN, he teaches Body Expression and contributes to the Artistic Direction of tourist entertainment productions, integrating movement, composition, and direction into professional training.",
+
     },
 ];

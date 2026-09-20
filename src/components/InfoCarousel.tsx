@@ -38,7 +38,7 @@ export default function InfoCarousel({ items, linkLabel }: InfoCarouselProps) {
                 640: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
             }}
-            className="info-carousel !overflow-hidden !px-1 !py-2"
+            className="info-carousel !overflow-hidden !px-1 !py-2 [&_.swiper-button-next]:h-11 [&_.swiper-button-next]:w-11 [&_.swiper-button-prev]:h-11 [&_.swiper-button-prev]:w-11"
         >
             {items.map((item, index) => (
                 <SwiperSlide key={`${item.title}-${index}`} className="!h-auto">

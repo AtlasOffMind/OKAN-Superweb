@@ -54,6 +54,16 @@ export const Submissions: CollectionConfig = {
       ],
     },
     {
+      name: "admissionDate",
+      type: "select",
+      options: [
+        { label: "Enero 2027", value: "january-2027" },
+        { label: "Septiembre 2027", value: "september-2027" },
+        { label: "Enero 2028", value: "january-2028" },
+        { label: "Estoy pensándolo", value: "considering" },
+      ],
+    },
+    {
       name: "message",
       type: "textarea",
       required: true,

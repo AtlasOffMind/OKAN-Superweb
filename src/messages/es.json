@@ -68,6 +68,7 @@
       "ctaText": "Da el paso. Nosotros ponemos la escuela.",
       "ctaButton": "Aplica ahora",
       "ctaSecondary": "Conoce OKAN",
+      "privacy": "Política de privacidad",
       "copyright": "OKAN Escuela Superior de Arte. Todos los derechos reservados."
     }
   },
@@ -190,6 +191,37 @@
     "cta": {
       "title": "¿Listo para postularte?",
       "button": "Aplica ahora"
+    },
+    "applicationForm": {
+      "open": "Aplica ahora",
+      "close": "Cerrar formulario",
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "email": "Correo electrónico",
+      "age": "Edad",
+      "gender": "Sexo",
+      "genderOptions": {
+        "male": "Masculino",
+        "female": "Femenino",
+        "other": "Otro"
+      },
+      "program": "Licenciatura",
+      "programOptions": {
+        "acting": "Actuación",
+        "dance": "Danza contemporánea",
+        "continuingEd": "Estudios continuos"
+      },
+      "admissionDate": "Fecha de ingreso",
+      "admissionDateOptions": {
+        "january2027": "Semestre enero 2027",
+        "september2027": "Semestre septiembre 2027",
+        "january2028": "Semestre enero 2028",
+        "considering": "Estoy pensándolo"
+      },
+      "submit": "Enviar solicitud",
+      "sending": "Enviando…",
+      "success": "¡Gracias! Recibimos tu solicitud.",
+      "error": "No pudimos enviar tu solicitud. Intenta de nuevo."
     }
   },
   "life": {
@@ -267,9 +299,9 @@
           "image": "/images/OKAN en accion/Agora/Dra. Natividad Norma Medero Hernández.jpeg",
           "title": "Cuando el arte se vuelve mercancía: imágenes que seducen y conciencias que se apagan.",
           "desc": [
-          "¿Qué ocurre cuando el valor del arte comienza a medirse por su precio, popularidad o número de visualizaciones? La industria cultural puede transformar la creación en un producto de consumo rápido: imágenes seductoras, emociones inmediatas y fórmulas diseñadas para captar nuestra atención. El problema no es que el arte circule o se comercialice, sino que el mercado se convierta en su único criterio de valor. Esta charla propone recuperar una mirada crítica capaz de distinguir entre la imagen que simplemente seduce y la obra que, además de conmovernos, despierta preguntas, pensamiento y sensibilidad.",
-          " Dra. Natividad Norma Medero Hernández es Doctora en Ciencias Filosóficas, Master en Educación por el Arte y Animación Sociocultural. Profesora titular e investigadora, especializada en Estética, Filosofía del Arte y Prácticas de Arte. Ha dedicado su trayectoria al estudio de la cultura, el arte y sus relaciones con el poder y la sociedad. Su pensamiento crítico se nutre de una profunda vocación humanista y de más de cuatro décadas dedicadas a la docencia"
-        ],
+            "¿Qué ocurre cuando el valor del arte comienza a medirse por su precio, popularidad o número de visualizaciones? La industria cultural puede transformar la creación en un producto de consumo rápido: imágenes seductoras, emociones inmediatas y fórmulas diseñadas para captar nuestra atención. El problema no es que el arte circule o se comercialice, sino que el mercado se convierta en su único criterio de valor. Esta charla propone recuperar una mirada crítica capaz de distinguir entre la imagen que simplemente seduce y la obra que, además de conmovernos, despierta preguntas, pensamiento y sensibilidad.",
+            " Dra. Natividad Norma Medero Hernández es Doctora en Ciencias Filosóficas, Master en Educación por el Arte y Animación Sociocultural. Profesora titular e investigadora, especializada en Estética, Filosofía del Arte y Prácticas de Arte. Ha dedicado su trayectoria al estudio de la cultura, el arte y sus relaciones con el poder y la sociedad. Su pensamiento crítico se nutre de una profunda vocación humanista y de más de cuatro décadas dedicadas a la docencia"
+          ],
           "href": "#"
         }
       ]
@@ -280,33 +312,38 @@
       "productions": [
         {
           "title": "La mirada de los invisibles",
-          "desc": [" Un grupo de jóvenes intenta encontrar su lugar en un mundo que los mira sin verlos. Sus historias se cruzan entre exclusión, violencia, miedo y necesidad de pertenecer, hasta que encontrarse con el otro comienza a romper el aislamiento.",
-                   " Puesta en escena y dirección general: Yailin Coppola y Ernesto Tamayo.",
-                   " Diseño coreográfico: Carolina Zepeda,",
-                   " Producción: OKAN Laboratorio Escénico"],
+          "desc": [
+            " Un grupo de jóvenes intenta encontrar su lugar en un mundo que los mira sin verlos. Sus historias se cruzan entre exclusión, violencia, miedo y necesidad de pertenecer, hasta que encontrarse con el otro comienza a romper el aislamiento.",
+            " Puesta en escena y dirección general: Yailin Coppola y Ernesto Tamayo.",
+            " Diseño coreográfico: Carolina Zepeda,",
+            " Producción: OKAN Laboratorio Escénico"
+          ],
           "date": "Fecha de estreno por confirmar",
           "image": "/images/Hero/20260707_193020.jpg"
         },
         {
           "title": "El laberinto de las alas",
-          "desc":[ "(Laboratorio de Intérprete Escénico Expandido)",
-                   "Diez jóvenes atraviesan un laberinto construido con aquello que traen consigo: recuerdos, miedos, deseos, contradicciones y sueños. En el recorrido, cada búsqueda individual comienza a encontrarse con las demás, hasta descubrir que pertenecer no significa dejar de ser uno mismo, sino reconocer qué podemos ofrecer a una comunidad.",
-                   "Idea original: Ernesto Tamayo",
-                   "Puesta en escena: Yailin Coppola",
-                   "Diseño coreográfico: Carolina Zepeda",
-                   "Producción: OKAN Laboratorio Escénico",
-                   "Proyecto apoyado por la Convocatoria Nacional de Danza 2026, a través del Programa de Residencias Artísticas en Danza (PRAD), Danza INBAL."],
+          "desc": [
+            "(Laboratorio de Intérprete Escénico Expandido)",
+            "Diez jóvenes atraviesan un laberinto construido con aquello que traen consigo: recuerdos, miedos, deseos, contradicciones y sueños. En el recorrido, cada búsqueda individual comienza a encontrarse con las demás, hasta descubrir que pertenecer no significa dejar de ser uno mismo, sino reconocer qué podemos ofrecer a una comunidad.",
+            "Idea original: Ernesto Tamayo",
+            "Puesta en escena: Yailin Coppola",
+            "Diseño coreográfico: Carolina Zepeda",
+            "Producción: OKAN Laboratorio Escénico",
+            "Proyecto apoyado por la Convocatoria Nacional de Danza 2026, a través del Programa de Residencias Artísticas en Danza (PRAD), Danza INBAL."
+          ],
           "date": "Fecha de estreno por confirmar",
           "image": "/images/Hero/20260707_193406.jpg"
         },
         {
           "title": "Ciénaga",
-          "desc":[ "(Proceso de investigación escénica: cuerpo, memoria y territorio)",
-                   "Una mujer atraviesa un territorio de memoria, resistencia y transformación. Su cuerpo, como los humedales de Quintana Roo, se adapta, se regenera y persiste aun en condiciones adversas. Ciénaga convierte ese paisaje en metáfora de los ciclos vitales y de la capacidad de las mujeres para transformarse y florecer, reconociendo en la interdependencia y la memoria compartida una forma de sostener la vida.",
-                   "Coreografía: Luz Más",
-                   "Intérprete: Natalia Velasco Zepeda",
-                   "Producción: OKAN Escuela Superior de Arte"
-                ],
+          "desc": [
+            "(Proceso de investigación escénica: cuerpo, memoria y territorio)",
+            "Una mujer atraviesa un territorio de memoria, resistencia y transformación. Su cuerpo, como los humedales de Quintana Roo, se adapta, se regenera y persiste aun en condiciones adversas. Ciénaga convierte ese paisaje en metáfora de los ciclos vitales y de la capacidad de las mujeres para transformarse y florecer, reconociendo en la interdependencia y la memoria compartida una forma de sostener la vida.",
+            "Coreografía: Luz Más",
+            "Intérprete: Natalia Velasco Zepeda",
+            "Producción: OKAN Escuela Superior de Arte"
+          ],
           "date": "Fecha de estreno por confirmar",
           "image": "/images/Hero/20260707_193712.jpg"
         }
@@ -320,6 +357,16 @@
           "title": "Próximo espectáculo",
           "video": "",
           "poster": "/images/Hero/okan-38-2.jpg"
+        },
+        {
+          "title": "Próximo espectáculo",
+          "video": "",
+          "poster": "/images/Hero/okan-49-2.jpg"
+        },
+        {
+          "title": "Próximo espectáculo",
+          "video": "",
+          "poster": "/images/Hero/okan-59-2.jpg"
         }
       ]
     }
@@ -390,7 +437,7 @@
         "other": "Otro"
       },
       "phone": "Teléfono",
-      "interest": "Interés",
+      "interest": "Licenciatura",
       "interestOptions": {
         "acting": "Actuación",
         "dance": "Danza contemporánea",

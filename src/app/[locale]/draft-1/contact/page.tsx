@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import { ContactForm } from "@/components/contact-form";
+import { AdmissionForm } from "@/components/admission-form";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -14,6 +14,7 @@ export default async function Draft1Contact({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("contact");
+  const admission = await getTranslations("admissions");
 
   return (
     <>
@@ -66,25 +67,32 @@ export default async function Draft1Contact({
           </div>
 
           {/* Columna Derecha: Formulario interactivo para enviar mensajes */}
-          <ContactForm
-            variant="classic"
+          <AdmissionForm
             labels={{
-              title: t("form.title"),
-              name: t("form.name"),
-              age: t("form.age"),
-              email: t("form.email"),
-              gender: t("form.gender"),
+              open: "",
+              close: admission("applicationForm.close"),
+              name: admission("applicationForm.name"),
+              phone: admission("applicationForm.phone"),
+              email: admission("applicationForm.email"),
+              age: admission("applicationForm.age"),
+              gender: admission("applicationForm.gender"),
               genderOptions: {
-                male: t("form.genderOptions.male"),
-                female: t("form.genderOptions.female"),
-                other: t("form.genderOptions.other"),
+                male: admission("applicationForm.genderOptions.male"),
+                female: admission("applicationForm.genderOptions.female"),
+                other: admission("applicationForm.genderOptions.other"),
               },
-              phone: t("form.phone"),
-              interest: t("form.interest"),
-              interestOptions: {
-                acting: t("form.interestOptions.acting"),
-                dance: t("form.interestOptions.dance"),
-                continuingEd: t("form.interestOptions.continuingEd"),
+              program: admission("applicationForm.program"),
+              programOptions: {
+                acting: admission("applicationForm.programOptions.acting"),
+                dance: admission("applicationForm.programOptions.dance"),
+                continuingEd: admission("applicationForm.programOptions.continuingEd"),
+              },
+              admissionDate: admission("applicationForm.admissionDate"),
+              admissionDateOptions: {
+                january2027: admission("applicationForm.admissionDateOptions.january2027"),
+                september2027: admission("applicationForm.admissionDateOptions.september2027"),
+                january2028: admission("applicationForm.admissionDateOptions.january2028"),
+                considering: admission("applicationForm.admissionDateOptions.considering"),
               },
               message: t("form.message"),
               messageHint: t("form.messageHint"),

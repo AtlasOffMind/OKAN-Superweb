@@ -7,6 +7,14 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+function renderBio(bio: string | string[]) {
+  return (Array.isArray(bio) ? bio : [bio]).map((paragraph, index) => (
+    <p key={index} className="mt-6 text-base leading-relaxed text-zinc-300">
+      {paragraph}
+    </p>
+  ));
+}
+
 export default async function Draft1About({
   params,
 }: {
@@ -56,9 +64,9 @@ export default async function Draft1About({
                 <h3 className="font-display mt-4 text-3xl font-semibold leading-tight md:text-5xl">
                   {member.name}
                 </h3>
-                <p className="mt-6 max-w-2xl text-base leading-relaxed text-zinc-300 md:text-lg">
-                  {locale === "es" ? member.bio : member.bioEn}
-                </p>
+                <div className="max-w-2xl md:text-lg">
+                  {renderBio(locale === "es" ? member.bio : member.bioEn)}
+                </div>
               </div>
             </article>
           ))}
@@ -98,16 +106,14 @@ export default async function Draft1About({
                 <h3 className="font-display mt-4 text-4xl font-semibold leading-tight md:text-6xl">
                   {principal.name}
                 </h3>
-                <p className="mt-6 text-base leading-relaxed text-zinc-300">
-                  {locale === "es" ? principal.bio : principal.bioEn}
-                </p>
+                <div>{renderBio(locale === "es" ? principal.bio : principal.bioEn)}</div>
               </div>
             </article>
           )}
 
           <div className="mt-20 grid gap-px bg-brand-800 md:grid-cols-3">
             {team.map((member) => (
-              <article key={member.file} className="bg-brand-950 p-6 md:p-8">
+              <article key={`${member.name}-${member.file}`} className="bg-brand-950 p-6 md:p-8">
                 <div className="relative aspect-[4/5] overflow-hidden bg-zinc-900">
                   <Image
                     src={member.file}
@@ -123,9 +129,7 @@ export default async function Draft1About({
                 <h3 className="font-display mt-3 text-2xl font-semibold leading-tight">
                   {member.name}
                 </h3>
-                <p className="mt-4 text-sm leading-relaxed text-zinc-300">
-                  {locale === "es" ? member.bio : member.bioEn}
-                </p>
+                <div>{renderBio(locale === "es" ? member.bio : member.bioEn)}</div>
               </article>
             ))}
           </div>

@@ -33,10 +33,10 @@ export function ProductionCarousel({
       fadeEffect={{ crossFade: true }}
       loop={items.length > 1}
       slidesPerView={1}
-      className="production-carousel !h-[100svh] min-h-[34rem] [&_.swiper-wrapper]:!h-full"
+      className="production-carousel !h-[100svh] min-h-[34rem] [&_.swiper-button-next]:h-12 [&_.swiper-button-next]:w-12 [&_.swiper-button-prev]:h-12 [&_.swiper-button-prev]:w-12 [&_.swiper-wrapper]:!h-full"
     >
-      {items.map((item) => (
-        <SwiperSlide key={item.title} className="!h-full">
+      {items.map((item, index) => (
+        <SwiperSlide key={`${item.title}-${index}`} className="!h-full">
           <article className="relative h-full overflow-hidden bg-zinc-950 text-white">
             {item.video ? (
               <video

@@ -100,13 +100,13 @@ export default async function Draft1Home({
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
-              href="draft-1/admissions"
+              href={`${base}/admissions`}
               className="hover:bg-brand-100 rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 transition-colors"
             >
               {t("hero.primary")}
             </Link>
             <Link
-              href="draft-1/programs"
+              href={`${base}/programs`}
               className="rounded-full border border-zinc-600 px-7 py-3 text-sm font-semibold text-white transition-colors hover:border-white"
             >
               {t("hero.secondary")}
@@ -201,23 +201,23 @@ export default async function Draft1Home({
       {/* ========================================================================= */}
       <section className="relative aspect-[4/3] overflow-hidden">
         <Image
-          src="/images/sobre OKAN/Collage.png"
+          src="/images/sobre OKAN/Collage1.png"
           alt=""
           fill
           sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 mx-auto flex h-full max-w-5xl flex-col items-center justify-center px-6 py-10 text-center md:px-12 md:py-24">
-          <h2 className="font-display text-5xl leading-[0.98] font-semibold tracking-tight text-white sm:text-6xl md:text-7xl">
+        <div className="relative z-10 mx-auto flex h-full max-w-5xl flex-col items-center justify-center px-5 py-6 text-center sm:px-6 sm:py-10 md:px-12 md:py-24">
+          <h2 className="font-display text-3xl leading-[0.98] font-semibold tracking-tight text-white sm:text-5xl md:text-7xl">
             {(t.raw("about.text") as string[])[0]}
           </h2>
-          <p className="mt-6 max-w-3xl text-xl leading-relaxed text-zinc-300 md:text-2xl">
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-zinc-300 sm:mt-6 sm:text-xl md:text-2xl">
             {(t.raw("about.text") as string[])[1]}
           </p>
           <Link
             href={`${base}/admissions`}
-            className="bg-brand-600 hover:bg-brand-500 mt-8 rounded-full px-8 py-3 text-sm font-semibold text-white transition-colors"
+            className="bg-brand-600 hover:bg-brand-500 mt-5 rounded-full px-6 py-2.5 text-sm font-semibold text-white transition-colors sm:mt-8 sm:px-8 sm:py-3"
           >
             {t("footer.ctaButton")}
           </Link>
@@ -283,13 +283,13 @@ export default async function Draft1Home({
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="draft-1/admissions"
+              href={`${base}/admissions`}
               className="bg-brand-600 hover:bg-brand-500 rounded-full px-9 py-4 text-base font-semibold text-white transition-colors"
             >
               {t("footer.ctaButton")}
             </Link>
             <Link
-              href="draft-1/programs"
+              href={`${base}/programs`}
               className="rounded-full border border-white/40 px-9 py-4 text-base font-semibold text-white transition-colors hover:border-white"
             >
               {t("footer.ctaSecondary")}

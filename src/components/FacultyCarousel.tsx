@@ -15,6 +15,14 @@ interface FacultyCarouselProps {
     aboutHref: string;
 }
 
+function renderBio(bio: string | string[]) {
+    return (Array.isArray(bio) ? bio : [bio]).map((paragraph, index) => (
+        <p key={index} className="mt-4 text-sm leading-relaxed text-zinc-300">
+            {paragraph}
+        </p>
+    ));
+}
+
 // =============================================================================
 // COMPONENTE: CARRUSEL INTERACTIVO DEL CLAUSTRO (PROFESORES DE OKAN)
 // - Muestra las fotos de los 14 profesores en fila continua sin espacios.
@@ -47,7 +55,7 @@ export default function FacultyCarousel({
         >
             {/* Genera una diapositiva / tarjeta para cada profesor de la lista */}
             {members.map((member) => (
-                <SwiperSlide key={member.file} className="!h-auto">
+                <SwiperSlide key={`${member.name}-${member.file}`} className="!h-auto">
                     {/* Tarjeta completa como enlace hacia la página Nosotros */}
                     <Link
                         href={aboutHref}
@@ -66,7 +74,7 @@ export default function FacultyCarousel({
                         </div>
 
                         {/* Panel de información translúcido que sube al poner el puntero */}
-                        <div className="absolute inset-x-0 bottom-0 max-h-36 overflow-hidden bg-black/55 p-5 backdrop-blur-[2px] transition-[max-height,background-color] duration-700 ease-out group-hover:max-h-full group-hover:bg-black/75 md:p-6">
+                        <div className="absolute inset-x-0 bottom-0 max-h-36 overflow-hidden bg-black/55 p-5 backdrop-blur-[2px] transition-[max-height,background-color] duration-700 ease-out group-hover:max-h-full group-hover:bg-black/75 [@media(hover:none)]:max-h-full [@media(hover:none)]:bg-black/75 md:p-6">
                             {/* Cargo / Rol */}
                             <p className="text-brand-300 text-xs font-semibold tracking-[0.2em] uppercase">
                                 {locale === "es" ? member.role : member.roleEn}
@@ -78,9 +86,7 @@ export default function FacultyCarousel({
                             </h3>
 
                             {/* Biografía / Descripción */}
-                            <p className="mt-4 text-sm leading-relaxed text-zinc-300">
-                                {locale === "es" ? member.bio : member.bioEn}
-                            </p>
+                            {renderBio(locale === "es" ? member.bio : member.bioEn)}
                         </div>
                     </Link>
                 </SwiperSlide>

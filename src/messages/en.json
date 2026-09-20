@@ -68,6 +68,7 @@
       "ctaText": "Take the step. We provide the school.",
       "ctaButton": "Apply now",
       "ctaSecondary": "Discover OKAN",
+      "privacy": "Privacy policy",
       "copyright": "OKAN School of the Arts. All rights reserved."
     }
   },
@@ -190,6 +191,37 @@
     "cta": {
       "title": "Ready to apply?",
       "button": "Apply for admission"
+    },
+    "applicationForm": {
+      "open": "Apply now",
+      "close": "Close form",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "age": "Age",
+      "gender": "Gender",
+      "genderOptions": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      },
+      "program": "Degree program",
+      "programOptions": {
+        "acting": "Acting",
+        "dance": "Contemporary dance",
+        "continuingEd": "Continuing Studies"
+      },
+      "admissionDate": "Admission term",
+      "admissionDateOptions": {
+        "january2027": "January 2027 semester",
+        "september2027": "September 2027 semester",
+        "january2028": "January 2028 semester",
+        "considering": "I am still considering it"
+      },
+      "submit": "Send application",
+      "sending": "Sending…",
+      "success": "Thank you! We received your application.",
+      "error": "We could not send your application. Please try again."
     }
   },
   "life": {
@@ -264,9 +296,12 @@
       "intro": "Talks and encounters with artists, academic specialists and public figures to share ideas, experiences and knowledge.",
       "conversations": [
         {
-          "image": "/images/Hero/okan-18-3.jpg",
-          "title": "Upcoming conversation",
-          "desc": "Add the topic, guest speakers and a brief overview of the session here.",
+          "image": "/images/OKAN en accion/Agora/Dra. Natividad Norma Medero Hernández.jpeg",
+          "title": "When art becomes a commodity: images that seduce and consciousnesses that fade.",
+          "desc": [
+            "What happens when the value of art begins to be measured by its price, popularity or number of views? The cultural industry can turn creation into a product for quick consumption: seductive images, immediate emotions and formulas designed to capture our attention. The problem is not that art circulates or is commercialized, but that the market becomes its sole criterion of value. This conversation proposes recovering a critical perspective that can distinguish between an image that simply seduces and a work that, beyond moving us, awakens questions, thought and sensitivity.",
+            "Dr. Natividad Norma Medero Hernández holds a doctorate in Philosophical Sciences and a master's degree in Education through Art and Sociocultural Animation. A full professor and researcher specializing in Aesthetics, Philosophy of Art and Art Practices, she has devoted her career to studying culture, art and their relationships with power and society. Her critical thinking is nourished by a profound humanist vocation and more than four decades dedicated to teaching."
+          ],
           "href": "#"
         }
       ]
@@ -277,19 +312,38 @@
       "productions": [
         {
           "title": "The gaze of the invisible",
-          "desc": "Add the production description here.",
+          "desc": [
+            "A group of young people tries to find their place in a world that looks at them without seeing them. Their stories intersect amid exclusion, violence, fear and the need to belong, until meeting one another begins to break their isolation.",
+            "Staging and general direction: Yailin Coppola and Ernesto Tamayo.",
+            "Choreographic design: Carolina Zepeda.",
+            "Production: OKAN Laboratorio Escénico."
+          ],
           "date": "Opening date to be confirmed",
           "image": "/images/Hero/20260707_193020.jpg"
         },
         {
           "title": "The labyrinth of wings",
-          "desc": "Add the production description here.",
+          "desc": [
+            "(Expanded Stage Performer Laboratory)",
+            "Ten young people cross a labyrinth built from what they carry within: memories, fears, desires, contradictions and dreams. Along the way, each individual search begins to meet the others, until they discover that belonging does not mean ceasing to be oneself, but recognizing what we can offer a community.",
+            "Original idea: Ernesto Tamayo.",
+            "Staging: Yailin Coppola.",
+            "Choreographic design: Carolina Zepeda.",
+            "Production: OKAN Laboratorio Escénico.",
+            "Project supported by the 2026 National Dance Call through the Artistic Residencies in Dance Program (PRAD), Danza INBAL."
+          ],
           "date": "Opening date to be confirmed",
           "image": "/images/Hero/20260707_193406.jpg"
         },
         {
-          "title": "Swamps",
-          "desc": "Add the production description here.",
+          "title": "Swamp",
+          "desc": [
+            "(Stage research process: body, memory and territory)",
+            "A woman moves through a territory of memory, resistance and transformation. Her body, like the wetlands of Quintana Roo, adapts, regenerates and persists even in adverse conditions. Swamp turns this landscape into a metaphor for life cycles and for women's ability to transform and flourish, recognizing interdependence and shared memory as ways of sustaining life.",
+            "Choreography: Luz Más.",
+            "Performer: Natalia Velasco Zepeda.",
+            "Production: OKAN School of the Arts."
+          ],
           "date": "Opening date to be confirmed",
           "image": "/images/Hero/20260707_193712.jpg"
         }
@@ -303,6 +357,16 @@
           "title": "Upcoming show",
           "video": "",
           "poster": "/images/Hero/okan-38-2.jpg"
+        },
+        {
+          "title": "Upcoming show",
+          "video": "",
+          "poster": "/images/Hero/okan-49-2.jpg"
+        },
+        {
+          "title": "Upcoming show",
+          "video": "",
+          "poster": "/images/Hero/okan-59-2.jpg"
         }
       ]
     }
@@ -373,11 +437,11 @@
         "other": "Other"
       },
       "phone": "Phone",
-      "interest": "Interest",
+      "interest": "Career",
       "interestOptions": {
         "acting": "Acting",
         "dance": "Contemporary dance",
-        "continuingEd": "Continuing Studies (workshops)"
+        "continuingEd": "Continuing Studies"
       },
       "message": "Message",
       "messageHint": "Maximum 250 characters",

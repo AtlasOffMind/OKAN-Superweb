@@ -1,6 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import { AdmissionForm } from "@/components/admission-form";
+
+const base = "/draft-1";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -32,7 +35,7 @@ export default async function Draft1Admissions({
             {t("intro")}
           </p>
           <Link
-            href="draft-1/contact"
+            href={`${base}/contact`}
             className="bg-brand-600 hover:bg-brand-500 mt-9 inline-flex w-fit rounded-full px-7 py-3 text-sm font-semibold text-white transition-colors"
           >
             {t("cta.button")}
@@ -95,12 +98,39 @@ export default async function Draft1Admissions({
             <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-zinc-400">
               {t("closing.text")}
             </p>
-            <Link
-              href="draft-1/contact"
-              className="bg-brand-600 hover:bg-brand-500 mt-8 inline-block rounded-full px-8 py-3 text-sm font-semibold text-white transition-colors"
-            >
-              {t("cta.button")}
-            </Link>
+            <AdmissionForm
+              labels={{
+                open: t("applicationForm.open"),
+                close: t("applicationForm.close"),
+                name: t("applicationForm.name"),
+                phone: t("applicationForm.phone"),
+                email: t("applicationForm.email"),
+                age: t("applicationForm.age"),
+                gender: t("applicationForm.gender"),
+                genderOptions: {
+                  male: t("applicationForm.genderOptions.male"),
+                  female: t("applicationForm.genderOptions.female"),
+                  other: t("applicationForm.genderOptions.other"),
+                },
+                program: t("applicationForm.program"),
+                programOptions: {
+                  acting: t("applicationForm.programOptions.acting"),
+                  dance: t("applicationForm.programOptions.dance"),
+                  continuingEd: t("applicationForm.programOptions.continuingEd"),
+                },
+                admissionDate: t("applicationForm.admissionDate"),
+                admissionDateOptions: {
+                  january2027: t("applicationForm.admissionDateOptions.january2027"),
+                  september2027: t("applicationForm.admissionDateOptions.september2027"),
+                  january2028: t("applicationForm.admissionDateOptions.january2028"),
+                  considering: t("applicationForm.admissionDateOptions.considering"),
+                },
+                submit: t("applicationForm.submit"),
+                sending: t("applicationForm.sending"),
+                success: t("applicationForm.success"),
+                error: t("applicationForm.error"),
+              }}
+            />
           </div>
         </div>
       </section>

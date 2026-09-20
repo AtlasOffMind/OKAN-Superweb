@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { OkanLogo } from "@/components/okan-logo";
 import { NavDrawer } from "@/components/nav-drawer";
 import { ScrollHeader } from "@/components/scroll-header";
+import { LocaleSwitcher } from "@/components/locale-switcher";
 import { navLinks } from "@/lib/site";
 
 const base = "/draft-1";
@@ -50,7 +51,8 @@ export default async function Draft1Layout({
       {/* BOTÓN DE MENÚ FLOTANTE PARA TODAS LAS PÁGINAS INTERNAS                    */}
       {/* (Se oculta automáticamente en el Home porque el Home tiene su propio header) */}
       {/* ========================================================================= */}
-      <ScrollHeader className="top-5 right-6 md:top-8 md:right-12">
+      <ScrollHeader className="top-5 right-6 flex items-center gap-2 md:top-8 md:right-12">
+        <LocaleSwitcher hiddenOnPath={base} />
         <NavDrawer
           links={links}
           applyLabel={t("nav.apply")}
@@ -135,10 +137,14 @@ export default async function Draft1Layout({
         {/* Línea divisoria inferior, redes sociales y texto de copyright */}
         <div className="mt-12 flex w-full flex-col gap-6 border-t border-zinc-800 pt-6 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>
-            {t("footer.copyright")}
+            © {t("footer.copyright")} · {" "}
+            <Link
+              href={`${base}/privacy-policy`}
+              className="underline hover:text-white">
+              {t("footer.privacy")}
+            </Link>
             <br />
-            {/* PENDIENTE: reemplazar el "#" por el enlace del portafolio/redes de Anyel */}
-            Fotografía: <a href="#" className="underline hover:text-white">Anyel</a>
+            Fotografía: <a href="https://www.instagram.com/elquerer_fotografia.cancun?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" className="underline hover:text-white">Anyel</a>
             <br />
             Diseño web: <a href="https://drive.google.com/file/d/1aqxzIr1QwrClFO0VCvbTVxc2xCTL-YFm/view?usp=sharing" className="underline hover:text-white">Gerardo</a>
           </p>
