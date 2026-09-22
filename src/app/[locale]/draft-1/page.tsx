@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { faculty } from "@/lib/faculty";
 import ImageMarquee from "@/components/ImageMarquee";
 import FacultyCarousel from "@/components/FacultyCarousel";
+import NewsCarousel, { type NewsItem } from "@/components/NewsCarousel";
 import { OkanLogo } from "@/components/okan-logo";
 import { LocaleSwitcher } from "@/components/locale-switcher";
 import { NavDrawer } from "@/components/nav-drawer";
@@ -25,6 +26,7 @@ export default async function Draft1Home({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("landing");
+  const homeNewsItems = t.raw("homeNews.items") as NewsItem[];
 
   const links = navLinks.map((link) =>
     link.children
@@ -225,7 +227,25 @@ export default async function Draft1Home({
       </section>
 
       {/* ========================================================================= */}
-      {/* SECCIÓN 4: NUESTRO CLAUSTRO (CARRUSEL INTERACTIVO DE PROFESORES)          */}
+      {/* SECCIÓN 4: NOTICIAS (CARRUSEL DE AGENDA Y EVENTOS OKAN 2026-2027)          */}
+      {/* - De la noticia más reciente a la más antigua.                          */}
+      {/* - Textos e imágenes modificables en: src/messages/es.json -> "landing.homeNews" */}
+      {/* - Componente del carrusel en: src/components/NewsCarousel.tsx             */}
+      {/* ========================================================================= */}
+      <section className="bg-[radial-gradient(ellipse_at_center,#080808_35%,#100817_72%,#24103d_100%)] pt-24 pb-16 text-white">
+        <div className="mx-auto max-w-7xl px-6 md:px-12">
+          <h2 className="font-display text-brand-600 text-4xl font-semibold tracking-tight md:text-5xl">
+            {t("homeNews.heading")}
+          </h2>
+          <p className="mt-4 max-w-md text-zinc-400">{t("homeNews.desc")}</p>
+        </div>
+        <div className="mt-14 w-full overflow-hidden">
+          <NewsCarousel items={homeNewsItems} />
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* SECCIÓN 5: NUESTRO CLAUSTRO (CARRUSEL INTERACTIVO DE PROFESORES)          */}
       {/* - Datos, fotos y biografías en: src/lib/faculty.ts                        */}
       {/* - Componente del carrusel en: src/components/FacultyCarousel.tsx          */}
       {/* ========================================================================= */}
@@ -246,7 +266,7 @@ export default async function Draft1Home({
       </section>
 
       {/* ========================================================================= */}
-      {/* SECCIÓN 5: AGENDA Y NOTICIAS (CONVOCATORIA ACTUAL / AUDICIONES)           */}
+      {/* SECCIÓN 6: AGENDA Y NOTICIAS (CONVOCATORIA ACTUAL / AUDICIONES)           */}
       {/* - Fondo oscuro continuo que fluye hacia el footer                         */}
       {/* - Textos modificables en: src/messages/es.json -> "landing.news"          */}
       {/* ========================================================================= */}

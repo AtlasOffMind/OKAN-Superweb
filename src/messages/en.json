@@ -61,6 +61,89 @@
         "Here art is trained, thought through and made. Find your voice, take it further and turn it into a profession."
       ]
     },
+    "homeNews": {
+      "heading": "News",
+      "desc": "Agenda and activities from the OKAN 2026-2027 calendar",
+      "items": [
+        {
+          "date": "Feb 6, 2027",
+          "title": "“La mirada de los invisibles”, by Saúl Enríquez — OKAN Laboratorio Escénico",
+          "desc": "Foro Hiram Sánchez, 7:00 pm. Stage direction: Ernesto Tamayo Benítez. First stage production by OKAN Laboratorio Escénico.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Nov 26, 2026",
+          "title": "Final Showcase of the Expanded Stage Performer Laboratory: body, action and composition in contemporary dance",
+          "desc": "Foro Hiram Sánchez, 7:00 pm. Presented by OKAN's Acting and Dance degree students, closing the PRAD / Saberes Danzados 2026 process.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Nov 20, 2026",
+          "title": "TEDx Cancún — Talk by Ernesto Tamayo, with OKAN students presenting “El Laberinto de las Alas”",
+          "desc": "Auditorio STOA, time to be confirmed.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Nov 13, 2026",
+          "title": "Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Third public showing",
+          "desc": "OKAN School of the Arts, 9:45 am–1:30 pm. Free admission with prior registration.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Nov 4–9, 2026",
+          "title": "46th National Theatre Showcase — Querétaro",
+          "desc": "Attendance of students from OKAN's first generation of Acting and Dance degree programs.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Oct 30, 2026",
+          "title": "Presentation of the dance-theatre piece “El Laberinto de las Alas”",
+          "desc": "Teatro 8 de Octubre, 7:00 pm. Presented by students from OKAN's first generation of Acting and Dance degree programs.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Oct 23, 2026",
+          "title": "Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Second public showing",
+          "desc": "OKAN School of the Arts, 9:45 am–1:30 pm. Free admission with prior registration.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Oct 17–18, 2026",
+          "title": "Hadestown by CIAE — Musical theatre production presented by Advanced Level students",
+          "desc": "Foro Hiram Sánchez. Showtimes: 7:00 pm and 5:00 pm respectively.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Oct 9, 2026",
+          "title": "Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — First public showing",
+          "desc": "OKAN School of the Arts, 9:45 am–1:30 pm. Free admission with prior registration.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Sep 25, 2026",
+          "title": "Ágora OKAN — Guest speaker: Dr. Norma Medero",
+          "desc": "OKAN School of the Arts. Time and details to be confirmed.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Sep 21 – Nov 20, 2026",
+          "title": "Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Saberes Danzados 2026 Program (PRAD), with Yailín Rodríguez García “Yailín Coppola”",
+          "desc": "OKAN School of the Arts. Tuesdays and Wednesdays, 10:45 am–1:30 pm; Fridays, 9:45 am–1:30 pm.",
+          "image": "",
+          "href": ""
+        }
+      ]
+    },
     "footer": {
       "col1": "Explore",
       "col2": "OKAN in action",
@@ -302,7 +385,37 @@
             "What happens when the value of art begins to be measured by its price, popularity or number of views? The cultural industry can turn creation into a product for quick consumption: seductive images, immediate emotions and formulas designed to capture our attention. The problem is not that art circulates or is commercialized, but that the market becomes its sole criterion of value. This conversation proposes recovering a critical perspective that can distinguish between an image that simply seduces and a work that, beyond moving us, awakens questions, thought and sensitivity.",
             "Dr. Natividad Norma Medero Hernández holds a doctorate in Philosophical Sciences and a master's degree in Education through Art and Sociocultural Animation. A full professor and researcher specializing in Aesthetics, Philosophy of Art and Art Practices, she has devoted her career to studying culture, art and their relationships with power and society. Her critical thinking is nourished by a profound humanist vocation and more than four decades dedicated to teaching."
           ],
-          "href": "#"
+          "href": null
+        },
+        {
+          "image": "/images/OKAN en accion/Agora/Ernesto Tamayo.jpeg",
+          "title": "The Transgression of Medea: From Euripides to Heiner Müller",
+          "desc": [
+            "What happens when a woman stops occupying the place that society has assigned to her? Medea spans more than two thousand years of theatrical history. This video talk proposes a critical journey from the tragedy of Euripides to the fragmentary writing of Heiner Müller, following the transformations of female representation and the conflict between the individual, power, and social order. In dialogue with Phaedra, Nora, and Julia, Medea allows us to interrogate power, exclusion, violence, gender, foreignness, motherhood, and rebellion. What does Medea transgress in each era, and what does that transgression reveal about us?",
+            "Ernesto Tamayo",
+            "Actor, director, producer, and theater pedagogue with more than three decades of experience. He graduated from the National School of Art of Cuba and holds a Bachelor's degree in Acting from the ISA, with a Gold Title. He has worked in theater, film, television, radio, opera, and dubbing. He is currently the Dean of Acting at OKAN Escuela Superior de Arte."
+          ],
+          "href": null
+        },
+        {
+          "image": "/images/OKAN en accion/Agora/Ernesto Tamayo.jpeg",
+          "title": "Discovering the Author: Meeting with Saúl Enríquez",
+          "desc": [
+            "What exists behind the works of a playwright? This meeting with Saúl Enríquez approaches the author, director, teacher, and cultural manager who has dedicated an essential part of his career to theater made with and for young people. The conversation explored his relationship with theater and adolescence, the experiences of invisibility that have crossed his life, and the sensitivity to injustice that accompanies his writing. It arose in dialogue with the staging of La mirada de los invisibles at OKAN Laboratorio Escénico. “The passion of my characters is also their suffering.”",
+            "Saúl Enríquez",
+            "Playwright, director, actor, teacher, and cultural manager based in Cancún since 2006. Founder of Nunca Merlot Teatro and author of ¿En qué estabas pensando?, SIE7E, Corazón Gordito, Toro, and La mirada de los invisibles. His career includes links with the Royal Court Theatre and Lark Play Development Center and presence in the National Theater Showcase. He currently works at the Instituto de la Cultura y las Artes de Cancún."
+          ],
+          "href": null
+        },
+        {
+          "image": "/images/OKAN en accion/Agora/Ernesto Tamayo.jpeg",
+          "title": "Mapping Dance: Reflections on the Curriculum Design of a Bachelor's Degree",
+          "desc": [
+            "How to build a bachelor's degree in dance that responds to the student, the territory, and the profession? From the curricular research of OKAN Escuela Superior de Arte, Carolina Zepeda presents the curriculum as a cartography between the admission profile and the professional horizon. The talk addresses diagnosis, training trajectory, and graduate profile, integrating technique, creation, thinking, research, and stage experience. It analyzes the dialogue between dance and acting within a common ecosystem, preserving the specificity of each discipline. From Cancún, it proposes that professionalization should not mean abandoning the territory, but acquiring tools to choose where and how to develop a career.",
+            "Carolina Zepeda",
+            "Dancer, choreographer, teacher, and educational manager. Rector of OKAN Escuela Superior de Arte, she participates in the design and development of its academic model and the bachelor's degrees in Dance and Acting. Her career integrates dance training, creation, teaching, and stage direction."
+          ],
+          "href": null
         }
       ]
     },

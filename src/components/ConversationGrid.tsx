@@ -4,7 +4,7 @@ export interface ConversationItem {
   image: string;
   title: string;
   desc: string | string[];
-  href: string;
+  href: string | null;
 }
 
 export function ConversationGrid({ items }: { items: ConversationItem[] }) {
@@ -14,10 +14,11 @@ export function ConversationGrid({ items }: { items: ConversationItem[] }) {
         {items.map((item) => (
           <a
             key={item.title}
-            href={item.href}
+
+            href={item.href != null ? item.href : undefined}
             target="_blank"
             rel="noreferrer"
-            className="group relative aspect-[5/15] overflow-hidden bg-zinc-900"
+            className="group relative aspect-[1/3] overflow-hidden bg-zinc-900"
           >
             <Image
               src={item.image}

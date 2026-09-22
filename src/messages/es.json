@@ -61,6 +61,89 @@
         "Aquí el arte se entrena, se piensa y se hace. Encuentra tu voz, llévala más lejos y conviértela en profesión."
       ]
     },
+    "homeNews": {
+      "heading": "Noticias",
+      "desc": "Agenda y actividades del calendario OKAN 2026-2027.",
+      "items": [
+        {
+          "date": "21 sep – 20 nov 2026",
+          "title": "Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Programa Saberes Danzados 2026 (PRAD), con Yailín Rodríguez García “Yailín Coppola”",
+          "desc": "OKAN Escuela Superior de Arte. Martes y miércoles, 10:45–13:30 h; viernes, 9:45–13:30 h.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "25 sep 2026",
+          "title": "Ágora OKAN — Conferencista invitada: Dra. Norma Medero",
+          "desc": "OKAN Escuela Superior de Arte. Horario y detalles por completar.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "9 oct 2026",
+          "title": "Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Primera salida al público",
+          "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "17 y 18 oct 2026",
+          "title": "Hadestown by CIAE — Obra de teatro musical presentada por los alumnos de Nivel Avanzado",
+          "desc": "Foro Hiram Sánchez. Horarios: 19:00 h y 17:00 h respectivamente.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "23 oct 2026",
+          "title": "Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Segunda salida al público",
+          "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "30 oct 2026",
+          "title": "Presentación de la obra de danza-teatro “El Laberinto de las Alas”",
+          "desc": "Teatro 8 de Octubre, 19:00 h. Presentada por alumnos de la primera generación de las Licenciaturas en Actuación y Danza de OKAN.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "4–9 nov 2026",
+          "title": "46.ª Muestra Nacional de Teatro — Querétaro",
+          "desc": "Asistencia de alumnos de la primera generación de las carreras de Actuación y Danza de OKAN Escuela Superior de Arte.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "13 nov 2026",
+          "title": "Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Tercera salida al público",
+          "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "20 nov 2026",
+          "title": "TEDx Cancún — Presentación de Ernesto Tamayo, con participación de alumnos de OKAN presentando “El Laberinto de las Alas”",
+          "desc": "Auditorio STOA, horario por definir.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "26 nov 2026",
+          "title": "Muestra Final del Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea",
+          "desc": "Foro Hiram Sánchez, 19:00 h. Presentada por alumnos de las Licenciaturas en Actuación y Danza de OKAN, como cierre del proceso PRAD / Saberes Danzados 2026.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "6 feb 2027",
+          "title": "“La mirada de los invisibles”, de Saúl Enríquez — OKAN Laboratorio Escénico",
+          "desc": "Foro Hiram Sánchez, 19:00 h. Dirección escénica: Ernesto Tamayo Benítez. Primer montaje escénico de OKAN Laboratorio Escénico.",
+          "image": "",
+          "href": ""
+        }
+      ]
+    },
     "footer": {
       "col1": "Explorar",
       "col2": "OKAN en acción",
@@ -300,9 +383,37 @@
           "title": "Cuando el arte se vuelve mercancía: imágenes que seducen y conciencias que se apagan.",
           "desc": [
             "¿Qué ocurre cuando el valor del arte comienza a medirse por su precio, popularidad o número de visualizaciones? La industria cultural puede transformar la creación en un producto de consumo rápido: imágenes seductoras, emociones inmediatas y fórmulas diseñadas para captar nuestra atención. El problema no es que el arte circule o se comercialice, sino que el mercado se convierta en su único criterio de valor. Esta charla propone recuperar una mirada crítica capaz de distinguir entre la imagen que simplemente seduce y la obra que, además de conmovernos, despierta preguntas, pensamiento y sensibilidad.",
-            " Dra. Natividad Norma Medero Hernández es Doctora en Ciencias Filosóficas, Master en Educación por el Arte y Animación Sociocultural. Profesora titular e investigadora, especializada en Estética, Filosofía del Arte y Prácticas de Arte. Ha dedicado su trayectoria al estudio de la cultura, el arte y sus relaciones con el poder y la sociedad. Su pensamiento crítico se nutre de una profunda vocación humanista y de más de cuatro décadas dedicadas a la docencia"
+            " Dra. Natividad Norma Medero Hernández es Doctora en Ciencias Filosóficas, Master en Educación por el Arte y Animación Sociocultural. Profesora titular e investigadora, especializada en Estética, Filosofía del Arte y Prácticas de Arte. Ha dedicado su trayectoria al estudio de la cultura, el arte y sus relaciones con el poder y la sociedad. Su pensamiento crítico se nutre de una profunda vocación humanista y de más de cuatro décadas dedicadas a la docencia."
           ],
-          "href": "#"
+          "href": null
+        },
+        {
+          "image": "/images/OKAN en accion/Agora/Ernesto Tamayo.jpeg",
+          "title": "La transgresión de Medea: de Eurípides a Heiner Müller.",
+          "desc": [
+            "¿Qué ocurre cuando una mujer deja de ocupar el lugar que la sociedad ha previsto para ella? Medea atraviesa más de dos mil años de historia teatral. Esta videocharla propone un recorrido crítico desde la tragedia de Eurípides hasta la escritura fragmentaria de Heiner Müller, siguiendo las transformaciones de la representación femenina y del conflicto entre individuo, poder y orden social. En diálogo con Fedra, Nora y Julia, Medea permite interrogar el poder, la exclusión, la violencia, el género, la extranjería, la maternidad y la rebelión. ¿Qué transgrede Medea en cada época y qué revela esa transgresión sobre nosotros?",
+            "Ernesto Tamayo",
+            "Actor, director, productor y pedagogo teatral con más de tres décadas de trayectoria. Graduado de la Escuela Nacional de Arte de Cuba y Licenciado en Actuación por el ISA, con Título de Oro. Ha trabajado en teatro, cine, televisión, radio, ópera y doblaje. Actualmente es Decano de Actuación de OKAN Escuela Superior de Arte."
+          ],
+          "href": null
+        },
+        {
+          "image": "/images/OKAN en accion/Agora/Ernesto Tamayo.jpeg",
+          "title": "Descubriendo al autor: encuentro con Saúl Enríquez.",
+          "desc": [
+            "¿Qué existe detrás de las obras de un dramaturgo? Este encuentro con Saúl Enríquez se acerca al autor, director, maestro y gestor cultural que ha dedicado parte esencial de su trayectoria al teatro hecho con y para jóvenes. La conversación recorrió su relación con el teatro y la adolescencia, las experiencias de invisibilidad que han atravesado su vida y la sensibilidad frente a la injusticia que acompaña su escritura. Surgió en diálogo con el montaje de La mirada de los invisibles en OKAN Laboratorio Escénico.“La pasión de mis personajes también es su padecimiento.”",
+            "Saúl Enríquez", 
+            "Dramaturgo, director, actor, docente y gestor cultural radicado en Cancún desde 2006. Fundador de Nunca Merlot Teatro y autor de ¿En qué estabas pensando?, SIE7E, Corazón Gordito, Toro y La mirada de los invisibles. Su trayectoria incluye vínculos con Royal Court Theatre y Lark Play Development Center y presencia en la Muestra Nacional de Teatro. Actualmente desarrolla su labor en el Instituto de la Cultura y las Artes de Cancún."
+          ],
+          "href": null
+        },
+        {
+          "image": "/images/OKAN en accion/Agora/Ernesto Tamayo.jpeg",
+          "title": "Cartografiar la danza: Reflexiones sobre el diseño curricular de una licenciatura.",
+          "desc": ["¿Cómo construir una licenciatura en danza que responda al estudiante, al territorio y a la profesión? Desde la investigación curricular de OKAN Escuela Superior de Arte, Carolina Zepeda presenta el currículo como una cartografía entre el perfil de ingreso y el horizonte profesional. La charla aborda diagnóstico, trayectoria formativa y perfil de egreso, integrando técnica, creación, pensamiento, investigación y experiencia escénica. Analiza el diálogo entre danza y actuación dentro de un ecosistema común, preservando la especificidad de cada disciplina. Desde Cancún plantea que profesionalizarse no debe significar abandonar el territorio, sino adquirir herramientas para elegir dónde y cómo desarrollar una carrera.",
+                   "Carolina Zepeda",
+                   "Bailarina, coreógrafa, docente y gestora educativa. Rectora de OKAN Escuela Superior de Arte, participa en el diseño y desarrollo de su modelo académico y de las licenciaturas en Danza y Actuación. Su trayectoria integra formación dancística, creación, docencia y dirección escénica."],
+          "href": null
         }
       ]
     },

@@ -75,7 +75,7 @@ export const faculty: FacultyMember[] = [
     },
     {
         name: "Odalis Suárez Almeida",
-        file: "/images/profesores/Daniel Moya.jpeg",
+        file: "/images/profesores/Odalys Dolores.png",
         role: "Departamento de Admisiones.",
         roleEn: "Admissions Department",
         bio: ["Ingeniera Industrial graduada del Instituto Superior Politécnico José Antonio Echeverría (CUJAE), de La Habana, Cuba. Inició su trayectoria profesional en la Empresa de Ómnibus Urbanos de La Habana, donde realizó su periodo de adiestramiento y servicio social.",
