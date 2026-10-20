@@ -9,6 +9,7 @@ interface AdmissionLabels {
     close: string;
     name: string;
     phone: string;
+    phoneCountryCode: string;
     email: string;
     age: string;
     gender: string;
@@ -33,6 +34,28 @@ interface AdmissionLabels {
 const fieldClass =
     "w-full rounded-xl border border-zinc-300 bg-white px-4 py-3 text-zinc-900 outline-none transition-colors focus:border-brand-500";
 const initialState: AdmissionState = { ok: false };
+const countryCodes = [
+    ["+52", "MX"],
+    ["+53", "CU"],
+    ["+1", "US/CA"],
+    ["+54", "AR"],
+    ["+55", "BR"],
+    ["+56", "CL"],
+    ["+57", "CO"],
+    ["+58", "VE"],
+    ["+34", "ES"],
+    ["+44", "GB"],
+    ["+49", "DE"],
+    ["+33", "FR"],
+    ["+39", "IT"],
+    ["+51", "PE"],
+    ["+502", "GT"],
+    ["+503", "SV"],
+    ["+504", "HN"],
+    ["+505", "NI"],
+    ["+506", "CR"],
+    ["+507", "PA"],
+] as const;
 
 export function AdmissionForm({ labels }: { labels: AdmissionLabels }) {
     const [open, setOpen] = useState(false);
@@ -47,9 +70,35 @@ export function AdmissionForm({ labels }: { labels: AdmissionLabels }) {
             className="mt-8 grid gap-5 rounded-2xl bg-white p-6 text-zinc-900 shadow-2xl sm:grid-cols-2 sm:p-8"
         >
             <input className={fieldClass} name="name" required placeholder={labels.name} />
-            <input className={fieldClass} name="phone" required type="tel" placeholder={labels.phone} />
+            <div className="grid grid-cols-[minmax(7.5rem,0.8fr)_minmax(0,1.2fr)] gap-2">
+                <label className="sr-only" htmlFor="admission-phone-country-code">
+                    {labels.phoneCountryCode}
+                </label>
+                <select
+                    id="admission-phone-country-code"
+                    className={fieldClass}
+                    name="phoneCountryCode"
+                    aria-label={labels.phoneCountryCode}
+                    defaultValue="+52"
+                    required
+                >
+                    {countryCodes.map(([code, country]) => (
+                        <option key={code} value={code}>{code} {country}</option>
+                    ))}
+                </select>
+                <input
+                    className={fieldClass}
+                    name="phone"
+                    required
+                    type="tel"
+                    inputMode="tel"
+                    autoComplete="tel-national"
+                    placeholder={labels.phone}
+                    aria-label={labels.phone}
+                />
+            </div>
             <input className={fieldClass} name="email" required type="email" placeholder={labels.email} />
-            <input className={fieldClass} name="age" required type="number" min="1" max="120" placeholder={labels.age} />
+            <input className={fieldClass} name="age" required type="number" min="12" max="120" placeholder={labels.age} />
 
             <select className={fieldClass} name="gender" required defaultValue="">
                 <option value="" disabled>{labels.gender}</option>

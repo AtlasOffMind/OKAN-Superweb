@@ -1,4 +1,5 @@
 import type { CollectionConfig } from "payload";
+import { isOwner } from "@/access/isOwner";
 
 export const Submissions: CollectionConfig = {
   slug: "submissions",
@@ -8,7 +9,9 @@ export const Submissions: CollectionConfig = {
   },
   access: {
     create: () => true,
-    read: ({ req: { user } }) => Boolean(user),
+    read: isOwner,
+    update: isOwner,
+    delete: isOwner,
   },
   fields: [
     {

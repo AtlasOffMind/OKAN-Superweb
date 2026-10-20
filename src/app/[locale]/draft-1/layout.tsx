@@ -6,7 +6,7 @@ import { ScrollHeader } from "@/components/scroll-header";
 import { LocaleSwitcher } from "@/components/locale-switcher";
 import { navLinks } from "@/lib/site";
 
-const base = "/draft-1";
+const base = "";
 
 export default async function Draft1Layout({
   children,
@@ -52,15 +52,15 @@ export default async function Draft1Layout({
       {/* (Se oculta automáticamente en el Home porque el Home tiene su propio header) */}
       {/* ========================================================================= */}
       <ScrollHeader className="top-5 right-6 flex items-center gap-2 md:top-8 md:right-12">
-        <LocaleSwitcher hiddenOnPath={base} />
+        <LocaleSwitcher hiddenOnPath="/" />
         <NavDrawer
           links={links}
           applyLabel={t("nav.apply")}
           applyHref={`${base}/admissions`}
           applyClassName="bg-brand-600 hover:bg-brand-500 text-white"
           homeLabel={t("nav.home")}
-          homeHref={base}
-          hiddenOnPath={base}
+          homeHref="/"
+          hiddenOnPath="/"
           className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-300 bg-white/80 text-zinc-900 shadow-lg backdrop-blur-sm transition-colors hover:border-brand-600 hover:bg-brand-600 hover:text-white"
         />
       </ScrollHeader>
@@ -163,7 +163,7 @@ export default async function Draft1Layout({
                 <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.26 4.9L2 22l5.25-1.38A9.96 9.96 0 0 0 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31A8.18 8.18 0 1 1 20.22 12a8.19 8.19 0 0 1-8.18 8.2zm4.5-6.13c-.25-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.78.96-.14.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.16 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z" />
               </svg>
             </a>
-            <a
+            {/* <a
               href="#"
               aria-label="LinkedIn"
               className="text-zinc-400 transition-colors hover:text-white"
@@ -171,7 +171,7 @@ export default async function Draft1Layout({
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.83v2.05h.05c.53-1 1.85-2.05 3.8-2.05C19.8 8 21 10.02 21 13.3V23h-4v-8.7c0-2.08-.04-4.75-2.9-4.75-2.9 0-3.35 2.27-3.35 4.6V23H7V8z" />
               </svg>
-            </a>
+            </a> */}
             <a
               href="https://www.tiktok.com/@escueladearteokan?_r=1&_t=ZS-99ni5B27cVp"
               aria-label="TikTok"

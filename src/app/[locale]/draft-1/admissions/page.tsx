@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { AdmissionForm } from "@/components/admission-form";
 
-const base = "/draft-1";
+const base = "";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -104,6 +104,7 @@ export default async function Draft1Admissions({
                 close: t("applicationForm.close"),
                 name: t("applicationForm.name"),
                 phone: t("applicationForm.phone"),
+                phoneCountryCode: t("applicationForm.phoneCountryCode"),
                 email: t("applicationForm.email"),
                 age: t("applicationForm.age"),
                 gender: t("applicationForm.gender"),

@@ -8,7 +8,11 @@ import config from "@payload-config";
 
 const schema = z.object({
     name: z.string().trim().min(1, "required").max(200),
-    phone: z.string().trim().min(1, "required").max(30),
+    phoneCountryCode: z.string().regex(/^\+\d{1,3}$/),
+    phone: z.string().trim().max(30).regex(/^[\d\s().-]+$/).refine((value) => {
+        const digitCount = value.replace(/\D/g, "").length;
+        return digitCount >= 7 && digitCount <= 15;
+    }),
     email: z.string().trim().email(),
     age: z.coerce.number().int().min(1).max(120),
     gender: z.enum(["male", "female", "other"]),
@@ -28,6 +32,7 @@ export async function submitAdmission(
 ): Promise<AdmissionState> {
     const parsed = schema.safeParse({
         name: formData.get("name"),
+        phoneCountryCode: formData.get("phoneCountryCode"),
         phone: formData.get("phone"),
         email: formData.get("email"),
         age: formData.get("age"),
@@ -41,7 +46,8 @@ export async function submitAdmission(
         return { ok: false, error: "invalid" };
     }
 
-    const { name, phone, email, age, gender, program, admissionDate, message } = parsed.data;
+    const { name, phoneCountryCode, email, age, gender, program, admissionDate, message } = parsed.data;
+    const phone = `${phoneCountryCode} ${parsed.data.phone.replace(/[\s().-]/g, "")}`;
 
     try {
         const payload = await getPayload({ config });

@@ -1,11 +1,16 @@
-import { redirect } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import Draft1Home from "./draft-1/page";
+import Draft1Layout from "./draft-1/layout";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default function Draft1Redirect({ params }: { params: { locale: string } }) {
-  // Redirecting to 'draft-1' will preserve the current locale prefix via next-intl
-  redirect('/draft-1');
+export default async function LocaleHome({
+  params,
+}: {
+  params: Promise<{ locale: (typeof routing.locales)[number] }>;
+}) {
+  const home = await Draft1Home({ params });
+  return Draft1Layout({ children: home, params });
 }

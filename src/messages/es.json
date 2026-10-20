@@ -261,6 +261,7 @@
       "close": "Cerrar formulario",
       "name": "Nombre",
       "phone": "Teléfono",
+      "phoneCountryCode": "Prefijo internacional",
       "email": "Correo electrónico",
       "age": "Edad",
       "gender": "Sexo",

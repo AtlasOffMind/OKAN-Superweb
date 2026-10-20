@@ -1,10 +1,17 @@
 import type { CollectionConfig } from "payload";
+import { isOwner } from "@/access/isOwner";
 
 export const Faculty: CollectionConfig = {
   slug: "faculty",
   admin: {
     useAsTitle: "name",
     defaultColumns: ["name", "role", "updatedAt"],
+  },
+  access: {
+    create: isOwner,
+    read: () => true,
+    update: isOwner,
+    delete: isOwner,
   },
   fields: [
     {

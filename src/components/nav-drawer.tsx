@@ -54,7 +54,7 @@ export function NavDrawer({
     () => false,
   );
   const pathname = usePathname();
-  const admissionsStyle = pathname.endsWith("/draft-1/admissions")
+  const admissionsStyle = pathname.endsWith("/admissions")
     ? "!border-white/50 !bg-black/35 !text-white backdrop-blur-sm"
     : "";
 

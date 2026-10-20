@@ -2,12 +2,17 @@
   "name": "okan-superweb",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
+    "payload:migrate:create": "payload migrate:create",
+    "payload:migrate": "payload migrate",
+    "payload:migrate:status": "payload migrate:status",
+    "payload:create-owner": "tsx scripts/create-owner.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"

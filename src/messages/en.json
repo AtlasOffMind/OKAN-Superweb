@@ -261,6 +261,7 @@
       "close": "Close form",
       "name": "Name",
       "phone": "Phone",
+      "phoneCountryCode": "Country calling code",
       "email": "Email",
       "age": "Age",
       "gender": "Gender",

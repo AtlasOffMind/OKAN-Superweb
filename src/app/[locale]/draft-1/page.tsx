@@ -12,7 +12,7 @@ import { NavDrawer } from "@/components/nav-drawer";
 import { ScrollHeader } from "@/components/scroll-header";
 import { navLinks } from "@/lib/site";
 
-const base = "/draft-1";
+const base = "";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
