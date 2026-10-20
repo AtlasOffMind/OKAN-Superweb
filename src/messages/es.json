@@ -64,83 +64,64 @@
     "homeNews": {
       "heading": "Noticias",
       "desc": "Agenda y actividades del calendario OKAN 2026-2027.",
+      "newsLinkLabel": "Leer noticia",
+      "secondaryLinkLabel": "¡Reserva tu ticket ya!",
       "items": [
         {
-          "date": "21 sep – 20 nov 2026",
-          "title": "Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Programa Saberes Danzados 2026 (PRAD), con Yailín Rodríguez García “Yailín Coppola”",
-          "desc": "OKAN Escuela Superior de Arte. Martes y miércoles, 10:45–13:30 h; viernes, 9:45–13:30 h.",
-          "image": "",
-          "href": ""
-        },
-        {
-          "date": "25 sep 2026",
-          "title": "Ágora OKAN — Conferencista invitada: Dra. Norma Medero",
-          "desc": "OKAN Escuela Superior de Arte. Horario y detalles por completar.",
-          "image": "",
-          "href": ""
-        },
-        {
-          "date": "9 oct 2026",
-          "title": "Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Primera salida al público",
-          "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
-          "image": "",
-          "href": ""
-        },
-        {
-          "date": "17 y 18 oct 2026",
-          "title": "Hadestown by CIAE — Obra de teatro musical presentada por los alumnos de Nivel Avanzado",
-          "desc": "Foro Hiram Sánchez. Horarios: 19:00 h y 17:00 h respectivamente.",
-          "image": "",
-          "href": ""
-        },
-        {
           "date": "23 oct 2026",
-          "title": "Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Segunda salida al público",
+          "title": "Clase abierta. Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Segunda salida al público",
           "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
-          "image": "",
-          "href": ""
+          "image": "/images/News/Laboratorio escenico.jpeg",
+          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
+          "secondaryHref": ""
         },
         {
           "date": "30 oct 2026",
           "title": "Presentación de la obra de danza-teatro “El Laberinto de las Alas”",
           "desc": "Teatro 8 de Octubre, 19:00 h. Presentada por alumnos de la primera generación de las Licenciaturas en Actuación y Danza de OKAN.",
-          "image": "",
-          "href": ""
+          "image": "/images/News/laberinto de las alas-News Home.png",
+          "href": "https://share.google/GBqlatbPAh8jlmhTq",
+          "secondaryHref": ""
         },
         {
           "date": "4–9 nov 2026",
           "title": "46.ª Muestra Nacional de Teatro — Querétaro",
           "desc": "Asistencia de alumnos de la primera generación de las carreras de Actuación y Danza de OKAN Escuela Superior de Arte.",
           "image": "",
-          "href": ""
+          "href": "",
+          "secondaryHref": ""
         },
         {
           "date": "13 nov 2026",
-          "title": "Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Tercera salida al público",
+          "title": "Clase abierta. Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Tercera salida al público",
           "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
-          "image": "",
-          "href": ""
+          "image": "/images/News/Laboratorio escenico.jpeg",
+          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
+          "secondaryHref": ""
         },
         {
           "date": "20 nov 2026",
           "title": "TEDx Cancún — Presentación de Ernesto Tamayo, con participación de alumnos de OKAN presentando “El Laberinto de las Alas”",
           "desc": "Auditorio STOA, horario por definir.",
           "image": "",
-          "href": ""
+          "href": "",
+          "secondaryHref": ""
         },
         {
           "date": "26 nov 2026",
           "title": "Muestra Final del Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea",
           "desc": "Foro Hiram Sánchez, 19:00 h. Presentada por alumnos de las Licenciaturas en Actuación y Danza de OKAN, como cierre del proceso PRAD / Saberes Danzados 2026.",
           "image": "",
-          "href": ""
+          "href": "",
+          "secondaryHref": ""
         },
         {
           "date": "6 feb 2027",
           "title": "“La mirada de los invisibles”, de Saúl Enríquez — OKAN Laboratorio Escénico",
           "desc": "Foro Hiram Sánchez, 19:00 h. Dirección escénica: Ernesto Tamayo Benítez. Primer montaje escénico de OKAN Laboratorio Escénico.",
           "image": "",
-          "href": ""
+          "href": "",
+          "secondaryHref": ""
         }
       ]
     },
@@ -163,7 +144,7 @@
       "title": "Actuación",
       "tagline": "ACTUACIÓN PARA TODOS LOS LENGUAJES DE LA ESCENA.",
       "planStudy": "VER PLAN DE ESTUDIO",
-      "planHref": "#",
+      "planHref": "/Pdfs/LICENCIATURA EN ACTUACIÓN.pdf",
       "desc": [
         "La Licenciatura en Actuación recorre el oficio desde todos los lugares que hoy exige la profesión: entrenamiento actoral, voz y expresión corporal; dramaturgia, historia, filosofía, pensamiento crítico e investigación escénica; creación, laboratorio y montaje; actuación para cámara, casting y doblaje; escenotecnia, gestión cultural y herramientas para comprender cómo se crea, produce y circula un proyecto escénico. La malla confirma además una progresión que llega a dirección para el actor, producción ejecutiva, emprendimiento e investigación aplicada al proyecto de tesis.",
         "Una malla para investigar, analizar, crear, dominar diferentes lenguajes de interpretación, comprender los recursos técnicos de la escena y desarrollar autonomía profesional."
@@ -176,7 +157,7 @@
       "title": "Danza contemporánea",
       "tagline": "DANZA CONTEMPORÁNEA PARA LA ESCENA DE HOY",
       "planStudy": "VER PLAN DE ESTUDIO",
-      "planHref": "#",
+      "planHref": "/Pdfs/LICENCIATURA EN DANZA.pdf",
       "desc": [
         "La Danza Contemporánea es la columna vertebral de la licenciatura. A su alrededor dialogan ballet clásico, jazz, ritmos del Caribe, folklore mexicano y danzas urbanas con interpretación, composición coreográfica, actuación, voz, historia, filosofía, pensamiento crítico e investigación.",
         "La formación se expande hacia los lenguajes y herramientas que construyen la escena contemporánea: multimedia, espacio, luz, escenografía y escenotecnia; y hacia los conocimientos que permiten desarrollar y sostener proyectos: gestión cultural, economía creativa, fondos, producción ejecutiva y pedagogía para la danza. La malla incorpora además anatomía funcional y kinesiología, música aplicada a la danza, gestión de audiciones y un proceso progresivo de laboratorio coreográfico que culmina en la creación y montaje de la obra de tesis.",
@@ -190,12 +171,12 @@
       "title": "Estudios continuos",
       "tagline": "EL CONOCIMIENTO ESCÉNICO NO TIENE UNA SOLA RUTA.",
       "planStudy": "EXPLORA LA OFERTA",
-      "planHref": "#",
+      "planHref": "/Pdfs/OKAN ESTUDIOS CONTINUOS 2026 - 2027_compressed.pdf",
       "desc": [
         "Estudios Continuos expande la Metodología OKAN más allá de las licenciaturas. Es un espacio para especializarse, actualizarse, profesionalizar una práctica y descubrir nuevas aplicaciones de las herramientas escénicas en otros campos del conocimiento y del trabajo.",
         "La oferta integra entrenamiento y profesionalización de intérpretes; actuación, danza, cuerpo y voz; filosofía e investigación del arte; creación interdisciplinaria; cine y audiovisual; artes marciales aplicadas a la escena; dirección, producción y liderazgo de compañías; pedagogía y formación docente.",
         "También lleva el conocimiento escénico a otros ámbitos profesionales: entrenamiento para conferencistas; presencia y comunicación; liderazgo y trabajo en equipo; creatividad y habilidades blandas; herramientas aplicadas a mercadotecnia, turismo y servicios; y preparación de estudiantes y profesionales para presentar, comunicar y defender sus proyectos.",
-        "Talleres, laboratorios, cursos, programas intensivos y diplomados permiten construir diferentes rutas según la experiencia, la profesión y el objetivo de cada participante. Los convenios y alianzas de OKAN amplian esta plataforma mediante colaboración con artistas, especialistas e instituciones de otros contextos, fortaleciendo la proyección nacional e internacional de sus programas."
+        "Talleres, laboratorios, cursos, programas intensivos y diplomados permiten construir diferentes rutas según la experiencia, la profesión y el objetivo de cada participante. Los convenios y alianzas de OKAN amplían esta plataforma mediante colaboración con artistas, especialistas e instituciones de otros contextos, fortaleciendo la proyección nacional e internacional de sus programas."
       ],
       "outcomes": [
         "ARTE · PROFESIONALIZACIÓN · FILOSOFÍA · EDUCACIÓN · COMUNICACIÓN · LIDERAZGO · EMPRESA · NUEVOS CRUCES"
@@ -207,7 +188,7 @@
     },
     "international": {
       "heading": "Vinculación internacional",
-      "intro": "OKAN colabora con compañías e instituciones artísticas que amplian la proyección de sus programas.",
+      "intro": "OKAN colabora con compañías e instituciones artísticas que amplían la proyección de sus programas.",
       "partners": [
         {
           "logo": "/images/Pograms/Logos/ARGOS TEATRO.png",
@@ -398,21 +379,23 @@
           "href": null
         },
         {
-          "image": "/images/OKAN en accion/Agora/Ernesto Tamayo.jpeg",
+          "image": "/images/OKAN en accion/Agora/Saul Enrique.jpg",
           "title": "Descubriendo al autor: encuentro con Saúl Enríquez.",
           "desc": [
             "¿Qué existe detrás de las obras de un dramaturgo? Este encuentro con Saúl Enríquez se acerca al autor, director, maestro y gestor cultural que ha dedicado parte esencial de su trayectoria al teatro hecho con y para jóvenes. La conversación recorrió su relación con el teatro y la adolescencia, las experiencias de invisibilidad que han atravesado su vida y la sensibilidad frente a la injusticia que acompaña su escritura. Surgió en diálogo con el montaje de La mirada de los invisibles en OKAN Laboratorio Escénico.“La pasión de mis personajes también es su padecimiento.”",
-            "Saúl Enríquez", 
+            "Saúl Enríquez",
             "Dramaturgo, director, actor, docente y gestor cultural radicado en Cancún desde 2006. Fundador de Nunca Merlot Teatro y autor de ¿En qué estabas pensando?, SIE7E, Corazón Gordito, Toro y La mirada de los invisibles. Su trayectoria incluye vínculos con Royal Court Theatre y Lark Play Development Center y presencia en la Muestra Nacional de Teatro. Actualmente desarrolla su labor en el Instituto de la Cultura y las Artes de Cancún."
           ],
           "href": null
         },
         {
-          "image": "/images/OKAN en accion/Agora/Ernesto Tamayo.jpeg",
+          "image": "/images/OKAN en accion/Agora/Carolina.jpg",
           "title": "Cartografiar la danza: Reflexiones sobre el diseño curricular de una licenciatura.",
-          "desc": ["¿Cómo construir una licenciatura en danza que responda al estudiante, al territorio y a la profesión? Desde la investigación curricular de OKAN Escuela Superior de Arte, Carolina Zepeda presenta el currículo como una cartografía entre el perfil de ingreso y el horizonte profesional. La charla aborda diagnóstico, trayectoria formativa y perfil de egreso, integrando técnica, creación, pensamiento, investigación y experiencia escénica. Analiza el diálogo entre danza y actuación dentro de un ecosistema común, preservando la especificidad de cada disciplina. Desde Cancún plantea que profesionalizarse no debe significar abandonar el territorio, sino adquirir herramientas para elegir dónde y cómo desarrollar una carrera.",
-                   "Carolina Zepeda",
-                   "Bailarina, coreógrafa, docente y gestora educativa. Rectora de OKAN Escuela Superior de Arte, participa en el diseño y desarrollo de su modelo académico y de las licenciaturas en Danza y Actuación. Su trayectoria integra formación dancística, creación, docencia y dirección escénica."],
+          "desc": [
+            "¿Cómo construir una licenciatura en danza que responda al estudiante, al territorio y a la profesión? Desde la investigación curricular de OKAN Escuela Superior de Arte, Carolina Zepeda presenta el currículo como una cartografía entre el perfil de ingreso y el horizonte profesional. La charla aborda diagnóstico, trayectoria formativa y perfil de egreso, integrando técnica, creación, pensamiento, investigación y experiencia escénica. Analiza el diálogo entre danza y actuación dentro de un ecosistema común, preservando la especificidad de cada disciplina. Desde Cancún plantea que profesionalizarse no debe significar abandonar el territorio, sino adquirir herramientas para elegir dónde y cómo desarrollar una carrera.",
+            "Carolina Zepeda",
+            "Bailarina, coreógrafa, docente y gestora educativa. Rectora de OKAN Escuela Superior de Arte, participa en el diseño y desarrollo de su modelo académico y de las licenciaturas en Danza y Actuación. Su trayectoria integra formación dancística, creación, docencia y dirección escénica."
+          ],
           "href": null
         }
       ]
@@ -421,17 +404,6 @@
       "heading": "OKAN Laboratorio Escénico",
       "intro": "Producciones profesionales de teatro y danza que integran a estudiantes, docentes y artistas invitados bajo la dirección de creadores de reconocida trayectoria.",
       "productions": [
-        {
-          "title": "La mirada de los invisibles",
-          "desc": [
-            " Un grupo de jóvenes intenta encontrar su lugar en un mundo que los mira sin verlos. Sus historias se cruzan entre exclusión, violencia, miedo y necesidad de pertenecer, hasta que encontrarse con el otro comienza a romper el aislamiento.",
-            " Puesta en escena y dirección general: Yailin Coppola y Ernesto Tamayo.",
-            " Diseño coreográfico: Carolina Zepeda,",
-            " Producción: OKAN Laboratorio Escénico"
-          ],
-          "date": "Fecha de estreno por confirmar",
-          "image": "/images/Hero/20260707_193020.jpg"
-        },
         {
           "title": "El laberinto de las alas",
           "desc": [
@@ -443,8 +415,19 @@
             "Producción: OKAN Laboratorio Escénico",
             "Proyecto apoyado por la Convocatoria Nacional de Danza 2026, a través del Programa de Residencias Artísticas en Danza (PRAD), Danza INBAL."
           ],
+          "date": "30 de octubre de 2026",
+          "image": "/images/OKAN en accion/Laboratorio/Laberinto de las alas.jpg"
+        },
+        {
+          "title": "La mirada de los invisibles",
+          "desc": [
+            " Un grupo de jóvenes intenta encontrar su lugar en un mundo que los mira sin verlos. Sus historias se cruzan entre exclusión, violencia, miedo y necesidad de pertenecer, hasta que encontrarse con el otro comienza a romper el aislamiento.",
+            " Puesta en escena y dirección general: Yailin Coppola y Ernesto Tamayo.",
+            " Diseño coreográfico: Carolina Zepeda,",
+            " Producción: OKAN Laboratorio Escénico"
+          ],
           "date": "Fecha de estreno por confirmar",
-          "image": "/images/Hero/20260707_193406.jpg"
+          "image": "/images/OKAN en accion/Laboratorio/La mirada de los invisibles.jpg"
         },
         {
           "title": "Ciénaga",
@@ -456,13 +439,19 @@
             "Producción: OKAN Escuela Superior de Arte"
           ],
           "date": "Fecha de estreno por confirmar",
-          "image": "/images/Hero/20260707_193712.jpg"
+          "image": "/images/OKAN en accion/Laboratorio/Cienaga.jpg"
         }
       ]
     },
     "espectaculos": {
       "heading": "OKAN Espectáculos",
       "intro": "Creación y producción de espectáculos para hoteles, DMC, convenciones, eventos y la industria turística y del entretenimiento.",
+      "galleryTitle": "Galería de espectáculos",
+      "heroImageAlt": "Escena de un espectáculo de OKAN",
+      "expandImage": "Ampliar imagen",
+      "closeImage": "Cerrar",
+      "catalogTitle": "Lleva el espectáculo contigo.",
+      "catalogDownload": "Descargar catálogo",
       "repertoire": [
         {
           "title": "Próximo espectáculo",
@@ -489,38 +478,134 @@
     "news": {
       "items": [
         {
+          "date": "17 y 18 oct 2026",
+          "title": "Hadestown by CIAE — Obra de teatro musical presentada por los alumnos de Nivel Avanzado",
+          "desc": "Foro Hiram Sánchez. Horarios: 19:00 h y 17:00 h respectivamente.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "12 oct 2026",
+          "title": " “El laberinto de las Alas” llega a Cancún con una experiencia de teatro y danza inmersiva",
+          "desc": [
+            "El talento artístico emergente tendrá un espacio especial en la escena cultural de Cancún con la presentación de “El laberinto de las Alas”, una propuesta de teatro y danza inmersiva que llegará al Teatro 8 de Octubre el próximo viernes 30 de octubre de 2026, a las 19:00 horas.",
+            " La puesta en escena estará a cargo de la primera generación de estudiantes de las licenciaturas en Actuación y Danza de OKAN Escuela Superior de Arte, quienes compartirán con el público los resultados de su formación e investigación artística."
+          ],
+          "image": "/images/News/laberinto de las alas-News Home.png",
+          "href": "https://enteratecancun.com/el-laberinto-de-las-alas-llega-a-cancun-con-una-experiencia-de-teatro-y-danza-inmersiva/"
+        },
+        {
+          "date": "21 sep - 20 nov  2026",
+          "title": "Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Programa Saberes Danzados 2026 (PRAD), con Yailín Rodríguez García “Yailín Coppola”",
+          "desc": "OKAN Escuela Superior de Arte. Martes y miércoles, 10:45–13:30 h; viernes, 9:45–13:30 h.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "14 Septiembre 2026",
+          "title": "Yailín Coppola llega a Cancún para compartir saberes y crear.",
+          "desc": "Cancún.- La escena cancunense suma una nueva oportunidad de encuentro y aprendizaje con la llegada de la actriz, directora y pedagoga cubana Yailín Rodríguez García, conocida artísticamente como Yailín Coppola. La creadora ya se encuentra en Cancún para desarrollar un laboratorio dirigido a jóvenes creadores y artistas en formación.",
+          "image": "/images/News/Quintana Roo hoy, Yailin.jpeg",
+          "href": "https://quintanaroohoy.com/cultura/yailin-coppola-cancun-laboratorio-escenico"
+        },
+        {
           "date": "Septiembre 2026",
           "title": "Audiciones abiertas para la nueva generación",
           "desc": "Convocatoria de admisión para los programas de Actuación, Danza y Creación escénica.",
-          "href": "#"
+          "image": "",
+          "href": ""
         },
         {
           "date": "Agosto 2026",
           "title": "Estreno de la producción escénica Humedal",
           "desc": "Nuestra compañía presenta su más reciente montaje, resultado de un año de laboratorio.",
-          "href": "#"
+          "image": "",
+          "href": ""
         },
         {
           "date": "Julio 2026",
           "title": "Nuevo ciclo de talleres abiertos",
           "desc": "Abrimos talleres de voz, movimiento y creación para la comunidad interesada.",
-          "href": "#"
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": " 9 Julio 2026",
+          "title": "OKAN transforma Cancún: nace la primera Escuela Superior de Arte con una propuesta escénica inmersiva",
+          "desc": "Mientras miles de jóvenes dejan Cancún para estudiar artes, una nueva escuela quiere cambiar esa historia. Durante años, quienes soñaban con dedicarse profesionalmente a la actuación o la danza tuvieron que dejar Cancún para buscar una formación de nivel superior en otras ciudades del país. Esa realidad marcó a generaciones enteras de artistas. Hoy, una nueva institución busca demostrar que ese camino ya no tiene por qué comenzar lejos de casa.",
+          "image": "/images/News/cancunissimo.mx.jpeg",
+          "href": "https://cancunissimo.mx/okan-transforma-cancun-nace-la-primera-escuela-superior-de-arte-con-una-propuesta-escenica-inmersiva/"
+        },
+        {
+          "date": " 9 Julio 2026",
+          "title": "OKAN presenta los frutos de su primer propedéutico con 'El Laberinto de las Alas'",
+          "desc": "La Escuela Superior de Arte OKAN cerrará su primera etapa formativa con una muestra escénica creada por sus estudiantes. Cancún.- La Escuela Superior de Arte OKAN concluirá su primer Propedéutico con la presentación de “El Laberinto de las Alas”, un proyecto integrador que reúne los conocimientos, experiencias y herramientas desarrolladas por sus estudiantes durante cuatro meses de formación artística.",
+          "image": "/images/News/Laberinto de las alas Prop.jpg",
+          "href": "https://quintanaroohoy.com/cultura/okan-presenta-el-laberinto-de-las-alas-propedeutico/"
+        },
+        {
+          "date": "13 Enero 2026",
+          "title": "Abrirá universidad en actuación y danza en Cancún",
+          "desc": "CANCÚN, Q. ROO.- Con el objetivo de fortalecer la formación y profesionalización de artistas escénicos, se anunció la creación y apertura próxima de la Escuela de Arte “Okan” en Cancún. La nueva institución de educación superior estará especializada en artes escénicas, particularmente en teatro y danza, catalogadas como artes bellas.",
+          "image": "/images/News/Luces del siglo.jpeg",
+          "href": "https://lucesdelsiglo.com/2026/01/13/abrira-universidad-en-actuacion-y-danza-en-cancun-local/"
         }
       ]
     },
     "library": {
       "items": [
         {
-          "date": "2026",
-          "title": "Ensayo: Cuerpo y territorio en la escena caribeña",
-          "desc": "Un acercamiento a la relación entre práctica escénica e identidad territorial.",
-          "href": "#"
+          "date": "",
+          "title": "LA MEXICANIDAD EN ESCENA:CUANDO EL TEATRO MUSICAL CONSTRUYE IDENTIDAD",
+          "desc": [
+            "De la telenovela de los años ochenta al imaginario de la Época de Oro del cine mexicano.",
+            "Autora: Carolina Zepeda"
+          ],
+          "image": "/images/Bitacora/LA MEXICANIDAD EN ESCENA.jpeg",
+          "href": "/Pdfs/Ensayos y articulos/OKAN_Bitacora_La_Mexicanidad_en_Escena_Carolina_Zepeda (1).pdf"
         },
         {
-          "date": "2026",
+          "date": "",
+          "title": "MEDEA: LA TRANSGRESIÓN QUE ATRAVIESA LA HISTORIA",
+          "desc": [
+            "De Eurípides a Heiner Müller: poder, violencia y transformación del personaje trágico",
+            "Autor: Ernesto Tamayo"
+          ],
+          "image": "/images/Bitacora/Medea.jpeg",
+          "href": "/Pdfs/Ensayos y articulos/OKAN_Medea_Ernesto_Tamayo.pdf"
+        },
+        {
+          "date": "",
+          "title": "Presencia y negación de Aristóteles en la Mímesis",
+          "desc": [
+            "El regreso a un texto como la Poética de Aristóteles implica siempre, una vuelta itinerante a discursos que dialogan sobre categorías que se postulan como inamovibles, y siempre polémicas, en tanto su cuestionamiento remueve preceptos automatizados, que se erigen en convencionalismos",
+            "Autor: Ernesto Tamayo"
+          ],
+          "image": "/images/Bitacora/Aristoteles.jpeg",
+          "href": "/Pdfs/Ensayos y articulos/OKAN_Presencia_y_negacion_de_Aristoteles_Ernesto_Tamayo_FINAL (1).pdf"
+        },
+        {
+          "date": "",
+          "title": "Cuando el arte se vuelve mercancía: imágenes que seducen y conciencias que se apagan.",
+          "desc": [
+            "¿Qué ocurre cuando el valor del arte comienza a medirse por su precio, popularidad o número de visualizaciones? "
+          ],
+          "image": "/images/OKAN en accion/Agora/Dra. Natividad Norma Medero Hernández.jpeg",
+          "href": ""
+        },
+        {
+          "date": "",
+          "title": "Ensayo: Cuerpo y territorio en la escena caribeña",
+          "desc": "Un acercamiento a la relación entre práctica escénica e identidad territorial.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "",
           "title": "Notas de laboratorio: proceso creativo de Humedal",
           "desc": "Registro del proceso de creación de la producción escénica Humedal.",
-          "href": "#"
+          "image": "",
+          "href": ""
         }
       ]
     }

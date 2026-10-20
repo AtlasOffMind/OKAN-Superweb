@@ -240,7 +240,11 @@ export default async function Draft1Home({
           <p className="mt-4 max-w-md text-zinc-400">{t("homeNews.desc")}</p>
         </div>
         <div className="mt-14 w-full overflow-hidden">
-          <NewsCarousel items={homeNewsItems} />
+          <NewsCarousel
+            items={homeNewsItems}
+            newsLinkLabel={t("homeNews.newsLinkLabel")}
+            secondaryLinkLabel={t("homeNews.secondaryLinkLabel")}
+          />
         </div>
       </section>
 

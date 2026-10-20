@@ -12,6 +12,7 @@ export interface NewsItem {
     desc: string;
     image?: string;
     href?: string;
+    secondaryHref?: string;
 }
 
 // El carrusel avanza solo cada 5s (AUTOPLAY_DELAY_MS); cambia este valor para
@@ -28,7 +29,15 @@ const AUTOPLAY_DELAY_MS = 5000;
 // - Si un item no tiene "href", la tarjeta no es clicable.
 // =============================================================================
 
-export default function NewsCarousel({ items }: { items: NewsItem[] }) {
+export default function NewsCarousel({
+    items,
+    newsLinkLabel,
+    secondaryLinkLabel,
+}: {
+    items: NewsItem[];
+    newsLinkLabel: string;
+    secondaryLinkLabel: string;
+}) {
     return (
         <Swiper
             modules={[A11y, Autoplay, Keyboard, Navigation]}
@@ -68,29 +77,42 @@ export default function NewsCarousel({ items }: { items: NewsItem[] }) {
                         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-zinc-300 md:text-base">
                             {item.desc}
                         </p>
+                        <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3">
+                            {item.href && item.href !== "#" && (
+                                <a
+                                    href={item.href}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label={`${newsLinkLabel}: ${item.title}`}
+                                    className="text-brand-200 hover:text-white inline-flex items-center gap-2 text-sm font-semibold transition-colors"
+                                >
+                                    {newsLinkLabel}
+                                    <span aria-hidden="true">-&gt;</span>
+                                </a>
+                            )}
+                            {item.secondaryHref && item.secondaryHref !== "#" && (
+                                <a
+                                    href={item.secondaryHref}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label={`${secondaryLinkLabel}: ${item.title}`}
+                                    className="text-brand-200 hover:text-white inline-flex items-center gap-2 text-sm font-semibold transition-colors"
+                                >
+                                    {secondaryLinkLabel}
+                                    <span aria-hidden="true">-&gt;</span>
+                                </a>
+                            )}
+                        </div>
                     </div>
                 );
 
                 return (
                     <SwiperSlide key={`${item.title}-${index}`}>
-                        {item.href ? (
-                            <a
-                                href={item.href}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="relative block h-[70svh] min-h-[28rem] overflow-hidden bg-zinc-950 text-white"
-                            >
-                                {background}
-                                <div className="absolute inset-0 bg-black/55" />
-                                {info}
-                            </a>
-                        ) : (
-                            <div className="relative h-[70svh] min-h-[28rem] overflow-hidden bg-zinc-950 text-white">
-                                {background}
-                                <div className="absolute inset-0 bg-black/55" />
-                                {info}
-                            </div>
-                        )}
+                        <div className="relative h-[80svh] min-h-[32rem] overflow-hidden bg-zinc-950 text-white">
+                            {background}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/10" />
+                            {info}
+                        </div>
                     </SwiperSlide>
                 );
             })}

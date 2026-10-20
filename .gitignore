@@ -51,3 +51,7 @@ yarn-error.log*
 !.vscode/extensions.json
 .idea
 *.swp
+
+# Work archives
+/Assets
+OKAN.zip

@@ -64,83 +64,64 @@
     "homeNews": {
       "heading": "News",
       "desc": "Agenda and activities from the OKAN 2026-2027 calendar",
+      "newsLinkLabel": "Read the story",
+      "secondaryLinkLabel": "Book your ticket",
       "items": [
         {
-          "date": "Feb 6, 2027",
-          "title": "“La mirada de los invisibles”, by Saúl Enríquez — OKAN Laboratorio Escénico",
-          "desc": "Foro Hiram Sánchez, 7:00 pm. Stage direction: Ernesto Tamayo Benítez. First stage production by OKAN Laboratorio Escénico.",
-          "image": "",
-          "href": ""
-        },
-        {
-          "date": "Nov 26, 2026",
-          "title": "Final Showcase of the Expanded Stage Performer Laboratory: body, action and composition in contemporary dance",
-          "desc": "Foro Hiram Sánchez, 7:00 pm. Presented by OKAN's Acting and Dance degree students, closing the PRAD / Saberes Danzados 2026 process.",
-          "image": "",
-          "href": ""
-        },
-        {
-          "date": "Nov 20, 2026",
-          "title": "TEDx Cancún — Talk by Ernesto Tamayo, with OKAN students presenting “El Laberinto de las Alas”",
-          "desc": "Auditorio STOA, time to be confirmed.",
-          "image": "",
-          "href": ""
-        },
-        {
-          "date": "Nov 13, 2026",
-          "title": "Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Third public showing",
+          "date": "Oct 23, 2026",
+          "title": "Open class: Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Second public showing",
           "desc": "OKAN School of the Arts, 9:45 am–1:30 pm. Free admission with prior registration.",
-          "image": "",
-          "href": ""
+          "image": "/images/News/Laboratorio escenico.jpeg",
+          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
+          "secondaryHref": ""
+        },
+        {
+          "date": "Oct 30, 2026",
+          "title": "Dance-theatre performance: “El Laberinto de las Alas”",
+          "desc": "Teatro 8 de Octubre, 7:00 pm. Performed by students from the first generation of OKAN's Acting and Dance bachelor's programs.",
+          "image": "/images/News/laberinto de las alas-News Home.png",
+          "href": "https://share.google/GBqlatbPAh8jlmhTq",
+          "secondaryHref": ""
         },
         {
           "date": "Nov 4–9, 2026",
           "title": "46th National Theatre Showcase — Querétaro",
-          "desc": "Attendance of students from OKAN's first generation of Acting and Dance degree programs.",
+          "desc": "Students from the first generation of OKAN's Acting and Dance bachelor's programs will attend.",
           "image": "",
-          "href": ""
+          "href": "",
+          "secondaryHref": ""
         },
         {
-          "date": "Oct 30, 2026",
-          "title": "Presentation of the dance-theatre piece “El Laberinto de las Alas”",
-          "desc": "Teatro 8 de Octubre, 7:00 pm. Presented by students from OKAN's first generation of Acting and Dance degree programs.",
-          "image": "",
-          "href": ""
-        },
-        {
-          "date": "Oct 23, 2026",
-          "title": "Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Second public showing",
+          "date": "Nov 13, 2026",
+          "title": "Open class: Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Third public showing",
           "desc": "OKAN School of the Arts, 9:45 am–1:30 pm. Free admission with prior registration.",
-          "image": "",
-          "href": ""
+          "image": "/images/News/Laboratorio escenico.jpeg",
+          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
+          "secondaryHref": ""
         },
         {
-          "date": "Oct 17–18, 2026",
-          "title": "Hadestown by CIAE — Musical theatre production presented by Advanced Level students",
-          "desc": "Foro Hiram Sánchez. Showtimes: 7:00 pm and 5:00 pm respectively.",
+          "date": "Nov 20, 2026",
+          "title": "TEDx Cancún — Ernesto Tamayo, with OKAN students presenting “El Laberinto de las Alas”",
+          "desc": "Auditorio STOA. Schedule to be announced.",
           "image": "",
-          "href": ""
+          "href": "",
+          "secondaryHref": ""
         },
         {
-          "date": "Oct 9, 2026",
-          "title": "Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — First public showing",
-          "desc": "OKAN School of the Arts, 9:45 am–1:30 pm. Free admission with prior registration.",
+          "date": "Nov 26, 2026",
+          "title": "Final showcase of the Expanded Stage Performer Laboratory: body, action and composition in contemporary dance",
+          "desc": "Foro Hiram Sánchez, 7:00 pm. Presented by students from OKAN's Acting and Dance bachelor's programs, closing the PRAD / Saberes Danzados 2026 process.",
           "image": "",
-          "href": ""
+          "href": "",
+          "secondaryHref": ""
         },
         {
-          "date": "Sep 25, 2026",
-          "title": "Ágora OKAN — Guest speaker: Dr. Norma Medero",
-          "desc": "OKAN School of the Arts. Time and details to be confirmed.",
+          "date": "Feb 6, 2027",
+          "title": "“La mirada de los invisibles”, by Saúl Enríquez — OKAN Stage Laboratory",
+          "desc": "Foro Hiram Sánchez, 7:00 pm. Stage direction: Ernesto Tamayo Benítez. First production by OKAN Stage Laboratory.",
           "image": "",
-          "href": ""
-        },
-        {
-          "date": "Sep 21 – Nov 20, 2026",
-          "title": "Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Saberes Danzados 2026 Program (PRAD), with Yailín Rodríguez García “Yailín Coppola”",
-          "desc": "OKAN School of the Arts. Tuesdays and Wednesdays, 10:45 am–1:30 pm; Fridays, 9:45 am–1:30 pm.",
-          "image": "",
-          "href": ""
+          "href": "",
+          "secondaryHref": ""
         }
       ]
     },
@@ -163,7 +144,7 @@
       "title": "Acting",
       "tagline": "The actor as creator",
       "planStudy": "VIEW STUDY PLAN",
-      "planHref": "#",
+      "planHref": "/Pdfs/LICENCIATURA%20EN%20ACTUACI%C3%93N.pdf",
       "desc": [
         "The Bachelor's Degree in Acting explores the craft from every angle the profession demands today: actor training, voice and physical expression; dramaturgy, history, philosophy, critical thinking and performance research; creation, laboratory work and staging; acting for camera, casting and dubbing; stagecraft, cultural management and the tools to understand how a stage project is created, produced and circulated. The curriculum also builds toward directing actors, executive production, entrepreneurship and research applied to the thesis project.",
         "A curriculum to investigate, analyze, create, master different languages of performance, understand the technical resources of the stage and develop professional autonomy."
@@ -176,7 +157,7 @@
       "title": "Dance",
       "tagline": "The body as language",
       "planStudy": "VIEW STUDY PLAN",
-      "planHref": "#",
+      "planHref": "/Pdfs/LICENCIATURA%20EN%20DANZA.pdf",
       "desc": [
         "Contemporary Dance is the backbone of the degree. Around it, classical ballet, jazz, Caribbean rhythms, Mexican folklore and urban dance engage in dialogue with performance, choreographic composition, acting, voice, history, philosophy, critical thinking and research.",
         "The training expands toward the languages and tools that build the contemporary stage: multimedia, space, light, set design and stagecraft; and toward the knowledge needed to develop and sustain projects: cultural management, the creative economy, funding, executive production and pedagogy for dance. The curriculum also includes functional anatomy and kinesiology, music applied to dance, audition management and a progressive choreographic lab process that culminates in the creation and staging of the thesis work.",
@@ -190,7 +171,7 @@
       "title": "Continuing Studies",
       "tagline": "Continuing education and workshops",
       "planStudy": "EXPLORE THE OFFERING",
-      "planHref": "#",
+      "planHref": "/Pdfs/OKAN%20ESTUDIOS%20CONTINUOS%202026%20-%202027_compressed.pdf",
       "desc": [
         "Continuing Studies extends the OKAN Methodology beyond the degree programs. It is a space to specialize, update knowledge, professionalize a practice and discover new applications of stage tools in other fields of knowledge and work.",
         "The offering combines training and professional development for performers; acting, dance, body and voice; philosophy and research in the arts; interdisciplinary creation; film and audiovisual media; martial arts applied to the stage; directing, production and company leadership; pedagogy and teacher training.",
@@ -207,7 +188,7 @@
     },
     "international": {
       "heading": "International partnerships",
-      "intro": "OKAN collaborates with arts companies and institutions that expand the reach of its programs.",
+      "intro": "OKAN collaborates with arts companies and institutions to extend the reach of its programs.",
       "partners": [
         {
           "logo": "/images/Pograms/Logos/ARGOS TEATRO.png",
@@ -317,7 +298,7 @@
       },
       {
         "title": "Community",
-        "desc": "A close faculty and classmates who become colleagues."
+        "desc": "Supportive faculty and classmates who become colleagues."
       },
       {
         "title": "Support",
@@ -424,17 +405,6 @@
       "intro": "Professional theatre and dance productions involving students, faculty and guest artists under the direction of creators with recognized careers.",
       "productions": [
         {
-          "title": "The gaze of the invisible",
-          "desc": [
-            "A group of young people tries to find their place in a world that looks at them without seeing them. Their stories intersect amid exclusion, violence, fear and the need to belong, until meeting one another begins to break their isolation.",
-            "Staging and general direction: Yailin Coppola and Ernesto Tamayo.",
-            "Choreographic design: Carolina Zepeda.",
-            "Production: OKAN Laboratorio Escénico."
-          ],
-          "date": "Opening date to be confirmed",
-          "image": "/images/Hero/20260707_193020.jpg"
-        },
-        {
           "title": "The labyrinth of wings",
           "desc": [
             "(Expanded Stage Performer Laboratory)",
@@ -447,6 +417,17 @@
           ],
           "date": "Opening date to be confirmed",
           "image": "/images/Hero/20260707_193406.jpg"
+        },
+        {
+          "title": "The gaze of the invisible",
+          "desc": [
+            "A group of young people tries to find their place in a world that looks at them without seeing them. Their stories intersect amid exclusion, violence, fear and the need to belong, until meeting one another begins to break their isolation.",
+            "Staging and general direction: Yailin Coppola and Ernesto Tamayo.",
+            "Choreographic design: Carolina Zepeda.",
+            "Production: OKAN Laboratorio Escénico."
+          ],
+          "date": "Opening date to be confirmed",
+          "image": "/images/Hero/20260707_193020.jpg"
         },
         {
           "title": "Swamp",
@@ -464,7 +445,14 @@
     },
     "espectaculos": {
       "heading": "OKAN Espectáculos",
-      "intro": "Creation and production of shows for hotels, DMCs, conventions, events and the tourism and entertainment industries.",
+      "intro": "Creation and production of shows for hotels, destination management companies, conventions, events, tourism and entertainment.",
+      "galleryTitle": "Show gallery",
+      "heroImageAlt": "A scene from an OKAN show",
+      "expandImage": "Enlarge image",
+      "closeImage": "Close",
+      "catalogTitle": "Take the show with you.",
+      "catalogDownload": "Download the catalog",
+      "catalogFileInfo": "",
       "repertoire": [
         {
           "title": "Upcoming show",
@@ -491,38 +479,134 @@
     "news": {
       "items": [
         {
+          "date": "Oct 17–18, 2026",
+          "title": "Hadestown by CIAE — Musical theatre production by Advanced Level students",
+          "desc": "Foro Hiram Sánchez. Showtimes: 7:00 pm and 5:00 pm, respectively.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Oct 12, 2026",
+          "title": "“El Laberinto de las Alas” brings an immersive theatre and dance experience to Cancún",
+          "desc": [
+            "Emerging artists take the stage in Cancún with “El Laberinto de las Alas”, an immersive theatre and dance production at Teatro 8 de Octubre on Friday, October 30, 2026, at 7:00 pm.",
+            "The production features students from the first generation of OKAN's Acting and Dance bachelor's programs, sharing the results of their artistic training and research."
+          ],
+          "image": "/images/News/laberinto de las alas-News Home.png",
+          "href": "https://enteratecancun.com/el-laberinto-de-las-alas-llega-a-cancun-con-una-experiencia-de-teatro-y-danza-inmersiva/"
+        },
+        {
+          "date": "Sep 21–Nov 20, 2026",
+          "title": "Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Saberes Danzados 2026 (PRAD), with Yailín Rodríguez García “Yailín Coppola”",
+          "desc": "OKAN School of the Arts. Tuesdays and Wednesdays, 10:45 am–1:30 pm; Fridays, 9:45 am–1:30 pm.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Sep 14, 2026",
+          "title": "Yailín Coppola arrives in Cancún to share knowledge and create",
+          "desc": "Cancún gains a new opportunity for artistic exchange with the arrival of Cuban actor, director and educator Yailín Rodríguez García, known as Yailín Coppola. She is in Cancún to lead a laboratory for young creators and artists in training.",
+          "image": "/images/News/Quintana Roo hoy, Yailin.jpeg",
+          "href": "https://quintanaroohoy.com/cultura/yailin-coppola-cancun-laboratorio-escenico"
+        },
+        {
           "date": "September 2026",
           "title": "Auditions open for the new generation",
           "desc": "Admission call for the Acting, Dance and Stage Creation programs.",
-          "href": "#"
+          "image": "",
+          "href": ""
         },
         {
           "date": "August 2026",
           "title": "Premiere of the stage production Humedal",
-          "desc": "Our company presents its latest work, the result of a year of laboratory.",
-          "href": "#"
+          "desc": "Our company presents its latest production, the result of a year of laboratory work.",
+          "image": "",
+          "href": ""
         },
         {
           "date": "July 2026",
           "title": "New cycle of open workshops",
-          "desc": "We open workshops in voice, movement and creation for the interested community.",
-          "href": "#"
+          "desc": "We are opening workshops in voice, movement and creation for the wider community.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "Jul 9, 2026",
+          "title": "OKAN transforms Cancún: the city's first School of the Arts opens with an immersive performing arts program",
+          "desc": "As many young people leave Cancún to study the arts, a new school hopes to change that. For years, aspiring actors and dancers had to move to other cities for higher education. OKAN aims to make professional arts training available locally and build a new path for generations of artists.",
+          "image": "/images/News/cancunissimo.mx.jpeg",
+          "href": "https://cancunissimo.mx/okan-transforma-cancun-nace-la-primera-escuela-superior-de-arte-con-una-propuesta-escenica-inmersiva/"
+        },
+        {
+          "date": "Jul 9, 2026",
+          "title": "OKAN presents the results of its first preparatory term with “El Laberinto de las Alas”",
+          "desc": "OKAN School of the Arts concludes its first preparatory term with a student-created stage production. “El Laberinto de las Alas” brings together the knowledge, experience and tools developed during four months of artistic training.",
+          "image": "/images/News/Laberinto de las alas Prop.jpg",
+          "href": "https://quintanaroohoy.com/cultura/okan-presenta-el-laberinto-de-las-alas-propedeutico/"
+        },
+        {
+          "date": "Jan 13, 2026",
+          "title": "New university for acting and dance to open in Cancún",
+          "desc": "A new School of the Arts, OKAN, was announced in Cancún to strengthen the training and professional development of performing artists. The higher education institution will specialize in performing arts, particularly theatre and dance.",
+          "image": "/images/News/Luces del siglo.jpeg",
+          "href": "https://lucesdelsiglo.com/2026/01/13/abrira-universidad-en-actuacion-y-danza-en-cancun-local/"
         }
       ]
     },
     "library": {
       "items": [
         {
-          "date": "2026",
-          "title": "Essay: Body and territory in the Caribbean stage",
-          "desc": "An exploration of the relationship between stage practice and territorial identity.",
-          "href": "#"
+          "date": "",
+          "title": "Mexican identity on stage: how musical theatre builds identity",
+          "desc": [
+            "From 80's soap operas to the imagery of Mexico's Golden Age of cinema.",
+            "By Carolina Zepeda"
+          ],
+          "image": "/images/Bitacora/LA MEXICANIDAD EN ESCENA.jpeg",
+          "href": "/Pdfs/Ensayos%20y%20articulos/OKAN_Bitacora_La_Mexicanidad_en_Escena_Carolina_Zepeda%20(1).pdf"
         },
         {
-          "date": "2026",
+          "date": "",
+          "title": "Medea: the transgression that crosses history",
+          "desc": [
+            "From Euripides to Heiner Müller: power, violence and the transformation of the tragic character.",
+            "By Ernesto Tamayo"
+          ],
+          "image": "/images/Bitacora/Medea.jpeg",
+          "href": "/Pdfs/Ensayos%20y%20articulos/OKAN_Medea_Ernesto_Tamayo.pdf"
+        },
+        {
+          "date": "",
+          "title": "Aristotle's presence and denial in mimesis",
+          "desc": [
+            "Returning to Aristotle's Poetics means revisiting debates about categories presented as fixed yet always contested, whose questioning unsettles automated precepts and conventions.",
+            "By Ernesto Tamayo"
+          ],
+          "image": "/images/Bitacora/Aristoteles.jpeg",
+          "href": "/Pdfs/Ensayos%20y%20articulos/OKAN_Presencia_y_negacion_de_Aristoteles_Ernesto_Tamayo_FINAL%20(1).pdf"
+        },
+        {
+          "date": "",
+          "title": "When art becomes a commodity: images that seduce and consciousnesses that fade",
+          "desc": [
+            "What happens when the value of art is measured by its price, popularity or number of views?"
+          ],
+          "image": "/images/OKAN en accion/Agora/Dra. Natividad Norma Medero Hernández.jpeg",
+          "href": ""
+        },
+        {
+          "date": "",
+          "title": "Essay: Body and territory on the Caribbean stage",
+          "desc": "An exploration of the relationship between stage practice and territorial identity.",
+          "image": "",
+          "href": ""
+        },
+        {
+          "date": "",
           "title": "Lab notes: the creative process behind Humedal",
           "desc": "A record of the creative process behind the stage production Humedal.",
-          "href": "#"
+          "image": "",
+          "href": ""
         }
       ]
     }

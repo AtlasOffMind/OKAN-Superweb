@@ -1,9 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { routing } from "@/i18n/routing";
-import {
-    ProductionCarousel,
-    type ProductionItem,
-} from "@/components/ProductionCarousel";
+import { ShowGallery } from "@/components/ShowGallery";
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -17,26 +15,54 @@ export default async function Draft1Espectaculos({
     const { locale } = await params;
     setRequestLocale(locale);
     const t = await getTranslations("okanEnAccion.espectaculos");
-    const repertoire = t.raw("repertoire") as ProductionItem[];
 
     return (
         <>
-            {/* ========================================================================= */}
-            {/* SECCIÓN 1: HERO (FONDO CON COLORES OKAN)                                   */}
-            {/* - Textos modificables en: src/messages/es.json -> "okanEnAccion.espectaculos" */}
-            {/* ========================================================================= */}
-            <section className="bg-[radial-gradient(ellipse_at_top,#24103d_0%,#0a0a0a_62%)] px-6 py-28 text-white md:px-12 md:py-36">
-                <div className="mx-auto max-w-5xl">
-                    <h1 className="font-display max-w-3xl text-5xl font-semibold leading-[0.98] tracking-tight sm:text-6xl md:text-8xl">
-                        {t("heading")}
-                    </h1>
-                    <p className="mt-8 max-w-2xl text-xl leading-relaxed text-zinc-300">
-                        {t("intro")}
-                    </p>
-                </div>
+            <section aria-label={t("heading")} className="relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-zinc-950">
+                <h1 className="sr-only">{t("heading")}</h1>
+                <Image
+                    src="/images/OKAN%20en%20accion/Shows/1.jpg"
+                    alt={t("heroImageAlt")}
+                    fill
+                    priority
+                    sizes="100vw"
+                    aria-hidden="true"
+                    className="scale-110 object-cover opacity-70 blur-md"
+                />
+                <Image
+                    src="/images/OKAN%20en%20accion/Shows/1.jpg"
+                    alt={t("heroImageAlt")}
+                    width={1920}
+                    height={1080}
+                    priority
+                    sizes="100vw"
+                    className="relative z-10 max-h-[100svh] w-full object-contain"
+                />
             </section>
 
-            <ProductionCarousel items={repertoire} showDetails={false} />
+            <ShowGallery
+                galleryTitle={t("galleryTitle")}
+                imageAltPrefix={t("galleryTitle")}
+                expandLabel={t("expandImage")}
+                closeLabel={t("closeImage")}
+            />
+
+            <section className="bg-brand-950 px-6 py-20 text-white md:px-12 md:py-28">
+                <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 border-t border-white/20 pt-10 sm:flex-row sm:items-end">
+                    <h2 className="font-display max-w-2xl text-4xl font-semibold leading-tight md:text-6xl">
+                        {t("catalogTitle")}
+                    </h2>
+                    <div className="flex shrink-0 flex-col items-start gap-3">
+                        <a
+                            href="/Pdfs/OKAN%20%281%29_compressed%20%281%29.pdf"
+                            download="CATALOGO OKAN ESPECTACULO.pdf"
+                            className="bg-brand-500 text-zinc-950 px-6 py-4 text-sm font-bold transition-colors hover:bg-brand-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                        >
+                            {t("catalogDownload")}
+                        </a>
+                    </div>
+                </div>
+            </section>
         </>
     );
 }

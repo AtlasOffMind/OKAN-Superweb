@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Keyboard, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -8,8 +9,19 @@ import "swiper/css/navigation";
 export interface InfoCarouselItem {
     date: string;
     title: string;
-    desc: string;
-    href: string;
+    desc: string | string[];
+    image?: string;
+    href?: string;
+}
+
+function renderDescription(description: string | string[]) {
+    return (Array.isArray(description) ? description : [description]).map(
+        (paragraph, index) => (
+            <p key={index} className="mt-4 text-sm leading-relaxed text-zinc-400">
+                {paragraph}
+            </p>
+        ),
+    );
 }
 
 interface InfoCarouselProps {
@@ -44,25 +56,36 @@ export default function InfoCarousel({ items, linkLabel }: InfoCarouselProps) {
                 <SwiperSlide key={`${item.title}-${index}`} className="!h-auto">
                     <article className="flex h-full flex-col justify-between gap-6 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6">
                         <div>
+                            {item.image && (
+                                <div className="relative -mx-6 -mt-6 mb-6 aspect-[16/9] overflow-hidden bg-zinc-950">
+                                    <Image
+                                        src={item.image}
+                                        alt={item.title}
+                                        fill
+                                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                                        className="object-cover"
+                                    />
+                                </div>
+                            )}
                             <p className="text-brand-300 text-xs font-semibold tracking-[0.2em] uppercase">
                                 {item.date}
                             </p>
                             <h3 className="font-display mt-3 text-2xl font-semibold tracking-tight text-white">
                                 {item.title}
                             </h3>
-                            <p className="mt-4 text-sm leading-relaxed text-zinc-400">
-                                {item.desc}
-                            </p>
+                            {renderDescription(item.desc)}
                         </div>
-                        <a
-                            href={item.href}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-brand-300 hover:text-white inline-flex w-fit items-center gap-2 text-sm font-semibold transition-colors"
-                        >
-                            {linkLabel}
-                            <span aria-hidden="true">-&gt;</span>
-                        </a>
+                        {item.href && item.href !== "#" && (
+                            <a
+                                href={item.href}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-brand-300 hover:text-white inline-flex w-fit items-center gap-2 text-sm font-semibold transition-colors"
+                            >
+                                {linkLabel}
+                                <span aria-hidden="true">-&gt;</span>
+                            </a>
+                        )}
                     </article>
                 </SwiperSlide>
             ))}
