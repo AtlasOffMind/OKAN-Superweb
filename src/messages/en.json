@@ -19,7 +19,7 @@
       "apply": "Apply now"
     },
     "hero": {
-      "eyebrow": "School of the Arts",
+      "eyebrow": "School of the Arts in Cancun",
       "title": "ART IS MORE THAN TALENT",
       "subtitle": "IT IS CRAFT. THOUGHT. IDENTITY. PROFESSION.",
       "primary": "Apply now",
@@ -192,27 +192,27 @@
       "partners": [
         {
           "logo": "/images/Pograms/Logos/ARGOS TEATRO.png",
-          "name": "",
+          "name": "Argos Teatro",
           "desc": ""
         },
         {
           "logo": "/images/Pograms/Logos/CORPOREA ENTERPRISE.png",
-          "name": "",
+          "name": "Corporea Enterprise",
           "desc": ""
         },
         {
           "logo": "/images/Pograms/Logos/GESTARTE.png",
-          "name": "",
+          "name": "Gestarte",
           "desc": ""
         },
         {
           "logo": "/images/Pograms/Logos/ISA.png",
-          "name": "",
+          "name": "ISA",
           "desc": ""
         },
         {
           "logo": "/images/Pograms/Logos/MIAMI FACTORY THEATRE.png",
-          "name": "",
+          "name": "Miami Factory Theatre",
           "desc": ""
         }
       ]

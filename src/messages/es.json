@@ -19,7 +19,7 @@
       "apply": "Aplica ahora"
     },
     "hero": {
-      "eyebrow": "Escuela Superior de Arte",
+      "eyebrow": "Escuela Superior de Arte en Cancún",
       "title": "EL ARTE NO ES SOLO TALENTO",
       "subtitle": "ES OFICIO. PENSAMIENTO. IDENTIDAD. PROFESIÓN.",
       "primary": "Aplica ahora",
@@ -192,27 +192,27 @@
       "partners": [
         {
           "logo": "/images/Pograms/Logos/ARGOS TEATRO.png",
-          "name": "",
+          "name": "Argos Teatro",
           "desc": ""
         },
         {
           "logo": "/images/Pograms/Logos/CORPOREA ENTERPRISE.png",
-          "name": "",
+          "name": "Corporea Enterprise",
           "desc": ""
         },
         {
           "logo": "/images/Pograms/Logos/GESTARTE.png",
-          "name": "",
+          "name": "Gestarte",
           "desc": ""
         },
         {
           "logo": "/images/Pograms/Logos/ISA.png",
-          "name": "",
+          "name": "ISA",
           "desc": ""
         },
         {
           "logo": "/images/Pograms/Logos/MIAMI FACTORY THEATRE.png",
-          "name": "",
+          "name": "Miami Factory Theatre",
           "desc": ""
         }
       ]

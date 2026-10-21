@@ -1,9 +1,20 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
-import { routing } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
+import { routing, type Locale } from "@/i18n/routing";
+import { getPageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  return getPageMetadata(locale, "programs");
 }
 
 export default async function Draft1Programs({
@@ -15,9 +26,9 @@ export default async function Draft1Programs({
   setRequestLocale(locale);
   const t = await getTranslations("programs");
   const careers = [
-    { key: "acting", image: "/images/Pograms/Programs/actuacion2.jpg" },
-    { key: "dance", image: "/images/Pograms/Programs/danza2.jpg" },
-    { key: "continuingEd", image: "/images/Pograms/Programs/estudios_continuos2.jpg" },
+    { key: "acting", slug: "acting", image: "/images/Pograms/Programs/actuacion2.jpg" },
+    { key: "dance", slug: "contemporary-dance", image: "/images/Pograms/Programs/danza2.jpg" },
+    { key: "continuingEd", slug: "continuing-studies", image: "/images/Pograms/Programs/estudios_continuos2.jpg" },
   ] as const;
 
   return (
@@ -49,7 +60,7 @@ export default async function Draft1Programs({
       {/* ========================================================================= */}
       <section>
         <div className="grid md:grid-cols-3">
-          {careers.map(({ key, image }) => (
+          {careers.map(({ key, slug, image }) => (
             <article key={key} className="group relative overflow-hidden bg-zinc-950 text-white">
               {/* Imagen del programa con título gigante y lema */}
               <div className="relative aspect-[4/5] overflow-hidden">
@@ -91,13 +102,13 @@ export default async function Draft1Programs({
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={t(`${key}.planHref`)}
+                <Link
+                  href={`/programs/${slug}`}
                   className="text-brand-300 hover:text-white inline-flex w-fit items-center gap-2 text-sm font-semibold transition-colors"
                 >
-                  {t(`${key}.planStudy`)}
+                  {locale === "es" ? "Conoce el programa" : "Explore the program"}
                   <span aria-hidden="true">-&gt;</span>
-                </a>
+                </Link>
               </div>
             </article>
           ))}

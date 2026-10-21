@@ -25,6 +25,7 @@ El sitio está bajo `src/app/[locale]/` con locales `es` (default) y `en`, por l
 ## Payload y despliegue
 
 - URLs públicas de la versión actual: `/es/...` y `/en/...`. Las rutas anteriores con `/draft-1` redirigen a la URL limpia.
+- Configura `NEXT_PUBLIC_SITE_URL` con el origen HTTPS canónico de producción, sin barra final. Se usa para canonical, `hreflang` y `sitemap.xml`; si queda vacío, sitemap no listará URLs y esos metadatos no se generarán.
 - Configura `DATABASE_URI`, `PAYLOAD_SECRET` y `PAYLOAD_OWNER_EMAIL` en el entorno del hosting. Genera `PAYLOAD_SECRET` con `openssl rand -hex 32`; nunca publiques secretos ni uses los valores de ejemplo.
 - La cuenta propietaria no se crea mediante la web. En local, después de aplicar las migraciones, establece `PAYLOAD_OWNER_EMAIL` y `PAYLOAD_OWNER_INITIAL_PASSWORD` en `.env` y ejecuta `npm run payload:create-owner`. El script crea solo esa cuenta; no configures `PAYLOAD_OWNER_INITIAL_PASSWORD` en el hosting.
 - Solo el email definido en `PAYLOAD_OWNER_EMAIL` puede acceder al admin y administrar colecciones. El público puede leer contenido y enviar solicitudes; las solicitudes solo son visibles para el propietario.

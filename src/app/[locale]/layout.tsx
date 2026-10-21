@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { getSiteUrl } from "@/lib/seo";
 import "../globals.css";
 
 const inter = Inter({
@@ -26,9 +27,21 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "home" });
+  const siteUrl = getSiteUrl();
   return {
-    title: t("title"),
+    metadataBase: siteUrl,
+    title: {
+      default:
+        locale === "es"
+          ? "OKAN Escuela Superior de Arte"
+          : "OKAN School of the Arts",
+      template:
+        locale === "es"
+          ? "%s | OKAN Escuela Superior de Arte"
+          : "%s | OKAN School of the Arts",
+    },
+    applicationName: "OKAN Escuela Superior de Arte",
+    category: "education",
   };
 }
 

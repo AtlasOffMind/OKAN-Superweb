@@ -94,6 +94,9 @@ export default async function Draft1Home({
           <div className="flex items-center justify-center">
             <OkanLogo variant="light" width={300} />
           </div>
+          <p className="mt-6 text-sm font-semibold tracking-[0.2em] text-zinc-200 uppercase">
+            {t("hero.eyebrow")}
+          </p>
           <h1 className="font-display mt-6 text-5xl leading-[1.05] font-semibold tracking-tight text-white md:text-7xl">
             {t("hero.title")}
           </h1>

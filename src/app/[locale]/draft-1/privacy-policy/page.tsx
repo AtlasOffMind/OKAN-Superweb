@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { OkanLogo } from "@/components/okan-logo";
-import { routing } from "@/i18n/routing";
+import { routing, type Locale } from "@/i18n/routing";
+import { getPageMetadata } from "@/lib/seo";
 
 const content = {
     es: {
@@ -37,6 +38,15 @@ const content = {
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: Locale }>;
+}) {
+    const { locale } = await params;
+    return getPageMetadata(locale, "privacy");
 }
 
 export default async function PrivacyPolicyPage({

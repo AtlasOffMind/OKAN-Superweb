@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { routing } from "@/i18n/routing";
+import { routing, type Locale } from "@/i18n/routing";
+import { getPageMetadata } from "@/lib/seo";
 import {
     ConversationGrid,
     type ConversationItem,
@@ -7,6 +8,15 @@ import {
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: Locale }>;
+}) {
+    const { locale } = await params;
+    return getPageMetadata(locale, "agora");
 }
 
 export default async function Draft1Agora({
