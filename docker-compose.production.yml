@@ -1,0 +1,57 @@
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?Set POSTGRES_DB in the production env file}
+      POSTGRES_USER: ${POSTGRES_USER:?Set POSTGRES_USER in the production env file}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in the production env file}
+    volumes:
+      - okan_postgres_data:/var/lib/postgresql/data
+    networks:
+      - okan_network
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:?Set NEXT_PUBLIC_SITE_URL in the production env file}
+    restart: unless-stopped
+    env_file:
+      - ${OKAN_ENV_FILE:-/opt/okan/.env}
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:?Set NEXT_PUBLIC_SITE_URL in the production env file}
+      DATABASE_URI: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      PAYLOAD_MEDIA_DIR: /app/data/media
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - okan_payload_uploads:/app/data/media
+    networks:
+      - okan_network
+    user: node
+
+volumes:
+  okan_postgres_data:
+    external: true
+    name: okan_postgres_data
+  okan_payload_uploads:
+    external: true
+    name: okan_payload_uploads
+
+networks:
+  okan_network:
+    name: okan_network

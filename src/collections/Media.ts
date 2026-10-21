@@ -9,7 +9,9 @@ export const Media: CollectionConfig = {
     update: isOwner,
     delete: isOwner,
   },
-  upload: true,
+  upload: process.env.PAYLOAD_MEDIA_DIR
+    ? { staticDir: process.env.PAYLOAD_MEDIA_DIR }
+    : true,
   fields: [
     {
       name: "alt",
