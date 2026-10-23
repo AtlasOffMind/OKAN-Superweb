@@ -72,19 +72,29 @@ export async function submitAdmission(
     const from = process.env.RESEND_FROM;
     const to = process.env.CONTACT_EMAIL || "info@escueladearteokan.com";
 
-    if (apiKey && from) {
-        try {
-            const resend = new Resend(apiKey);
-            await resend.emails.send({
-                from,
-                to: [to],
-                replyTo: email,
-                subject: `Nueva solicitud de admisión de ${name}`,
-                text: `Nombre: ${name}\nTeléfono: ${phone}\nCorreo: ${email}\nEdad: ${age}\nSexo: ${gender}\nLicenciatura: ${program}\nFecha de ingreso: ${admissionDate}\nMensaje: ${message || "Sin mensaje"}`,
-            });
-        } catch {
-            // El correo es secundario: el registro ya quedó guardado en Payload.
+    if (!apiKey || !from) {
+        console.error("Admission email not sent: RESEND_API_KEY or RESEND_FROM is missing.");
+        return { ok: true };
+    }
+
+    try {
+        const resend = new Resend(apiKey);
+        const { error } = await resend.emails.send({
+            from,
+            to: [to],
+            replyTo: email,
+            subject: `Nueva solicitud de admisión de ${name}`,
+            text: `Nombre: ${name}\nTeléfono: ${phone}\nCorreo: ${email}\nEdad: ${age}\nSexo: ${gender}\nLicenciatura: ${program}\nFecha de ingreso: ${admissionDate}\nMensaje: ${message || "Sin mensaje"}`,
+        });
+
+        if (error) {
+            console.error("Admission email failed in Resend:", error.message);
         }
+    } catch (error) {
+        console.error(
+            "Admission email request failed:",
+            error instanceof Error ? error.message : "Unknown Resend error",
+        );
     }
 
     return { ok: true };
