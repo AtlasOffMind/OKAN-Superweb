@@ -264,6 +264,8 @@
       "phoneCountryCode": "Prefijo internacional",
       "email": "Correo electrónico",
       "age": "Edad",
+      "completedHighSchool": "Declaro que terminé el bachillerato.",
+      "parentalPermission": "Declaro que cuento con autorización de mi madre, padre o tutor legal para solicitar admisión con 17 años.",
       "gender": "Sexo",
       "genderOptions": {
         "male": "Masculino",
@@ -286,7 +288,24 @@
       "submit": "Enviar solicitud",
       "sending": "Enviando…",
       "success": "¡Gracias! Recibimos tu solicitud.",
-      "error": "No pudimos enviar tu solicitud. Intenta de nuevo."
+      "error": "No pudimos enviar tu solicitud. Intenta de nuevo.",
+      "eligibilityError": "Para solicitar admisión debes tener 18 años, o 17 con bachillerato terminado y autorización de tu madre, padre o tutor legal.",
+      "consentError": "Debes leer y aceptar el aviso de privacidad para continuar.",
+      "captchaError": "No se pudo validar la protección anti-spam. Actualiza el reto e intenta de nuevo.",
+      "rateLimitError": "Se alcanzó el límite temporal de solicitudes. Espera unos minutos e inténtalo de nuevo.",
+      "reviewTitle": "Aviso de privacidad para solicitudes de admisión",
+      "reviewText": [
+        "Responsable: OKAN Escuela Superior de Arte [COMPLETAR RAZÓN SOCIAL Y DOMICILIO]. Contacto para privacidad: [COMPLETAR CORREO O MEDIO DE CONTACTO].",
+        "Usaremos los datos que proporciones —incluidos nombre, contacto, edad, programa y mensaje— únicamente para atender tu solicitud de admisión y comunicarnos contigo sobre el proceso.",
+        "El personal autorizado de admisiones podrá consultar la solicitud. Para operar el sitio y entregar el aviso por correo, los datos pueden ser procesados por Hostinger (alojamiento) y Resend (envío de correo). Completar o confirmar sus condiciones y ubicaciones de tratamiento antes de publicar.",
+        "Conservaremos las solicitudes durante [COMPLETAR PLAZO DE RETENCIÓN] y después las eliminaremos o anonimizaremos, salvo que debamos conservarlas por una obligación legal. Para solicitar acceso, corrección o eliminación, escribe a [COMPLETAR CORREO DE PRIVACIDAD].",
+        "La edad ordinaria mínima de ingreso es 18 años. Una persona de 17 puede solicitar admisión si concluyó el bachillerato y cuenta con autorización de su madre, padre o tutor legal. Esta casilla registra tu declaración; OKAN podrá solicitar documentación para verificarla.",
+        "Al enviar, confirmas que leíste este aviso y autorizas el uso de los datos para los fines descritos. No incluyas información sensible en el campo de mensaje."
+      ],
+      "privacyConsent": "He leído y acepto el aviso de privacidad para que OKAN use mis datos con los fines descritos.",
+      "reviewBack": "Volver al formulario",
+      "reviewSubmit": "Aceptar y enviar",
+      "captchaLabel": "Verificación anti-spam"
     }
   },
   "life": {

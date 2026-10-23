@@ -38,7 +38,7 @@ export default async function Draft1Admissions({
       {/* ========================================================================= */}
       <section className="relative min-h-[70svh] overflow-hidden bg-[radial-gradient(ellipse_at_top,#24103d_0%,#0a0a0a_62%)] text-white">
         <div className="relative z-10 mx-auto flex min-h-[70svh] max-w-6xl flex-col justify-end px-6 py-20 md:px-12 md:py-24">
-          <h1 className="font-display max-w-3xl text-5xl font-semibold leading-[0.98] tracking-tight md:text-7xl">
+          <h1 className="font-display max-w-3xl text-5xl leading-[0.98] font-semibold tracking-tight md:text-7xl">
             {t("heading")}
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-200">
@@ -63,7 +63,7 @@ export default async function Draft1Admissions({
             <p className="text-brand-600 text-sm font-semibold tracking-[0.25em] uppercase">
               {t("welcome.eyebrow")}
             </p>
-            <h2 className="font-display mt-5 text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
+            <h2 className="font-display mt-5 text-4xl leading-tight font-semibold tracking-tight md:text-5xl">
               {t("welcome.title")}
             </h2>
           </div>
@@ -117,6 +117,8 @@ export default async function Draft1Admissions({
                 phoneCountryCode: t("applicationForm.phoneCountryCode"),
                 email: t("applicationForm.email"),
                 age: t("applicationForm.age"),
+                completedHighSchool: t("applicationForm.completedHighSchool"),
+                parentalPermission: t("applicationForm.parentalPermission"),
                 gender: t("applicationForm.gender"),
                 genderOptions: {
                   male: t("applicationForm.genderOptions.male"),
@@ -127,19 +129,41 @@ export default async function Draft1Admissions({
                 programOptions: {
                   acting: t("applicationForm.programOptions.acting"),
                   dance: t("applicationForm.programOptions.dance"),
-                  continuingEd: t("applicationForm.programOptions.continuingEd"),
+                  continuingEd: t(
+                    "applicationForm.programOptions.continuingEd"
+                  ),
                 },
                 admissionDate: t("applicationForm.admissionDate"),
                 admissionDateOptions: {
-                  january2027: t("applicationForm.admissionDateOptions.january2027"),
-                  september2027: t("applicationForm.admissionDateOptions.september2027"),
-                  january2028: t("applicationForm.admissionDateOptions.january2028"),
-                  considering: t("applicationForm.admissionDateOptions.considering"),
+                  january2027: t(
+                    "applicationForm.admissionDateOptions.january2027"
+                  ),
+                  september2027: t(
+                    "applicationForm.admissionDateOptions.september2027"
+                  ),
+                  january2028: t(
+                    "applicationForm.admissionDateOptions.january2028"
+                  ),
+                  considering: t(
+                    "applicationForm.admissionDateOptions.considering"
+                  ),
                 },
                 submit: t("applicationForm.submit"),
                 sending: t("applicationForm.sending"),
                 success: t("applicationForm.success"),
                 error: t("applicationForm.error"),
+                eligibilityError: t("applicationForm.eligibilityError"),
+                consentError: t("applicationForm.consentError"),
+                captchaError: t("applicationForm.captchaError"),
+                rateLimitError: t("applicationForm.rateLimitError"),
+                reviewTitle: t("applicationForm.reviewTitle"),
+                reviewText: t.raw("applicationForm.reviewText") as string[],
+                privacyConsent: t("applicationForm.privacyConsent"),
+                reviewBack: t("applicationForm.reviewBack"),
+                reviewSubmit: t("applicationForm.reviewSubmit"),
+                captchaLabel: t("applicationForm.captchaLabel"),
+                captchaSiteKey:
+                  process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? "",
               }}
             />
           </div>

@@ -86,6 +86,12 @@ export default async function Draft1Contact({
               phoneCountryCode: admission("applicationForm.phoneCountryCode"),
               email: admission("applicationForm.email"),
               age: admission("applicationForm.age"),
+              completedHighSchool: admission(
+                "applicationForm.completedHighSchool"
+              ),
+              parentalPermission: admission(
+                "applicationForm.parentalPermission"
+              ),
               gender: admission("applicationForm.gender"),
               genderOptions: {
                 male: admission("applicationForm.genderOptions.male"),
@@ -96,14 +102,24 @@ export default async function Draft1Contact({
               programOptions: {
                 acting: admission("applicationForm.programOptions.acting"),
                 dance: admission("applicationForm.programOptions.dance"),
-                continuingEd: admission("applicationForm.programOptions.continuingEd"),
+                continuingEd: admission(
+                  "applicationForm.programOptions.continuingEd"
+                ),
               },
               admissionDate: admission("applicationForm.admissionDate"),
               admissionDateOptions: {
-                january2027: admission("applicationForm.admissionDateOptions.january2027"),
-                september2027: admission("applicationForm.admissionDateOptions.september2027"),
-                january2028: admission("applicationForm.admissionDateOptions.january2028"),
-                considering: admission("applicationForm.admissionDateOptions.considering"),
+                january2027: admission(
+                  "applicationForm.admissionDateOptions.january2027"
+                ),
+                september2027: admission(
+                  "applicationForm.admissionDateOptions.september2027"
+                ),
+                january2028: admission(
+                  "applicationForm.admissionDateOptions.january2028"
+                ),
+                considering: admission(
+                  "applicationForm.admissionDateOptions.considering"
+                ),
               },
               message: t("form.message"),
               messageHint: t("form.messageHint"),
@@ -111,6 +127,19 @@ export default async function Draft1Contact({
               sending: t("form.sending"),
               success: t("form.success"),
               error: t("form.error"),
+              eligibilityError: admission("applicationForm.eligibilityError"),
+              consentError: admission("applicationForm.consentError"),
+              captchaError: admission("applicationForm.captchaError"),
+              rateLimitError: admission("applicationForm.rateLimitError"),
+              reviewTitle: admission("applicationForm.reviewTitle"),
+              reviewText: admission.raw(
+                "applicationForm.reviewText"
+              ) as string[],
+              privacyConsent: admission("applicationForm.privacyConsent"),
+              reviewBack: admission("applicationForm.reviewBack"),
+              reviewSubmit: admission("applicationForm.reviewSubmit"),
+              captchaLabel: admission("applicationForm.captchaLabel"),
+              captchaSiteKey: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? "",
             }}
           />
         </div>

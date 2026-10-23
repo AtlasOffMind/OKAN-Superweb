@@ -264,6 +264,8 @@
       "phoneCountryCode": "Country calling code",
       "email": "Email",
       "age": "Age",
+      "completedHighSchool": "I confirm that I have completed high school.",
+      "parentalPermission": "I confirm that I have permission from my parent or legal guardian to apply at age 17.",
       "gender": "Gender",
       "genderOptions": {
         "male": "Male",
@@ -286,7 +288,24 @@
       "submit": "Send application",
       "sending": "Sending…",
       "success": "Thank you! We received your application.",
-      "error": "We could not send your application. Please try again."
+      "error": "We could not send your application. Please try again.",
+      "eligibilityError": "Applicants must be 18, or 17 with completed high school and permission from a parent or legal guardian.",
+      "consentError": "Please read and accept the privacy notice to continue.",
+      "captchaError": "We could not verify the anti-spam check. Refresh it and try again.",
+      "rateLimitError": "The temporary submission limit was reached. Wait a few minutes and try again.",
+      "reviewTitle": "Privacy notice for admission applications",
+      "reviewText": [
+        "Data controller: OKAN Escuela Superior de Arte [ADD LEGAL ENTITY NAME AND ADDRESS]. Privacy contact: [ADD PRIVACY CONTACT EMAIL OR CHANNEL].",
+        "We use the information you provide — including your name, contact details, age, program and message — only to handle your admission inquiry and contact you about the process.",
+        "Authorized admissions staff can access the application. To operate the site and deliver email notifications, data may be processed by Hostinger (hosting) and Resend (email delivery). Confirm their processing terms and locations before publication.",
+        "We retain applications for [ADD RETENTION PERIOD] and then delete or anonymize them unless retention is legally required. To request access, correction or deletion, contact [ADD PRIVACY EMAIL].",
+        "The standard minimum admission age is 18. A 17-year-old may apply if they have completed high school and have permission from a parent or legal guardian. This checkbox records your declaration; OKAN may request documents to verify it.",
+        "By submitting, you confirm that you have read this notice and consent to the described use of your data. Do not include sensitive information in the message field."
+      ],
+      "privacyConsent": "I have read and accept this privacy notice and consent to OKAN using my data for the purposes described.",
+      "reviewBack": "Back to form",
+      "reviewSubmit": "Accept and submit",
+      "captchaLabel": "Anti-spam verification"
     }
   },
   "life": {

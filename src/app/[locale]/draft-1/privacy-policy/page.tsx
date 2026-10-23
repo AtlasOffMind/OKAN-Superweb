@@ -6,32 +6,79 @@ import { getPageMetadata } from "@/lib/seo";
 const content = {
     es: {
         title: "Política de privacidad",
-        intro: "Borrador de política de privacidad para el sitio web de OKAN.",
+        intro:
+            "Información sobre el tratamiento de datos enviados en solicitudes de admisión.",
         sections: [
-            ["Quiénes somos", "La dirección de nuestro sitio web es: "],
-            ["Comentarios", "Cuando los visitantes dejan comentarios en el sitio, recopilamos los datos que aparecen en el formulario de comentarios, además de la dirección IP del visitante y la cadena de agente de usuario del navegador para ayudar a detectar spam.\n\nUna cadena anonimizada creada a partir de tu dirección de correo electrónico (también llamada hash) puede proporcionarse al servicio Gravatar para comprobar si lo utilizas. La política de privacidad de Gravatar está disponible en https://automattic.com/privacy/. Después de aprobar tu comentario, tu foto de perfil será visible públicamente en el contexto de tu comentario."],
-            ["Medios", "Si subes imágenes al sitio web, evita incluir imágenes con datos de ubicación incrustados (EXIF GPS). Los visitantes del sitio pueden descargar y extraer cualquier dato de ubicación de las imágenes."],
-            ["Cookies", "Si dejas un comentario en nuestro sitio, puedes optar por guardar tu nombre, correo electrónico y sitio web en cookies. Estas cookies sirven para que no tengas que volver a introducir tus datos al dejar otro comentario y duran un año.\n\nSi visitas nuestra página de inicio de sesión, estableceremos una cookie temporal para determinar si tu navegador acepta cookies. Esta cookie no contiene datos personales y se descarta al cerrar el navegador.\n\nCuando inicias sesión, también configuramos varias cookies para guardar tu información de acceso y tus preferencias de visualización. Las cookies de inicio de sesión duran dos días y las de opciones de pantalla un año. Si seleccionas “Recordarme”, tu sesión persistirá durante dos semanas. Si cierras sesión, las cookies de inicio de sesión se eliminarán.\n\nSi editas o publicas un artículo, se guardará una cookie adicional en tu navegador. No incluye datos personales y solo indica el ID de la publicación que acabas de editar. Caduca después de un día."],
-            ["Contenido incrustado de otros sitios web", "Los artículos de este sitio pueden incluir contenido incrustado (por ejemplo, videos, imágenes y artículos). El contenido incrustado de otros sitios se comporta exactamente igual que si el visitante hubiera visitado el otro sitio web.\n\nEsos sitios pueden recopilar datos sobre ti, utilizar cookies, incrustar seguimiento de terceros y supervisar tu interacción con ese contenido, incluyendo dicha interacción si tienes una cuenta y has iniciado sesión en ese sitio."],
-            ["Con quién compartimos tus datos", "Si solicitas restablecer una contraseña, tu dirección IP se incluirá en el correo de restablecimiento."],
-            ["Cuánto tiempo conservamos tus datos", "Si dejas un comentario, el comentario y sus metadatos se conservan indefinidamente. Esto permite reconocer y aprobar automáticamente comentarios posteriores en lugar de mantenerlos en una cola de moderación.\n\nPara usuarios que se registren en este sitio (si los hubiera), también almacenamos la información personal que proporcionen en su perfil. Los usuarios pueden ver, editar o eliminar su información personal en cualquier momento, excepto su nombre de usuario. Los administradores del sitio también pueden verla y editarla."],
-            ["Qué derechos tienes sobre tus datos", "Si tienes una cuenta en este sitio o has dejado comentarios, puedes solicitar un archivo exportado de los datos personales que conservamos sobre ti, incluyendo los que hayas proporcionado. También puedes solicitar que eliminemos cualquier dato personal que conservemos. Esto no incluye los datos que estamos obligados a conservar por motivos administrativos, legales o de seguridad."],
-            ["Dónde se envían tus datos", "Los comentarios de los visitantes pueden revisarse mediante un servicio automatizado de detección de spam."],
+            [
+                "Responsable",
+                "Responsable del tratamiento: OKAN Escuela Superior de Arte [COMPLETAR RAZÓN SOCIAL Y DOMICILIO]. Contacto de privacidad: [COMPLETAR CORREO O MEDIO DE CONTACTO].",
+            ],
+            [
+                "Datos y finalidad",
+                "El formulario puede recopilar nombre, teléfono, correo electrónico, edad, programa de interés, fecha de ingreso y mensaje. Los usamos para atender solicitudes de admisión y contactar a la persona interesada sobre el proceso. No incluyas información sensible en el campo de mensaje.",
+            ],
+            [
+                "Quién puede acceder y proveedores",
+                "El personal autorizado de admisiones puede consultar las solicitudes. Para operar el sitio y almacenar la información se utiliza Hostinger como proveedor de alojamiento y PostgreSQL/Payload en el VPS. Si se habilitan avisos, Resend procesa el envío de correo. OKAN debe confirmar y completar la información legal aplicable sobre proveedores y ubicaciones de tratamiento antes de publicar.",
+            ],
+            [
+                "Conservación",
+                "Las solicitudes se conservarán durante [COMPLETAR PLAZO DE RETENCIÓN] desde el último contacto relacionado con admisiones. Después se eliminarán o anonimizarán, salvo que exista una obligación legal de conservarlas. OKAN debe definir y aplicar el procedimiento de eliminación.",
+            ],
+            [
+                "Derechos y solicitudes",
+                "Puedes solicitar acceso, corrección o eliminación de tus datos escribiendo a [COMPLETAR CORREO DE PRIVACIDAD]. La solicitud será atendida conforme a la legislación aplicable y a los plazos correspondientes.",
+            ],
+            [
+                "Personas de 17 años",
+                "La edad ordinaria mínima de ingreso es 18 años. Una persona de 17 años puede solicitar admisión si concluyó el bachillerato y cuenta con autorización de su madre, padre o tutor legal. El formulario registra estas declaraciones; OKAN puede solicitar documentación para verificarlas antes de una decisión de admisión.",
+            ],
+            [
+                "Consentimiento",
+                "Antes de enviar el formulario se presenta este aviso y se solicita una aceptación expresa. La aceptación queda asociada a la solicitud junto con la versión del aviso y la fecha de envío. La verificación anti-spam de Cloudflare Turnstile procesa el token necesario para validar el envío.",
+            ],
+            [
+                "Actualizaciones",
+                "Esta política puede actualizarse cuando cambien el formulario, los proveedores o las prácticas de tratamiento. Fecha de actualización: [COMPLETAR].",
+            ],
         ],
     },
     en: {
         title: "Privacy Policy",
-        intro: "Draft privacy policy for the OKAN website.",
+        intro: "How we handle information submitted with admission applications.",
         sections: [
-            ["Who we are", "Our website address is: "],
-            ["Comments", "When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.\n\nAn anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment."],
-            ["Media", "If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website."],
-            ["Cookies", "If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.\n\nIf you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.\n\nWhen you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select “Remember Me”, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.\n\nIf you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day."],
-            ["Embedded content from other websites", "Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.\n\nThese websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website."],
-            ["Who we share your data with", "If you request a password reset, your IP address will be included in the reset email."],
-            ["How long we retain your data", "If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.\n\nFor users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information."],
-            ["What rights you have over your data", "If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes."],
-            ["Where your data is sent", "Visitor comments may be checked through an automated spam detection service."],
+            [
+                "Data controller",
+                "Controller: OKAN Escuela Superior de Arte [ADD LEGAL ENTITY NAME AND ADDRESS]. Privacy contact: [ADD PRIVACY CONTACT EMAIL OR CHANNEL].",
+            ],
+            [
+                "Data and purpose",
+                "The form may collect your name, phone number, email address, age, program of interest, intended admission term and message. We use it to handle admission inquiries and contact the applicant about the process. Do not include sensitive information in the message field.",
+            ],
+            [
+                "Access and service providers",
+                "Authorized admissions staff can access applications. The website and application data are hosted by Hostinger and stored in PostgreSQL/Payload on the VPS. If notifications are enabled, Resend processes email delivery. OKAN must confirm and complete applicable legal details about processors and processing locations before publication.",
+            ],
+            [
+                "Retention",
+                "Applications will be retained for [ADD RETENTION PERIOD] after the last admission-related contact, then deleted or anonymized unless a legal obligation requires longer retention. OKAN must define and follow the deletion procedure.",
+            ],
+            [
+                "Your rights",
+                "To request access, correction or deletion of your data, contact [ADD PRIVACY EMAIL]. Requests will be handled under applicable law and timelines.",
+            ],
+            [
+                "Applicants aged 17",
+                "The standard minimum admission age is 18. A 17-year-old may apply if they have completed high school and have permission from a parent or legal guardian. The form records these declarations; OKAN may request documents to verify them before making an admission decision.",
+            ],
+            [
+                "Consent",
+                "Before submission, this notice is presented and express acceptance is requested. Acceptance is stored with the application along with the notice version and submission time. Cloudflare Turnstile's anti-spam verification processes the token needed to validate the submission.",
+            ],
+            [
+                "Updates",
+                "This policy may be updated when the form, providers or data practices change. Last updated: [ADD DATE].",
+            ],
         ],
     },
 } as const;
@@ -76,7 +123,7 @@ export default async function PrivacyPolicyPage({
                             <h2 className="font-display text-3xl font-semibold tracking-tight text-zinc-900 md:text-4xl">
                                 {heading}
                             </h2>
-                            <div className="mt-4 whitespace-pre-line text-base leading-relaxed text-zinc-600 md:text-lg">
+                            <div className="mt-4 text-base leading-relaxed whitespace-pre-line text-zinc-600 md:text-lg">
                                 {text}
                             </div>
                         </section>

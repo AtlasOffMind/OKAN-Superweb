@@ -14,8 +14,19 @@ Required values:
 - `PAYLOAD_SECRET`: a separate long random hexadecimal secret.
 - `PAYLOAD_OWNER_EMAIL`: the sole administrator email configured by the project.
 - `NEXT_PUBLIC_SITE_URL`: canonical HTTPS origin, without a trailing slash. Set it to the reserved domain before the production build, even while DNS is not yet pointing at the VPS.
+- `NEXT_PUBLIC_TURNSTILE_SITE_KEY`: Cloudflare Turnstile site key. This public key is embedded in the client build.
+- `TURNSTILE_SECRET_KEY`: Cloudflare Turnstile secret key. Keep it only in the VPS environment file; never pass it as a Docker build argument.
 
 Optional email values: `RESEND_API_KEY`, `RESEND_FROM`, and `CONTACT_EMAIL`. The app builds `DATABASE_URI` from the three `POSTGRES_*` variables and the internal Compose hostname `postgres`; do not add a second `DATABASE_URI` entry to the env file.
+
+## Admission privacy and abuse controls
+
+- The admission form displays a privacy/consent dialog before submission. The policy at `/es/privacy-policy` and `/en/privacy-policy` still has `[COMPLETAR]` fields for the legal entity/contact, retention period, privacy contact, and last-updated date. OKAN must complete and review these with its privacy/legal advisor before public launch.
+- Applicants must be 18 or older, or 17 with completed high school and parental/legal guardian permission. The form records these declarations; it does not verify supporting documents.
+- Cloudflare Turnstile is validated server-side. Configure the widget to allow the final public hostname and any temporary test hostname used. Without valid site and secret keys, the form intentionally refuses submissions.
+- The app limits an IP to five successful Turnstile checks/submissions per 15-minute window in its process memory. This is a basic single-instance safeguard, not a durable or distributed rate limiter; the counter resets on app restart. If the app is later scaled to multiple instances, move rate limiting to shared storage.
+- Direct anonymous creation through Payload's REST API is disabled for `submissions`; validated form submissions use the server-side Local API.
+- The new migration `20261023_165429_admission_consent_and_eligibility` adds consent and eligibility fields. Existing requests are retained and tagged `legacy-no-consent-recorded`; they are not retroactively marked as consented.
 
 ## Files and persistent data
 
@@ -33,7 +44,7 @@ These commands are deliberately not run as part of repository setup. Execute the
 2. Set ownership on the media volume once, before first app startup: `docker run --rm --user 0:0 -v okan_payload_uploads:/app/data/media alpine:3.24.2 chown -R 1000:1000 /app/data/media`.
 3. Validate Compose without starting services, ensuring `/opt/okan/.env` is populated: `docker compose --env-file /opt/okan/.env -f /opt/okan/docker-compose.production.yml config --quiet`.
 4. Build the app separately from PostgreSQL first. Monitor memory; stop if the KVM 1 runs out of RAM. No deployment or migration is implied by a successful build.
-5. Before the first public release, review and authorize the initial Payload migration. Never migrate a database containing important data without a verified backup.
+5. Before deploying this admission/privacy update, create and verify a PostgreSQL backup, then explicitly authorize `npm run payload:migrate` to apply any pending migration. Never migrate a database containing important data without a verified backup.
 6. Configure a reverse proxy and HTTPS, then point the domain's `@` and `www` A records to the VPS IP. Do not change nameservers unless intentionally moving DNS management.
 
 The VPS plan is 4 GB RAM, so a Next.js production build may be memory-constrained. If it fails, do not repeatedly retry on the live server; build elsewhere and transfer the resulting image, or upgrade resources.

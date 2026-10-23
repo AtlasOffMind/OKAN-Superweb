@@ -8,12 +8,43 @@ export const Submissions: CollectionConfig = {
     defaultColumns: ["name", "email", "createdAt"],
   },
   access: {
-    create: () => true,
+    create: () => false,
     read: isOwner,
     update: isOwner,
     delete: isOwner,
   },
   fields: [
+    {
+      name: "completedHighSchool",
+      type: "checkbox",
+      defaultValue: false,
+      admin: { position: "sidebar" },
+    },
+    {
+      name: "parentalPermission",
+      type: "checkbox",
+      defaultValue: false,
+      admin: { position: "sidebar" },
+    },
+    {
+      name: "privacyConsent",
+      type: "checkbox",
+      required: true,
+      defaultValue: false,
+      admin: { position: "sidebar" },
+    },
+    {
+      name: "privacyNoticeVersion",
+      type: "text",
+      required: true,
+      admin: { position: "sidebar", readOnly: true },
+    },
+    {
+      name: "consentedAt",
+      type: "date",
+      required: true,
+      admin: { position: "sidebar", readOnly: true },
+    },
     {
       name: "name",
       type: "text",
@@ -23,7 +54,7 @@ export const Submissions: CollectionConfig = {
       name: "age",
       type: "number",
       required: true,
-      min: 1,
+      min: 17,
       max: 120,
     },
     {
