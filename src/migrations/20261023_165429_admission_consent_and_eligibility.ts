@@ -8,10 +8,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   ALTER TABLE "submissions" ADD COLUMN "privacy_notice_version" varchar;
   ALTER TABLE "submissions" ADD COLUMN "consented_at" timestamp(3) with time zone;
   UPDATE "submissions"
-    SET "privacy_consent" = false,
-        "privacy_notice_version" = 'legacy-no-consent-recorded',
-        "consented_at" = "created_at"
-    WHERE "privacy_consent" IS NULL;
+    SET "privacy_consent" = COALESCE("privacy_consent", false),
+      "privacy_notice_version" = COALESCE("privacy_notice_version", 'legacy-no-consent-recorded'),
+      "consented_at" = COALESCE("consented_at", "created_at", now())
+    WHERE "privacy_consent" IS NULL
+       OR "privacy_notice_version" IS NULL
+       OR "consented_at" IS NULL;
   ALTER TABLE "submissions" ALTER COLUMN "privacy_consent" SET NOT NULL;
   ALTER TABLE "submissions" ALTER COLUMN "privacy_notice_version" SET NOT NULL;
   ALTER TABLE "submissions" ALTER COLUMN "consented_at" SET NOT NULL;`);
