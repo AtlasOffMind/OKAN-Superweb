@@ -156,7 +156,7 @@ export default async function Draft1Admissions({
                 consentError: t("applicationForm.consentError"),
                 captchaError: t("applicationForm.captchaError"),
                 rateLimitError: t("applicationForm.rateLimitError"),
-                reviewTitle: t("applicationForm.reviewTitle"),
+                reviewTitle: t.raw("applicationForm.reviewTitle") as string[],
                 reviewText: t.raw("applicationForm.reviewText") as string[],
                 privacyConsent: t("applicationForm.privacyConsent"),
                 reviewBack: t("applicationForm.reviewBack"),

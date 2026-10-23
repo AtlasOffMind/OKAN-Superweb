@@ -131,7 +131,9 @@ export default async function Draft1Contact({
               consentError: admission("applicationForm.consentError"),
               captchaError: admission("applicationForm.captchaError"),
               rateLimitError: admission("applicationForm.rateLimitError"),
-              reviewTitle: admission("applicationForm.reviewTitle"),
+              reviewTitle: admission.raw(
+                "applicationForm.reviewTitle"
+              ) as string[],
               reviewText: admission.raw(
                 "applicationForm.reviewText"
               ) as string[],

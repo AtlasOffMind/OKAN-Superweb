@@ -36,7 +36,7 @@ interface AdmissionLabels {
     consentError: string;
     captchaError: string;
     rateLimitError: string;
-    reviewTitle: string;
+    reviewTitle: string[];
     reviewText: string[];
     privacyConsent: string;
     reviewBack: string;
@@ -297,7 +297,11 @@ export function AdmissionForm({ labels }: { labels: AdmissionLabels }) {
                         id="admission-review-title"
                         className="font-display text-2xl font-semibold"
                     >
-                        {labels.reviewTitle}
+                        {labels.reviewTitle.map((line) => (
+                            <span key={line} className="block">
+                                {line}
+                            </span>
+                        ))}
                     </h2>
                     <div className="mt-4 space-y-3 text-sm leading-relaxed text-zinc-700">
                         {labels.reviewText.map((paragraph) => (
