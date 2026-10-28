@@ -32,18 +32,10 @@ export const faculty: FacultyMember[] = [
     {
         name: "Ernesto Tamayo Benítez",
         file: "/images/profesores/ErnestoTamayo.jpg",
-        role: "Decano de Actuación",
-        roleEn: "Dean of Acting",
+        role: "Vicerrector",
+        roleEn: "Vice-Rector",
         bio: "Actor, director escénico, diseñador de iluminación y pedagogo teatral. Es Licenciado en Artes Escénicas con perfil en Actuación por la Universidad de las Artes de Cuba, con formación previa como Instructor Profesional de Teatro por la Escuela Nacional de Teatro de Cuba. Es maestrante en Neuroeducación, con una línea centrada en la relación entre procesos cognitivos, aprendizaje artístico y pedagogías contemporáneas del entrenamiento escénico. Su formación incluye procesos de estudio y entrenamiento con Eugenio Barba, Peter Goldfarb, Bertha Martínez y Philippe Genty. Es fundador de OKAN y Decano de la carrera de Actuación, donde diseñó la malla curricular y el marco filosófico de la institución.",
         bioEn: "Actor, stage director, lighting designer and theatre educator. An OKAN founder who shaped the school's acting curriculum and educational philosophy.",
-    },
-    {
-        name: "Luz Mas",
-        file: "/images/profesores/Luz-Mas.jpg",
-        role: "Decana de Danza",
-        roleEn: "Dean of Dance",
-        bio: "Bailarina, coreógrafa, docente y gestora cultural especializada en ballet, danza contemporánea y jazz. Realizó su formación profesional en el Real Conservatorio Profesional de Danza de Madrid y estudios avanzados en danza contemporánea y jazz mediante beca en la compañía 10 & 10 Danza. Cuenta con más de veinticinco años de trayectoria como intérprete, coreógrafa, directora artística y formadora, con trabajo en España, Reino Unido y México. Es coautora de la Guía metodológica para la danza jazz. Actualmente es fundadora de OKAN, Decana de Danza y diseñadora de la malla curricular de la Licenciatura en Danza.",
-        bioEn: "Dancer, choreographer, educator and cultural leader with more than 25 years of experience in ballet, contemporary dance and jazz.",
     },
     {
         name: "Alia Gisela Sánchez Vázquez",
@@ -83,6 +75,14 @@ export const faculty: FacultyMember[] = [
             "Actualmente forma parte del Departamento de Admisiones de OKAN Escuela Superior de Arte, donde aplica su experiencia organizativa y administrativa al acompañamiento y seguimiento de los procesos de ingreso de nuevos estudiantes."
         ],
         bioEn: ["Industrial Engineer graduated from the José Antonio Echeverría Higher Polytechnic Institute (CUJAE) in Havana, Cuba. She began her professional career at the Havana Urban Bus Company, completing her training period and social service there.", "She later worked in commercial management at the José María Pérez Bus Workshop Company, known as El Naranjito, where she became commercial manager. She continued her career at Cuba's National Institute of Hydraulic Resources as a senior specialist in Work Organization and Salaries, consolidating experience in management, organization and administrative processes.", "She is currently part of OKAN School of the Arts' Admissions Department, applying her organizational and administrative experience to supporting and following up on new student admissions."],
+    },
+    {
+        name: "Luz Mas",
+        file: "/images/profesores/Luz-Mas.jpg",
+        role: "Docente",
+        roleEn: "Dance Instructor",
+        bio: "Bailarina, coreógrafa, docente y gestora cultural especializada en ballet, danza contemporánea y jazz. Realizó su formación profesional en el Real Conservatorio Profesional de Danza de Madrid y estudios avanzados en danza contemporánea y jazz mediante beca en la compañía 10 & 10 Danza. Cuenta con más de veinticinco años de trayectoria como intérprete, coreógrafa, directora artística y formadora, con trabajo en España, Reino Unido y México. Es coautora de la Guía metodológica para la danza jazz. Actualmente es fundadora de OKAN, Decana de Danza y diseñadora de la malla curricular de la Licenciatura en Danza.",
+        bioEn: "Dancer, choreographer, educator and cultural leader with more than 25 years of experience in ballet, contemporary dance and jazz.",
     },
     {
         name: "Yailín Coppola",
@@ -149,6 +149,15 @@ export const faculty: FacultyMember[] = [
         bioEn: "Bachelor of Dance Art in Folklore and Master in Audiovisual Culture from the University of the Arts (ISA), with theater training and First-Level Musical Show Artistic Director accreditation. With over twenty years of experience as an artistic director, choreographer, actor, and stage creator, he has worked across musical theater, dance, television, and cultural projects. At OKAN, he teaches Body Expression and contributes to the Artistic Direction of tourist entertainment productions, integrating movement, composition, and direction into professional training.",
     },
     {
+        name: "Juan Alberto Reyes",
+        file: "/images/profesores/Juan_Alberto.jpg",
+        role: "Docente",
+        roleEn: "Dance Instructor",
+        bio: "Juan Alberto Reyes Pérez es bailarín, coreógrafo y docente cubano con 15 años de trayectoria artística. Licenciado en Arte Danzario, especialidad Folklore, por la Universidad de las Artes de Cuba (ISA), cuenta con formación en danza moderna, contemporánea y folklórica. Primer bailarín y coreógrafo de la Compañía Verdarte, ha participado en producciones teatrales, musicales, televisivas y festivales internacionales. Entre sus reconocimientos destacan el Premio Ramiro Guerra a la Mejor Interpretación Masculina en Danza Folklórica (2024) y el Premio Caricato a la Mejor Coreografía de Espectáculos Musicales (2025). Su experiencia pedagógica abarca ballet clásico, danza contemporánea, folklore cubano y danzas yoruba. En OKAN se integra como profesor de Danza.",
+        bioEn: "Juan Alberto Reyes Pérez is a Cuban dancer, choreographer and educator with 15 years of artistic experience. He holds a degree in Dance Art, specializing in Folklore, from the University of the Arts of Cuba (ISA), and has trained in modern, contemporary and folkloric dance. He is principal dancer and choreographer with Compañía Verdarte and has participated in theatre, musical, television and international festival productions. His awards include the Ramiro Guerra Award for Best Male Performance in Folkloric Dance (2024) and the Caricato Award for Best Musical Show Choreography (2025). His teaching experience includes classical ballet, contemporary dance, Cuban folklore and Yoruba dances. At OKAN, he joins the faculty as a Dance instructor.",
+
+    },
+    {
         name: "Doriam Díaz Goenaga",
         file: "/images/profesores/Doriam.jpeg",
         role: "Psicóloga",
@@ -156,5 +165,46 @@ export const faculty: FacultyMember[] = [
         bio: "Psicóloga y especialista en acompañamiento psicopedagógico en procesos artísticos. Es Licenciada en Psicología por la Universidad de La Habana. En OKAN desarrolla procesos de acompañamiento integral orientados al bienestar emocional y al desarrollo humano dentro de la formación artística. Su trabajo integra psicología clínica, dinámicas grupales y herramientas expresivas aplicadas a la formación escénica y la conciencia emocional. En la escuela es profesora de Psicodrama y Psicodanza.",
         bioEn: "Psychologist specializing in psychopedagogical support. At OKAN, she supports emotional wellbeing through Psychodrama and Psychodance.",
 
+    },
+    {
+        name: "Flora Borrego",
+        file: "/images/profesores/Flora_Borrego.jpg",
+        role: "Directora de Producción",
+        roleEn: "Production Director",
+        bio: "Flora Borrego es actriz y productora cubana, graduada de Actuación en la Escuela Nacional de Arte de Cuba (ENA) en 2011. Ha desarrollado su trayectoria en teatro, cine y televisión, integrando compañías como Aire Frío, bajo la dirección de Eduardo Eimil, y La Franja Teatral, dirigida por Agnieska Hernández. En televisión ha participado en Promesas, Valientes, En tiempos de amar y Asuntos pendientes, donde alcanzó especial reconocimiento por su interpretación de Adriana Estrada. En 2026 asumió el personaje protagónico de Lía en la telenovela Entre aguas. Su experiencia artística comprende también la interpretación musical y la participación en proyectos de producción. En OKAN Escuela Superior de Arte se incorpora como Directora de Producción de OKAN Espectáculos, al frente de la coordinación operativa de sus propuestas escénicas y de entretenimiento.",
+        bioEn: "Flora Borrego is a Cuban actress and producer who graduated in Acting from Cuba's National School of Art (ENA) in 2011. Her career spans theatre, film and television, including work with Aire Frío under Eduardo Eimil and La Franja Teatral under Agnieska Hernández. Her television credits include Promesas, Valientes, En tiempos de amar and Asuntos pendientes, where her portrayal of Adriana Estrada received particular recognition. In 2026, she took the leading role of Lía in the telenovela Entre aguas. Her artistic experience also includes musical performance and production. At OKAN School of the Arts, she is Production Director for OKAN Espectáculos, leading the operational coordination of its stage and entertainment productions.",
+
+    },
+    {
+        name: "Omar Vázquez",
+        file: "/images/profesores/Omar_Vazquez.jpg",
+        role: "Productor Ejecutivo",
+        roleEn: "Executive Producer",
+        bio: "Omar Vázquez Sánchez, conocido como Señor Sargazo, es empresario mexicano, emprendedor e impulsor de proyectos de innovación ambiental y responsabilidad social. Fundador de Blue Green México y creador del Sargablock, ha desarrollado un modelo de aprovechamiento del sargazo para la fabricación de materiales de construcción sostenibles, iniciativa que ha alcanzado proyección internacional y ha contribuido a la construcción de viviendas para familias en situación de vulnerabilidad. Su trayectoria se distingue por la capacidad de transformar iniciativas emprendedoras en proyectos de impacto social, articulando innovación, gestión de recursos y desarrollo empresarial. En OKAN Escuela Superior de Arte se integra como Productor Ejecutivo de OKAN Espectáculos y OKAN Laboratorio Escénico, contribuyendo a la gestión y viabilidad de sus proyectos de creación y producción artística.",
+        bioEn: "Omar Vázquez Sánchez, known as Señor Sargazo, is a Mexican entrepreneur and advocate for environmental innovation and social responsibility. He founded Blue Green México and created Sargablock, a project that repurposes sargassum seaweed to produce sustainable building materials. The initiative has gained international visibility and helped build homes for families facing vulnerability. His work turns entrepreneurial ideas into social-impact projects by bringing together innovation, resource management and business development. At OKAN School of the Arts, he is Executive Producer for OKAN Espectáculos and OKAN Laboratorio Escénico, contributing to the management and sustainability of their artistic creation and production projects.",
+    },
+    {
+        name: "Nassiely Hérnandez",
+        file: "/images/profesores/Nassiely.jpg",
+        role: "Asistente de Dirección",
+        roleEn: "Assistant Director",
+        bio: "Nassiely Hernández Rodríguez es productora, gestora cultural y asistente de dirección cubana, licenciada en Estudios Socioculturales con Título de Oro y máster en Historia Contemporánea, con mención en Relaciones Internacionales, por la Universidad de La Habana. Cuenta con formación especializada en producción, comunicación, gestión cultural y asistencia de dirección audiovisual por el Instituto Cubano del Arte e Industria Cinematográficos (ICAIC). Su trayectoria comprende la organización y producción de espectáculos, festivales, conciertos y proyectos televisivos, vinculada a instituciones y agrupaciones como la Empresa Adolfo Guzmán, la Compañía Verdarte y Artestudio El Hombrecito Verde. Ha participado en producciones como Travesura Musical, En busca del Hombrecito Verde y giras artísticas junto a la Orquesta Miguel Failde. En OKAN Escuela Superior de Arte se incorpora como Coordinadora de Gestión y Asistencia de Dirección, articulando los procesos organizativos y de producción con la asistencia artística en las creaciones de OKAN Laboratorio Escénico y OKAN Espectáculos.",
+        bioEn: "Nassiely Hernández Rodríguez is a Cuban producer, cultural manager and assistant director. She holds a gold-medal degree in Sociocultural Studies and a master's degree in Contemporary History, with a focus on International Relations, from the University of Havana. She has specialized training in production, communications, cultural management and assistant directing for audiovisual work from the Cuban Institute of Cinematographic Art and Industry (ICAIC). Her experience includes organizing and producing performances, festivals, concerts and television projects with organizations such as Empresa Adolfo Guzmán, Compañía Verdarte and Artestudio El Hombrecito Verde. Her credits include Travesura Musical, En busca del Hombrecito Verde and artistic tours with the Miguel Failde Orchestra. At OKAN School of the Arts, she coordinates management and assistant-directing processes, connecting production organization with the artistic work of OKAN Laboratorio Escénico and OKAN Espectáculos.",
+    },
+    {
+        name: "Elvys Ariel",
+        file: "/images/profesores/Elvys.jpg",
+        role: "Audiovisuales",
+        roleEn: "Audiovisual Director",
+        bio: "Elvys Ariel Urra Moreno es realizador audiovisual, director de fotografía y creador visual cubano, con más de 15 años de experiencia en cine, televisión, publicidad y producción escénica. Licenciado por la Facultad de Arte de los Medios de Comunicación Audiovisual (FAMCA) de la Universidad de las Artes de Cuba (ISA), en la especialidad de Dirección de Fotografía, cuenta también con formación en artes visuales, videodanza y tecnologías digitales de visualización. Su trayectoria incluye trabajos en producciones cinematográficas como Últimos días en La Habana, Los buenos demonios y Buscando a Casal, así como la dirección fotográfica de documentales dedicados a Los Van Van y la Orquesta Aragón. Ha participado en programas televisivos como Travesura Musical, Sesiones Vagabundas y Fútbol por Dentro, además de desarrollar propuestas visuales y escenográficas para espectáculos de la Compañía Verdarte. En OKAN Escuela Superior de Arte se integra como Director de Audiovisuales y Tecnología Escénica, responsable del registro fotográfico y audiovisual, el desarrollo de contenidos y soluciones visuales para espectáculos, proyectos de videomapping, experiencias inmersivas de 360 grados y propuestas escénicas con drones, así como de la formación audiovisual en los programas de educación continua.",
+        bioEn: "Elvys Ariel Urra Moreno is a Cuban audiovisual filmmaker, cinematographer and visual artist with more than 15 years of experience in film, television, advertising and stage production. He graduated in Cinematography from the Faculty of Audiovisual Media Arts (FAMCA) at the University of the Arts of Cuba (ISA), and has additional training in visual arts, videodance and digital visualization technologies. His film credits include Últimos días en La Habana, Los buenos demonios and Buscando a Casal. He has also directed photography for documentaries about Los Van Van and Orquesta Aragón, contributed to television programs such as Travesura Musical, Sesiones Vagabundas and Fútbol por Dentro, and developed visual and scenic concepts for Compañía Verdarte. At OKAN School of the Arts, he leads Audiovisuals and Stage Technology, overseeing photo and video documentation, content development, visual solutions for performances, videomapping, 360-degree immersive experiences and drone-based stage concepts, as well as audiovisual training in continuing education.",
+    },
+    {
+        name: "Gerardo Javier",
+        file: "/images/profesores/Gerardo.jpg",
+        role: "Desarrollador Web",
+        roleEn: "Web Developer",
+        bio: "Gerardo Javier Pujol Suárez es desarrollador de software y estudiante de la Licenciatura en Ciencia de la Computación de la Facultad de Matemática y Computación (MATCOM) de la Universidad de La Habana. Su formación comprende programación, arquitectura de computadoras, diseño de algoritmos y desarrollo de aplicaciones, con experiencia práctica en C#, Python, programación orientada a objetos y herramientas de control de versiones como Git y GitHub. Ha desarrollado proyectos de videojuegos, sistemas de gestión y arquitectura computacional, además de participar en iniciativas universitarias de divulgación tecnológica. En OKAN Escuela Superior de Arte es Responsable de Desarrollo Web y Automatización de Procesos, a cargo del desarrollo de la página web institucional, la implementación de herramientas digitales y la creación de soluciones tecnológicas orientadas a optimizar la gestión académica, administrativa y operativa de la institución. Paralelamente, cuenta con doce años de formación en artes marciales chinas (wushu) y experiencia como instructor, trayectoria que incorpora a Estudios Continuos de OKAN mediante talleres de artes marciales aplicadas a la escena.",
+        bioEn: "Gerardo Javier Pujol Suárez is a software developer and Computer Science student at the Faculty of Mathematics and Computing (MATCOM), University of Havana. His studies include programming, computer architecture, algorithm design and application development; he has practical experience with C#, Python, object-oriented programming and version-control tools such as Git and GitHub. He has developed video games, management systems and computer architecture projects, and has taken part in university technology outreach. At OKAN School of the Arts, he leads web development and process automation, maintaining the institutional website, implementing digital tools and creating technology solutions to improve academic, administrative and operational work. He also has twelve years of Chinese martial arts (wushu) training and experience as an instructor, which he brings to OKAN Continuing Studies through workshops in martial arts for the stage.",
     },
 ];

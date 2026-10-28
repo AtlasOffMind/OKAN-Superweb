@@ -121,7 +121,7 @@ export default async function Draft1About({
             </article>
           )}
 
-          <div className="mt-20 grid gap-px bg-brand-800 md:grid-cols-3">
+          <div className="mt-20 grid gap-x-6 gap-y-14 bg-brand-950 md:grid-cols-3 md:gap-x-8 md:gap-y-16">
             {team.map((member) => (
               <article key={`${member.name}-${member.file}`} className="bg-brand-950 p-6 md:p-8">
                 <div className="relative aspect-[4/5] overflow-hidden bg-zinc-900">

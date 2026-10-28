@@ -11,6 +11,7 @@ Required values:
 - `POSTGRES_DB`: production database name.
 - `POSTGRES_USER`: production database role.
 - `POSTGRES_PASSWORD`: generate a long random hexadecimal value so it is safe in the Compose-generated connection URL.
+- `GHCR_IMAGE`: production image name, currently `ghcr.io/atlasoffmind/okan-superweb`.
 - `PAYLOAD_SECRET`: a separate long random hexadecimal secret.
 - `PAYLOAD_OWNER_EMAIL`: the sole administrator email configured by the project.
 - `NEXT_PUBLIC_SITE_URL`: canonical HTTPS origin, without a trailing slash. Set it to the reserved domain before the production build, even while DNS is not yet pointing at the VPS.
@@ -31,10 +32,21 @@ Optional email values: `RESEND_API_KEY`, `RESEND_FROM`, and `CONTACT_EMAIL`. The
 ## Files and persistent data
 
 - [Dockerfile.production](../Dockerfile.production) builds and runs with Node.js `22.22.2`.
-- [docker-compose.production.yml](../docker-compose.production.yml) runs the app and PostgreSQL. PostgreSQL has no public port; the app is bound to VPS-local port `3000` only.
+- [docker-compose.production.yml](../docker-compose.production.yml) pulls the app image from GHCR and runs it with PostgreSQL. PostgreSQL has no public port; the app is bound to VPS-local port `3000` only.
 - [.dockerignore](../.dockerignore) excludes local secrets, dependencies, build output, and source archives while retaining `public/images`.
 - The app uses `PAYLOAD_MEDIA_DIR=/app/data/media`; [Media.ts](../src/collections/Media.ts) uses that path only when set, preserving the local default otherwise.
 - PostgreSQL data and Payload media use separate external named volumes. They must be created before Compose can start. Do not use `docker compose down -v`.
+
+## Automatic image deployment
+
+- `.github/workflows/deploy.yml` runs on pushes to `main` and can also be started manually. GitHub Actions builds `Dockerfile.production`, publishes `ghcr.io/atlasoffmind/okan-superweb` with `latest` and the commit SHA tags, then connects to the VPS over SSH.
+- The VPS deployment expects `/opt/okan/app/docker-compose.production.yml` to use the GHCR `image:` reference and `/opt/okan/.env` to define `GHCR_IMAGE=ghcr.io/atlasoffmind/okan-superweb`. The workflow pulls the commit-SHA tag and recreates only `app`; it does not sync the Compose file, touch PostgreSQL/media volumes, or run Payload migrations.
+- GitHub Actions requires repository variables `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_TURNSTILE_SITE_KEY`, plus secrets `VPS_HOST`, `VPS_USER`, `VPS_SSH_KEY`, and `VPS_KNOWN_HOSTS`. The VPS SSH public key must authorize the matching private key for `VPS_USER`; the VPS must be able to pull the GHCR package.
+- A successful workflow means the image was built and published, the app container was updated, and `http://127.0.0.1:3000/es` returned successfully. Verify the public domain and critical form flows separately after deployment.
+
+## Recorded production build
+
+Buildx artifact `*.dockerbuild` files are binary OCI/tar diagnostic exports, not source files; keep them local and out of Git. The reviewed export showed `next build` compiling successfully in 19.9 seconds and generating all 36 static pages in 0.794 seconds. The final npm audit summary reported 22 vulnerabilities: 1 low, 11 moderate, 7 high, and 3 critical. This did not fail the build, but the dependency findings should be investigated and remediated deliberately; do not apply `npm audit fix --force` blindly.
 
 ## Deferred VPS steps
 
@@ -43,7 +55,7 @@ These commands are deliberately not run as part of repository setup. Execute the
 1. Create the two named volumes: `docker volume create okan_postgres_data` and `docker volume create okan_payload_uploads`.
 2. Set ownership on the media volume once, before first app startup: `docker run --rm --user 0:0 -v okan_payload_uploads:/app/data/media alpine:3.24.2 chown -R 1000:1000 /app/data/media`.
 3. Validate Compose without starting services, ensuring `/opt/okan/.env` is populated: `docker compose --env-file /opt/okan/.env -f /opt/okan/docker-compose.production.yml config --quiet`.
-4. Build the app separately from PostgreSQL first. Monitor memory; stop if the KVM 1 runs out of RAM. No deployment or migration is implied by a successful build.
+4. For app releases, use the GitHub Actions workflow after the VPS Compose file and `GHCR_IMAGE` setting are configured. The image is built in GitHub, so routine releases do not compile Next.js on the VPS.
 5. Before deploying this admission/privacy update, create and verify a PostgreSQL backup, then explicitly authorize `npm run payload:migrate` to apply any pending migration. Never migrate a database containing important data without a verified backup.
 6. Configure a reverse proxy and HTTPS, then point the domain's `@` and `www` A records to the VPS IP. Do not change nameservers unless intentionally moving DNS management.
 
