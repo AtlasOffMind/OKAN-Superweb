@@ -9,17 +9,17 @@ import Image from "next/image";
 
 // Lista de rutas de las imágenes que se muestran en el carrusel del Hero
 const images = [
-  "/images/Hero/20260707_193020.jpg",
-  "/images/Hero/20260707_193406.jpg",
-  "/images/Hero/20260707_193712.jpg",
-  "/images/Hero/20260707_203802.jpg",
-  "/images/Hero/20260707_204624.jpg",
-  "/images/Hero/okan-18-3.jpg",
-  "/images/Hero/okan-38-2.jpg",
-  "/images/Hero/okan-49-2.jpg",
-  "/images/Hero/okan-59-2.jpg",
-  "/images/Hero/okan-77-2.jpg",
-  "/images/Hero/okan-85.jpg",
+  "/images/Hero/20260707_193020.webp",
+  "/images/Hero/20260707_193406.webp",
+  "/images/Hero/20260707_193712.webp",
+  "/images/Hero/20260707_203802.webp",
+  "/images/Hero/20260707_204624.webp",
+  "/images/Hero/okan-18-3.webp",
+  "/images/Hero/okan-38-2.webp",
+  "/images/Hero/okan-49-2.webp",
+  "/images/Hero/okan-59-2.webp",
+  "/images/Hero/okan-77-2.webp",
+  "/images/Hero/okan-85.webp",
 ] as const;
 
 interface ImageMarqueeProps {
@@ -30,7 +30,7 @@ export default function ImageMarquee({ className }: ImageMarqueeProps) {
   return (
     <div className={`overflow-hidden ${className ?? ""}`}>
       {/* Pista animada que contiene dos copias idénticas para hacer el loop infinito */}
-      <div className="flex h-full w-max shrink-0 flex-nowrap animate-marquee">
+      <div className="animate-marquee flex h-full w-max shrink-0 flex-nowrap">
         {[0, 1].map((copy) => (
           <div
             key={copy}
@@ -48,7 +48,14 @@ export default function ImageMarquee({ className }: ImageMarqueeProps) {
                   width={1600}
                   height={1067}
                   priority={copy === 0 && index === 0}
-                  loading="eager"
+                  loading={copy === 0 && index === 0 ? "eager" : "lazy"}
+                  sizes={
+                    index < 5
+                      ? "(max-width: 767px) 75vh, 100vw"
+                      : index === 5
+                        ? "(max-width: 767px) 67vh, 100vw"
+                        : "(max-width: 767px) 150vh, 100vw"
+                  }
                   className="block h-full w-auto max-w-none object-contain object-center"
                 />
               </div>

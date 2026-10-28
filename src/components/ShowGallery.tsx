@@ -22,7 +22,7 @@ const gallerySections: GallerySection[] = [
 ];
 
 function imagePath(imageNumber: number) {
-    return `/images/OKAN%20en%20accion/Shows/${imageNumber}.jpg`;
+    return `/images/OKAN%20en%20accion/Shows/${imageNumber}.webp`;
 }
 
 export function ShowGallery({

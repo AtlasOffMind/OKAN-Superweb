@@ -130,8 +130,8 @@ export default async function Draft1Home({
           {/* Bloques 1 y 2: Actuación y Danza con sus fotos de fondo */}
           {(
             [
-              ["acting", "/images/Pograms/Actuacion.jpg"],
-              ["dance", "/images/Pograms/Danza.jpg"],
+              ["acting", "/images/Pograms/Actuacion.webp"],
+              ["dance", "/images/Pograms/Danza.webp"],
             ] as const
           ).map(([key, image]) => (
             <article
@@ -145,7 +145,7 @@ export default async function Draft1Home({
                 sizes="(min-width: 768px) 33vw, 100vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-black/60" />
+              <div className="absolute inset-0 bg-black/60"/>
               <h3
                 className={`font-display text-brand-600 absolute top-8 z-10 text-5xl font-semibold tracking-tight md:top-12 md:text-7xl ${key === "dance" ? "inset-x-0 text-center" : "left-8 md:left-12"
                   }`}
@@ -173,7 +173,7 @@ export default async function Draft1Home({
           {/* Bloque 3: Estudios Continuos */}
           <article className="relative flex aspect-[3/4] flex-col justify-end overflow-hidden p-8 md:aspect-[4/5] md:p-12">
             <Image
-              src="/images/Pograms/Estudios_Continuos.jpeg"
+              src="/images/Pograms/Estudios_Continuos.webp"
               alt=""
               fill
               sizes="(min-width: 768px) 33vw, 100vw"
@@ -206,7 +206,7 @@ export default async function Draft1Home({
       {/* ========================================================================= */}
       <section className="relative aspect-[4/3] overflow-hidden">
         <Image
-          src="/images/sobre OKAN/Collage1.png"
+          src="/images/sobre OKAN/Collage1.webp"
           alt=""
           fill
           sizes="100vw"

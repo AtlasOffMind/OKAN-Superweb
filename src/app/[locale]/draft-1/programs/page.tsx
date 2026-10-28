@@ -26,9 +26,9 @@ export default async function Draft1Programs({
   setRequestLocale(locale);
   const t = await getTranslations("programs");
   const careers = [
-    { key: "acting", slug: "acting", image: "/images/Pograms/Programs/actuacion2.jpg" },
-    { key: "dance", slug: "contemporary-dance", image: "/images/Pograms/Programs/danza2.jpg" },
-    { key: "continuingEd", slug: "continuing-studies", image: "/images/Pograms/Programs/estudios_continuos2.jpg" },
+    { key: "acting", slug: "acting", image: "/images/Pograms/Programs/actuacion2.webp" },
+    { key: "dance", slug: "contemporary-dance", image: "/images/Pograms/Programs/danza2.webp" },
+    { key: "continuingEd", slug: "continuing-studies", image: "/images/Pograms/Programs/estudios_continuos2.webp" },
   ] as const;
 
   return (
