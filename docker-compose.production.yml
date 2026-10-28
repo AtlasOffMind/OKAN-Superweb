@@ -19,12 +19,7 @@ services:
       retries: 10
 
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile.production
-      args:
-        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:?Set NEXT_PUBLIC_SITE_URL in the production env file}
-        NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${NEXT_PUBLIC_TURNSTILE_SITE_KEY:?Set NEXT_PUBLIC_TURNSTILE_SITE_KEY in the production env file}
+    image: ${GHCR_IMAGE:?Set GHCR_IMAGE in the production env file}:${OKAN_IMAGE_TAG:-latest}
     restart: unless-stopped
     env_file:
       - ${OKAN_ENV_FILE:-/opt/okan/.env}
