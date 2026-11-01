@@ -66,7 +66,7 @@ export const faculty: FacultyMember[] = [
         bioEn: ["Stage production and digital communication professional, trained in production assistance at Cuba's Radio and Television Studies Center. His experience includes logistics for performances and cultural events, cast and technical resource management, content creation and strategic social media management. He has participated in projects including Cuba Espectacular, the theatre premiere Cuarentena and the closing event for the television series El Derecho de Soñar, as well as cultural and social projects in Cuba and Mexico.", "At OKAN School of the Arts, he is part of the production and communications team, contributing to institutional logistics, operational organization and digital communication. His profile connects the creative, technical and communication needs of each project, supporting its development on stage and in its relationship with audiences."],
     },
     {
-        name: "Odalis Suárez Almeida",
+        name: "Odalys Suárez Almeida",
         file: "/images/profesores/Odalys Dolores.png",
         role: "Departamento de Admisiones.",
         roleEn: "Admissions Department",

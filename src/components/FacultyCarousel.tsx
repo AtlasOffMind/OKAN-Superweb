@@ -16,7 +16,10 @@ interface FacultyCarouselProps {
 }
 
 function renderBio(bio: string | string[]) {
-    return (Array.isArray(bio) ? bio : [bio]).map((paragraph, index) => (
+    const paragraphs = Array.isArray(bio) ? bio : [bio];
+    const visibleParagraphs = paragraphs.slice(0, paragraphs.join(" ").length > 800 ? 1 : 2);
+
+    return visibleParagraphs.map((paragraph, index) => (
         <p key={index} className="mt-4 text-sm leading-relaxed text-zinc-300">
             {paragraph}
         </p>

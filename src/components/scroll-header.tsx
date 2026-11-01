@@ -30,8 +30,16 @@ export function ScrollHeader({
 
     const onScroll = () => {
       const y = window.scrollY;
-      // Si el usuario baja más de 80px, oculta la cabecera; si sube, la muestra
-      setHidden(y > lastY.current && y > 80);
+      const delta = y - lastY.current;
+
+      if (Math.abs(delta) > 2) {
+        if (delta > 0 && y > 80) {
+          setHidden(true);
+        } else {
+          setHidden(false);
+        }
+      }
+
       // Aplica fondo oscuro con desenfoque si se ha hecho scroll más de 40px
       setScrolled(y > 40);
       lastY.current = y;
@@ -43,9 +51,8 @@ export function ScrollHeader({
 
   return (
     <div
-      className={`fixed z-40 transition-[transform,background-color,box-shadow] duration-300 ease-out ${
-        hidden ? "-translate-y-[150%]" : "translate-y-0"
-      } ${className} ${scrolled ? scrolledClassName : ""}`}
+      className={`fixed z-40 transition-[transform,background-color,box-shadow] duration-300 ease-out ${hidden ? "-translate-y-[calc(100%+3rem)]" : "translate-y-0"
+        } ${className} ${scrolled ? scrolledClassName : ""}`}
     >
       {children}
     </div>
