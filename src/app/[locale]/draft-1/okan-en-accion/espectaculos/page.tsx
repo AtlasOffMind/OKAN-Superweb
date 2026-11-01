@@ -31,7 +31,7 @@ export default async function Draft1Espectaculos({
             <section aria-label={t("heading")} className="relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-zinc-950">
                 <h1 className="sr-only">{t("heading")}</h1>
                 <Image
-                    src="/images/OKAN%20en%20accion/Shows/1.jpg"
+                    src="/images/OKAN%20en%20accion/Shows/1.webp"
                     alt={t("heroImageAlt")}
                     fill
                     priority
@@ -40,7 +40,7 @@ export default async function Draft1Espectaculos({
                     className="scale-110 object-cover opacity-70 blur-md"
                 />
                 <Image
-                    src="/images/OKAN%20en%20accion/Shows/1.jpg"
+                    src="/images/OKAN%20en%20accion/Shows/1.webp"
                     alt={t("heroImageAlt")}
                     width={1920}
                     height={1080}
