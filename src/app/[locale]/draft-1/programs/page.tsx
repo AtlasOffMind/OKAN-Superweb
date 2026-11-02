@@ -72,7 +72,7 @@ export default async function Draft1Programs({
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/65" />
-                <h2 className="font-display text-brand-600 absolute top-7 left-7 z-10 max-w-[92%] text-4xl font-semibold leading-[0.95] tracking-tight drop-shadow-[0_3px_16px_rgba(0,0,0,0.65)] sm:text-5xl md:top-60 md:left-12 md:max-w-[85%] md:text-7xl">
+                <h2 className="font-display text-brand-600 absolute top-7 left-7 z-10 max-w-[88%] text-4xl font-semibold leading-[0.95] tracking-tight drop-shadow-[0_3px_16px_rgba(0,0,0,0.65)] sm:text-5xl md:top-12 md:left-12 md:max-w-[85%] md:text-5xl lg:text-6xl">
                   {t(`${key}.title`)}
                 </h2>
                 <div className="absolute inset-x-0 bottom-0 p-7 md:p-10">
