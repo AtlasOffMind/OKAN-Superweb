@@ -68,30 +68,6 @@
       "secondaryLinkLabel": "¡Reserva tu ticket ya!",
       "items": [
         {
-          "date": "23 oct 2026",
-          "title": "Clase abierta. Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Segunda salida al público",
-          "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
-          "image": "/images/News/Laboratorio escenico.jpeg",
-          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
-          "secondaryHref": ""
-        },
-        {
-          "date": "30 oct 2026",
-          "title": "Presentación de la obra de danza-teatro “El Laberinto de las Alas”",
-          "desc": "Teatro 8 de Octubre, 19:00 h. Presentada por alumnos de la primera generación de las Licenciaturas en Actuación y Danza de OKAN.",
-          "image": "/images/News/laberinto de las alas-News Home.png",
-          "href": "https://enteratecancun.com/el-laberinto-de-las-alas-llega-a-cancun-con-una-experiencia-de-teatro-y-danza-inmersiva/",
-          "secondaryHref": "https://share.google/GBqIatbPAh8jlmhTq"
-        },
-        {
-          "date": "4–9 nov 2026",
-          "title": "46.ª Muestra Nacional de Teatro — Querétaro",
-          "desc": "Asistencia de alumnos de la primera generación de las carreras de Actuación y Danza de OKAN Escuela Superior de Arte.",
-          "image": "",
-          "href": "",
-          "secondaryHref": ""
-        },
-        {
           "date": "13 nov 2026",
           "title": "Clase abierta. Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Tercera salida al público",
           "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
@@ -517,6 +493,22 @@
     "readMore": "Ver más",
     "news": {
       "items": [
+        {
+          "date": "30 oct 2026",
+          "title": "Presentación de la obra de danza-teatro “El Laberinto de las Alas”",
+          "desc": "Teatro 8 de Octubre, 19:00 h. Presentada por alumnos de la primera generación de las Licenciaturas en Actuación y Danza de OKAN.",
+          "image": "/images/News/laberinto de las alas-News Home.png",
+          "href": "https://enteratecancun.com/el-laberinto-de-las-alas-llega-a-cancun-con-una-experiencia-de-teatro-y-danza-inmersiva/",
+          "secondaryHref": ""
+        },
+        {
+          "date": "23 oct 2026",
+          "title": "Clase abierta. Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Segunda salida al público",
+          "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
+          "image": "/images/News/Laboratorio escenico.jpeg",
+          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
+          "secondaryHref": ""
+        },
         {
           "date": "17 y 18 oct 2026",
           "title": "Hadestown by CIAE — Obra de teatro musical presentada por los alumnos de Nivel Avanzado",

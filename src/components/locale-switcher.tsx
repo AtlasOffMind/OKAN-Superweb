@@ -31,7 +31,9 @@ export function LocaleSwitcher({
           <button
             key={l}
             type="button"
-            onClick={() => !active && router.replace(pathname, { locale: l })}
+            onClick={() =>
+              !active && router.replace(pathname, { locale: l, scroll: false })
+            }
             aria-pressed={active}
             className={`min-h-11 rounded-full px-2.5 py-1 text-xs font-semibold tracking-wide uppercase transition-colors ${active
               ? "bg-brand-600 text-white"
