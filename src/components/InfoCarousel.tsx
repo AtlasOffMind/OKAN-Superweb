@@ -63,6 +63,7 @@ export default function InfoCarousel({ items, linkLabel }: InfoCarouselProps) {
                                         alt={item.title}
                                         fill
                                         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                                        loading={index < 2 ? "eager" : "lazy"}
                                         className="object-cover"
                                     />
                                 </div>

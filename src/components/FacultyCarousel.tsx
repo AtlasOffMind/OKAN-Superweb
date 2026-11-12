@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import type { FacultyMember } from "@/lib/faculty";
+import { useTouchReveal } from "@/components/use-touch-reveal";
 
 interface FacultyCarouselProps {
     members: FacultyMember[];
@@ -24,6 +25,42 @@ function renderBio(bio: string | string[]) {
             {paragraph}
         </p>
     ));
+}
+
+function FacultyCard({ member, locale, aboutHref }: {
+    member: FacultyMember;
+    locale: string;
+    aboutHref: string;
+}) {
+    const { revealed, ...touchHandlers } = useTouchReveal();
+
+    return (
+        <Link
+            {...touchHandlers}
+            href={aboutHref}
+            className="group relative block h-full min-h-[30rem] overflow-hidden bg-zinc-950 text-white focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-white [@media(hover:none)]:[-webkit-touch-callout:none]"
+            aria-label={`${member.name}, ${locale === "es" ? member.role : member.roleEn}`}
+        >
+            <div className="absolute inset-0 overflow-hidden">
+                <Image
+                    src={member.file}
+                    alt={member.name}
+                    fill
+                    sizes="(min-width: 1024px) 30vw, (min-width: 640px) 47vw, 87vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+            </div>
+            <div className={`absolute inset-x-0 bottom-0 overflow-hidden bg-black/55 p-5 backdrop-blur-[2px] transition-[max-height,background-color] duration-700 ease-out group-hover:max-h-full group-hover:bg-black/75 group-focus-visible:max-h-full group-focus-visible:bg-black/75 md:p-6 ${revealed ? "max-h-full bg-black/75" : "max-h-36"}`}>
+                <p className="text-brand-300 text-xs font-semibold tracking-[0.2em] uppercase">
+                    {locale === "es" ? member.role : member.roleEn}
+                </p>
+                <h3 className="font-display mt-3 text-2xl font-semibold leading-tight">
+                    {member.name}
+                </h3>
+                {renderBio(locale === "es" ? member.bio : member.bioEn)}
+            </div>
+        </Link>
+    );
 }
 
 // =============================================================================
@@ -59,39 +96,7 @@ export default function FacultyCarousel({
             {/* Genera una diapositiva / tarjeta para cada profesor de la lista */}
             {members.map((member) => (
                 <SwiperSlide key={`${member.name}-${member.file}`} className="!h-auto">
-                    {/* Tarjeta completa como enlace hacia la página Nosotros */}
-                    <Link
-                        href={aboutHref}
-                        className="group relative block h-full min-h-[30rem] overflow-hidden bg-zinc-950 text-white focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-white"
-                        aria-label={`${member.name}, ${locale === "es" ? member.role : member.roleEn}`}
-                    >
-                        {/* Foto del docente con efecto zoom al pasar el cursor */}
-                        <div className="absolute inset-0 overflow-hidden">
-                            <Image
-                                src={member.file}
-                                alt={member.name}
-                                fill
-                                sizes="(min-width: 1024px) 30vw, (min-width: 640px) 47vw, 87vw"
-                                className="object-cover transition-transform duration-700 group-hover:scale-110"
-                            />
-                        </div>
-
-                        {/* Panel de información translúcido que sube al poner el puntero */}
-                        <div className="absolute inset-x-0 bottom-0 max-h-36 overflow-hidden bg-black/55 p-5 backdrop-blur-[2px] transition-[max-height,background-color] duration-700 ease-out group-hover:max-h-full group-hover:bg-black/75 [@media(hover:none)]:max-h-full [@media(hover:none)]:bg-black/75 md:p-6">
-                            {/* Cargo / Rol */}
-                            <p className="text-brand-300 text-xs font-semibold tracking-[0.2em] uppercase">
-                                {locale === "es" ? member.role : member.roleEn}
-                            </p>
-
-                            {/* Nombre del profesor */}
-                            <h3 className="font-display mt-3 text-2xl font-semibold leading-tight">
-                                {member.name}
-                            </h3>
-
-                            {/* Biografía / Descripción */}
-                            {renderBio(locale === "es" ? member.bio : member.bioEn)}
-                        </div>
-                    </Link>
+                    <FacultyCard member={member} locale={locale} aboutHref={aboutHref} />
                 </SwiperSlide>
             ))}
         </Swiper>

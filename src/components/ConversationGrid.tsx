@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useTouchReveal } from "@/components/use-touch-reveal";
 
 export interface ConversationItem {
   image: string;
@@ -7,18 +10,16 @@ export interface ConversationItem {
   href: string | null;
 }
 
-export function ConversationGrid({ items }: { items: ConversationItem[] }) {
-  return (
-    <section className="bg-zinc-950 px-6 py-24 text-white md:px-12">
-      <div className="mx-auto grid max-w-7xl gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {items.map((item) => (
-          <a
-            key={item.title}
+function ConversationCard({ item }: { item: ConversationItem }) {
+  const { revealed, ...touchHandlers } = useTouchReveal();
 
+  return (
+          <a
+            {...touchHandlers}
             href={item.href != null ? item.href : undefined}
             target="_blank"
             rel="noreferrer"
-            className="group relative aspect-[1/3] overflow-hidden bg-zinc-900"
+            className="group relative aspect-[1/3] overflow-hidden bg-zinc-900 [@media(hover:none)]:[-webkit-touch-callout:none]"
           >
             <Image
               src={item.image}
@@ -33,7 +34,7 @@ export function ConversationGrid({ items }: { items: ConversationItem[] }) {
                 {item.title}
               </h2>
             </div>
-            <div className="absolute inset-y-0 right-0 flex w-full translate-x-full flex-col justify-end bg-brand-950/95 p-6 text-white transition-transform duration-500 ease-out group-hover:translate-x-0 group-focus-visible:translate-x-0">
+            <div className={`absolute inset-y-0 right-0 flex w-full flex-col justify-end bg-brand-950/95 p-6 text-white transition-transform duration-500 ease-out group-hover:translate-x-0 group-focus-visible:translate-x-0 ${revealed ? "translate-x-0" : "translate-x-full"}`}>
               <h2 className="font-display text-2xl font-semibold leading-tight">
                 {item.title}
               </h2>
@@ -46,7 +47,14 @@ export function ConversationGrid({ items }: { items: ConversationItem[] }) {
               </div>
             </div>
           </a>
-        ))}
+  );
+}
+
+export function ConversationGrid({ items }: { items: ConversationItem[] }) {
+  return (
+    <section className="bg-zinc-950 px-6 py-24 text-white md:px-12">
+      <div className="mx-auto grid max-w-7xl gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {items.map((item) => <ConversationCard key={item.title} item={item} />)}
       </div>
     </section>
   );

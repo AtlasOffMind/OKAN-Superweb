@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { usePathname } from "@/i18n/navigation";
 import { Link } from "@/i18n/navigation";
@@ -57,6 +57,37 @@ export function NavDrawer({
   const admissionsStyle = pathname.endsWith("/admissions")
     ? "!border-white/50 !bg-black/35 !text-white backdrop-blur-sm"
     : "";
+
+  useEffect(() => {
+    if (hiddenOnPath && pathname === hiddenOnPath) return;
+
+    let start: { x: number; y: number } | null = null;
+    const onTouchStart = (event: TouchEvent) => {
+      const touch = event.touches[0];
+      start = event.touches.length === 1 && touch.clientX <= 32
+        ? { x: touch.clientX, y: touch.clientY }
+        : null;
+    };
+    const onTouchEnd = (event: TouchEvent) => {
+      const touch = event.changedTouches[0];
+      if (start && touch) {
+        const horizontal = touch.clientX - start.x;
+        const vertical = Math.abs(touch.clientY - start.y);
+        if (horizontal >= 70 && horizontal > vertical * 1.5) setOpen(true);
+      }
+      start = null;
+    };
+    const onTouchCancel = () => { start = null; };
+
+    document.addEventListener("touchstart", onTouchStart, { passive: true });
+    document.addEventListener("touchend", onTouchEnd, { passive: true });
+    document.addEventListener("touchcancel", onTouchCancel, { passive: true });
+    return () => {
+      document.removeEventListener("touchstart", onTouchStart);
+      document.removeEventListener("touchend", onTouchEnd);
+      document.removeEventListener("touchcancel", onTouchCancel);
+    };
+  }, [hiddenOnPath, pathname]);
 
   if (hiddenOnPath && pathname === hiddenOnPath) {
     return null;

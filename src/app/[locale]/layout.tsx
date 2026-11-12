@@ -64,7 +64,7 @@ export default async function LocaleLayout({
       className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={null}>{children}</NextIntlClientProvider>
       </body>
     </html>
   );
