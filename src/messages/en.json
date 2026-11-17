@@ -71,12 +71,12 @@
           "date": "Nov 20, 2026",
           "title": "TEDx Cancún — Ernesto Tamayo, with OKAN students presenting “El Laberinto de las Alas”",
           "desc": "Auditorio STOA. Schedule to be announced.",
-          "image": "",
-          "href": "",
+          "image": "public/images/News/TEDx_Ecos_Website.webp",
+          "href": "https://www.ted.com/tedx/events/69352",
           "secondaryHref": ""
         },
         {
-          "date": "Nov 26, 2026",
+          "date": "Nov 27, 2026",
           "title": "Final showcase of the Expanded Stage Performer Laboratory: body, action and composition in contemporary dance",
           "desc": "Foro Hiram Sánchez, 7:00 pm. Presented by students from OKAN's Acting and Dance bachelor's programs, closing the PRAD / Saberes Danzados 2026 process.",
           "image": "/images/News/Laboratorio escenico.webp",
@@ -87,7 +87,7 @@
           "date": "Feb 6, 2027",
           "title": "“La mirada de los invisibles”, by Saúl Enríquez — OKAN Stage Laboratory",
           "desc": "Foro Hiram Sánchez, 7:00 pm. Stage direction: Ernesto Tamayo Benítez. First production by OKAN Stage Laboratory.",
-          "image": "",
+          "image": "/images/OKAN en accion/Laboratorio/La mirada de los invisibles.webp",
           "href": "",
           "secondaryHref": ""
         }
@@ -422,7 +422,7 @@
             "Production: OKAN Laboratorio Escénico.",
             "Project supported by the 2026 National Dance Call through the Artistic Residencies in Dance Program (PRAD), Danza INBAL."
           ],
-          "date": "Opening date to be confirmed",
+          "date": "",
           "image": "/images/OKAN en accion/Laboratorio/Laberinto de las alas.jpg 1"
         },
         {

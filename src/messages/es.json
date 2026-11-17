@@ -71,12 +71,12 @@
           "date": "20 nov 2026",
           "title": "TEDx Cancún — Presentación de Ernesto Tamayo, con participación de alumnos de OKAN presentando “El Laberinto de las Alas”",
           "desc": "Auditorio STOA, horario por definir.",
-          "image": "",
-          "href": "",
+          "image": "public/images/News/TEDx_Ecos_Website.webp",
+          "href": "https://www.ted.com/tedx/events/69352",
           "secondaryHref": ""
         },
         {
-          "date": "26 nov 2026",
+          "date": "27 nov 2026",
           "title": "Muestra Final del Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea",
           "desc": "Foro Hiram Sánchez, 19:00 h. Presentada por alumnos de las Licenciaturas en Actuación y Danza de OKAN, como cierre del proceso PRAD / Saberes Danzados 2026.",
           "image": "/images/News/Laboratorio escenico.webp",
@@ -87,7 +87,7 @@
           "date": "6 feb 2027",
           "title": "“La mirada de los invisibles”, de Saúl Enríquez — OKAN Laboratorio Escénico",
           "desc": "Foro Hiram Sánchez, 19:00 h. Dirección escénica: Ernesto Tamayo Benítez. Primer montaje escénico de OKAN Laboratorio Escénico.",
-          "image": "",
+          "image": "/images/OKAN en accion/Laboratorio/La mirada de los invisibles.webp",
           "href": "",
           "secondaryHref": ""
         }
@@ -423,7 +423,7 @@
             "Producción: OKAN Laboratorio Escénico",
             "Proyecto apoyado por la Convocatoria Nacional de Danza 2026, a través del Programa de Residencias Artísticas en Danza (PRAD), Danza INBAL."
           ],
-          "date": "30 de octubre de 2026",
+          "date": "",
           "image": "/images/OKAN en accion/Laboratorio/Laberinto de las alas.webp"
         },
         {
