@@ -68,14 +68,6 @@
       "secondaryLinkLabel": "Book your ticket",
       "items": [
         {
-          "date": "Nov 13, 2026",
-          "title": "Open class: Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Third public showing",
-          "desc": "OKAN School of the Arts, 9:45 am–1:30 pm. Free admission with prior registration.",
-          "image": "/images/News/Laboratorio escenico.webp",
-          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
-          "secondaryHref": ""
-        },
-        {
           "date": "Nov 20, 2026",
           "title": "TEDx Cancún — Ernesto Tamayo, with OKAN students presenting “El Laberinto de las Alas”",
           "desc": "Auditorio STOA. Schedule to be announced.",
@@ -87,8 +79,8 @@
           "date": "Nov 26, 2026",
           "title": "Final showcase of the Expanded Stage Performer Laboratory: body, action and composition in contemporary dance",
           "desc": "Foro Hiram Sánchez, 7:00 pm. Presented by students from OKAN's Acting and Dance bachelor's programs, closing the PRAD / Saberes Danzados 2026 process.",
-          "image": "",
-          "href": "",
+          "image": "/images/News/Laboratorio escenico.webp",
+          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
           "secondaryHref": ""
         },
         {
@@ -493,6 +485,14 @@
     "readMore": "Read more",
     "news": {
       "items": [
+        {
+          "date": "Nov 13, 2026",
+          "title": "Open class: Expanded Stage Performer Laboratory: body, action and composition in contemporary dance — Third public showing",
+          "desc": "OKAN School of the Arts, 9:45 am–1:30 pm. Free admission with prior registration.",
+          "image": "/images/News/Laboratorio escenico.webp",
+          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
+          "secondaryHref": ""
+        },
         {
           "date": "Oct 30, 2026",
           "title": "Dance-theatre performance: “El Laberinto de las Alas”",

@@ -68,14 +68,6 @@
       "secondaryLinkLabel": "¡Reserva tu ticket ya!",
       "items": [
         {
-          "date": "13 nov 2026",
-          "title": "Clase abierta. Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Tercera salida al público",
-          "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
-          "image": "/images/News/Laboratorio escenico.webp",
-          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
-          "secondaryHref": ""
-        },
-        {
           "date": "20 nov 2026",
           "title": "TEDx Cancún — Presentación de Ernesto Tamayo, con participación de alumnos de OKAN presentando “El Laberinto de las Alas”",
           "desc": "Auditorio STOA, horario por definir.",
@@ -87,8 +79,8 @@
           "date": "26 nov 2026",
           "title": "Muestra Final del Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea",
           "desc": "Foro Hiram Sánchez, 19:00 h. Presentada por alumnos de las Licenciaturas en Actuación y Danza de OKAN, como cierre del proceso PRAD / Saberes Danzados 2026.",
-          "image": "",
-          "href": "",
+          "image": "/images/News/Laboratorio escenico.webp",
+          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
           "secondaryHref": ""
         },
         {
@@ -493,6 +485,14 @@
     "readMore": "Ver más",
     "news": {
       "items": [
+        {
+          "date": "13 nov 2026",
+          "title": "Clase abierta. Laboratorio del Intérprete Escénico Expandido: cuerpo, acción y composición en danza contemporánea — Tercera salida al público",
+          "desc": "OKAN Escuela Superior de Arte, 9:45–13:30 h. Acceso gratuito con registro previo.",
+          "image": "/images/News/Laboratorio escenico.webp",
+          "href": "https://quintanaroohoy.com/cultura/danza-contemporanea-cancun-okan/",
+          "secondaryHref": ""
+        },
         {
           "date": "30 oct 2026",
           "title": "Presentación de la obra de danza-teatro “El Laberinto de las Alas”",

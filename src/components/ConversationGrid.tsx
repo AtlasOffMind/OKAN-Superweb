@@ -14,39 +14,39 @@ function ConversationCard({ item }: { item: ConversationItem }) {
   const { revealed, ...touchHandlers } = useTouchReveal();
 
   return (
-          <a
-            {...touchHandlers}
-            href={item.href != null ? item.href : undefined}
-            target="_blank"
-            rel="noreferrer"
-            className="group relative aspect-[1/3] overflow-hidden bg-zinc-900 [@media(hover:none)]:[-webkit-touch-callout:none]"
-          >
-            <Image
-              src={item.image}
-              alt={item.title}
-              fill
-              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/20" />
-            <div className="absolute inset-x-0 bottom-0 bg-black/70 p-5 backdrop-blur-sm">
-              <h2 className="font-display text-2xl font-semibold leading-tight">
-                {item.title}
-              </h2>
-            </div>
-            <div className={`absolute inset-y-0 right-0 flex w-full flex-col justify-end bg-brand-950/95 p-6 text-white transition-transform duration-500 ease-out group-hover:translate-x-0 group-focus-visible:translate-x-0 ${revealed ? "translate-x-0" : "translate-x-full"}`}>
-              <h2 className="font-display text-2xl font-semibold leading-tight">
-                {item.title}
-              </h2>
-              <div className="mt-4 space-y-3 text-sm leading-relaxed text-zinc-200">
-                {(Array.isArray(item.desc) ? item.desc : [item.desc]).map(
-                  (paragraph, index) => (
-                    <p key={`${item.title}-desc-${index}`}>{paragraph}</p>
-                  ),
-                )}
-              </div>
-            </div>
-          </a>
+    <a
+      {...touchHandlers}
+      href={item.href != null ? item.href : undefined}
+      target="_blank"
+      rel="noreferrer"
+      className="group relative aspect-[1/3] overflow-hidden bg-zinc-900 [@media(hover:none)]:[-webkit-touch-callout:none]"
+    >
+      <Image
+        src={item.image}
+        alt={item.title}
+        fill
+        sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+        className="object-cover transition-transform duration-700 group-hover:scale-105"
+      />
+      <div className="absolute inset-0 bg-black/20" />
+      <div className="absolute inset-x-0 bottom-0 bg-black/70 p-5 backdrop-blur-sm">
+        <h2 className="font-display text-2xl font-semibold leading-tight">
+          {item.title}
+        </h2>
+      </div>
+      <div className={`absolute inset-y-0 right-0 flex w-full flex-col justify-end bg-brand-950/95 p-6 text-white transition-transform duration-500 ease-out group-hover:translate-x-0 group-focus-visible:translate-x-0 ${revealed ? "translate-x-0" : "translate-x-full"}`}>
+        <h2 className="font-display text-2xl font-semibold leading-tight">
+          {item.title}
+        </h2>
+        <div className="mt-4 space-y-3 text-sm leading-relaxed text-zinc-200">
+          {(Array.isArray(item.desc) ? item.desc : [item.desc]).map(
+            (paragraph, index) => (
+              <p key={`${item.title}-desc-${index}`}>{paragraph}</p>
+            ),
+          )}
+        </div>
+      </div>
+    </a>
   );
 }
 
