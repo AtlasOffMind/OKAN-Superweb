@@ -108,7 +108,7 @@ export default function NewsCarousel({
 
                 return (
                     <SwiperSlide key={`${item.title}-${index}`}>
-                        <div className="relative h-[80svh] min-h-[32rem] overflow-hidden bg-zinc-950 text-white">
+                        <div className="relative h-[89svh] min-h-[39rem] overflow-hidden bg-zinc-950 text-white">
                             {background}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/10" />
                             {info}
